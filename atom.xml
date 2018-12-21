@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-21T14:11:18.772Z</updated>
+  <updated>2018-12-21T14:33:08.522Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo搭建个人博客之Git安装</title>
+    <link href="http://yoursite.com/2018/12/21/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/"/>
+    <id>http://yoursite.com/2018/12/21/hexo搭建个人博客之Git安装/</id>
+    <published>2018-12-21T14:30:07.000Z</published>
+    <updated>2018-12-21T14:33:08.522Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;windows-环境下-Git-安装&quot;&gt;&lt;a href=&quot;#windows-环境下-Git-安装&quot; class=&quot;headerlink&quot; title=&quot;windows 环境下 Git 安装&quot;&gt;&lt;/a&gt;windows 环境下 Git 安装&lt;/h1&gt;&lt;h2 id=&quot;一
+      
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>装逼路上的小插曲一：博客上传图片无法显示</title>
@@ -43,18 +64,23 @@
     <link href="http://yoursite.com/2018/12/21/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGithub%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C/"/>
     <id>http://yoursite.com/2018/12/21/hexo搭建个人博客之Github账号注册/</id>
     <published>2018-12-21T12:55:38.000Z</published>
-    <updated>2018-12-21T13:15:43.865Z</updated>
+    <updated>2018-12-21T14:59:46.897Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/2018/12/21/hexo搭建个人博客之Github账号注册/1545397622600.png&quot; alt=&quot;1545397622600&quot;&gt;&lt;/p&gt;
-
+        &lt;p&gt;点击进入&lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Github官网&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注册之后，登录，创建一个测试项目可以点击右上角红框位置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img 
       
     
     </summary>
     
+    
+      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
     
   </entry>
   
@@ -87,30 +113,32 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2018/12/21/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/"/>
-    <id>http://yoursite.com/2018/12/21/hexo搭建个人博客之Git安装/</id>
-    <published>2018-12-21T12:01:10.621Z</published>
-    <updated>2018-12-21T14:15:58.349Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;windows-环境下-Git-安装&quot;&gt;&lt;a href=&quot;#windows-环境下-Git-安装&quot; class=&quot;headerlink&quot; title=&quot;windows 环境下 Git 安装&quot;&gt;&lt;/a&gt;windows 环境下 Git 安装&lt;/h1&gt;&lt;h2 id=&quot;一
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>hexo搭建个人博客之基本框架搭建</title>
     <link href="http://yoursite.com/2018/12/20/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/"/>
     <id>http://yoursite.com/2018/12/20/hexo搭建个人博客详细教程/</id>
     <published>2018-12-20T09:44:45.000Z</published>
     <updated>2018-12-21T13:48:42.173Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一-Git-安装及GitHub账号注册&quot;&gt;&lt;a href=&quot;#一-Git-安装及GitHub账号注册&quot; class=&quot;headerlink&quot; title=&quot;一  Git 安装及GitHub账号注册&quot;&gt;&lt;/a&gt;一  Git 安装及GitHub账号注册&lt;/h2&gt;&lt;p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="个人博客" scheme="http://yoursite.com/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo搭建个人博客之基本框架搭建</title>
+    <link href="http://yoursite.com/2018/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-%E6%AC%A2%E8%BF%8E%E8%AE%BF%E9%97%AE/"/>
+    <id>http://yoursite.com/2018/12/20/我的第一篇博客-欢迎访问/</id>
+    <published>2018-12-20T09:44:45.000Z</published>
+    <updated>2018-12-21T14:26:32.898Z</updated>
     
     <summary type="html">
     
