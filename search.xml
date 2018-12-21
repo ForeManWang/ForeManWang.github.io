@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo安装]]></title>
+    <url>%2F2018%2F12%2F21%2FHexo%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[NodeJs安装]]></title>
+    <url>%2F2018%2F12%2F21%2FNodeJs%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo搭建个人博客系列之Git安装]]></title>
+    <url>%2F2018%2F12%2F21%2FGit%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"><![CDATA[windows 环境下 Git 安装一、安装：官网下载对应 exe 文件直接安装 我电脑是win10 64位的，这里讲的是在windows下安装的Git [下载地址]https://git-scm.com/download/win 下载之后，一直next就可以了 二、配置：配置环境变量 win + r 打开windows运行面板 输入 sysdm.cpl 打开系统属性面板 选择系统属性面板上的高级 选择环境变量 双击path,添加一条你安装git的路径即可，我这里是E:\Develop\Git\Git\cmd 三、检测是否安装成功 到任意位置下，鼠标右键出现Git Bash Here和Git GUI Here即视为成功]]></content>
+      <tags>
+        <tag>windows Git win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[我的第二篇博客，欢迎访问]]></title>
     <url>%2F2018%2F12%2F20%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%AC%A2%E8%BF%8E%E8%AE%BF%E9%97%AE%2F</url>
     <content type="text"></content>
