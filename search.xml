@@ -11,7 +11,7 @@
   <entry>
     <title><![CDATA[装逼路上的小插曲一：博客上传图片无法显示]]></title>
     <url>%2F2018%2F12%2F21%2F%E8%A3%85%E9%80%BC%E8%B7%AF%E4%B8%8A%E7%9A%84%E5%B0%8F%E6%8F%92%E6%9B%B2%E4%B8%80%EF%BC%9A%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%2F</url>
-    <content type="text"><![CDATA[闲来无事，用hexo搭建了一个个人博客，中间也遇到了很多坑，这里总结一些遇到的坑，搞不好就有人遇到一样的问题了呢？ 一、关于hexo上传博客无法显示图片的问题废话不说了，这里参照了————大佬的文档 简单总结下： 站点下配置文件_config.yml修改，找到post_asset_folder(如果没有，自己写一个)，默认值一般是false，修改为true。 在hexo的目录下执行npm install https://github.com/CodeFalling/hexo-asset-image --save（需要等待一段时间）。 1npm install https://github.com/CodeFalling/hexo-asset-image --save 安装后再站点根目录下执行命令hexo new &quot;我的测试博客&quot;，在hexo/source/_post文件夹下不仅会生成对应的.md文件，还有一个同名的文件夹，用于存放该文件相关的资源。 1npm new "我的测试博客" 这个时候在写.md文档的时候，只需要图片链接为我的测试博客/[图片名].png即可 这里是利用相对路径解决了这一问题，详细请参照大佬的博客]]></content>
+    <content type="text"><![CDATA[有些日子，不知不觉就过去了…… 有些坑，不知不觉就进了，我也很无奈啊 废话不说了，这里参照了————大佬的文档 简单总结下： 站点下配置文件_config.yml修改，找到post_asset_folder(如果没有，自己写一个)，默认值一般是false，修改为true。 在hexo的目录下执行npm install https://github.com/CodeFalling/hexo-asset-image --save（需要等待一段时间）。 1npm install https://github.com/CodeFalling/hexo-asset-image --save 安装后再站点根目录下执行命令hexo new &quot;我的测试博客&quot;，在hexo/source/_post文件夹下不仅会生成对应的.md文件，还有一个同名的文件夹，用于存放该文件相关的资源。 1npm new "我的测试博客" 这个时候在写.md文档的时候，只需要图片链接为我的测试博客/[图片名].png即可 这里是利用相对路径解决了这一问题，详细请参照大佬的博客]]></content>
       <tags>
         <tag>hexo遇到的坑</tag>
       </tags>
