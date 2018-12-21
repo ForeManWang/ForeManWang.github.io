@@ -6,9 +6,12 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[我的第一篇博客,欢迎访问]]></title>
+    <title><![CDATA[hexo搭建个人博客之基本框架搭建]]></title>
     <url>%2F2018%2F12%2F20%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-%E6%AC%A2%E8%BF%8E%E8%AE%BF%E9%97%AE%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[一 Git 安装二 NodeJS 安装三 Hexo 安装四 基本主题next五 本地调试六 服务器部署]]></content>
+      <tags>
+        <tag>git nodejs hexo next</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>

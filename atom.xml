@@ -31,16 +31,23 @@
   </entry>
   
   <entry>
-    <title>我的第一篇博客,欢迎访问</title>
+    <title>hexo搭建个人博客之基本框架搭建</title>
     <link href="http://yoursite.com/2018/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-%E6%AC%A2%E8%BF%8E%E8%AE%BF%E9%97%AE/"/>
     <id>http://yoursite.com/2018/12/20/我的第一篇博客-欢迎访问/</id>
     <published>2018-12-20T09:44:45.000Z</published>
-    <updated>2018-12-20T17:41:18.375Z</updated>
+    <updated>2018-12-21T10:58:19.064Z</updated>
     
     <summary type="html">
     
+      
+      
+        &lt;h2 id=&quot;一-Git-安装&quot;&gt;&lt;a href=&quot;#一-Git-安装&quot; class=&quot;headerlink&quot; title=&quot;一  Git 安装&quot;&gt;&lt;/a&gt;一  Git 安装&lt;/h2&gt;&lt;h2 id=&quot;二-NodeJS-安装&quot;&gt;&lt;a href=&quot;#二-NodeJS-安装&quot; cla
+      
+    
     </summary>
     
+    
+      <category term="git nodejs hexo next" scheme="http://yoursite.com/tags/git-nodejs-hexo-next/"/>
     
   </entry>
   
