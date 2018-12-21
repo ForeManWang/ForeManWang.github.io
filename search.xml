@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[hexo搭建个人博客之Git安装]]></title>
-    <url>%2F2018%2F12%2F21%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85%2F</url>
+    <url>%2Funcategorized%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85%2F</url>
     <content type="text"><![CDATA[windows 环境下 Git 安装一、安装：官网下载对应 exe 文件直接安装 我电脑是win10 64位的，这里讲的是在windows下安装的Git 下载地址 下载之后，一直next就可以了 二、配置：配置环境变量 win + r 打开windows运行面板 输入 sysdm.cpl 打开系统属性面板 选择系统属性面板上的高级 选择环境变量 双击path,添加一条你安装git的路径即可，我这里是E:\Develop\Git\Git\cmd 三、检测是否安装成功 到任意位置下，鼠标右键出现Git Bash Here和Git GUI Here即视为成功 四、整个系列文档推荐hexo搭建个人博客之Git安装 hexo搭建个人博客之Github账号注册 hexo搭建个人博客之NodeJs安装 hexo搭建个人博客之Hexo安装 hexo搭建个人博客详细教程 装逼路上的小插曲一：博客上传图片无法显示]]></content>
       <tags>
         <tag>Git</tag>
@@ -10,7 +10,7 @@
   </entry>
   <entry>
     <title><![CDATA[装逼路上的小插曲一：博客上传图片无法显示]]></title>
-    <url>%2F2018%2F12%2F21%2F%E8%A3%85%E9%80%BC%E8%B7%AF%E4%B8%8A%E7%9A%84%E5%B0%8F%E6%8F%92%E6%9B%B2%E4%B8%80%EF%BC%9A%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%2F</url>
+    <url>%2Funcategorized%2F%E8%A3%85%E9%80%BC%E8%B7%AF%E4%B8%8A%E7%9A%84%E5%B0%8F%E6%8F%92%E6%9B%B2%E4%B8%80%EF%BC%9A%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%2F</url>
     <content type="text"><![CDATA[有些日子，不知不觉就过去了…… 有些坑，不知不觉就进了，我也很无奈啊 废话不说了，这里参照了————大佬的文档 简单总结下： 站点下配置文件_config.yml修改，找到post_asset_folder(如果没有，自己写一个)，默认值一般是false，修改为true。 在hexo的目录下执行npm install https://github.com/CodeFalling/hexo-asset-image --save（需要等待一段时间）。 1npm install https://github.com/CodeFalling/hexo-asset-image --save 安装后再站点根目录下执行命令hexo new &quot;我的测试博客&quot;，在hexo/source/_post文件夹下不仅会生成对应的.md文件，还有一个同名的文件夹，用于存放该文件相关的资源。 1npm new "我的测试博客" 这个时候在写.md文档的时候，只需要图片链接为我的测试博客/[图片名].png即可 这里是利用相对路径解决了这一问题，详细请参照大佬的博客 整个系列文档推荐 hexo搭建个人博客之Git安装 hexo搭建个人博客之Github账号注册 hexo搭建个人博客之NodeJs安装 hexo搭建个人博客之Hexo安装 hexo搭建个人博客详细教程 装逼路上的小插曲一：博客上传图片无法显示]]></content>
       <tags>
         <tag>hexo遇到的坑</tag>
@@ -18,7 +18,7 @@
   </entry>
   <entry>
     <title><![CDATA[hexo搭建个人博客之Github账号注册]]></title>
-    <url>%2F2018%2F12%2F21%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGithub%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%2F</url>
+    <url>%2Funcategorized%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGithub%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%2F</url>
     <content type="text"><![CDATA[点击进入Github官网 注册之后，登录，创建一个测试项目可以点击右上角红框位置 点击Create repository之后就可以创建一个测试项目了 新建一个分支 分支是用来同时处理存储库不同版本的方法；默认情况下你的存储库会有一个分支master作为主分支 。 输入分支名称，enter即可 在分支上可以进行修改和提交，具体还可以使用Git指令进行项目的下载，修改和上传，如果没有Git的，请参照我同一个系列的另一篇文章，点击hexo搭建个人博客之Git安装 Git的一些指令 本地任意位置打开Git面板 1234Git init // 初始化一个Git仓库，后面可以跟仓库名Git pull git@github.com:ForeManWang/test.git // 上传文件到项目地址，指令后面跟的是项目地址，具体查看方法，下面有Git clone git@github.com:ForeManWang/test.git // 下载文件到本地，指令后面跟的是项目地址，具体查看方法，下面有...... Github项目地址：见下图 整个系列文档推荐 hexo搭建个人博客之Git安装 hexo搭建个人博客之Github账号注册 hexo搭建个人博客之NodeJs安装 hexo搭建个人博客之Hexo安装 hexo搭建个人博客详细教程 装逼路上的小插曲一：博客上传图片无法显示 本文参考： （https://blog.csdn.net/lezaimemecha/article/details/84969353）]]></content>
       <tags>
         <tag>Github</tag>
@@ -26,7 +26,7 @@
   </entry>
   <entry>
     <title><![CDATA[hexo搭建个人博客之Hexo安装]]></title>
-    <url>%2F2018%2F12%2F21%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BHexo%E5%AE%89%E8%A3%85%2F</url>
+    <url>%2Funcategorized%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BHexo%E5%AE%89%E8%A3%85%2F</url>
     <content type="text"><![CDATA[hexo搭建个人博客之Hexo安装什么是hexo一个快速高效的博客框架 安装hexo安装hexo之前，先确认自己必须已经安装了NodeJs和Git和已经拥有了GitHub账号，可以参照以下三篇文章 Git详细安装教程————点击此处 GitHub账号注册详细教程————点击此处 NodeJs详细安装过程和环境配置————点击此处 如果以上步骤已经全部完成，去任意一个位置，右键打开Git面板，输入以下指令 1npm install -g hexo-cli 等待一会，安装之后，继续输入指令 1hexo -v // 有版本号则成功 成功安装之后，就可以创建一个博客了，详细请见hexo搭建个人博客总流程 整个系列文档推荐 hexo搭建个人博客之Git安装 hexo搭建个人博客之Github账号注册 hexo搭建个人博客之NodeJs安装 hexo搭建个人博客之Hexo安装 hexo搭建个人博客详细教程 装逼路上的小插曲一：博客上传图片无法显示]]></content>
       <tags>
         <tag>个人博客</tag>
@@ -34,7 +34,7 @@
   </entry>
   <entry>
     <title><![CDATA[NodeJs安装]]></title>
-    <url>%2F2018%2F12%2F21%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BNodeJs%E5%AE%89%E8%A3%85%2F</url>
+    <url>%2Funcategorized%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BNodeJs%E5%AE%89%E8%A3%85%2F</url>
     <content type="text"><![CDATA[NodeJs 安装与环境配置安装这里只介绍windows环境下的NodeJs安装 这里是官网请点击 图片中左边稳定版，右边最新版 点击，下载，是一个msi文件，直接安装就可以，记住你的安装路径，后面做环境配置 安装之后就可以做配置了 配置不知道怎么做环境配置的点击这里查看,同样的道理 测试打开命令行面板，输入以下指令 1node -v npmnpm即包管理工具，一般安装完NodeJs之后，npm是附带安装上去的，所以，同样的执行命令行命令 1npm --version nvmnvm即版本管理工具，详细参考点击这里 整个系列文档推荐hexo搭建个人博客之Git安装 hexo搭建个人博客之Github账号注册 hexo搭建个人博客之NodeJs安装 hexo搭建个人博客之Hexo安装 hexo搭建个人博客详细教程 装逼路上的小插曲一：博客上传图片无法显示]]></content>
       <tags>
         <tag>nodejs</tag>
@@ -42,7 +42,7 @@
   </entry>
   <entry>
     <title><![CDATA[hexo搭建个人博客详细教程]]></title>
-    <url>%2F2018%2F12%2F20%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B%2F</url>
+    <url>%2Funcategorized%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[一 Git 安装及GitHub账号注册Git详细安装教程————点击此处 GitHub账号注册详细教程————点击此处 二 NodeJS 安装NodeJs详细安装过程和环境配置————点击此处 三 Hexo 安装Hexo基本框架搭建过程————点击此处 四 基本主题next1、开启GitPages服务搭建我们的个人博客需要一个唯一的域名，当然我们可以申请购买一个域名来使用，但是在不是太必要的情况下，我们也可以通过Github Pages获得一个免费使用的域名，这需要我们在Github上新建一个仓库，如下： 登录Github，右上角创建一个项目，也可以参照我的另外一个同系列的文章 hexo搭建个人博客之Github账号注册 这个过程和建立普通的仓库没什么区别，关键在于新仓库的名字，一定要是UserName+“github.io”的形式。这也是之前强调的要起一个好的用户名的原因。这样之后我们最后的博客网站的链接就会是：https://UserName.github.io的形式。注意：固定新仓库的名字格式并非必须，只是这样操作生成的博客域名比较短小简洁，另起他名生成博客域名会很冗长。 点击Create Repository之后，选择settings 进入如下： 找到GitHub Pages找到choose theme 之后进入主题仓库,任意选择一个主题，这里我选择的是这个 此时再去查看settings,会发现GitHub Pages变化如下 现在，我们就可以使用https://UserName.github.io，访问自己的博客网站了，打开链接我们会看到默认主题的个人博客样式如下(虽然有点点丑，是吧)： 备注：由于我的有一个服务已经在开着了，电脑太卡了，这里借用参考文档的图片 2、创建一个本地博客站点打开windows命令面板，输入以下指令 1hexo init myBlog 测试本地博客12hexo g //g是generetor的缩写，生成博客 hexo s //s是server的缩写，启动服务 此时打开浏览器，输入 http://localhost:4000/，我们将会看到Hexo自带默认主题显示的博客样式如下(呃，是好看了那么一点点)： 3、同步GitHub，允许公共访问在本地我们已经搭建了博客，但是还只能自己本地访问。若要别人也能看到，那就需要我们将其同步部署到GitHub上了。还记得我们之前准备的Github仓库吗，这里就要用到了。首先找到我们的博客仓库，并拷贝仓库地址： 然后修改本地站点的配置_config.yml文件，修改deploy下的配置如下： 1234deploy: type: git // 类型为 git repository: git@github.com:ForeManWang/ForeManWang.github.io.git // 这里写仓库地址 branch: master 现在，我们再次访问链接：https://userName.github.io，就会发现这里的界面和本地的一样了。如此一来我们搭建的个人博客网站就基本完成了。 4、下载主题-Next(官网)1、安装Git部署插件12345npm install hexo-deployer-git --save // 有版本号即成功// 部署指令hexo clean // 每次同步之前操作，清理缓存hexo g //将md文档生成博客hexo d //同步到github 2、下载Next,参考安装包，或直接克隆1git clone https://github.com/iissnan/hexo-theme-next themes/next 3、启用主题在 Hexo 中有2份主要的配置文件，其名称都是_config.yml。一份是站点配置文件，在站点根目录下另一份是主题配置文件，在主题目录下，比如我们这里用到的是next主题，则在myHexoBlog\themes\next下 打开themes/next/下的_config.yml,查找scheme，可以看到四种不同的风格。去掉#注释，即启用对应的scheme，博主采用Gemini主题，大家可以依次测试效果，选择自己喜欢的scheme。打开根目录下的_config.yml，查找theme字段，将字段改为theme: next(冒号:之后要有空格分隔，否则无效) 之后通过hexo g和hexo s，再在浏览器中访问localhost:4000即可本地预览主题效果。 4、主题基础配置设置过程中，可运行在本地查看，步骤跟之前一样(注意所有的：后面都要空一格!!!)。 1、设置菜单找到主题next的_config.yml查找menu`，去掉#注释即可显示对应的菜单项。 2、设置网站基本信息和语言找到站点的_config.yml，找到Site如下设置。 3、设置个人信息找到主题next的_config.yml，找到social如下设置。 4、设置头像进入themes/next/source/uploads下，找到avatar.png，放入一张同样大小的图片替换名字。之后找到主题next的_config.yml，找到avatar如下设置。 5、更多美化next主题参考请点击next美化主题1-4 6、整个系列文档推荐hexo搭建个人博客之Git安装 hexo搭建个人博客之Github账号注册 hexo搭建个人博客之NodeJs安装 hexo搭建个人博客之Hexo安装 hexo搭建个人博客详细教程 装逼路上的小插曲一：博客上传图片无法显示 7、本文参考文档Hexo搭建个人博客（一）——框架搭建 Hexo搭建个人博客网站详细流程 Hexo博客搭建]]></content>
       <tags>
         <tag>个人博客</tag>
