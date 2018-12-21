@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-21T14:33:08.522Z</updated>
+  <updated>2018-12-21T15:40:16.157Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,23 +17,16 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo搭建个人博客之Git安装</title>
+    <title></title>
     <link href="http://yoursite.com/2018/12/21/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/"/>
     <id>http://yoursite.com/2018/12/21/hexo搭建个人博客之Git安装/</id>
-    <published>2018-12-21T14:30:07.000Z</published>
-    <updated>2018-12-21T14:33:08.522Z</updated>
+    <published>2018-12-21T14:30:07.621Z</published>
+    <updated>2018-12-21T15:40:16.157Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;windows-环境下-Git-安装&quot;&gt;&lt;a href=&quot;#windows-环境下-Git-安装&quot; class=&quot;headerlink&quot; title=&quot;windows 环境下 Git 安装&quot;&gt;&lt;/a&gt;windows 环境下 Git 安装&lt;/h1&gt;&lt;h2 id=&quot;一
-      
-    
     </summary>
     
-    
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
     
   </entry>
   
@@ -87,17 +80,17 @@
   </entry>
   
   <entry>
-    <title>Hexo安装</title>
+    <title>hexo搭建个人博客之Hexo安装</title>
     <link href="http://yoursite.com/2018/12/21/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BHexo%E5%AE%89%E8%A3%85/"/>
     <id>http://yoursite.com/2018/12/21/hexo搭建个人博客之Hexo安装/</id>
     <published>2018-12-21T12:02:30.000Z</published>
-    <updated>2018-12-21T15:16:53.711Z</updated>
+    <updated>2018-12-21T15:37:49.834Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;一-Git-安装及GitHub账号注册&quot;&gt;&lt;a href=&quot;#一-Git-安装及GitHub账号注册&quot; class=&quot;headerlink&quot; title=&quot;一  Git 安装及GitHub账号注册&quot;&gt;&lt;/a&gt;一  Git 安装及GitHub账号注册&lt;/h2&gt;&lt;p&gt;
+        &lt;h2 id=&quot;hexo搭建个人博客之Hexo安装&quot;&gt;&lt;a href=&quot;#hexo搭建个人博客之Hexo安装&quot; class=&quot;headerlink&quot; title=&quot;hexo搭建个人博客之Hexo安装&quot;&gt;&lt;/a&gt;hexo搭建个人博客之Hexo安装&lt;/h2&gt;
       
     
     </summary>
@@ -112,21 +105,28 @@
     <link href="http://yoursite.com/2018/12/21/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BNodeJs%E5%AE%89%E8%A3%85/"/>
     <id>http://yoursite.com/2018/12/21/hexo搭建个人博客之NodeJs安装/</id>
     <published>2018-12-21T12:01:43.000Z</published>
-    <updated>2018-12-21T12:01:43.912Z</updated>
+    <updated>2018-12-21T15:40:20.030Z</updated>
     
     <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;NodeJs-安装与环境配置&quot;&gt;&lt;a href=&quot;#NodeJs-安装与环境配置&quot; class=&quot;headerlink&quot; title=&quot;NodeJs 安装与环境配置&quot;&gt;&lt;/a&gt;NodeJs 安装与环境配置&lt;/h1&gt;&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot;
+      
     
     </summary>
     
     
+      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
   </entry>
   
   <entry>
-    <title>hexo搭建个人博客之基本框架搭建</title>
+    <title>hexo搭建个人博客详细教程</title>
     <link href="http://yoursite.com/2018/12/20/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/"/>
     <id>http://yoursite.com/2018/12/20/hexo搭建个人博客详细教程/</id>
     <published>2018-12-20T09:44:45.000Z</published>
-    <updated>2018-12-21T13:48:42.173Z</updated>
+    <updated>2018-12-21T15:37:02.634Z</updated>
     
     <summary type="html">
     

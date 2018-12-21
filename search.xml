@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[hexo搭建个人博客之Git安装]]></title>
+    <title></title>
     <url>%2F2018%2F12%2F21%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85%2F</url>
-    <content type="text"><![CDATA[windows 环境下 Git 安装一、安装：官网下载对应 exe 文件直接安装 我电脑是win10 64位的，这里讲的是在windows下安装的Git 下载地址 下载之后，一直next就可以了 二、配置：配置环境变量 win + r 打开windows运行面板 输入 sysdm.cpl 打开系统属性面板 选择系统属性面板上的高级 选择环境变量 双击path,添加一条你安装git的路径即可，我这里是E:\Develop\Git\Git\cmd 三、检测是否安装成功 到任意位置下，鼠标右键出现Git Bash Here和Git GUI Here即视为成功]]></content>
-      <tags>
-        <tag>Git</tag>
-      </tags>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[装逼路上的小插曲一：博客上传图片无法显示]]></title>
@@ -25,9 +22,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo安装]]></title>
+    <title><![CDATA[hexo搭建个人博客之Hexo安装]]></title>
     <url>%2F2018%2F12%2F21%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BHexo%E5%AE%89%E8%A3%85%2F</url>
-    <content type="text"><![CDATA[一 Git 安装及GitHub账号注册Git详细安装教程————点击此处 GitHub账号注册详细教程————点击此处 二 NodeJS 安装NodeJs详细安装过程和环境配置————点击此处 三 Hexo 安装Hexo基本框架搭建过程————点击此处 四 基本主题next五 本地调试六 服务器部署]]></content>
+    <content type="text"><![CDATA[hexo搭建个人博客之Hexo安装]]></content>
       <tags>
         <tag>个人博客</tag>
       </tags>
@@ -35,10 +32,13 @@
   <entry>
     <title><![CDATA[NodeJs安装]]></title>
     <url>%2F2018%2F12%2F21%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BNodeJs%E5%AE%89%E8%A3%85%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[NodeJs 安装与环境配置安装这里只介绍windows环境下的NodeJs安装 这里是官网请点击 图片中左边稳定版，右边最新版 点击，下载，是一个msi文件，直接安装就可以，记住你的安装路径，后面做环境配置 安装之后就可以做配置了 配置不知道怎么做环境配置的点击这里查看,同样的道理 测试打开命令行面板，输入以下指令 12 npmnpm即包管理工具，一般安装完NodeJs之后，npm是附带安装上去的，所以，同样的执行命令行命令 12 nvmnvm即版本管理工具，详细参考点击这里]]></content>
+      <tags>
+        <tag>nodejs</tag>
+      </tags>
   </entry>
   <entry>
-    <title><![CDATA[hexo搭建个人博客之基本框架搭建]]></title>
+    <title><![CDATA[hexo搭建个人博客详细教程]]></title>
     <url>%2F2018%2F12%2F20%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[一 Git 安装及GitHub账号注册Git详细安装教程————点击此处 GitHub账号注册详细教程————点击此处 二 NodeJS 安装NodeJs详细安装过程和环境配置————点击此处 三 Hexo 安装Hexo基本框架搭建过程————点击此处 四 基本主题next五 本地调试六 服务器部署]]></content>
       <tags>
