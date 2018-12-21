@@ -19,7 +19,7 @@
   <entry>
     <title><![CDATA[hexo搭建个人博客之Github账号注册]]></title>
     <url>%2F2018%2F12%2F21%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGithub%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%2F</url>
-    <content type="text"><![CDATA[点击进入Github官网 注册之后，登录，创建一个测试项目可以点击右上角红框位置 点击Create repository之后就可以创建一个测试项目了 新建一个分支 分支是用来同时处理存储库不同版本的方法；默认情况下你的存储库会有一个分支master作为主分支 。 输入分支名称，enter即可 在分支上可以进行修改和提交，具体还可以使用Git指令进行项目的下载，修改和上传，如果没有Git的，请参照我同一个系列的另一篇文章，点击hexo搭建个人博客之Git安装 Git的一些指令 本地任意位置打开Git面板 1234Git init // 初始化一个Git仓库，后面可以跟仓库名Git pull git@github.com:ForeManWang/test.git // 上传文件到项目地址，指令后面跟的是项目地址，具体查看方法，下面有Git clone git@github.com:ForeManWang/test.git // 下载文件到本地，指令后面跟的是项目地址，具体查看方法，下面有...... Github项目地址：见下图 本文参考文件地址：（https://blog.csdn.net/lezaimemecha/article/details/84969353）]]></content>
+    <content type="text"><![CDATA[点击进入Github官网 注册之后，登录，创建一个测试项目可以点击右上角红框位置 点击Create repository之后就可以创建一个测试项目了 新建一个分支 分支是用来同时处理存储库不同版本的方法；默认情况下你的存储库会有一个分支master作为主分支 。 输入分支名称，enter即可 在分支上可以进行修改和提交，具体还可以使用Git指令进行项目的下载，修改和上传，如果没有Git的，请参照我同一个系列的另一篇文章，点击hexo搭建个人博客之Git安装 Git的一些指令 本地任意位置打开Git面板 1234Git init // 初始化一个Git仓库，后面可以跟仓库名Git pull git@github.com:ForeManWang/test.git // 上传文件到项目地址，指令后面跟的是项目地址，具体查看方法，下面有Git clone git@github.com:ForeManWang/test.git // 下载文件到本地，指令后面跟的是项目地址，具体查看方法，下面有...... Github项目地址：见下图 本文参考（https://blog.csdn.net/lezaimemecha/article/details/84969353）]]></content>
       <tags>
         <tag>Github</tag>
       </tags>
@@ -27,7 +27,10 @@
   <entry>
     <title><![CDATA[Hexo安装]]></title>
     <url>%2F2018%2F12%2F21%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BHexo%E5%AE%89%E8%A3%85%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[一 Git 安装及GitHub账号注册Git详细安装教程————点击此处 GitHub账号注册详细教程————点击此处 二 NodeJS 安装NodeJs详细安装过程和环境配置————点击此处 三 Hexo 安装Hexo基本框架搭建过程————点击此处 四 基本主题next五 本地调试六 服务器部署]]></content>
+      <tags>
+        <tag>个人博客</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[NodeJs安装]]></title>
@@ -37,14 +40,6 @@
   <entry>
     <title><![CDATA[hexo搭建个人博客之基本框架搭建]]></title>
     <url>%2F2018%2F12%2F20%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[一 Git 安装及GitHub账号注册Git详细安装教程————点击此处 GitHub账号注册详细教程————点击此处 二 NodeJS 安装NodeJs详细安装过程和环境配置————点击此处 三 Hexo 安装Hexo基本框架搭建过程————点击此处 四 基本主题next五 本地调试六 服务器部署]]></content>
-      <tags>
-        <tag>个人博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[hexo搭建个人博客之基本框架搭建]]></title>
-    <url>%2F2018%2F12%2F20%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-%E6%AC%A2%E8%BF%8E%E8%AE%BF%E9%97%AE%2F</url>
     <content type="text"><![CDATA[一 Git 安装及GitHub账号注册Git详细安装教程————点击此处 GitHub账号注册详细教程————点击此处 二 NodeJS 安装NodeJs详细安装过程和环境配置————点击此处 三 Hexo 安装Hexo基本框架搭建过程————点击此处 四 基本主题next五 本地调试六 服务器部署]]></content>
       <tags>
         <tag>个人博客</tag>
