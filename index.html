@@ -326,6 +326,181 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/21/装逼路上的小插曲一：博客上传图片无法显示/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王工头">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="工头的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/21/装逼路上的小插曲一：博客上传图片无法显示/" itemprop="url">装逼路上的小插曲一：博客上传图片无法显示</a></h1>
+        
+
+        <div class="post-meta">
+          
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-21T21:23:18+08:00">
+                2018-12-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  286 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>闲来无事，用hexo搭建了一个个人博客，中间也遇到了很多坑，这里总结一些遇到的坑，搞不好就有人遇到一样的问题了呢？</p>
+<h2 id="一、关于hexo上传博客无法显示图片的问题"><a href="#一、关于hexo上传博客无法显示图片的问题" class="headerlink" title="一、关于hexo上传博客无法显示图片的问题"></a>一、关于hexo上传博客无法显示图片的问题</h2><p>废话不说了，这里参照了————<a href="https://www.jianshu.com/p/c2ba9533088a" target="_blank" rel="noopener">大佬的文档</a></p>
+<p>简单总结下：</p>
+<ul>
+<li>站点下配置文件<code>_config.yml</code>修改，找到<code>post_asset_folder</code>(如果没有，自己写一个)，默认值一般是<code>false</code>，修改为<code>true</code>。</li>
+<li>在hexo的目录下执行<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code>（需要等待一段时间）。 </li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装后再站点根目录下执行命令<code>hexo new &quot;我的测试博客&quot;</code>，在<code>hexo/source/_post</code>文件夹下不仅会生成对应的.md文件，还有一个同名的文件夹，用于存放该文件相关的资源。</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm new "我的测试博客"</span><br></pre></td></tr></table></figure>
+<ul>
+<li>这个时候在写<code>.md</code>文档的时候，只需要图片链接为<code>我的测试博客/[图片名].png</code>即可</li>
+<li>这里是利用相对路径解决了这一问题，详细请参照<a href="https://www.jianshu.com/p/c2ba9533088a" target="_blank" rel="noopener">大佬的博客</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+    <div>
+      
+    </div>
+
+
+    
+
+    
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/21/hexo搭建个人博客之Github账号注册/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -486,7 +661,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/21/Hexo安装/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/21/hexo搭建个人博客之Hexo安装/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王工头">
@@ -505,7 +680,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/21/Hexo安装/" itemprop="url">Hexo安装</a></h1>
+                <a class="post-title-link" href="/2018/12/21/hexo搭建个人博客之Hexo安装/" itemprop="url">Hexo安装</a></h1>
         
 
         <div class="post-meta">
@@ -645,7 +820,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/21/NodeJs安装/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/21/hexo搭建个人博客之NodeJs安装/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王工头">
@@ -664,7 +839,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/21/NodeJs安装/" itemprop="url">NodeJs安装</a></h1>
+                <a class="post-title-link" href="/2018/12/21/hexo搭建个人博客之NodeJs安装/" itemprop="url">NodeJs安装</a></h1>
         
 
         <div class="post-meta">
@@ -804,7 +979,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/21/Git安装/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/21/hexo搭建个人博客之Git安装/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王工头">
@@ -823,7 +998,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/21/Git安装/" itemprop="url">Hexo搭建个人博客系列之Git安装</a></h1>
+                <a class="post-title-link" href="/2018/12/21/hexo搭建个人博客之Git安装/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -914,39 +1089,39 @@
 <li>下载之后，一直<code>next</code>就可以了</li>
 </ul>
 </blockquote>
-<p><img src="/2018/12/21/Git安装/1545394055478.png" alt="1545394055478"></p>
+<p><img src="/2018/12/21/hexo搭建个人博客之Git安装/C:/Users/wanggongtou/Desktop/myHexoBlog/source/_posts/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/1545394055478.png" alt="1545394055478"></p>
 <h2 id="二、配置：配置环境变量"><a href="#二、配置：配置环境变量" class="headerlink" title="二、配置：配置环境变量"></a>二、配置：配置环境变量</h2><blockquote>
 <ul>
 <li>win + r 打开<code>windows</code>运行面板</li>
 <li>输入 <code>sysdm.cpl</code> 打开系统属性面板</li>
 </ul>
 </blockquote>
-<p><img src="/2018/12/21/Git安装/1545395277189.png" alt="1545395277189"></p>
+<p><img src="/2018/12/21/hexo搭建个人博客之Git安装/C:/Users/wanggongtou/Desktop/myHexoBlog/source/_posts/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/1545395277189.png" alt="1545395277189"></p>
 <blockquote>
 <ul>
 <li>选择<code>系统属性</code>面板上的<code>高级</code></li>
 </ul>
 </blockquote>
-<p><img src="/2018/12/21/Git安装/1545395339377.png" alt="1545395339377"></p>
+<p><img src="/2018/12/21/hexo搭建个人博客之Git安装/C:/Users/wanggongtou/Desktop/myHexoBlog/source/_posts/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/1545395339377.png" alt="1545395339377"></p>
 <blockquote>
 <ul>
 <li>选择环境变量</li>
 </ul>
 </blockquote>
-<p><img src="/2018/12/21/Git安装/1545395474510.png" alt="1545395474510"></p>
+<p><img src="/2018/12/21/hexo搭建个人博客之Git安装/C:/Users/wanggongtou/Desktop/myHexoBlog/source/_posts/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/1545395474510.png" alt="1545395474510"></p>
 <blockquote>
 <ul>
 <li>双击<code>path</code>,添加一条你安装<code>git</code>的路径即可，我这里是<code>E:\Develop\Git\Git\cmd</code></li>
 </ul>
 </blockquote>
-<p><img src="/2018/12/21/Git安装/1545395563514.png" alt="1545395563514"></p>
-<p><img src="/2018/12/21/Git安装/1545395598116.png" alt="1545395598116"></p>
+<p><img src="/2018/12/21/hexo搭建个人博客之Git安装/C:/Users/wanggongtou/Desktop/myHexoBlog/source/_posts/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/1545395563514.png" alt="1545395563514"></p>
+<p><img src="/2018/12/21/hexo搭建个人博客之Git安装/C:/Users/wanggongtou/Desktop/myHexoBlog/source/_posts/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/1545395598116.png" alt="1545395598116"></p>
 <h2 id="三、检测是否安装成功"><a href="#三、检测是否安装成功" class="headerlink" title="三、检测是否安装成功"></a>三、检测是否安装成功</h2><blockquote>
 <ul>
 <li>到任意位置下，鼠标右键出现<code>Git Bash Here</code>和<code>Git GUI Here</code>即视为成功</li>
 </ul>
 </blockquote>
-<p><img src="/2018/12/21/Git安装/1545395879515.png" alt="1545395879515"></p>
+<p><img src="/2018/12/21/hexo搭建个人博客之Git安装/C:/Users/wanggongtou/Desktop/myHexoBlog/source/_posts/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/1545395879515.png" alt="1545395879515"></p>
 
           
         
@@ -1003,7 +1178,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/20/我的第二篇博客，欢迎访问/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/20/hexo搭建个人博客详细教程/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王工头">
@@ -1022,166 +1197,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/20/我的第二篇博客，欢迎访问/" itemprop="url">我的第二篇博客，欢迎访问</a></h1>
-        
-
-        <div class="post-meta">
-          
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-20T18:24:18+08:00">
-                2018-12-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  0 字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1 分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-    <div>
-      
-    </div>
-
-
-    
-
-    
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/20/我的第一篇博客-欢迎访问/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王工头">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="工头的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/20/我的第一篇博客-欢迎访问/" itemprop="url">hexo搭建个人博客之基本框架搭建</a></h1>
+                <a class="post-title-link" href="/2018/12/20/hexo搭建个人博客详细教程/" itemprop="url">hexo搭建个人博客之基本框架搭建</a></h1>
         
 
         <div class="post-meta">
@@ -1226,7 +1242,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  29 字
+                  87 字
                 </span>
               
 
@@ -1265,175 +1281,11 @@
       
         
           
-            <h2 id="一-Git-安装"><a href="#一-Git-安装" class="headerlink" title="一  Git 安装"></a>一  Git 安装</h2><h2 id="二-NodeJS-安装"><a href="#二-NodeJS-安装" class="headerlink" title="二  NodeJS 安装"></a>二  NodeJS 安装</h2><h2 id="三-Hexo-安装"><a href="#三-Hexo-安装" class="headerlink" title="三  Hexo  安装"></a>三  Hexo  安装</h2><h2 id="四-基本主题next"><a href="#四-基本主题next" class="headerlink" title="四  基本主题next"></a>四  基本主题next</h2><h2 id="五-本地调试"><a href="#五-本地调试" class="headerlink" title="五  本地调试"></a>五  本地调试</h2><h2 id="六-服务器部署"><a href="#六-服务器部署" class="headerlink" title="六  服务器部署"></a>六  服务器部署</h2>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-    <div>
-      
-    </div>
-
-
-    
-
-    
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/20/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王工头">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="工头的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/20/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-20T17:27:27+08:00">
-                2018-12-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  73 字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1 分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <h2 id="一-Git-安装及GitHub账号注册"><a href="#一-Git-安装及GitHub账号注册" class="headerlink" title="一  Git 安装及GitHub账号注册"></a>一  Git 安装及GitHub账号注册</h2><p><code>Git</code>详细安装教程————点击<a href="https://qqqww.com/2018/12/21/Git安装/" target="_blank" rel="noopener">此处</a></p>
+<p><code>GitHub</code>账号注册详细教程————点击<a href="https://qqqww.com/2018/12/21/hexo搭建个人博客之Github账号注册/" target="_blank" rel="noopener">此处</a></p>
+<h2 id="二-NodeJS-安装"><a href="#二-NodeJS-安装" class="headerlink" title="二  NodeJS 安装"></a>二  NodeJS 安装</h2><p><code>NodeJs</code>详细安装过程和环境配置————点击<a href="https://qqqww.com/2018/12/21/NodeJs安装/" target="_blank" rel="noopener">此处</a></p>
+<h2 id="三-Hexo-安装"><a href="#三-Hexo-安装" class="headerlink" title="三  Hexo  安装"></a>三  Hexo  安装</h2><p><code>Hexo</code>基本框架搭建过程————点击<a href="https://qqqww.com/2018/12/21/Hexo安装/" target="_blank" rel="noopener">此处</a></p>
+<h2 id="四-基本主题next"><a href="#四-基本主题next" class="headerlink" title="四  基本主题next"></a>四  基本主题next</h2><h2 id="五-本地调试"><a href="#五-本地调试" class="headerlink" title="五  本地调试"></a>五  本地调试</h2><h2 id="六-服务器部署"><a href="#六-服务器部署" class="headerlink" title="六  服务器部署"></a>六  服务器部署</h2>
           
         
       
@@ -1524,7 +1376,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1647,7 +1499,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">264</span>
+    <span title="Site words total count">535</span>
   
 </div>
 
@@ -1677,7 +1529,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共264字</span>
+  <span class="post-count">博客全站共535字</span>
 </div>
 
         
