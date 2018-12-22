@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2018-12-22T11:42:04.521Z</updated>
+  <updated>2018-12-22T12:51:31.942Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -17,25 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试</title>
-    <link href="https://qqqww.com/%E6%B5%8B%E8%AF%95/"/>
-    <id>https://qqqww.com/测试/</id>
-    <published>2018-12-22T11:40:17.000Z</published>
-    <updated>2018-12-22T11:42:04.521Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>hexo搭建个人博客之Git安装</title>
     <link href="https://qqqww.com/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/"/>
     <id>https://qqqww.com/hexo搭建个人博客之Git安装/</id>
     <published>2018-12-21T15:53:33.000Z</published>
-    <updated>2018-12-22T11:43:04.191Z</updated>
+    <updated>2018-12-22T12:51:31.942Z</updated>
     
     <summary type="html">
     
@@ -45,6 +31,10 @@
     
     
       <category term="Git" scheme="https://qqqww.com/tags/Git/"/>
+    
+      <category term="Git安装" scheme="https://qqqww.com/tags/Git%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="windows Git安装" scheme="https://qqqww.com/tags/windows-Git%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
