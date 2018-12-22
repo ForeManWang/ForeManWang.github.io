@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2018-12-22T12:51:31.942Z</updated>
+  <updated>2018-12-22T12:59:49.222Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://qqqww.com/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/"/>
     <id>https://qqqww.com/hexo搭建个人博客之Git安装/</id>
     <published>2018-12-21T15:53:33.000Z</published>
-    <updated>2018-12-22T12:51:31.942Z</updated>
+    <updated>2018-12-22T12:59:49.222Z</updated>
     
     <summary type="html">
     
@@ -30,11 +30,7 @@
     </summary>
     
     
-      <category term="Git" scheme="https://qqqww.com/tags/Git/"/>
-    
       <category term="Git安装" scheme="https://qqqww.com/tags/Git%E5%AE%89%E8%A3%85/"/>
-    
-      <category term="windows Git安装" scheme="https://qqqww.com/tags/windows-Git%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
@@ -43,16 +39,16 @@
     <link href="https://qqqww.com/%E8%A3%85%E9%80%BC%E8%B7%AF%E4%B8%8A%E7%9A%84%E5%B0%8F%E6%8F%92%E6%9B%B2%E4%B8%80%EF%BC%9A%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA/"/>
     <id>https://qqqww.com/装逼路上的小插曲一：博客上传图片无法显示/</id>
     <published>2018-12-21T13:23:18.000Z</published>
-    <updated>2018-12-22T11:45:38.058Z</updated>
+    <updated>2018-12-22T13:01:50.298Z</updated>
     
     <summary type="html">
     
-      hexo
+      完美解决了hexo博客上传图片无法显示
     
     </summary>
     
     
-      <category term="hexo遇到的坑" scheme="https://qqqww.com/tags/hexo%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
+      <category term="博客上传图片无法显示" scheme="https://qqqww.com/tags/%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA/"/>
     
   </entry>
   
@@ -61,7 +57,7 @@
     <link href="https://qqqww.com/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGithub%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C/"/>
     <id>https://qqqww.com/hexo搭建个人博客之Github账号注册/</id>
     <published>2018-12-21T12:55:38.000Z</published>
-    <updated>2018-12-22T11:43:55.495Z</updated>
+    <updated>2018-12-22T13:00:21.814Z</updated>
     
     <summary type="html">
     
@@ -70,7 +66,7 @@
     </summary>
     
     
-      <category term="Github账号注册" scheme="https://qqqww.com/tags/Github%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C/"/>
+      <category term="Github" scheme="https://qqqww.com/tags/Github/"/>
     
   </entry>
   
@@ -79,7 +75,7 @@
     <link href="https://qqqww.com/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BHexo%E5%AE%89%E8%A3%85/"/>
     <id>https://qqqww.com/hexo搭建个人博客之Hexo安装/</id>
     <published>2018-12-21T12:02:30.000Z</published>
-    <updated>2018-12-22T11:45:02.617Z</updated>
+    <updated>2018-12-22T12:59:35.304Z</updated>
     
     <summary type="html">
     
@@ -88,16 +84,16 @@
     </summary>
     
     
-      <category term="个人博客" scheme="https://qqqww.com/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="hexo安装" scheme="https://qqqww.com/tags/hexo%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
   <entry>
-    <title>NodeJs安装</title>
+    <title>hexo搭建个人博客之NodeJs安装</title>
     <link href="https://qqqww.com/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BNodeJs%E5%AE%89%E8%A3%85/"/>
     <id>https://qqqww.com/hexo搭建个人博客之NodeJs安装/</id>
     <published>2018-12-21T12:01:43.000Z</published>
-    <updated>2018-12-22T11:44:23.245Z</updated>
+    <updated>2018-12-22T13:00:07.514Z</updated>
     
     <summary type="html">
     
@@ -106,7 +102,7 @@
     </summary>
     
     
-      <category term="nodejs" scheme="https://qqqww.com/tags/nodejs/"/>
+      <category term="NodeJs安装" scheme="https://qqqww.com/tags/NodeJs%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
@@ -115,7 +111,7 @@
     <link href="https://qqqww.com/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/"/>
     <id>https://qqqww.com/hexo搭建个人博客详细教程/</id>
     <published>2018-12-20T09:44:45.000Z</published>
-    <updated>2018-12-22T11:45:22.584Z</updated>
+    <updated>2018-12-22T13:00:49.575Z</updated>
     
     <summary type="html">
     
@@ -124,7 +120,7 @@
     </summary>
     
     
-      <category term="个人博客" scheme="https://qqqww.com/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="hexo搭建个人博客" scheme="https://qqqww.com/tags/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
