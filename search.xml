@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[测试]]></title>
+    <url>%2F%E6%B5%8B%E8%AF%95%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[hexo搭建个人博客之Git安装]]></title>
     <url>%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85%2F</url>
     <content type="text"><![CDATA[windows 环境下 Git 安装一、安装：官网下载对应 exe 文件直接安装 我电脑是win10 64位的，这里讲的是在windows下安装的Git 下载地址 下载之后，一直next就可以了 二、配置：配置环境变量 win + r 打开windows运行面板 输入 sysdm.cpl 打开系统属性面板 选择系统属性面板上的高级 选择环境变量 双击path,添加一条你安装git的路径即可，我这里是E:\Develop\Git\Git\cmd 三、检测是否安装成功 到任意位置下，鼠标右键出现Git Bash Here和Git GUI Here即视为成功 四、整个系列文档推荐hexo搭建个人博客之Git安装 hexo搭建个人博客之Github账号注册 hexo搭建个人博客之NodeJs安装 hexo搭建个人博客之Hexo安装 hexo搭建个人博客详细教程 装逼路上的小插曲一：博客上传图片无法显示]]></content>
@@ -21,7 +26,7 @@
     <url>%2Fhexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGithub%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%2F</url>
     <content type="text"><![CDATA[点击进入Github官网 注册之后，登录，创建一个测试项目可以点击右上角红框位置 点击Create repository之后就可以创建一个测试项目了 新建一个分支 分支是用来同时处理存储库不同版本的方法；默认情况下你的存储库会有一个分支master作为主分支 。 输入分支名称，enter即可 在分支上可以进行修改和提交，具体还可以使用Git指令进行项目的下载，修改和上传，如果没有Git的，请参照我同一个系列的另一篇文章，点击hexo搭建个人博客之Git安装 Git的一些指令 本地任意位置打开Git面板 1234Git init // 初始化一个Git仓库，后面可以跟仓库名Git pull git@github.com:ForeManWang/test.git // 上传文件到项目地址，指令后面跟的是项目地址，具体查看方法，下面有Git clone git@github.com:ForeManWang/test.git // 下载文件到本地，指令后面跟的是项目地址，具体查看方法，下面有...... Github项目地址：见下图 整个系列文档推荐 hexo搭建个人博客之Git安装 hexo搭建个人博客之Github账号注册 hexo搭建个人博客之NodeJs安装 hexo搭建个人博客之Hexo安装 hexo搭建个人博客详细教程 装逼路上的小插曲一：博客上传图片无法显示 本文参考： （https://blog.csdn.net/lezaimemecha/article/details/84969353）]]></content>
       <tags>
-        <tag>Github</tag>
+        <tag>Github账号注册</tag>
       </tags>
   </entry>
   <entry>
