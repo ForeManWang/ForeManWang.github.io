@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2018-12-22T19:42:54.598Z</updated>
+  <updated>2018-12-26T13:50:45.830Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何将本地文件上传到github</title>
+    <link href="https://qqqww.com/%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0github/"/>
+    <id>https://qqqww.com/如何将本地文件上传到github/</id>
+    <published>2018-12-26T13:36:38.000Z</published>
+    <updated>2018-12-26T13:50:45.830Z</updated>
+    
+    <summary type="html">
+    
+      将本地文件上传到github
+    
+    </summary>
+    
+    
+      <category term="本地文件上传到github" scheme="https://qqqww.com/tags/%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0github/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo搭建个人博客之seo优化</title>
