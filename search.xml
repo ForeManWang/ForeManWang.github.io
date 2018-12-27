@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[javascript 中全局变量与形参的赋值]]></title>
+    <url>%2Fjavascript-%E4%B8%AD%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E4%B8%8E%E5%BD%A2%E5%8F%82%E7%9A%84%E8%B5%8B%E5%80%BC%2F</url>
+    <content type="text"><![CDATA[javascript 中全局变量与形参的赋值现象定义数组 12345678var arr1,arr2,arr3;var arr4 = [ &#123;name:'zhangsan',age:'18'&#125;, &#123;name:'lisi',age:'18'&#125;, &#123;name:'wangwu',age:'18'&#125;, &#123;name:'zhaoliu',age:'18'&#125;, &#123;name:'xiaoming',age:'18'&#125;]; 创建一个change函数 123456function change(params)&#123; for(var i = 0; i&lt;params.length;i++)&#123; params[i].name = params[i].name +'miaomiaomiao' &#125; return params &#125; 将arr4赋值给arr1、arr2、arr3并打印，观察打印结果 12345678arr1 = arr4arr2 = arr4arr3 = arr4console.log(change(arr1)) // 对任意一个数组执行change函数console.log(arr4)console.log(arr1)console.log(arr2)console.log(arr3) 以下是打印结果 可以发现，当其中任何一个数组改变时，其他的数组的值也会跟着改变 原因在计算机的内存中，系统对变量的声明在栈中，而值是在堆中 画图理解 arr1 = arr4; arr2 = arr4; arr3 = arr4 的赋值只是将arr4的值的地址指向了arr1，arr2，arr3；内存中并没有为其创建内容空间，这样就导致直接或间接的修改变量的值，那么原始值都将被修改。]]></content>
+      <tags>
+        <tag>全局变量与形参的赋值</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[javascript 中局部变量和形参同名冲突问题]]></title>
+    <url>%2Fjavascript-%E4%B8%AD%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E5%92%8C%E5%BD%A2%E5%8F%82%E5%90%8C%E5%90%8D%E5%86%B2%E7%AA%81%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[javascript 中局部变量和形参同名冲突问题新建一个数组 1234567var arr = [ &#123;name:'zhangsan',age:'18'&#125;, &#123;name:'lisi',age:'18'&#125;, &#123;name:'wangwu',age:'18'&#125;, &#123;name:'zhaoliu',age:'18'&#125;, &#123;name:'xiaoming',age:'18'&#125;] 局部变量和形参冲突的情况 12345678910function getList(i)&#123; for(var i = 0; i &lt; arr.length; i++)&#123; if(arr[i].name == 'e')&#123; console.log('已遍历完整个数组') &#125; &#125; return arr[i]&#125;console.log(getList(1)) // undefined// 调用 getList(1)时，其结果并不是 &#123;tel:1234658,name:'b'&#125; , 而是 undefined 解决方法 将形参改变或者将循环体内变量改变一下 12345678910function getList(i) &#123; for(var j = 0; j &lt; arr.length; j++)&#123; if(arr[j].name == 'e')&#123; console.log('已遍历完整个数组') &#125; &#125; return arr[i]&#125;// console.log(getList(1)) // &#123; tel: 1234658, name: 'b' &#125;// 更改 循环体中 i 变量 为 j 结果就是想要的结果了]]></content>
+      <tags>
+        <tag>局部变量和形参同名冲突</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何将本地文件上传到github]]></title>
     <url>%2F%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0github%2F</url>
     <content type="text"><![CDATA[将本地文件上传到github文件上传 桌面打开git命令面板 新建Git仓库 1git init 添加文件到git 12git add . // 或者下面一种git add README.md 添加此次更新内容描述 12 将本地仓库关联到github上 1git remote add origin git@github.com:ForeManWang/letao.git // 最后面的地址需要填写你自己github的项目地址 将代码上传到github 1git push -u origin master 常见错误执行代码git remote add origin git@github.com:ForeManWang/letao.git时出现错误：fatal: remote origin already exists 解决办法 执行命令 12git remote rm origingit remote add origin git@github.com:ForeManWang/letao.git 这样就解决了，后面再上传项目到github 12 ···]]></content>
