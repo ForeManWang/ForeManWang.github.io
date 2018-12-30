@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2018-12-27T14:04:04.413Z</updated>
+  <updated>2018-12-30T12:17:53.697Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,78 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sublime添加自定义代码段</title>
+    <link href="https://qqqww.com/sublime%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BB%A3%E7%A0%81%E6%AE%B5/"/>
+    <id>https://qqqww.com/sublime添加自定义代码段/</id>
+    <published>2018-12-30T11:33:19.000Z</published>
+    <updated>2018-12-30T12:17:53.697Z</updated>
+    
+    <summary type="html">
+    
+      sublime添加自定义代码段
+    
+    </summary>
+    
+    
+      <category term="sublime添加自定义代码段" scheme="https://qqqww.com/tags/sublime%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BB%A3%E7%A0%81%E6%AE%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sublime安装插件&amp;常用的sublime插件</title>
+    <link href="https://qqqww.com/sublime%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6/"/>
+    <id>https://qqqww.com/sublime安装插件/</id>
+    <published>2018-12-30T11:32:31.000Z</published>
+    <updated>2018-12-30T12:07:21.829Z</updated>
+    
+    <summary type="html">
+    
+      sublime如何安装插件&amp;常用的sublime插件
+    
+    </summary>
+    
+    
+      <category term="sublime安装插件&amp;常用的sublime插件" scheme="https://qqqww.com/tags/sublime%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6-%E5%B8%B8%E7%94%A8%E7%9A%84sublime%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6笔记一</title>
+    <link href="https://qqqww.com/ES6%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
+    <id>https://qqqww.com/ES6笔记一/</id>
+    <published>2018-12-29T06:21:24.000Z</published>
+    <updated>2018-12-29T06:52:55.646Z</updated>
+    
+    <summary type="html">
+    
+      ES6笔记一之部署进度中检查运行环境中对ES6的支持情况，以及将ES6代码转为ES5代码
+    
+    </summary>
+    
+    
+      <category term="ES6" scheme="https://qqqww.com/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webpack基本属性配置</title>
+    <link href="https://qqqww.com/webpack%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7%E9%85%8D%E7%BD%AE/"/>
+    <id>https://qqqww.com/webpack基本属性配置/</id>
+    <published>2018-12-29T04:57:41.000Z</published>
+    <updated>2018-12-29T05:25:08.027Z</updated>
+    
+    <summary type="html">
+    
+      webpack基本属性配置
+    
+    </summary>
+    
+    
+      <category term="webpack配置" scheme="https://qqqww.com/tags/webpack%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>javascript 中全局变量与形参的赋值</title>

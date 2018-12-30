@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[sublime添加自定义代码段]]></title>
+    <url>%2Fsublime%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BB%A3%E7%A0%81%E6%AE%B5%2F</url>
+    <content type="text"><![CDATA[sublime添加自定义代码段一：打来Sublime Text，在菜单栏找到“Tools（工具）”-&gt;”New Snippet（新代码段）” 二：Hello, ${1:this} is a ${2:snippet}.这块代码区域，可以直接删除，然后添加上你所需要的代码段进去，然后Ctrl + s保存，保存到默认文件夹，命名随意，假如你的命名是vuecode，那么你去书写你的代码时就需要通过vuecode来调用这个代码段 三：调用过程： Ctrl + Shift + P ======&gt; Snippet:vuecode =====&gt; enter 这时候代码段就自动添加到你需要的地方了]]></content>
+      <tags>
+        <tag>sublime添加自定义代码段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[sublime安装插件&常用的sublime插件]]></title>
+    <url>%2Fsublime%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[sublime安装插件&amp;常用的sublime插件其实sublime安装插件并不难，几步操作就好了，关键插件安装过程中总出现各种各样的错误，而且比较好的插件都有哪些呢？ 安装步骤 第一步：下载一个sublime，正版不正版，汉化不汉化的那就按照你个人要求制定就行，网上也有相应教程，我用的是官网的，然后加的汉化包 sublime官网 第二步：打开你的sublime , Ctrl + ` 切换到sublime控制台，控制台一共两块内容区域，第一块区域时监控代码运行进程的，不用管，当然出错也可以从这里查找，第二块区域根据你自己的是sublime2还是sublime3来选择代码复制粘贴进去并运行 sublime3 1import urllib.request,os,hashlib; h = &apos;6f4c264a24d933ce70df5dedcf1dcaee&apos; + &apos;ebe013ee18cced0ef93d5f746d80ef60&apos;; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &apos;http://packagecontrol.io/&apos; + pf.replace(&apos; &apos;, &apos;%20&apos;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&apos;Error validating download (got %s instead of %s), please try manual install&apos; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &apos;wb&apos; ).write(by) sublime2 1import urllib2,os,hashlib; h = &apos;6f4c264a24d933ce70df5dedcf1dcaee&apos; + &apos;ebe013ee18cced0ef93d5f746d80ef60&apos;; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( &apos;http://packagecontrol.io/&apos; + pf.replace(&apos; &apos;, &apos;%20&apos;)).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), &apos;wb&apos; ).write(by) if dh == h else None; print(&apos;Error validating download (got %s instead of %s), please try manual install&apos; % (dh, h) if dh != h else &apos;Please restart Sublime Text to finish installation&apos;) 第三步：安装完成后，按 Ctrl+Shift+p (Windows)/ Command+Shift+p (Mac), 输入Install Packages，之后Sublime会自动下载插件列表，然后弹出一个小的下拉菜单让你填写想要下载的插件名称。 常见错误这里是我遇到过的一些问题：欢迎大佬们补充 直接无法安装插件网上看了一些文档，说是GWF被墙问题 错误提示如下： 解决办法： 1、开代理自己翻墙 2、直接下载插件，将下载的文件解压到Sublime Text3的Installed Packages目录下 解析错误还有个问题是包解析错误，需要自己去发现错误翻译下看看是不是这一类问题，我忘记错误代码了，这一类问题可能是网络原因，我换了个网，能用了 常用插件推荐下面推荐我安装的一些插件，主要参照了博客sublime常用插件 本文参考博客Package Control]]></content>
+      <tags>
+        <tag>sublime安装插件&amp;常用的sublime插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6笔记一]]></title>
+    <url>%2FES6%E7%AC%94%E8%AE%B0%E4%B8%80%2F</url>
+    <content type="text"><![CDATA[ES6笔记一 ES6的笔记参考ECMAScript 6 入门 部署进度 这里使用阮一峰老师写的一个工具 ES-Checker用来检查各种运行环境对 ES6 的支持情况。访问ruanyf.github.io/es-checker，可以看到您的浏览器支持 ES6 的程度。运行下面的命令，可以查看你正在使用的 Node 环境对 ES6 的支持程度。 1234567$ npm install -g es-checker$ es-checker// 结果=========================================Passes 39 feature DetectionsYour runtime supports 92% of ECMAScript 6========================================= Babel转码器 Babel 是一个广泛使用的 ES6 转码器，可以将 ES6 代码转为 ES5 代码，从而在现有环境执行。这意味着，你可以用 ES6 的方式编写程序，又不用担心现有环境是否支持。下面是一个例子。 例子： 1234567// 转码前input.map(item =&gt; item + 1);// 转码后input.map(function (item) &#123; return item + 1;&#125;); 上面的原始代码用了箭头函数，Babel 将其转为普通函数，就能在不支持箭头函数的 JavaScript 环境执行了。 Babel的配置文件.babelrc Babel 的配置文件是.babelrc，存放在项目的根目录下。使用 Babel 的第一步，就是配置这个文件。 该文件用来设置转码规则和插件，基本格式如下。 1234&#123; &quot;presets&quot;: [], &quot;plugins&quot;: []&#125; presets字段设定转码规则，官方提供以下的规则集，你可以根据需要安装。 1234567891011# 最新转码规则$ npm install --save-dev babel-preset-latest# react 转码规则$ npm install --save-dev babel-preset-react# 不同阶段语法提案的转码规则（共有4个阶段），选装一个$ npm install --save-dev babel-preset-stage-0$ npm install --save-dev babel-preset-stage-1$ npm install --save-dev babel-preset-stage-2$ npm install --save-dev babel-preset-stage-3 然后，将这些规则加入.babelrc。 12345678&#123; &quot;presets&quot;: [ &quot;latest&quot;, &quot;react&quot;, &quot;stage-2&quot; ], &quot;plugins&quot;: []&#125; 注意，以下所有 Babel 工具和模块的使用，都必须先写好.babelrc。 本来这里想详细总结下各种转码，然后发现阮一峰老师写的是真的详细，请参见ECMAScript 6 入门]]></content>
+      <tags>
+        <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[webpack基本属性配置]]></title>
+    <url>%2Fwebpack%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[webpack 基本属性配置1234567891011121314151617181920212223242526272829303132333435363738394041const path = require('path')module.exports = &#123; entry: &#123; // main是默认入口，也可以是多入口 main: './src/main.js' &#125;, // 出口 output: &#123; filename: './build.js', // 指定js路径 path: path.join(__dirname, '..', '', 'dist') // 最好是绝对路径 // 代表上一级的dist &#125;, module: &#123; // 一样的功能rules: webpack2.xx新加的 loaders: [ // require('./a.css||./a.js') &#123; test: /\.css$/, loader: 'style-loader!css=loader', //多个loader用!分割 //顺序是反过来的 2!1 多个loader &#125;, &#123; test: /\.(jpg|svg)$/, loaderL 'url-loader?limit=4096&amp;name=[name].[ext]', // limit=4096&amp;name=[name].[ext]' 多个参数之间用&amp;符号分割 //[name].[ext]内置提供的 options: &#123; limit: 4096, name: '[name].[ext]' &#125; &#125; ] &#125;, plugins: [ // 插件的执行顺序是依次执行的，和loader是反过来的 new htmlWebpackPlugin(&#123; template: './src/index.html', &#125;) // 将src下的template属性描述的文件根据当前配置的output.path，将文件移动到该目录。 // 在插件的执行过程中，它本身可以去拿当前所设置的webpack选项，便于对webpack选项的复用， ]&#125;]]></content>
+      <tags>
+        <tag>webpack配置</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[javascript 中全局变量与形参的赋值]]></title>
     <url>%2Fjavascript-%E4%B8%AD%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E4%B8%8E%E5%BD%A2%E5%8F%82%E7%9A%84%E8%B5%8B%E5%80%BC%2F</url>
     <content type="text"><![CDATA[javascript 中全局变量与形参的赋值现象定义数组 12345678var arr1,arr2,arr3;var arr4 = [ &#123;name:'zhangsan',age:'18'&#125;, &#123;name:'lisi',age:'18'&#125;, &#123;name:'wangwu',age:'18'&#125;, &#123;name:'zhaoliu',age:'18'&#125;, &#123;name:'xiaoming',age:'18'&#125;]; 创建一个change函数 123456function change(params)&#123; for(var i = 0; i&lt;params.length;i++)&#123; params[i].name = params[i].name +'miaomiaomiao' &#125; return params &#125; 将arr4赋值给arr1、arr2、arr3并打印，观察打印结果 12345678arr1 = arr4arr2 = arr4arr3 = arr4console.log(change(arr1)) // 对任意一个数组执行change函数console.log(arr4)console.log(arr1)console.log(arr2)console.log(arr3) 以下是打印结果 可以发现，当其中任何一个数组改变时，其他的数组的值也会跟着改变 原因在计算机的内存中，系统对变量的声明在栈中，而值是在堆中 画图理解 arr1 = arr4; arr2 = arr4; arr3 = arr4 的赋值只是将arr4的值的地址指向了arr1，arr2，arr3；内存中并没有为其创建内容空间，这样就导致直接或间接的修改变量的值，那么原始值都将被修改。]]></content>
