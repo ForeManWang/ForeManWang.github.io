@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="javascript,js,全局变量与形参的赋值">
+  <meta name="keywords" content="node,node读取文件,node读取文件方法封装,Promise">
 
 
 
@@ -92,21 +92,23 @@
 
 
 
-<meta name="description" content="javascript 中全局变量与形参的赋值">
-<meta name="keywords" content="javascript,js,全局变量与形参的赋值">
+<meta name="description" content="node读取文件方法封装">
+<meta name="keywords" content="node,node读取文件,node读取文件方法封装,Promise">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javascript 中全局变量与形参的赋值">
-<meta property="og:url" content="https://qqqww.com/javascript-中全局变量与形参的赋值/index.html">
+<meta property="og:title" content="node-读取文件方法封装">
+<meta property="og:url" content="https://qqqww.com/node-读取文件方法封装/index.html">
 <meta property="og:site_name" content="工头的博客">
-<meta property="og:description" content="javascript 中全局变量与形参的赋值">
+<meta property="og:description" content="node读取文件方法封装">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/1545918924790.png">
-<meta property="og:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/1545919380981.png">
-<meta property="og:updated_time" content="2018-12-27T14:04:04.413Z">
+<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/1546493666213.png">
+<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/1546505460828.png">
+<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/1546505973788.png">
+<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/1546506107865.png">
+<meta property="og:updated_time" content="2019-01-03T09:11:14.991Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javascript 中全局变量与形参的赋值">
-<meta name="twitter:description" content="javascript 中全局变量与形参的赋值">
-<meta name="twitter:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/1545918924790.png">
+<meta name="twitter:title" content="node-读取文件方法封装">
+<meta name="twitter:description" content="node读取文件方法封装">
+<meta name="twitter:image" content="https://qqqww.com/node-读取文件方法封装/1546493666213.png">
 
 
 
@@ -136,7 +138,7 @@
 
 
 
-  <link rel="canonical" href="https://qqqww.com/javascript-中全局变量与形参的赋值/">
+  <link rel="canonical" href="https://qqqww.com/node-读取文件方法封装/">
 
 
 
@@ -160,7 +162,7 @@
 
 
 
-  <title>javascript 中全局变量与形参的赋值 | 工头的博客</title>
+  <title>node-读取文件方法封装 | 工头的博客</title>
   
 
 
@@ -341,7 +343,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://qqqww.com/javascript-中全局变量与形参的赋值/">
+    <link itemprop="mainEntityOfPage" href="https://qqqww.com/node-读取文件方法封装/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王工头">
@@ -358,7 +360,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">javascript 中全局变量与形参的赋值</h2>
+          <h2 class="post-title" itemprop="name headline">node-读取文件方法封装</h2>
         
 
         <div class="post-meta">
@@ -371,8 +373,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-27T21:48:42+08:00">
-                2018-12-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-02T17:14:39+08:00">
+                2019-01-02
               </time>
             
 
@@ -403,7 +405,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  263 字
+                  1.3k 字
                 </span>
               
 
@@ -419,7 +421,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  5 分钟
                 </span>
               
             </div>
@@ -427,7 +429,7 @@
 
           
               <div class="post-description">
-                  javascript 中全局变量与形参的赋值 
+                  node读取文件方法封装 
               </div>
           
 
@@ -444,19 +446,49 @@
       
 
       
-        <h1 id="javascript-中全局变量与形参的赋值"><a href="#javascript-中全局变量与形参的赋值" class="headerlink" title="javascript 中全局变量与形参的赋值"></a>javascript 中全局变量与形参的赋值</h1><h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p><strong>定义数组</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr1,arr2,arr3;</span><br><span class="line"><span class="keyword">var</span> arr4 = [</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'zhangsan'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'lisi'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'wangwu'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'zhaoliu'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'xiaoming'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-<p><strong>创建一个change函数</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">change</span>(<span class="params">params</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i&lt;params.length;i++)&#123;</span><br><span class="line">        params[i].name = params[i].name +<span class="string">'miaomiaomiao'</span></span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> params </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>将arr4赋值给arr1、arr2、arr3并打印，观察打印结果</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">arr1 = arr4</span><br><span class="line">arr2 = arr4</span><br><span class="line">arr3 = arr4</span><br><span class="line"><span class="built_in">console</span>.log(change(arr1)) <span class="comment">// 对任意一个数组执行change函数</span></span><br><span class="line"><span class="built_in">console</span>.log(arr4)</span><br><span class="line"><span class="built_in">console</span>.log(arr1)</span><br><span class="line"><span class="built_in">console</span>.log(arr2)</span><br><span class="line"><span class="built_in">console</span>.log(arr3)</span><br></pre></td></tr></table></figure>
-<p><strong>以下是打印结果</strong></p>
-<p><img src="/javascript-中全局变量与形参的赋值/1545918924790.png" alt="1545918924790"></p>
-<p>可以发现，当其中任何一个数组改变时，其他的数组的值也会跟着改变</p>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>在计算机的内存中，系统对变量的声明在<code>栈</code>中，而值是在<code>堆</code>中</p>
-<p>画图理解</p>
-<p><img src="/javascript-中全局变量与形参的赋值/1545919380981.png" alt="1545919380981"></p>
-<p>arr1 = arr4; arr2 = arr4; arr3 = arr4 的赋值只是将arr4的值的地址指向了arr1，arr2，arr3；内存中并没有为其创建内容空间，这样就导致直接或间接的修改变量的值，那么原始值都将被修改。</p>
+        <h1 id="node读取文件方法封装-amp-Promise"><a href="#node读取文件方法封装-amp-Promise" class="headerlink" title="node读取文件方法封装&amp;Promise"></a>node读取文件方法封装&amp;Promise</h1><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
+<li>一个空<code>js</code>文件和<code>files</code>文件里面放上三个文件，方便下面操作</li>
+</ul>
+<p><img src="/node-读取文件方法封装/1546493666213.png" alt="1546493666213"></p>
+<ul>
+<li>载入核心模块</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>)</span><br></pre></td></tr></table></figure>
+<p>需求：封装一个方法，给你一个要读取文件的路径，你这个方法能帮我读取文件，并把内容返回给我</p>
+<h2 id="普通方式"><a href="#普通方式" class="headerlink" title="普通方式"></a>普通方式</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这是普通读取文件的方式</span></span><br><span class="line"> fs.readFile(path.join(__dirname, <span class="string">'./files/1.txt'</span>), <span class="string">'utf-8'</span>, (err, dataStr) =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (err) <span class="keyword">throw</span> err</span><br><span class="line">  <span class="built_in">console</span>.log(dataStr)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>但是这样达不到需求，所以就有了下面一种方式</p>
+<h2 id="简单封装一"><a href="#简单封装一" class="headerlink" title="简单封装一"></a>简单封装一</h2><p>给一个路径参数<code>fpath</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>由于读取文件是异步操作，不能直接在函数内部return,所以没有接收到返回值，在外部调用就是undefined</p>
+<p><strong>所以用<code>callback</code>接收一下</strong></p>
+<h2 id="简单封装二"><a href="#简单封装二" class="headerlink" title="简单封装二"></a>简单封装二</h2><p>封装一个给定文件路径，返回读取到的内容的读取文件的异步方法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFileByPath</span> (<span class="params">fpath, callback</span>) </span>&#123;</span><br><span class="line">  fs.readFile(fpath, <span class="string">'utf-8'</span>, (err, data) =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err</span><br><span class="line">    <span class="comment">// console.log(data)</span></span><br><span class="line">    callback(data)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line">getFileByPath(path.join(__dirname, <span class="string">'./files/1.txt'</span>), (data) =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(data) <span class="comment">// 111</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>这样基本就达到需求了，但是依然不能知道读取文件数据到底成功还是失败，没有明确的标识</p>
+<h2 id="简单封装三"><a href="#简单封装三" class="headerlink" title="简单封装三"></a>简单封装三</h2><p>所以可以给 callback 规定两个参数，一个失败结果，一个成功结果</p>
+<p>同时我们规定，如果成功后，返回结果应该位于 callback 结果的第二个位置，此时第一个结果由于没有出错，所以放一个 null ，如果失败了，则第一个结果放置 error 对象，第二个位置放置一个 undefined</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFileByPath</span> (<span class="params">fpath, callback</span>) </span>&#123;</span><br><span class="line">  fs.readFile(fpath, <span class="string">'utf-8'</span>, (err, data) =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err</span><br><span class="line">    <span class="comment">// console.log(data)</span></span><br><span class="line">    callback(<span class="literal">null</span>, data)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line">getFileByPath(path.join(__dirname, <span class="string">'./files/1.txt'</span>), (err, data) =&gt; &#123;</span><br><span class="line">  <span class="comment">// console.log(data) // 111</span></span><br><span class="line">  <span class="keyword">if</span> (err) <span class="keyword">return</span> <span class="built_in">console</span>.log(err.message)</span><br><span class="line">  <span class="built_in">console</span>.log(data)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>这种情况下，不管成功还是失败，共用的是一个参数（不是很好理解），可以拆分为两个，成功一个回调，失败一个回调，这样更好理解</p>
+<h2 id="简单封装四"><a href="#简单封装四" class="headerlink" title="简单封装四"></a>简单封装四</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFileByPath</span> (<span class="params">fpath, succCb, errCb</span>) </span>&#123;</span><br><span class="line">  fs.readFile(fpath, <span class="string">'utf-8'</span>, (err, data) =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) errCb(err)</span><br><span class="line">    succCb(data)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line">getFileByPath(path.join(__dirname, <span class="string">'./files/1.txt'</span>), <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(data + <span class="string">'成功了'</span>)</span><br><span class="line">&#125;, <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(err.message + <span class="string">'失败了'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>这样就基本封装完成，达到需求，并提示失败和成功，提升体验</p>
+<h2 id="Promise解决回调地狱"><a href="#Promise解决回调地狱" class="headerlink" title="Promise解决回调地狱"></a>Promise解决回调地狱</h2><p>假如我们使用上一种封装方法，去按顺序读取三个文件<code>files/1.txt</code>、<code>files/2.txt</code>、<code>files/3.txt</code>这样就需要嵌套</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">getFileByPath(path.join(__dirname, <span class="string">'./files/1.txt'</span>), <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(data)</span><br><span class="line"></span><br><span class="line">  getFileByPath(path.join(__dirname, <span class="string">'./files/2.txt'</span>), <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line"></span><br><span class="line">    getFileByPath(path.join(__dirname, <span class="string">'./files/3.txt'</span>), <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(data)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>假如以上的嵌套有很多，还不止这样三个嵌套呢？就会成这样</p>
+<p><img src="/node-读取文件方法封装/1546505460828.png" alt="1546505460828"></p>
+<p>这样就形成了回调地狱，由于函数查找变量的规则需要由内至外一层一层去查找，这样难免造成大量的资源浪费</p>
+<p><strong>引入Promise</strong>来解决回调地狱的问题</p>
+<h4 id="Promise介绍"><a href="#Promise介绍" class="headerlink" title="Promise介绍"></a>Promise介绍</h4><p><code>Promise</code>是<code>ES6</code>中的一个对象，用于表示一个异步操作的最终状态（完成或失败），以及其返回的值。 </p>
+<p>在浏览器控制台输入<code>console.dir(Promise)</code>可以看到</p>
+<p><img src="/node-读取文件方法封装/1546505973788.png" alt="1546505973788"></p>
+<p>我们看图片中两个红框，第一个红框，<code>Promise</code>是一个构造函数</p>
+<p>第二个红框是两个回调函数，<code>reject()</code>表示失败执行，<code>resolve()</code>表示成功后执行</p>
+<p>点开<code>prototype:Promise</code>发现一个<code>then</code>方法和<code>catch()方法</code>，而<code>then和catch</code>方法和在<code>Promise</code>的原型对象中，所以可以用<code>promise</code>直接调用</p>
+<p><img src="/node-读取文件方法封装/1546506107865.png" alt="1546506107865"></p>
+<h3 id="Promise解决回调地狱-1"><a href="#Promise解决回调地狱-1" class="headerlink" title="Promise解决回调地狱"></a>Promise解决回调地狱</h3><p>这样就可以封装一个基于<code>Promise</code>读取文件的函数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFileByPath</span>(<span class="params">fpath</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span> (<span class="function"><span class="keyword">function</span> (<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">    fs.readFile(fpath, <span class="string">'utf-8'</span>, (err, data) =&gt; &#123;</span><br><span class="line">      <span class="keyword">if</span> (err) <span class="keyword">return</span> reject(err)</span><br><span class="line">      resolve(data)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 如果 ，前面的 Promise 执行失败，我们不想让后续的Promise 操作被终止，可以为 每个 promise 指定 失败的回调</span></span><br><span class="line"> getFileByPath(<span class="string">'./files/11.txt'</span>)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 读取文件2</span></span><br><span class="line">    <span class="keyword">return</span> getFileByPath(<span class="string">'./files/2.txt'</span>)</span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'这是失败的结果：'</span> + err.message)</span><br><span class="line">    <span class="comment">// return 一个 新的 Promise</span></span><br><span class="line">    <span class="keyword">return</span> getFileByPath(<span class="string">'./files/2.txt'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> getFileByPath(<span class="string">'./files/3.txt'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line">  &#125;).then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+<p>当 我们有这样的需求： 哪怕前面的 Promise 执行失败了，但是，不要影响后续 promise 的正常执行，此时，我们可以单独为 每个 promise，通过 .then 指定一下失败的回调；</p>
+<p>有时候，我们有这样的需求，个上面的需求刚好相反：如果 后续的Promise 执行，依赖于 前面 Promise 执行的结果，如果前面的失败了，则后面的就没有继续执行下去的意义了，此时，我们想要实现，一旦有报错，则立即终止所有 Promise的执行。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">getFileByPath(<span class="string">'./files/1.txt'</span>)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> getFileByPath(<span class="string">'./files/22.txt'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> getFileByPath(<span class="string">'./files/3.txt'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123; <span class="comment">// catch 的作用： 如果前面有任何的 Promise 执行失败，则立即终止所有 promise 的执行，并 马上进入 catch 去处理 Promise中 抛出的异常；</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'这是自己的处理方式：'</span> + err.message)</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -476,12 +508,12 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>javascript 中全局变量与形参的赋值</p>
+  <p><span>本文标题:</span>node-读取文件方法封装</p>
   <p><span>文章作者:</span>王工头</p>
-  <p><span>发布时间:</span>2018年12月27日 - 21:48:42</p>
-  <p><span>最后更新:</span>2018年12月27日 - 22:04:04</p>
-  <p><span>原始链接:</span><a href="/javascript-中全局变量与形参的赋值/" title="javascript 中全局变量与形参的赋值">https://qqqww.com/javascript-中全局变量与形参的赋值/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript-中全局变量与形参的赋值/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年01月02日 - 17:14:39</p>
+  <p><span>最后更新:</span>2019年01月03日 - 17:11:14</p>
+  <p><span>原始链接:</span><a href="/node-读取文件方法封装/" title="node-读取文件方法封装">https://qqqww.com/node-读取文件方法封装/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/node-读取文件方法封装/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -523,7 +555,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/全局变量与形参的赋值/" rel="tag"><i class="fa fa-tag"></i> 全局变量与形参的赋值</a>
+            <a href="/tags/函数封装/" rel="tag"><i class="fa fa-tag"></i> 函数封装</a>
           
         </div>
       
@@ -536,8 +568,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/javascript-中局部变量和形参同名冲突问题/" rel="next" title="javascript 中局部变量和形参同名冲突问题">
-                <i class="fa fa-chevron-left"></i> javascript 中局部变量和形参同名冲突问题
+              <a href="/sublime添加自定义代码段/" rel="next" title="sublime添加自定义代码段">
+                <i class="fa fa-chevron-left"></i> sublime添加自定义代码段
               </a>
             
           </div>
@@ -545,10 +577,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/webpack基本属性配置/" rel="prev" title="webpack基本属性配置">
-                webpack基本属性配置 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -753,7 +781,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#javascript-中全局变量与形参的赋值"><span class="nav-number">1.</span> <span class="nav-text">javascript 中全局变量与形参的赋值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#现象"><span class="nav-number">1.1.</span> <span class="nav-text">现象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原因"><span class="nav-number">1.2.</span> <span class="nav-text">原因</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#node读取文件方法封装-amp-Promise"><span class="nav-number">1.</span> <span class="nav-text">node读取文件方法封装&amp;Promise</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备"><span class="nav-number">1.1.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#普通方式"><span class="nav-number">1.2.</span> <span class="nav-text">普通方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单封装一"><span class="nav-number">1.3.</span> <span class="nav-text">简单封装一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单封装二"><span class="nav-number">1.4.</span> <span class="nav-text">简单封装二</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单封装三"><span class="nav-number">1.5.</span> <span class="nav-text">简单封装三</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单封装四"><span class="nav-number">1.6.</span> <span class="nav-text">简单封装四</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Promise解决回调地狱"><span class="nav-number">1.7.</span> <span class="nav-text">Promise解决回调地狱</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Promise介绍"><span class="nav-number">1.7.0.1.</span> <span class="nav-text">Promise介绍</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Promise解决回调地狱-1"><span class="nav-number">1.7.1.</span> <span class="nav-text">Promise解决回调地狱</span></a></li></ol></li></ol></div>
             
 
           </div>
