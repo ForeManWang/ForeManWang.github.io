@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-03T09:11:14.991Z</updated>
+  <updated>2019-01-05T07:21:52.462Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue-vuex</title>
+    <link href="https://qqqww.com/vue-vuex/"/>
+    <id>https://qqqww.com/vue-vuex/</id>
+    <published>2019-01-05T05:37:19.000Z</published>
+    <updated>2019-01-05T07:21:52.462Z</updated>
+    
+    <summary type="html">
+    
+      vuex
+    
+    </summary>
+    
+    
+      <category term="vuex" scheme="https://qqqww.com/tags/vuex/"/>
+    
+  </entry>
   
   <entry>
     <title>node-读取文件方法封装</title>
