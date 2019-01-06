@@ -4,6 +4,23 @@ Allow: /archives/
 Allow: /tags/
 Allow: /categories/
 Allow: /about/
+Allow: /ES6笔记一/
+Allow: /hexo搭建个人博客详细教程/
+Allow: /hexo搭建个人博客之Github账号注册/
+Allow: /hexo搭建个人博客之Git安装/
+Allow: /hexo搭建个人博客之Hexo安装/
+Allow: /hexo搭建个人博客之NodeJs安装/
+Allow: /hexo搭建个人博客之seo优化/
+Allow: /javascript-中局部变量和形参同名冲突问题/
+Allow: /javascript-中全局变量与形参的赋值/
+Allow: /node-读取文件方法封装/
+Allow: /page/
+Allow: /sublime安装插件/
+Allow: /sublime添加自定义代码段/
+Allow: /vue-vuex/
+Allow: /webpack基本属性配置/
+Allow: /如何将本地文件上传到github/
+Allow: /装逼路上的小插曲一：博客上传图片无法显示/
 
 Disallow: /vendors/
 Disallow: /js/
@@ -11,6 +28,10 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
+Disallow: /images/
+Disallow: /lib/
+Disallow: /live2dw/
+Disallow: /uploads/
 
 Sitemap: http://qqqww.com/sitemap.xml
 Sitemap: http://qqqww.com/baidusitemap.xml
