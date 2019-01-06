@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="王工头, Web前端">
+  <meta name="keywords" content="虚拟DOM,Diff算法">
 
 
 
@@ -92,17 +92,23 @@
 
 
 
-<meta name="description" content="一个平凡的Web前端开发者。">
-<meta name="keywords" content="Web前端开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="工头的博客">
-<meta property="og:url" content="https://qqqww.com/tags/hexo搭建个人博客/index.html">
+<meta name="description" content="React中的虚拟DOM与Diff算法，本质和目的">
+<meta name="keywords" content="虚拟DOM,Diff算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React-虚拟DOM与Diff算法">
+<meta property="og:url" content="https://qqqww.com/React-虚拟DOM/index.html">
 <meta property="og:site_name" content="工头的博客">
-<meta property="og:description" content="一个平凡的Web前端开发者。">
+<meta property="og:description" content="React中的虚拟DOM与Diff算法，本质和目的">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://qqqww.com/React-虚拟DOM/虚拟DOM引入图片.png">
+<meta property="og:image" content="https://qqqww.com/React-虚拟DOM/DOM树.png">
+<meta property="og:image" content="https://qqqww.com/React-虚拟DOM/模拟DOM树.png">
+<meta property="og:image" content="https://qqqww.com/React-虚拟DOM/Diff.png">
+<meta property="og:updated_time" content="2019-01-06T13:57:41.059Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="工头的博客">
-<meta name="twitter:description" content="一个平凡的Web前端开发者。">
+<meta name="twitter:title" content="React-虚拟DOM与Diff算法">
+<meta name="twitter:description" content="React中的虚拟DOM与Diff算法，本质和目的">
+<meta name="twitter:image" content="https://qqqww.com/React-虚拟DOM/虚拟DOM引入图片.png">
 
 
 
@@ -132,7 +138,7 @@
 
 
 
-  <link rel="canonical" href="https://qqqww.com/tags/hexo搭建个人博客/">
+  <link rel="canonical" href="https://qqqww.com/React-虚拟DOM/">
 
 
 
@@ -156,7 +162,7 @@
 
 
 
-  <title>标签: hexo搭建个人博客 | 工头的博客</title>
+  <title>React-虚拟DOM与Diff算法 | 工头的博客</title>
   
 
 
@@ -185,7 +191,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband">
       <a href="https://foremanwang.github.io/" class="github-corner" aria-label="View source on GitHub" rel="external nofollow noopener noreferrer" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     </div>
@@ -323,52 +329,345 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>hexo搭建个人博客<small>标签</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://qqqww.com/React-虚拟DOM/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王工头">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="工头的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/hexo搭建个人博客详细教程/" itemprop="url">
-              
-                <span itemprop="name">hexo搭建个人博客详细教程</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">React-虚拟DOM与Diff算法</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-20T17:44:45+08:00" content="2018-12-20">
-          12-20
-        </time>
-      </div>
+        <div class="post-meta">
+          
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-06T19:37:34+08:00">
+                2019-01-06
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.1k 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3 分钟
+                </span>
+              
+            </div>
+          
+
+          
+              <div class="post-description">
+                  React中的虚拟DOM与Diff算法，本质和目的 
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="虚拟DOM与Diff算法"><a href="#虚拟DOM与Diff算法" class="headerlink" title="虚拟DOM与Diff算法"></a>虚拟DOM与Diff算法</h1><p>虚拟DOM(Virtual Document Object Model)的模拟DOM树操作需要用到DIff算法，推荐先看这句话下面的文章内容</p>
+<h2 id="DOM的本质"><a href="#DOM的本质" class="headerlink" title="DOM的本质"></a>DOM的本质</h2><blockquote>
+<p>浏览器中的概念，用JS对象来表示 页面上的元素，并提供了操作 DOM 对象的API</p>
+</blockquote>
+<h2 id="React中的虚拟DOM"><a href="#React中的虚拟DOM" class="headerlink" title="React中的虚拟DOM"></a>React中的虚拟DOM</h2><blockquote>
+<p>框架中的概念，是程序员 用JS对象来模拟 页面上的 DOM 和 DOM嵌套</p>
+</blockquote>
+<h2 id="实现虚拟DOM的目的"><a href="#实现虚拟DOM的目的" class="headerlink" title="实现虚拟DOM的目的"></a>实现虚拟DOM的目的</h2><blockquote>
+<p>为了实现页面中， DOM 元素的高效更新</p>
+</blockquote>
+<h2 id="DOM和虚拟DOM的区别"><a href="#DOM和虚拟DOM的区别" class="headerlink" title="DOM和虚拟DOM的区别"></a><strong>DOM和虚拟DOM的区别</strong></h2><blockquote>
+<ul>
+<li><strong>DOM：</strong>浏览器中，提供的概念；用JS对象，表示页面上的元素，并提供了操作元素的API</li>
+<li><strong>虚拟DOM：</strong>是框架中的概念；而是开发框架的程序员，手动用JS对象来模拟DOM元素和嵌套关系<ul>
+<li>本质： 用JS对象，来模拟DOM元素和嵌套关系</li>
+<li>目的：就是为了实现页面元素的高效更新</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="如何实现页面元素的高效更新"><a href="#如何实现页面元素的高效更新" class="headerlink" title="如何实现页面元素的高效更新"></a>如何实现页面元素的高效更新</h2><p>利用虚拟DOM可以实现页面元素的高效更新，那么如何实现页面元素的高效更新呢？</p>
+<p><img src="/React-虚拟DOM/虚拟DOM引入图片.png" alt="虚拟DOM表格排序案例"></p>
+<p><strong>假如我有一个需求：点击列头，实现表格数据顺序的排序</strong></p>
+<ol>
+<li><strong>数据来源：</strong>表格中的数据从数据库查询而来</li>
+<li><strong>存储：</strong>这些查询到的数据以<code>数组</code>的形式，存放到了浏览器的内存中</li>
+<li><strong>渲染：</strong><ol>
+<li>方案一：手动for循环整个数据，手动拼接字符串<code>str += &#39;&lt;tr&gt;123&lt;tr&gt;&#39;</code></li>
+<li>方案二：使用模板引擎，类似<code>art-template</code>，比手动更方便点，其内部本质也是拼接了字符串</li>
+</ol>
+</li>
+<li><strong>思考：</strong>对于上述方案，思考其缺陷和解决方案<ol>
+<li>如果用户点击了<code>时间</code>,想要按照时间从大到小的排序，其流程应当是：<ol>
+<li>触发点击事件，在事件中，把内存中的对象数组，重新排序</li>
+<li>当排序完成之后，页面时旧的，但是内存中的顺序是最新的</li>
+<li>把最新的数据顺序渲染到页面上</li>
+</ol>
+</li>
+<li>上述方案只是实现了把数据渲染到页面中，但是并没有把性能做到最优，这里的第三步，完全可以按需渲染页面(只重新渲染排序中需要更新的数据所对应的页面元素)，以提高性能</li>
+</ol>
+</li>
+<li><strong>DOM树实现按需渲染：</strong><ol>
+<li><strong>什么是<code>DOM树</code>：</strong><ol>
+<li><code>DOM</code>结构，类似下图1中的结构</li>
+<li><strong>一个网页的呈现过程：</strong><ol>
+<li>浏览器请求服务器获取<code>HTML</code>代码</li>
+<li>浏览器在内存中，解析<code>DOM结构</code>, 并在浏览器中内存中渲染出一棵<code>DOM</code>树</li>
+<li>浏览器把<code>DOM树</code>呈现到页面上</li>
+</ol>
+</li>
+<li><strong>怎么按需更新：</strong>获取内存中新旧两棵DOM树，得到需要被按需更新得DOM树</li>
+<li><strong>如何获取到新旧两棵DOM树：</strong><ol>
+<li>浏览器并没有直接提供获取DOM树的相关API，因此无法拿到内存中的DOM树</li>
+<li>可以自己手动模拟新旧两棵DOM树</li>
+<li>那么<strong>怎么去模拟DOM树呢</strong><ol>
+<li>模拟一个DOM元素，假如网页上有一个div元素，怎么模拟呢？用js以字面量赋值的形式进行模拟，看下图<code>模拟DOM元素</code></li>
+<li>当旧的DOM发生改变，对比两棵DOM树的标签和值，如果都相等，则不变，如果标签相同，值不同，则修改，这样的新旧两棵树就是模拟DOM树</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>总结：</strong>什么是虚拟DOM<ol>
+<li>用JS对象的形式，来模拟页面上的DOM嵌套关系，即虚拟DOM是以JS对象的形式存在的</li>
+<li>React中虚拟DOM对象的本质和目的：<ol>
+<li>本质：用JS对象来模拟DOM元素的嵌套关系</li>
+<li>目的：实现页面元素的高效更新</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p><img src="/React-虚拟DOM/DOM树.png" alt="DOM树"></p>
+<p><img src="/React-虚拟DOM/模拟DOM树.png" alt="模拟DOM树"></p>
+<h2 id="Diff算法"><a href="#Diff算法" class="headerlink" title="Diff算法"></a>Diff算法</h2><p><img src="/React-虚拟DOM/Diff.png" alt="Diff算法"></p>
+<h3 id="tree-diff"><a href="#tree-diff" class="headerlink" title="tree diff"></a>tree diff</h3><p>上图中新旧两棵DOM树每一层对比的过程叫做<strong>tree diff</strong>，当整棵DOM树逐层对比完毕，则所有的按需更新的元素必然能够找到</p>
+<h3 id="component-diff"><a href="#component-diff" class="headerlink" title="component  diff"></a>component  diff</h3><p>在进行<code>tree diff</code>的时候，每一层中组件级别的对比，叫做<strong>component diff</strong></p>
+<p>如果对比前后，组件类型相同，则暂时认为不需要更新组件</p>
+<p>如果对比前后，组件类型不同，则需要暂时移除旧组件，创建新组件，追加到页面上</p>
+<p>###element diff</p>
+<p>在进行组件对比的时候，如果两个组件类型相同，需要进行元素级别的对比，这叫做<strong>element diff</strong></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>React-虚拟DOM与Diff算法</p>
+  <p><span>文章作者:</span>王工头</p>
+  <p><span>发布时间:</span>2019年01月06日 - 19:37:34</p>
+  <p><span>最后更新:</span>2019年01月06日 - 21:57:41</p>
+  <p><span>原始链接:</span><a href="/React-虚拟DOM/" title="React-虚拟DOM与Diff算法">https://qqqww.com/React-虚拟DOM/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/React-虚拟DOM/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
 
       
     </div>
 
+
+    
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢大佬们的阅读-------------</div>
+    
+</div>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/虚拟DOM与Diff算法/" rel="tag"><i class="fa fa-tag"></i> 虚拟DOM与Diff算法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/vue-vuex/" rel="next" title="vue-vuex">
+                <i class="fa fa-chevron-left"></i> vue-vuex
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/React-Diff算法/" rel="prev" title="React-Diff算法">
+                React-Diff算法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank" rel="external nofollow noopener noreferrer">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -376,6 +675,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTc2Mi8xODMwOA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -396,8 +704,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -499,6 +816,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#虚拟DOM与Diff算法"><span class="nav-number">1.</span> <span class="nav-text">虚拟DOM与Diff算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM的本质"><span class="nav-number">1.1.</span> <span class="nav-text">DOM的本质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中的虚拟DOM"><span class="nav-number">1.2.</span> <span class="nav-text">React中的虚拟DOM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现虚拟DOM的目的"><span class="nav-number">1.3.</span> <span class="nav-text">实现虚拟DOM的目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM和虚拟DOM的区别"><span class="nav-number">1.4.</span> <span class="nav-text">DOM和虚拟DOM的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何实现页面元素的高效更新"><span class="nav-number">1.5.</span> <span class="nav-text">如何实现页面元素的高效更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Diff算法"><span class="nav-number">1.6.</span> <span class="nav-text">Diff算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#tree-diff"><span class="nav-number">1.6.1.</span> <span class="nav-text">tree diff</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#component-diff"><span class="nav-number">1.6.2.</span> <span class="nav-text">component  diff</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
       <div id="music163player">
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=490106148&auto=1&height=66"></iframe> 
@@ -675,6 +1008,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -703,6 +1040,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
