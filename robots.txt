@@ -24,6 +24,8 @@ Allow: /webpack基本属性配置/
 Allow: /如何将本地文件上传到github/
 Allow: /装逼路上的小插曲一：博客上传图片无法显示/
 
+Disallow: /js/
+
 Sitemap: http://qqqww.com/sitemap.xml
 Sitemap: http://qqqww.com/baidusitemap.xml
 

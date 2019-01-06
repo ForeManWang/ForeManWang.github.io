@@ -100,21 +100,21 @@
 <meta property="og:site_name" content="工头的博客">
 <meta property="og:description" content="hexo搭建个人博客之seo优化">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/1545504338356.png">
-<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/1545504409188.png">
-<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/1545504733881.png">
-<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/1545505327458.png">
-<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/1545505744034.png">
-<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/1545505786746.png">
-<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/1545505835183.png">
-<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/1545506166450.png">
+<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/百度站长.png">
+<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/验证网站.png">
+<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/提交sitemap.png">
+<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/谷歌收录验证.png">
+<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/robots测试.png">
+<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/sitemap验证.png">
+<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/Google抓取.png">
+<meta property="og:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/验证站点是否收录.png">
 <meta property="og:image" content="http://www.langzi.fun/upload/hexo-seo-01.jpg">
 <meta property="og:image" content="http://www.langzi.fun/upload/hexo-seo-02.jpg">
-<meta property="og:updated_time" content="2019-01-06T04:04:14.257Z">
+<meta property="og:updated_time" content="2019-01-06T07:07:47.913Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo搭建个人博客之seo优化">
 <meta name="twitter:description" content="hexo搭建个人博客之seo优化">
-<meta name="twitter:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/1545504338356.png">
+<meta name="twitter:image" content="https://qqqww.com/hexo搭建个人博客之seo优化/百度站长.png">
 
 
 
@@ -470,9 +470,9 @@
 <p>这里可以参照我的：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">User-agent: *</span><br><span class="line">Allow: /</span><br><span class="line">Allow: /archives/</span><br><span class="line">Allow: /tags/</span><br><span class="line">Allow: /categories/</span><br><span class="line">Allow: /about/</span><br><span class="line"></span><br><span class="line">Disallow: /vendors/</span><br><span class="line">Disallow: /js/</span><br><span class="line">Disallow: /css/</span><br><span class="line">Disallow: /fonts/</span><br><span class="line">Disallow: /vendors/</span><br><span class="line">Disallow: /fancybox/</span><br><span class="line"></span><br><span class="line">Sitemap: http://qqqww.com/sitemap.xml</span><br><span class="line">Sitemap: http://qqqww.com/baidusitemap.xml</span><br></pre></td></tr></table></figure>
 <h2 id="百度收录站点"><a href="#百度收录站点" class="headerlink" title="百度收录站点"></a>百度收录站点</h2><p>登录<a href="http://zhanzhang.baidu.com" rel="external nofollow noopener noreferrer" target="_blank">百度站长平台</a>，在用户中心 =&gt; 站点管理添加你的站点网址</p>
-<p><img src="/hexo搭建个人博客之seo优化/1545504338356.png" alt="百度站长"></p>
+<p><img src="/hexo搭建个人博客之seo优化/百度站长.png" alt="百度站长"></p>
 <p>配置完站点属性后，进入最后一步：验证网站。有三种方式：文件验证、HTML标签验证、CNAME验证，文件验证和CNAME验证都比较简单，也有相对应的帮助文本，在此我选择的是HTML标签验证。</p>
-<p><img src="/hexo搭建个人博客之seo优化/1545504409188.png" alt="百度站点管理"></p>
+<p><img src="/hexo搭建个人博客之seo优化/验证网站.png" alt="验证网站"></p>
 <ol>
 <li>在主题的_config.yml文件中，设置：baidu_site_verification: true，如果没有该字段就手动添加。</li>
 <li>在themes/next/layout/_partials/head.swig文件中添加下列代码</li>
@@ -508,7 +508,7 @@
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.baidu_push %&#125;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    var bp = document.createElement(&apos;script&apos;);</span><br><span class="line">    var curProtocol = window.location.protocol.split(&apos;:&apos;)[0];</span><br><span class="line">    if (curProtocol === &apos;https&apos;) &#123;</span><br><span class="line">        bp.src = &apos;https://zz.bdstatic.com/linksubmit/push.js&apos;;        </span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        bp.src = &apos;http://push.zhanzhang.baidu.com/push.js&apos;;</span><br><span class="line">    &#125;</span><br><span class="line">    var s = document.getElementsByTagName(&quot;script&quot;)[0];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 <h5 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h5><p>这里将之前生成的sitemap文件提交到百度站长</p>
-<p><img src="/hexo搭建个人博客之seo优化/1545504733881.png" alt="提交sitemap"></p>
+<p><img src="/hexo搭建个人博客之seo优化/提交sitemap.png" alt="提交sitemap"></p>
 <h4 id="手动提交"><a href="#手动提交" class="headerlink" title="手动提交"></a>手动提交</h4><blockquote>
 <p>如果您不想通过程序提交，那么可以采用此种方式，手动将链接提交给百度。</p>
 </blockquote>
@@ -520,20 +520,20 @@
 <p>之后，我去google认证，发现并不能验证成功，后来去<code>站点配置</code>_config.yml下添加了一句代码，和百度的类似</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">google-site-verification: true</span><br></pre></td></tr></table></figure>
 <p>这样就验证成功了，再去看看，验证成功吧的界面如下（这里用的是参考文档里验证成功的图片，其实都一样，下面发参考文档链接）</p>
-<p><img src="/hexo搭建个人博客之seo优化/1545505327458.png" alt="谷歌收录验证"></p>
+<p><img src="/hexo搭建个人博客之seo优化/谷歌收录验证.png" alt="谷歌收录验证"></p>
 <p>验证通过后点进入控制台测试<code>robots.txt</code>文件,没有错误和警告即可</p>
-<p><img src="/hexo搭建个人博客之seo优化/1545505744034.png" alt="robots测试"></p>
+<p><img src="/hexo搭建个人博客之seo优化/robots测试.png" alt="robots测试"></p>
 <p> 提交 sitemap.xml 文件，点击右上角<code>添加/测试站点地图</code>输入 <code>sitemap.xml</code> 进行测试，测试无误后再提交文件</p>
-<p><img src="/hexo搭建个人博客之seo优化/1545505786746.png" alt="sitemap验证"></p>
+<p><img src="/hexo搭建个人博客之seo优化/sitemap验证.png" alt="sitemap验证"></p>
 <p><code>robots.txt</code>验证和<code>sitemap.xml</code>验证通过，抓取网页，我这里给<code>sitemap.xml</code>和<code>baidusitemap.xml</code>都加进去了，虽然不知道是不是提交一个就可以了…..</p>
-<p><img src="/hexo搭建个人博客之seo优化/1545505835183.png" alt="1545505835183"></p>
+<p><img src="/hexo搭建个人博客之seo优化/Google抓取.png" alt="Google抓取"></p>
 <ul>
 <li>输入框留空表示抓取首页，填入 about 表示抓取关于页面，抓取完成后,抓取因为验证原因,可能会有几种状态：完成、部分完成和已重定向等，直接提交就可以。</li>
 </ul>
 <h4 id="验证站点是否被收录"><a href="#验证站点是否被收录" class="headerlink" title="验证站点是否被收录"></a>验证站点是否被收录</h4><ul>
 <li>谷歌中输入：site:yousite，会有提示：(抓取需要时间。等几分钟)</li>
 </ul>
-<p><img src="/hexo搭建个人博客之seo优化/1545506166450.png" alt="1545506166450"></p>
+<p><img src="/hexo搭建个人博客之seo优化/验证站点是否收录.png" alt="验证站点是否收录"></p>
 <p> 以上就完成了百度和谷歌的搜索引擎抓取站点的功能</p>
 <h2 id="优化结构"><a href="#优化结构" class="headerlink" title="优化结构"></a>优化结构</h2><p>seo搜索引擎优化认为，网站的最佳结构是用户从首页点击三次就可以到达任何一个页面，但是我们使用hexo编译的站点打开文章的url是：sitename/year/mounth/day/title四层的结构，这样的url结构很不利于seo，爬虫就会经常爬不到我们的文章，于是，我们可以将url直接改成sitename/title的形式，并且title最好是用英文，在根目录的配置文件下修改permalink如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># URL 配置站点</span><br><span class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</span><br><span class="line">url: https://qqqww.com</span><br><span class="line">root: /</span><br><span class="line">permalink: :title/</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
@@ -662,7 +662,7 @@
   <p><span>本文标题:</span>hexo搭建个人博客之seo优化</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2018年12月23日 - 02:22:03</p>
-  <p><span>最后更新:</span>2019年01月06日 - 12:04:14</p>
+  <p><span>最后更新:</span>2019年01月06日 - 15:07:47</p>
   <p><span>原始链接:</span><a href="/hexo搭建个人博客之seo优化/" title="hexo搭建个人博客之seo优化">https://qqqww.com/hexo搭建个人博客之seo优化/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/hexo搭建个人博客之seo优化/" aria-label="复制成功！"></i></span>
   </p>

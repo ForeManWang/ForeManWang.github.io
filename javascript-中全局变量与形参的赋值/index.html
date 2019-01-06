@@ -100,13 +100,13 @@
 <meta property="og:site_name" content="工头的博客">
 <meta property="og:description" content="javascript 中全局变量与形参的赋值">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/1545918924790.png">
-<meta property="og:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/1545919380981.png">
-<meta property="og:updated_time" content="2018-12-27T14:04:04.413Z">
+<meta property="og:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/全局变量与形参的赋值.png">
+<meta property="og:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/栈和堆.png">
+<meta property="og:updated_time" content="2019-01-06T07:21:13.658Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript 中全局变量与形参的赋值">
 <meta name="twitter:description" content="javascript 中全局变量与形参的赋值">
-<meta name="twitter:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/1545918924790.png">
+<meta name="twitter:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/全局变量与形参的赋值.png">
 
 
 
@@ -451,11 +451,11 @@
 <p><strong>将arr4赋值给arr1、arr2、arr3并打印，观察打印结果</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">arr1 = arr4</span><br><span class="line">arr2 = arr4</span><br><span class="line">arr3 = arr4</span><br><span class="line"><span class="built_in">console</span>.log(change(arr1)) <span class="comment">// 对任意一个数组执行change函数</span></span><br><span class="line"><span class="built_in">console</span>.log(arr4)</span><br><span class="line"><span class="built_in">console</span>.log(arr1)</span><br><span class="line"><span class="built_in">console</span>.log(arr2)</span><br><span class="line"><span class="built_in">console</span>.log(arr3)</span><br></pre></td></tr></table></figure>
 <p><strong>以下是打印结果</strong></p>
-<p><img src="/javascript-中全局变量与形参的赋值/1545918924790.png" alt="1545918924790"></p>
+<p><img src="/javascript-中全局变量与形参的赋值/全局变量与形参的赋值.png" alt="全局变量与形参的赋值"></p>
 <p>可以发现，当其中任何一个数组改变时，其他的数组的值也会跟着改变</p>
 <h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>在计算机的内存中，系统对变量的声明在<code>栈</code>中，而值是在<code>堆</code>中</p>
 <p>画图理解</p>
-<p><img src="/javascript-中全局变量与形参的赋值/1545919380981.png" alt="1545919380981"></p>
+<p><img src="/javascript-中全局变量与形参的赋值/栈和堆.png" alt="栈和堆"></p>
 <p>arr1 = arr4; arr2 = arr4; arr3 = arr4 的赋值只是将arr4的值的地址指向了arr1，arr2，arr3；内存中并没有为其创建内容空间，这样就导致直接或间接的修改变量的值，那么原始值都将被修改。</p>
 
       
@@ -479,7 +479,7 @@
   <p><span>本文标题:</span>javascript 中全局变量与形参的赋值</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2018年12月27日 - 21:48:42</p>
-  <p><span>最后更新:</span>2018年12月27日 - 22:04:04</p>
+  <p><span>最后更新:</span>2019年01月06日 - 15:21:13</p>
   <p><span>原始链接:</span><a href="/javascript-中全局变量与形参的赋值/" title="javascript 中全局变量与形参的赋值">https://qqqww.com/javascript-中全局变量与形参的赋值/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript-中全局变量与形参的赋值/" aria-label="复制成功！"></i></span>
   </p>

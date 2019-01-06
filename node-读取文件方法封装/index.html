@@ -100,15 +100,15 @@
 <meta property="og:site_name" content="工头的博客">
 <meta property="og:description" content="node读取文件方法封装">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/1546493666213.png">
-<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/1546505460828.png">
-<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/1546505973788.png">
-<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/1546506107865.png">
-<meta property="og:updated_time" content="2019-01-03T09:11:14.991Z">
+<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/files.png">
+<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/回调地狱.png">
+<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/Promise介绍.png">
+<meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/Promise的then方法.png">
+<meta property="og:updated_time" content="2019-01-06T07:24:04.860Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="node-读取文件方法封装">
 <meta name="twitter:description" content="node读取文件方法封装">
-<meta name="twitter:image" content="https://qqqww.com/node-读取文件方法封装/1546493666213.png">
+<meta name="twitter:image" content="https://qqqww.com/node-读取文件方法封装/files.png">
 
 
 
@@ -449,7 +449,7 @@
         <h1 id="node读取文件方法封装-amp-Promise"><a href="#node读取文件方法封装-amp-Promise" class="headerlink" title="node读取文件方法封装&amp;Promise"></a>node读取文件方法封装&amp;Promise</h1><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
 <li>一个空<code>js</code>文件和<code>files</code>文件里面放上三个文件，方便下面操作</li>
 </ul>
-<p><img src="/node-读取文件方法封装/1546493666213.png" alt="1546493666213"></p>
+<p><img src="/node-读取文件方法封装/files.png" alt="files"></p>
 <ul>
 <li>载入核心模块</li>
 </ul>
@@ -473,16 +473,16 @@
 <h2 id="Promise解决回调地狱"><a href="#Promise解决回调地狱" class="headerlink" title="Promise解决回调地狱"></a>Promise解决回调地狱</h2><p>假如我们使用上一种封装方法，去按顺序读取三个文件<code>files/1.txt</code>、<code>files/2.txt</code>、<code>files/3.txt</code>这样就需要嵌套</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">getFileByPath(path.join(__dirname, <span class="string">'./files/1.txt'</span>), <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(data)</span><br><span class="line"></span><br><span class="line">  getFileByPath(path.join(__dirname, <span class="string">'./files/2.txt'</span>), <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line"></span><br><span class="line">    getFileByPath(path.join(__dirname, <span class="string">'./files/3.txt'</span>), <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(data)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p>假如以上的嵌套有很多，还不止这样三个嵌套呢？就会成这样</p>
-<p><img src="/node-读取文件方法封装/1546505460828.png" alt="1546505460828"></p>
+<p><img src="/node-读取文件方法封装/回调地狱.png" alt="回调地狱"></p>
 <p>这样就形成了回调地狱，由于函数查找变量的规则需要由内至外一层一层去查找，这样难免造成大量的资源浪费</p>
 <p><strong>引入Promise</strong>来解决回调地狱的问题</p>
 <h4 id="Promise介绍"><a href="#Promise介绍" class="headerlink" title="Promise介绍"></a>Promise介绍</h4><p><code>Promise</code>是<code>ES6</code>中的一个对象，用于表示一个异步操作的最终状态（完成或失败），以及其返回的值。 </p>
 <p>在浏览器控制台输入<code>console.dir(Promise)</code>可以看到</p>
-<p><img src="/node-读取文件方法封装/1546505973788.png" alt="1546505973788"></p>
+<p><img src="/node-读取文件方法封装/Promise介绍.png" alt="Promise介绍"></p>
 <p>我们看图片中两个红框，第一个红框，<code>Promise</code>是一个构造函数</p>
 <p>第二个红框是两个回调函数，<code>reject()</code>表示失败执行，<code>resolve()</code>表示成功后执行</p>
 <p>点开<code>prototype:Promise</code>发现一个<code>then</code>方法和<code>catch()方法</code>，而<code>then和catch</code>方法和在<code>Promise</code>的原型对象中，所以可以用<code>promise</code>直接调用</p>
-<p><img src="/node-读取文件方法封装/1546506107865.png" alt="1546506107865"></p>
+<p><img src="/node-读取文件方法封装/Promise的then方法.png" alt="Promise的then方法"></p>
 <h3 id="Promise解决回调地狱-1"><a href="#Promise解决回调地狱-1" class="headerlink" title="Promise解决回调地狱"></a>Promise解决回调地狱</h3><p>这样就可以封装一个基于<code>Promise</code>读取文件的函数</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFileByPath</span>(<span class="params">fpath</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span> (<span class="function"><span class="keyword">function</span> (<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">    fs.readFile(fpath, <span class="string">'utf-8'</span>, (err, data) =&gt; &#123;</span><br><span class="line">      <span class="keyword">if</span> (err) <span class="keyword">return</span> reject(err)</span><br><span class="line">      resolve(data)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 如果 ，前面的 Promise 执行失败，我们不想让后续的Promise 操作被终止，可以为 每个 promise 指定 失败的回调</span></span><br><span class="line"> getFileByPath(<span class="string">'./files/11.txt'</span>)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 读取文件2</span></span><br><span class="line">    <span class="keyword">return</span> getFileByPath(<span class="string">'./files/2.txt'</span>)</span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'这是失败的结果：'</span> + err.message)</span><br><span class="line">    <span class="comment">// return 一个 新的 Promise</span></span><br><span class="line">    <span class="keyword">return</span> getFileByPath(<span class="string">'./files/2.txt'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> getFileByPath(<span class="string">'./files/3.txt'</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line">  &#125;).then(<span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
@@ -511,7 +511,7 @@
   <p><span>本文标题:</span>node-读取文件方法封装</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月02日 - 17:14:39</p>
-  <p><span>最后更新:</span>2019年01月03日 - 17:11:14</p>
+  <p><span>最后更新:</span>2019年01月06日 - 15:24:04</p>
   <p><span>原始链接:</span><a href="/node-读取文件方法封装/" title="node-读取文件方法封装">https://qqqww.com/node-读取文件方法封装/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/node-读取文件方法封装/" aria-label="复制成功！"></i></span>
   </p>
