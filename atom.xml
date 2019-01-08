@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-06T11:38:04.345Z</updated>
+  <updated>2019-01-08T14:28:09.074Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ReactNative项目环境搭建</title>
+    <link href="https://qqqww.com/ReactNative%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>https://qqqww.com/ReactNative项目环境搭建/</id>
+    <published>2019-01-08T11:53:52.000Z</published>
+    <updated>2019-01-08T14:28:09.074Z</updated>
+    
+    <summary type="html">
+    
+      ReactNative项目环境搭建，这里首先搭建了android编译环境,然后打包安装到安卓手机
+    
+    </summary>
+    
+    
+      <category term="ReactNative豆瓣电影" scheme="https://qqqww.com/tags/ReactNative%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>React-Diff算法</title>
