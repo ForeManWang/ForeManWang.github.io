@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-10T19:20:56.607Z</updated>
+  <updated>2019-01-10T19:39:25.432Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -17,11 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ReactNative豆瓣电影项目文档</title>
+    <link href="https://qqqww.com/ReactNative%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/"/>
+    <id>https://qqqww.com/ReactNative豆瓣电影项目文档/</id>
+    <published>2019-01-10T19:27:04.000Z</published>
+    <updated>2019-01-10T19:39:25.432Z</updated>
+    
+    <summary type="html">
+    
+      ReactNative豆瓣电影，react-native，android环境搭建，android打包发布等技能
+    
+    </summary>
+    
+    
+      <category term="ReactNative豆瓣电影" scheme="https://qqqww.com/tags/ReactNative%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ReactNative组件</title>
     <link href="https://qqqww.com/ReactNative%E7%BB%84%E4%BB%B6/"/>
     <id>https://qqqww.com/ReactNative组件/</id>
     <published>2019-01-10T18:43:21.000Z</published>
-    <updated>2019-01-10T19:20:56.607Z</updated>
+    <updated>2019-01-10T19:37:56.218Z</updated>
     
     <summary type="html">
     
@@ -35,31 +53,11 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://qqqww.com/ReactNative%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E9%A1%B9%E7%9B%AE/"/>
-    <id>https://qqqww.com/ReactNative豆瓣电影项目/</id>
-    <published>2019-01-09T01:00:29.541Z</published>
-    <updated>2019-01-10T19:20:02.571Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;title: ReactNative豆瓣电影项目&lt;br&gt;copyright: true&lt;br&gt;date: 2019-01-09 09:00:29&lt;br&gt;tags:&lt;br&gt;keywords:&lt;br&gt;description:&lt;/p&gt;
-&lt;h1 id=&quot;ReactNative豆瓣电
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>ReactNative项目环境搭建</title>
     <link href="https://qqqww.com/ReactNative%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>https://qqqww.com/ReactNative项目环境搭建/</id>
     <published>2019-01-08T11:53:52.000Z</published>
-    <updated>2019-01-09T00:42:22.293Z</updated>
+    <updated>2019-01-10T19:36:27.585Z</updated>
     
     <summary type="html">
     
@@ -69,20 +67,6 @@
     
     
       <category term="ReactNative豆瓣电影" scheme="https://qqqww.com/tags/ReactNative%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>React-Diff算法</title>
-    <link href="https://qqqww.com/React-Diff%E7%AE%97%E6%B3%95/"/>
-    <id>https://qqqww.com/React-Diff算法/</id>
-    <published>2019-01-06T11:38:04.000Z</published>
-    <updated>2019-01-06T11:38:04.345Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
     
   </entry>
   
@@ -371,6 +355,24 @@
     
     
       <category term="NodeJs安装" scheme="https://qqqww.com/tags/NodeJs%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo搭建个人博客详细教程</title>
+    <link href="https://qqqww.com/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/"/>
+    <id>https://qqqww.com/hexo搭建个人博客详细教程/</id>
+    <published>2018-12-20T09:44:45.000Z</published>
+    <updated>2019-01-06T07:18:59.910Z</updated>
+    
+    <summary type="html">
+    
+      hexo个人博客
+    
+    </summary>
+    
+    
+      <category term="hexo搭建个人博客" scheme="https://qqqww.com/tags/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
