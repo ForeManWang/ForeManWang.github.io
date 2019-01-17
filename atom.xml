@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-17T13:01:53.240Z</updated>
+  <updated>2019-01-17T13:21:23.895Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记录一次hexo生成静态文件报错</title>
+    <link href="https://qqqww.com/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1hexo%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99/"/>
+    <id>https://qqqww.com/记录一次hexo生成静态文件报错/</id>
+    <published>2019-01-17T13:08:39.000Z</published>
+    <updated>2019-01-17T13:21:23.895Z</updated>
+    
+    <summary type="html">
+    
+      hexo常见错误
+    
+    </summary>
+    
+    
+      <category term="hexo生成html报错" scheme="https://qqqww.com/tags/hexo%E7%94%9F%E6%88%90html%E6%8A%A5%E9%94%99/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序学习笔记</title>
@@ -49,20 +67,6 @@
     
     
       <category term="flex布局语法" scheme="https://qqqww.com/tags/flex%E5%B8%83%E5%B1%80%E8%AF%AD%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="https://qqqww.com/test/"/>
-    <id>https://qqqww.com/test/</id>
-    <published>2019-01-17T11:09:17.000Z</published>
-    <updated>2019-01-17T11:09:17.371Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
     
   </entry>
   
