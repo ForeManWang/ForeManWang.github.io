@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-17T09:54:58.695Z</updated>
+  <updated>2019-01-17T04:52:18.180Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,25 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Flex布局</title>
-    <link href="https://qqqww.com/Flex%E5%B8%83%E5%B1%80/"/>
-    <id>https://qqqww.com/Flex布局/</id>
-    <published>2019-01-17T09:50:17.000Z</published>
-    <updated>2019-01-17T09:54:58.695Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Flex-布局&quot;&gt;&lt;a href=&quot;#Flex-布局&quot; class=&quot;headerlink&quot; title=&quot;Flex 布局&quot;&gt;&lt;/a&gt;Flex 布局&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;本文参考阮一峰老师的《Flex布局：语法篇》，在实践过程中，添加了一些案例，方便理解
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>git克隆失败和解决办法</title>
@@ -374,6 +355,24 @@
     
     
       <category term="hexo安装" scheme="https://qqqww.com/tags/hexo%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo搭建个人博客之NodeJs安装</title>
+    <link href="https://qqqww.com/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BNodeJs%E5%AE%89%E8%A3%85/"/>
+    <id>https://qqqww.com/hexo搭建个人博客之NodeJs安装/</id>
+    <published>2018-12-21T12:01:43.000Z</published>
+    <updated>2019-01-06T07:02:20.050Z</updated>
+    
+    <summary type="html">
+    
+      NodeJs 安装与环境配置
+    
+    </summary>
+    
+    
+      <category term="NodeJs安装" scheme="https://qqqww.com/tags/NodeJs%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
