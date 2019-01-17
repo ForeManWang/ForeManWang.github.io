@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="flex布局,flex语法">
+  <meta name="keywords" content="flex,flex布局">
 
 
 
@@ -92,18 +92,18 @@
 
 
 
-<meta name="description" content="flex布局的语法和案例">
-<meta name="keywords" content="flex布局,flex语法">
+<meta name="description" content="flex布局">
+<meta name="keywords" content="flex,flex布局">
 <meta property="og:type" content="article">
-<meta property="og:title" content="flex布局的语法和案例">
-<meta property="og:url" content="https://qqqww.com/flex布局的语法和案例/index.html">
+<meta property="og:title" content="Flex布局">
+<meta property="og:url" content="https://qqqww.com/Flex布局/index.html">
 <meta property="og:site_name" content="工头的博客">
-<meta property="og:description" content="flex布局的语法和案例">
+<meta property="og:description" content="flex布局">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-17T11:20:25.205Z">
+<meta property="og:updated_time" content="2019-01-17T11:36:28.285Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="flex布局的语法和案例">
-<meta name="twitter:description" content="flex布局的语法和案例">
+<meta name="twitter:title" content="Flex布局">
+<meta name="twitter:description" content="flex布局">
 
 
 
@@ -133,7 +133,7 @@
 
 
 
-  <link rel="canonical" href="https://qqqww.com/flex布局的语法和案例/">
+  <link rel="canonical" href="https://qqqww.com/Flex布局/">
 
 
 
@@ -157,7 +157,7 @@
 
 
 
-  <title>flex布局的语法和案例 | 工头的博客</title>
+  <title>Flex布局 | 工头的博客</title>
   
 
 
@@ -338,7 +338,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://qqqww.com/flex布局的语法和案例/">
+    <link itemprop="mainEntityOfPage" href="https://qqqww.com/Flex布局/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王工头">
@@ -355,7 +355,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">flex布局的语法和案例</h2>
+          <h2 class="post-title" itemprop="name headline">Flex布局</h2>
         
 
         <div class="post-meta">
@@ -368,7 +368,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-17T19:15:19+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-17T17:50:17+08:00">
                 2019-01-17
               </time>
             
@@ -424,7 +424,7 @@
 
           
               <div class="post-description">
-                  flex布局的语法和案例 
+                  flex布局 
               </div>
           
 
@@ -446,15 +446,15 @@
 <h2 id="一、Flex-布局是什么？"><a href="#一、Flex-布局是什么？" class="headerlink" title="一、Flex 布局是什么？"></a>一、Flex 布局是什么？</h2><p>Flex 是 Flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。</p>
 <p>任何一个容器都可以指定为 Flex 布局。</p>
 <blockquote>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="selector-class">.box</span>&#123;</span><br><span class="line">&gt; display: flex;</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="selector-class">.box</span>&#123;</span><br><span class="line">&gt;   display: flex;</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p>行内元素也可以使用 Flex 布局。</p>
 <blockquote>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="selector-class">.box</span>&#123;</span><br><span class="line">&gt; display: inline-flex;</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="selector-class">.box</span>&#123;</span><br><span class="line">&gt;   display: inline-flex;</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p>Webkit 内核的浏览器，必须加上<code>-webkit</code>前缀。</p>
 <blockquote>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="selector-class">.box</span>&#123;</span><br><span class="line">&gt; display: -webkit-flex; /* Safari */</span><br><span class="line">&gt; <span class="selector-tag">display</span>: <span class="selector-tag">flex</span>;</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="selector-class">.box</span>&#123;</span><br><span class="line">&gt;   display: -webkit-flex; /* Safari */</span><br><span class="line">&gt;   <span class="selector-tag">display</span>: <span class="selector-tag">flex</span>;</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p>注意，设为 Flex 布局以后，子元素的<code>float</code>、<code>clear</code>和<code>vertical-align</code>属性将失效。</p>
 <h2 id="二、基本概念"><a href="#二、基本概念" class="headerlink" title="二、基本概念"></a>二、基本概念</h2><p>采用 Flex 布局的元素，称为 Flex 容器（flex container），简称”容器”。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称”项目”。</p>
@@ -501,12 +501,12 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>flex布局的语法和案例</p>
+  <p><span>本文标题:</span>Flex布局</p>
   <p><span>文章作者:</span>王工头</p>
-  <p><span>发布时间:</span>2019年01月17日 - 19:15:19</p>
-  <p><span>最后更新:</span>2019年01月17日 - 19:20:25</p>
-  <p><span>原始链接:</span><a href="/flex布局的语法和案例/" title="flex布局的语法和案例">https://qqqww.com/flex布局的语法和案例/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/flex布局的语法和案例/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年01月17日 - 17:50:17</p>
+  <p><span>最后更新:</span>2019年01月17日 - 19:36:28</p>
+  <p><span>原始链接:</span><a href="/Flex布局/" title="Flex布局">https://qqqww.com/Flex布局/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/Flex布局/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -548,7 +548,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/flex布局语法/" rel="tag"><i class="fa fa-tag"></i> flex布局语法</a>
+            <a href="/tags/flex布局/" rel="tag"><i class="fa fa-tag"></i> flex布局</a>
           
         </div>
       
@@ -561,8 +561,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/test/" rel="next" title="test">
-                <i class="fa fa-chevron-left"></i> test
+              <a href="/git克隆失败和解决办法/" rel="next" title="git克隆失败和解决办法">
+                <i class="fa fa-chevron-left"></i> git克隆失败和解决办法
               </a>
             
           </div>
@@ -570,6 +570,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/test/" rel="prev" title="test">
+                test <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
