@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2Ftest%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[git克隆失败和解决办法]]></title>
     <url>%2Fgit%E5%85%8B%E9%9A%86%E5%A4%B1%E8%B4%A5%E5%92%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%2F</url>
     <content type="text"><![CDATA[git clone 失败，解决办法：–depth 1去github上面去clone一个项目，发现总是失败，网速太差？ 上网查了下原因，给我的git clone 项目地址后面加上--depth 1就好了 原因git clone 是克隆所有历史版本 而 –depth 1 是克隆最近一次的commit， 1 代表克隆深度]]></content>
