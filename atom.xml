@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-17T13:21:23.895Z</updated>
+  <updated>2019-01-19T09:16:59.430Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github上contributions统计错误</title>
+    <link href="https://qqqww.com/github%E4%B8%8Acontributions%E7%BB%9F%E8%AE%A1%E9%94%99%E8%AF%AF/"/>
+    <id>https://qqqww.com/github上contributions统计错误/</id>
+    <published>2019-01-19T08:32:08.000Z</published>
+    <updated>2019-01-19T09:16:59.430Z</updated>
+    
+    <summary type="html">
+    
+      github上contributions统计错误
+    
+    </summary>
+    
+    
+      <category term="contributions统计" scheme="https://qqqww.com/tags/contributions%E7%BB%9F%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>记录一次hexo生成静态文件报错</title>
@@ -39,7 +57,7 @@
     <link href="https://qqqww.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://qqqww.com/微信小程序学习笔记/</id>
     <published>2019-01-17T12:38:33.000Z</published>
-    <updated>2019-01-17T13:01:53.240Z</updated>
+    <updated>2019-01-17T13:34:43.440Z</updated>
     
     <summary type="html">
     
@@ -111,7 +129,7 @@
     <link href="https://qqqww.com/ReactNative%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/"/>
     <id>https://qqqww.com/ReactNative豆瓣电影项目文档/</id>
     <published>2019-01-10T19:27:04.000Z</published>
-    <updated>2019-01-10T19:44:42.336Z</updated>
+    <updated>2019-01-18T12:22:58.881Z</updated>
     
     <summary type="html">
     
@@ -327,7 +345,7 @@
     <link href="https://qqqww.com/%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0github/"/>
     <id>https://qqqww.com/如何将本地文件上传到github/</id>
     <published>2018-12-26T13:36:38.000Z</published>
-    <updated>2019-01-17T11:39:07.542Z</updated>
+    <updated>2019-01-18T10:15:56.555Z</updated>
     
     <summary type="html">
     
@@ -355,24 +373,6 @@
     
     
       <category term="hexo seo优化" scheme="https://qqqww.com/tags/hexo-seo%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo搭建个人博客之Git安装</title>
-    <link href="https://qqqww.com/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8BGit%E5%AE%89%E8%A3%85/"/>
-    <id>https://qqqww.com/hexo搭建个人博客之Git安装/</id>
-    <published>2018-12-21T15:53:33.000Z</published>
-    <updated>2019-01-06T07:00:08.686Z</updated>
-    
-    <summary type="html">
-    
-      windows 环境下 Git 安装
-    
-    </summary>
-    
-    
-      <category term="Git安装" scheme="https://qqqww.com/tags/Git%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   

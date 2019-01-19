@@ -101,7 +101,7 @@
 <meta property="og:description" content="ReactNative豆瓣电影，react-native，android环境搭建，android打包发布等技能">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://qqqww.com/ReactNative豆瓣电影项目文档/发布安卓项目Release版本.png">
-<meta property="og:updated_time" content="2019-01-10T19:44:42.336Z">
+<meta property="og:updated_time" content="2019-01-18T12:22:58.881Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ReactNative豆瓣电影项目文档">
 <meta name="twitter:description" content="ReactNative豆瓣电影，react-native，android环境搭建，android打包发布等技能">
@@ -617,14 +617,17 @@
 <li>编辑 <code>android</code> -&gt; <code>gradle.properties</code>文件，在最后，添加如下代码：</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MYAPP_RELEASE_STORE_FILE=your keystore filename</span><br><span class="line">MYAPP_RELEASE_KEY_ALIAS=your keystore alias</span><br><span class="line">MYAPP_RELEASE_STORE_PASSWORD=*****</span><br><span class="line">MYAPP_RELEASE_KEY_PASSWORD=*****</span><br></pre></td></tr></table></figure>
-<ol>
+<ol start="6">
 <li>编辑 android/app/build.gradle文件添加如下代码：</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">android &#123;</span><br><span class="line">    ...</span><br><span class="line">    defaultConfig &#123; ... &#125;</span><br><span class="line">    + signingConfigs &#123;</span><br><span class="line">    +    release &#123;</span><br><span class="line">    +        storeFile file(MYAPP_RELEASE_STORE_FILE)</span><br><span class="line">    +        storePassword MYAPP_RELEASE_STORE_PASSWORD</span><br><span class="line">    +        keyAlias MYAPP_RELEASE_KEY_ALIAS</span><br><span class="line">    +        keyPassword MYAPP_RELEASE_KEY_PASSWORD</span><br><span class="line">    +    &#125;</span><br><span class="line">    +&#125;</span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            ...</span><br><span class="line">    +        signingConfig signingConfigs.release</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-<ol>
-<li>进入项目根目录下的<code>android</code>文件夹，在当前目录打开终端，然后输入<code>./gradlew assembleRelease</code>开始发布APK的Release版；</li>
-<li>第七步出了点小问题，报错信息是<strong>Execution failed for task ‘:app:validateSigningRelease’.</strong>后来看看原来是我的第五步里的<code>MYAPP_RELEASE_KEY_ALIAS=your keystore alias</code>这一块的签名写错了，忘了加后缀名，改了之后，又给了我一个响应超时的惊喜，不过我就重新运行了第二次就打包构建成功了</li>
-<li>当发行完毕后，进入自己项目的<code>android\app\build\outputs\apk</code>目录中，找到<code>app-release.apk</code>，这就是我们发布完毕之后的完整安装包；安装到自己和朋友的手机上，测试成功，就可以上传到各大应用商店供用户使用啦。</li>
+<ol start="7">
+<li><p>进入项目根目录下的<code>android</code>文件夹，在当前目录打开终端，然后输入<code>./gradlew assembleRelease</code>开始发布APK的Release版；</p>
+</li>
+<li><p>第七步出了点小问题，报错信息是<strong>Execution failed for task ‘:app:validateSigningRelease’.</strong>后来看看原来是我的第五步里的<code>MYAPP_RELEASE_KEY_ALIAS=your keystore alias</code>这一块的签名写错了，忘了加后缀名，改了之后，又给了我一个响应超时的惊喜，不过我就重新运行了第二次就打包构建成功了</p>
+</li>
+<li><p>当发行完毕后，进入自己项目的<code>android\app\build\outputs\apk</code>目录中，找到<code>app-release.apk</code>，这就是我们发布完毕之后的完整安装包；安装到自己和朋友的手机上，测试成功，就可以上传到各大应用商店供用户使用啦。</p>
+</li>
 </ol>
 <blockquote>
 <p>注意：请记得妥善地保管好你的密钥库文件，不要上传到版本库或者其它的地方。</p>
@@ -657,7 +660,7 @@
   <p><span>本文标题:</span>ReactNative豆瓣电影项目文档</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月11日 - 03:27:04</p>
-  <p><span>最后更新:</span>2019年01月11日 - 03:44:42</p>
+  <p><span>最后更新:</span>2019年01月18日 - 20:22:58</p>
   <p><span>原始链接:</span><a href="/ReactNative豆瓣电影项目文档/" title="ReactNative豆瓣电影项目文档">https://qqqww.com/ReactNative豆瓣电影项目文档/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/ReactNative豆瓣电影项目文档/" aria-label="复制成功！"></i></span>
   </p>
@@ -836,7 +839,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -849,7 +852,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -975,7 +978,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">41.1k</span>
+    <span title="Site words total count">42.5k</span>
   
 </div>
 
@@ -1005,7 +1008,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共41.1k字</span>
+  <span class="post-count">博客全站共42.5k字</span>
 </div>
 
         
