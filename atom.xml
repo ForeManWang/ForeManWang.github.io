@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-19T09:16:59.430Z</updated>
+  <updated>2019-01-20T13:06:52.694Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript中typeof与instanceof的区别</title>
+    <link href="https://qqqww.com/javascript%E4%B8%ADtypeof%E4%B8%8Einstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>https://qqqww.com/javascript中typeof与instanceof的区别/</id>
+    <published>2019-01-20T12:59:58.000Z</published>
+    <updated>2019-01-20T13:06:52.694Z</updated>
+    
+    <summary type="html">
+    
+      javascript中typeof与instanceof的区别
+    
+    </summary>
+    
+    
+      <category term="typeof VS instanceof" scheme="https://qqqww.com/tags/typeof-VS-instanceof/"/>
+    
+  </entry>
   
   <entry>
     <title>github上contributions统计错误</title>
@@ -355,24 +373,6 @@
     
     
       <category term="本地文件上传到github" scheme="https://qqqww.com/tags/%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo搭建个人博客之seo优化</title>
-    <link href="https://qqqww.com/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8Bseo%E4%BC%98%E5%8C%96/"/>
-    <id>https://qqqww.com/hexo搭建个人博客之seo优化/</id>
-    <published>2018-12-22T18:22:03.000Z</published>
-    <updated>2019-01-06T07:07:47.913Z</updated>
-    
-    <summary type="html">
-    
-      hexo搭建个人博客之seo优化
-    
-    </summary>
-    
-    
-      <category term="hexo seo优化" scheme="https://qqqww.com/tags/hexo-seo%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
