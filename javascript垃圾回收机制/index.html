@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="javascript typeof,javascript instanceof,typeof VS instanceof">
+  <meta name="keywords" content="javascript垃圾回收机制,js垃圾回收机制与内存管理,内存泄漏">
 
 
 
@@ -92,18 +92,20 @@
 
 
 
-<meta name="description" content="javascript中typeof与instanceof的区别">
-<meta name="keywords" content="javascript typeof,javascript instanceof,typeof VS instanceof">
+<meta name="description" content="javascript垃圾回收机制与内存管理">
+<meta name="keywords" content="javascript垃圾回收机制,js垃圾回收机制与内存管理,内存泄漏">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javascript中typeof与instanceof的区别">
-<meta property="og:url" content="https://qqqww.com/javascript中typeof与instanceof的区别/index.html">
+<meta property="og:title" content="javascript垃圾回收机制与内存管理">
+<meta property="og:url" content="https://qqqww.com/javascript垃圾回收机制/index.html">
 <meta property="og:site_name" content="工头的博客">
-<meta property="og:description" content="javascript中typeof与instanceof的区别">
+<meta property="og:description" content="javascript垃圾回收机制与内存管理">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-20T13:06:52.694Z">
+<meta property="og:image" content="https://qqqww.com/javascript垃圾回收机制/内存泄漏的原因.png">
+<meta property="og:updated_time" content="2019-01-20T15:11:11.429Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javascript中typeof与instanceof的区别">
-<meta name="twitter:description" content="javascript中typeof与instanceof的区别">
+<meta name="twitter:title" content="javascript垃圾回收机制与内存管理">
+<meta name="twitter:description" content="javascript垃圾回收机制与内存管理">
+<meta name="twitter:image" content="https://qqqww.com/javascript垃圾回收机制/内存泄漏的原因.png">
 
 
 
@@ -133,7 +135,7 @@
 
 
 
-  <link rel="canonical" href="https://qqqww.com/javascript中typeof与instanceof的区别/">
+  <link rel="canonical" href="https://qqqww.com/javascript垃圾回收机制/">
 
 
 
@@ -157,7 +159,7 @@
 
 
 
-  <title>javascript中typeof与instanceof的区别 | 工头的博客</title>
+  <title>javascript垃圾回收机制与内存管理 | 工头的博客</title>
   
 
 
@@ -338,7 +340,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://qqqww.com/javascript中typeof与instanceof的区别/">
+    <link itemprop="mainEntityOfPage" href="https://qqqww.com/javascript垃圾回收机制/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王工头">
@@ -355,7 +357,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">javascript中typeof与instanceof的区别</h2>
+          <h2 class="post-title" itemprop="name headline">javascript垃圾回收机制与内存管理</h2>
         
 
         <div class="post-meta">
@@ -368,7 +370,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-20T20:59:58+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-20T15:20:48+08:00">
                 2019-01-20
               </time>
             
@@ -400,7 +402,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  263 字
+                  2.5k 字
                 </span>
               
 
@@ -416,7 +418,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  8 分钟
                 </span>
               
             </div>
@@ -424,7 +426,7 @@
 
           
               <div class="post-description">
-                  javascript中typeof与instanceof的区别 
+                  javascript垃圾回收机制与内存管理 
               </div>
           
 
@@ -441,19 +443,140 @@
       
 
       
-        <p>#<strong>typeof  VS  instanceof</strong></p>
-<p><strong>相同点：</strong>JavaScript 中 typeof 和 instanceof 常用来判断一个变量是否为空，或者是什么类型的</p>
-<p><strong>区别：</strong>前者判断数据类型较多，后者判断一个变量是否属于某个对象实例</p>
-<p><strong>typeof的定义和用法：</strong>返回值是一个字符串，用来说明变量的数据类型。</p>
-<p><strong>细节：</strong></p>
-<p>(1)、typeof 一般只能返回如下几个结果：number,boolean,string,function,object,undefined。</p>
-<p>(2)、typeof 来获取一个变量是否存在，如 if(typeof a!=”undefined”){alert(“ok”)}，而不要去使用 if(a) 因为如果 a 不存在（未声明）则会出错。</p>
-<p>(3)、对于 Array,Null 等特殊对象使用 typeof 一律返回 object，这正是 typeof 的局限性。</p>
-<p><strong>Instanceof定义和用法：</strong>instanceof 用于判断一个变量是否属于某个对象的实例。</p>
-<p><strong>实例演示：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = new Array(); </span><br><span class="line">alert(a instanceof Array);  // true</span><br><span class="line">alert(a instanceof Object)  // true</span><br></pre></td></tr></table></figure>
-<p>如上，会返回 true，同时 alert(a instanceof Object) 也会返回 true;这是因为<strong> Array 是 object 的子类</strong>。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function test()&#123;&#125;;</span><br><span class="line">var a = new test();</span><br><span class="line">alert(a instanceof test)   // true</span><br></pre></td></tr></table></figure>
+        <h1 id="垃圾回收机制与内存管理"><a href="#垃圾回收机制与内存管理" class="headerlink" title="垃圾回收机制与内存管理"></a>垃圾回收机制与内存管理</h1><blockquote>
+<p>Js具有自动垃圾回收机制。垃圾收集器会按照固定的时间间隔周期性的执行。</p>
+</blockquote>
+<h2 id="什么是垃圾回收机制"><a href="#什么是垃圾回收机制" class="headerlink" title="什么是垃圾回收机制"></a>什么是垃圾回收机制</h2><blockquote>
+<p><strong>垃圾回收机制（GC:Garbage Collection）：</strong></p>
+<p>JavaScript具有自动垃圾收集机制，也就是说，执行环境会负责管理代码在执行环境过程中使用的内存。<br>垃圾收集器会按照固定的时间间隔（或代码执行中预定的收集时间），周期性的执行这一操作。</p>
+</blockquote>
+<h3 id="垃圾回收机制的作用"><a href="#垃圾回收机制的作用" class="headerlink" title="垃圾回收机制的作用"></a>垃圾回收机制的作用</h3><p><strong>内存释放：</strong></p>
+<ol>
+<li>将某个不再被使用的变量所占用的内存释放掉，是为了不让内存总是被消耗而被没有释放，导致整个系统无法支持更为庞大的运算</li>
+<li>垃圾回收机制不是总是那么高效，其不是总在运行，因此有时需要我们人为的释放被占用的内存，从而使程序能够支持更为庞大的运算，能够接受更为巨量的数据运算。　</li>
+</ol>
+<h3 id="垃圾回收机制的原理"><a href="#垃圾回收机制的原理" class="headerlink" title="垃圾回收机制的原理"></a>垃圾回收机制的原理</h3><p><strong>垃圾收集机制的原理：</strong></p>
+<blockquote>
+<p>找出那些不再继续使用的变量，然后释放其占用的内存，但是这个过程不是实时的，因为其开销比较大，所以垃圾回收器会按照固定的时间间隔周期性的执行</p>
+</blockquote>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn1</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> obj = &#123;</span><br><span class="line">        name: <span class="string">'zhangsan'</span>,</span><br><span class="line">        age: <span class="number">10</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn2</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> obj = &#123;</span><br><span class="line">        name: <span class="string">'lisi'</span>,</span><br><span class="line">        age: <span class="number">11</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> obj</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> a = fn1() </span><br><span class="line"><span class="keyword">var</span> b = fn2()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>fn1中定义的obj为局部变量，而当调用结束后，出了fn1的环境，那么该块内存会被js引擎中的垃圾回收器自动释放；在fn2被调用的过程中，返回的对象被全局变量b所指向，所以该块内存并不会被释放</p>
+</blockquote>
+<p>##垃圾回收机制的标记策略</p>
+<blockquote>
+<p>垃圾收集器必须跟踪哪个变量有用哪个变量没用，对于<strong>不再有用的变量打上标记</strong>，以备将来收回其占用的内存。用于标识无用变量的策略可能会因实现而异，但具体到浏览器中的实现，则通常有两个策略：<strong>标记清除、引用计数。</strong></p>
+</blockquote>
+<p>###标记清除</p>
+<p>  　　1. 当变量进入环境时，将其标记为“进入环境”，当变量离开环境时，将其标记为“离开环境”（常用）<br>  　　2. 某一个时刻，垃圾回收器会过滤掉环境中的变量，以及被环境变量引用的变量，剩下的就是被视为准备回收的变量<br>  　　3. 到目前为止，IE、Firefox、Opera、Chrome、Safari的js实现使用的都是标记清除的垃圾回收策略或类似的策略，只不过垃圾收集的时间间隔互不相同</p>
+<p>###引用计数</p>
+<blockquote>
+<p>跟踪记录每个值被引用的次数</p>
+</blockquote>
+<ol>
+<li>当声明一个变量a并将一个<strong>引用类型的值</strong>赋给该变量时，这个值引用次数就是1</li>
+<li>如果同一个<strong>引用类型的值</strong>又被赋给另一个变量b，则该值的引用次数加1，相反，如果包含这个值引用的变量a又取得了另一个值（也就是前面的引用被覆盖，不再引用前面那个值），则这个值的引用次数减1。</li>
+<li>当这个值的引用次数变成0时，则说明没有办法再访问这个值，因而就可以将其占用的内存空间回收回来</li>
+<li>少见，几乎不用，除了早版IE的元素JS，因为会出现循环引用的问题</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">`var`</span> <span class="string">`a = obj1;`</span><span class="string">`var`</span> <span class="string">`b = boj1;`</span><span class="string">`//这是obj1的引用次数应该为2`</span><span class="string">`var`</span> <span class="string">`a = obj2;`</span><span class="string">`//这是obj1的引用次数为1，obj2的引用次数也为1`</span></span><br></pre></td></tr></table></figure>
+<h2 id="垃圾回收机制与内存管理-1"><a href="#垃圾回收机制与内存管理-1" class="headerlink" title="垃圾回收机制与内存管理"></a>垃圾回收机制与内存管理</h2><blockquote>
+<p>垃圾回收器是周期运行的，而且如果为变量分配的内存数量很可观，那么回收工作量也是相当大的。触发方式的改善很重要</p>
+</blockquote>
+<h3 id="堆和栈"><a href="#堆和栈" class="headerlink" title="堆和栈"></a>堆和栈</h3><ol>
+<li>堆和栈空间分配区别：<ol>
+<li>栈（操作系统）：由操作系统自动分配释放 ，存放函数的参数值，局部变量的值等。其操作方式类似于数据结构中的栈</li>
+<li>堆（操作系统）： 一般由程序员分配释放，若程序员不释放，程序结束时可能由OS回收，分配方式倒是类似于链表</li>
+</ol>
+</li>
+<li>堆和栈空间存放数据类型的区别：<ol>
+<li>栈：基本类型是：Undefined/Null/Boolean/Number/String，基本类型的值存在内存中，被保存在栈内存中。从一个变量向另一个变量复制基本类型的值，会创建这个值的一个副</li>
+<li>堆：引用类型：object，Array，function等，引用类型的值是对象类型，保存在堆内存中<ol>
+<li>包含引用类型值的变量实际上包含的并不是对象本身，而是一个指向该对象的指针。从一个变量向另一个变量复制引用类型的值，复制的其实是指针，因此两个变量最终都指向同一个对象</li>
+<li>js操作对象就是在操作对象的引用，而不是在操作实际的对象</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>堆和栈缓存方式区别：<ol>
+<li>栈使用的是一级缓存， 他们通常都是被调用时处于存储空间中，调用完毕立即释放</li>
+<li>堆是存放在二级缓存中，生命周期由虚拟机的垃圾回收算法来决定（并不是一旦成为孤儿对象就能被回收）。所以调用这些对象的速度要相对来得低一些</li>
+</ol>
+</li>
+<li>堆和栈数据结构区别：<ol>
+<li>堆（数据结构）：堆可以被看成是一棵树，如：堆排序</li>
+<li>栈（数据结构）：一种先进后出的数据结构</li>
+</ol>
+</li>
+</ol>
+<h3 id="管理内存"><a href="#管理内存" class="headerlink" title="管理内存"></a>管理内存</h3><blockquote>
+<p>虽然说使用具备垃圾回收机制的语言写程序，开发人员一般不必操心内存管理的问题。但是JavaScript在进行内存管理及垃圾收集时面临的问题还是有点与众不同的，其中最主要的问题之一，就是出于对安全方面考虑，防止运行JavaScript的网页耗尽全部系统内存而导致系统崩溃，所以分配给Web浏览器的内存数量通常比分配给桌面应用的程序少</p>
+</blockquote>
+<h3 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h3><blockquote>
+<p>虽然有垃圾回收机制但是我们编写代码操作不当还是会造成内存泄漏</p>
+</blockquote>
+<p><strong>那么什么情况会引起内存泄漏呢？</strong></p>
+<ol>
+<li><p><strong>意外的全局变量引起的内存泄漏</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span> (<span class="params"></span>) </span>&#123;  </span><br><span class="line">    fn1 = <span class="string">'xxxxxx'</span>;<span class="comment">//fn 成为一个全局变量，不会被回收</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>原因：全局变量不会被回收</li>
+<li>解决：使用严格模式(因为严格模式定义的变量都有其单独的作用域)</li>
+</ol>
+</li>
+<li><p><strong>闭包引起的内存泄漏</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fn = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> fn1 = <span class="string">'xxxxxx'</span>; <span class="comment">// 被闭包所引用，不会被回收</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(fn1);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)()</span><br></pre></td></tr></table></figure>
+<ol>
+<li>原因：闭包可以维持函数内部局部变量，使其得不到释放</li>
+<li>解决：将事件处理函数定义在外部，解除闭包，或者在定义事件处理函数的外部函数中，删除对DOM的引用</li>
+</ol>
+</li>
+<li><p><strong>DOM清空或删除时，事件未清除导致的内存泄漏</strong></p>
+<p><strong>案例一：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container"</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#container'</span>).bind(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'click'</span>);</span><br><span class="line">&#125;).remove();</span><br></pre></td></tr></table></figure>
+<p><strong>案例二：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"myDiv"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"Click me"</span> <span class="attr">id</span>=<span class="string">"myBtn"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">"myBtn"</span>);</span><br><span class="line">btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"myDiv"</span>).innerHTML = <span class="string">"Processing..."</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>原因：虽然DOM被清空或者删除了，但是对象中还存在对DOM的引用</p>
+</li>
+<li><p>解决一：zepto 和 原生 js 下，#container dom 元素，还在内存里 jquery 的 empty 和 remove 会帮助开发者避免这个问题</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#container'</span>).bind(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'click'</span>);</span><br><span class="line">&#125;).off(<span class="string">'click'</span>).remove();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解决二：手动删除</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">"myBtn"</span>);</span><br><span class="line">btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	btn.onclick = <span class="literal">null</span>;</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">"myDiv"</span>).innerHTML = <span class="string">"Processing..."</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p><strong>子元素存在引用引起的内存泄漏</strong></p>
+<p><img src="/javascript垃圾回收机制/内存泄漏的原因.png" alt="内存泄漏的原因"></p>
+<ol>
+<li>原因：上图<ol>
+<li>黄色是指直接被 js变量所引用，在内存里</li>
+<li>红色是指间接被 js变量所引用，如上图，refB 被 refA 间接引用，导致即使 refB 变量被清空，也是不会被回收的</li>
+<li>子元素 refB 由于 parentNode 的间接引用，只要它不被删除，它所有的父元素（图中红色部分）都不会被删除</li>
+</ol>
+</li>
+<li>解决：手动删除</li>
+</ol>
+</li>
+<li><p><strong>被遗忘的定时器或者回调引起的内存泄漏</strong></p>
+<ol>
+<li>原因：定时器中有dom的引用，即使dom删除了，但是定时器还在，所以内存中还是有这个dom</li>
+<li>解决：手动删除定时器</li>
+</ol>
+</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><blockquote>
+<ol>
+<li>占用最少的内存可以让页面获得更好的性能，而优化内存占用最佳方式，就是执行中的代码只保留必要的数据（占用必要的内存）。</li>
+<li>一旦数据不再有用，最好通过将其值设置为null来释放其引用——这个做法叫做解除引用。这一做法适用于大多数全局变量和全局对象的属性。局部变量会在它们离开执行环境时自动解除引用。</li>
+<li>解除一个值的引用并不意味着自动回收该值所占用的内存。解除引用的真正作用是让值脱离执行环境，以便垃圾回收器下次运行时将其回收</li>
+</ol>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getPerson</span> (<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> privatePerson = <span class="keyword">new</span> <span class="built_in">Object</span>()</span><br><span class="line">    privatePerson.name = name</span><br><span class="line">    <span class="keyword">return</span> privatePerson</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> globalPerson = getPerson(<span class="string">'zhangsan'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 此时调用了函数getPerson，使得返回的对象privatePerson会被全局变量globalPerson所指向，所以该块内存并不会被释放，可以手动`globalPerson = null`来释放内存</span></span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -472,12 +595,12 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>javascript中typeof与instanceof的区别</p>
+  <p><span>本文标题:</span>javascript垃圾回收机制与内存管理</p>
   <p><span>文章作者:</span>王工头</p>
-  <p><span>发布时间:</span>2019年01月20日 - 20:59:58</p>
-  <p><span>最后更新:</span>2019年01月20日 - 21:06:52</p>
-  <p><span>原始链接:</span><a href="/javascript中typeof与instanceof的区别/" title="javascript中typeof与instanceof的区别">https://qqqww.com/javascript中typeof与instanceof的区别/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript中typeof与instanceof的区别/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年01月20日 - 15:20:48</p>
+  <p><span>最后更新:</span>2019年01月20日 - 23:11:11</p>
+  <p><span>原始链接:</span><a href="/javascript垃圾回收机制/" title="javascript垃圾回收机制与内存管理">https://qqqww.com/javascript垃圾回收机制/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript垃圾回收机制/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -519,7 +642,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/typeof-VS-instanceof/" rel="tag"><i class="fa fa-tag"></i> typeof VS instanceof</a>
+            <a href="/tags/垃圾回收机制/" rel="tag"><i class="fa fa-tag"></i> 垃圾回收机制</a>
           
         </div>
       
@@ -532,8 +655,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/javascript垃圾回收机制/" rel="next" title="javascript垃圾回收机制与内存管理">
-                <i class="fa fa-chevron-left"></i> javascript垃圾回收机制与内存管理
+              <a href="/github上contributions统计错误/" rel="next" title="github上contributions统计错误">
+                <i class="fa fa-chevron-left"></i> github上contributions统计错误
               </a>
             
           </div>
@@ -541,6 +664,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/javascript中typeof与instanceof的区别/" rel="prev" title="javascript中typeof与instanceof的区别">
+                javascript中typeof与instanceof的区别 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -623,8 +750,17 @@ var jiathis_config={
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -726,6 +862,22 @@ var jiathis_config={
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#垃圾回收机制与内存管理"><span class="nav-number">1.</span> <span class="nav-text">垃圾回收机制与内存管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是垃圾回收机制"><span class="nav-number">1.1.</span> <span class="nav-text">什么是垃圾回收机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#垃圾回收机制的作用"><span class="nav-number">1.1.1.</span> <span class="nav-text">垃圾回收机制的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#垃圾回收机制的原理"><span class="nav-number">1.1.2.</span> <span class="nav-text">垃圾回收机制的原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例"><span class="nav-number">1.2.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾回收机制与内存管理-1"><span class="nav-number">1.3.</span> <span class="nav-text">垃圾回收机制与内存管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#堆和栈"><span class="nav-number">1.3.1.</span> <span class="nav-text">堆和栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#管理内存"><span class="nav-number">1.3.2.</span> <span class="nav-text">管理内存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内存泄漏"><span class="nav-number">1.3.3.</span> <span class="nav-text">内存泄漏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">1.3.4.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
       <div id="music163player">
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=490106148&auto=1&height=66"></iframe> 
