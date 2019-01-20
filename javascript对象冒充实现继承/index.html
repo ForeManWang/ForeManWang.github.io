@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="javascript,js,全局变量与形参的赋值">
+  <meta name="keywords" content="对象冒充,javascript基本特征,javascript继承方法,javascript对象冒充">
 
 
 
@@ -92,21 +92,24 @@
 
 
 
-<meta name="description" content="javascript 中全局变量与形参的赋值">
-<meta name="keywords" content="javascript,js,全局变量与形参的赋值">
+<meta name="description" content="javascript冒充对象实现继承">
+<meta name="keywords" content="对象冒充,javascript基本特征,javascript继承方法,javascript对象冒充">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javascript 中全局变量与形参的赋值">
-<meta property="og:url" content="https://qqqww.com/javascript-中全局变量与形参的赋值/index.html">
+<meta property="og:title" content="javascript对象冒充实现继承">
+<meta property="og:url" content="https://qqqww.com/javascript对象冒充实现继承/index.html">
 <meta property="og:site_name" content="工头的博客">
-<meta property="og:description" content="javascript 中全局变量与形参的赋值">
+<meta property="og:description" content="javascript冒充对象实现继承">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/全局变量与形参的赋值.png">
-<meta property="og:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/栈和堆.png">
-<meta property="og:updated_time" content="2019-01-06T07:21:13.658Z">
+<meta property="og:image" content="https://qqqww.com/javascript对象冒充实现继承/对象冒充.png">
+<meta property="og:image" content="https://qqqww.com/javascript对象冒充实现继承/call.png">
+<meta property="og:image" content="https://qqqww.com/javascript对象冒充实现继承/call_undefine.png">
+<meta property="og:image" content="https://qqqww.com/javascript对象冒充实现继承/call_result.png">
+<meta property="og:image" content="https://qqqww.com/javascript对象冒充实现继承/apply_result.png">
+<meta property="og:updated_time" content="2019-01-20T12:20:38.327Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javascript 中全局变量与形参的赋值">
-<meta name="twitter:description" content="javascript 中全局变量与形参的赋值">
-<meta name="twitter:image" content="https://qqqww.com/javascript-中全局变量与形参的赋值/全局变量与形参的赋值.png">
+<meta name="twitter:title" content="javascript对象冒充实现继承">
+<meta name="twitter:description" content="javascript冒充对象实现继承">
+<meta name="twitter:image" content="https://qqqww.com/javascript对象冒充实现继承/对象冒充.png">
 
 
 
@@ -136,7 +139,7 @@
 
 
 
-  <link rel="canonical" href="https://qqqww.com/javascript-中全局变量与形参的赋值/">
+  <link rel="canonical" href="https://qqqww.com/javascript对象冒充实现继承/">
 
 
 
@@ -160,7 +163,7 @@
 
 
 
-  <title>javascript 中全局变量与形参的赋值 | 工头的博客</title>
+  <title>javascript对象冒充实现继承 | 工头的博客</title>
   
 
 
@@ -341,7 +344,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://qqqww.com/javascript-中全局变量与形参的赋值/">
+    <link itemprop="mainEntityOfPage" href="https://qqqww.com/javascript对象冒充实现继承/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王工头">
@@ -358,7 +361,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">javascript 中全局变量与形参的赋值</h2>
+          <h2 class="post-title" itemprop="name headline">javascript对象冒充实现继承</h2>
         
 
         <div class="post-meta">
@@ -371,8 +374,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-27T21:48:42+08:00">
-                2018-12-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-20T17:33:04+08:00">
+                2019-01-20
               </time>
             
 
@@ -403,7 +406,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  263 字
+                  1.2k 字
                 </span>
               
 
@@ -419,7 +422,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  5 分钟
                 </span>
               
             </div>
@@ -427,7 +430,7 @@
 
           
               <div class="post-description">
-                  javascript 中全局变量与形参的赋值 
+                  javascript冒充对象实现继承 
               </div>
           
 
@@ -444,19 +447,99 @@
       
 
       
-        <h1 id="javascript-中全局变量与形参的赋值"><a href="#javascript-中全局变量与形参的赋值" class="headerlink" title="javascript 中全局变量与形参的赋值"></a>javascript 中全局变量与形参的赋值</h1><h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p><strong>定义数组</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr1,arr2,arr3;</span><br><span class="line"><span class="keyword">var</span> arr4 = [</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'zhangsan'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'lisi'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'wangwu'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'zhaoliu'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'xiaoming'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-<p><strong>创建一个change函数</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">change</span>(<span class="params">params</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i&lt;params.length;i++)&#123;</span><br><span class="line">        params[i].name = params[i].name +<span class="string">'miaomiaomiao'</span></span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> params </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>将arr4赋值给arr1、arr2、arr3并打印，观察打印结果</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">arr1 = arr4</span><br><span class="line">arr2 = arr4</span><br><span class="line">arr3 = arr4</span><br><span class="line"><span class="built_in">console</span>.log(change(arr1)) <span class="comment">// 对任意一个数组执行change函数</span></span><br><span class="line"><span class="built_in">console</span>.log(arr4)</span><br><span class="line"><span class="built_in">console</span>.log(arr1)</span><br><span class="line"><span class="built_in">console</span>.log(arr2)</span><br><span class="line"><span class="built_in">console</span>.log(arr3)</span><br></pre></td></tr></table></figure>
-<p><strong>以下是打印结果</strong></p>
-<p><img src="/javascript-中全局变量与形参的赋值/全局变量与形参的赋值.png" alt="全局变量与形参的赋值"></p>
-<p>可以发现，当其中任何一个数组改变时，其他的数组的值也会跟着改变</p>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>在计算机的内存中，系统对变量的声明在<code>栈</code>中，而值是在<code>堆</code>中</p>
-<p>画图理解</p>
-<p><img src="/javascript-中全局变量与形参的赋值/栈和堆.png" alt="栈和堆"></p>
-<p>arr1 = arr4; arr2 = arr4; arr3 = arr4 的赋值只是将arr4的值的地址指向了arr1，arr2，arr3；内存中并没有为其创建内容空间，这样就导致直接或间接的修改变量的值，那么原始值都将被修改。</p>
+        <h1 id="javascript中的继承"><a href="#javascript中的继承" class="headerlink" title="javascript中的继承"></a>javascript中的继承</h1><p><strong>面向对象的基本特征有：封闭、继承、多态</strong></p>
+<p><strong>在JavaScript中实现继承的方法：</strong></p>
+<ol>
+<li>原型链（prototype chaining）</li>
+<li>call()、apply()</li>
+<li>混合方式(prototype和call()/apply()结合)</li>
+<li>对象冒充</li>
+</ol>
+<p>##javascript对象冒充实现继承</p>
+<p>本质上就是改变<code>this</code>指向</p>
+<h3 id="对象冒充"><a href="#对象冒充" class="headerlink" title="对象冒充"></a>对象冒充</h3><p><strong>原理:</strong></p>
+<blockquote>
+<p>构造函数使用this关键字给所有属性和方法赋值.因为构造函数只是一个函数,所以可使ClassA的构造方法称为ClassB的方法,然后调用它.</p>
+<p>ClassB就会收到ClassA的构造方法中定义的属性和方法.</p>
+</blockquote>
+<p><strong>例子:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ClassA</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name=name;</span><br><span class="line">    <span class="keyword">this</span>.getName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ClassB</span>(<span class="params">name,password</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.ClassA=ClassA;</span><br><span class="line">    <span class="keyword">this</span>.ClassA(name);</span><br><span class="line">    <span class="keyword">delete</span> <span class="keyword">this</span>.ClassA;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">this</span>.password=password;</span><br><span class="line">    <span class="keyword">this</span>.getPassword=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.password;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b =<span class="keyword">new</span> ClassB(<span class="string">'wwww'</span>,<span class="string">'1123'</span>);</span><br><span class="line"><span class="built_in">document</span>.write(b.getName());</span><br></pre></td></tr></table></figure>
+<p>经过调试,我们可以看到:  变量b中已经包含了ClassA中定义的方法.</p>
+<p><img src="/javascript对象冒充实现继承/对象冒充.png" alt="对象冒充"></p>
+<p><strong>代码理解:</strong></p>
+<p>在ClassB中,<code>this.ClassA(name)</code>等价于以下代码:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.name=name;</span><br><span class="line">     <span class="keyword">this</span>.getName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">         <span class="keyword">return</span> <span class="keyword">this</span>.name;</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+<p>所以将ClassA函数中的代码复制过来,即:ClassB中的代码如下:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ClassB</span>(<span class="params">name,password</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.ClassA=ClassA;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">this</span>.name=name;</span><br><span class="line">    <span class="keyword">this</span>.getName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.name;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">delete</span> <span class="keyword">this</span>.ClassA;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">this</span>.password=password;</span><br><span class="line">    <span class="keyword">this</span>.getPassword=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.password;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>然后通过delete this.ClassA之后,ClassB中的实际代码如下:</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ClassB</span>(<span class="params">name,password</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name=name;</span><br><span class="line">    <span class="keyword">this</span>.getName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.name;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">this</span>.password=password;</span><br><span class="line">    <span class="keyword">this</span>.getPassword=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.password;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>从而实现了对象冒充.</p>
+</blockquote>
+<p><strong>注意:</strong></p>
+<blockquote>
+<p>对象冒充可以支持多重继承,也就是说一个类可以继承多个类.例子如下:</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ClassC</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.ClassX=ClassX;</span><br><span class="line">    <span class="keyword">this</span>.ClassX();</span><br><span class="line">    <span class="keyword">delete</span> <span class="keyword">this</span>.ClassX;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">this</span>.ClassY=ClassY;</span><br><span class="line">    <span class="keyword">this</span>.ClassY();</span><br><span class="line">    <span class="keyword">delete</span> <span class="keyword">this</span>.ClassY;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这样就ClassC就实现了继承自ClassX,ClassY.但此处存在一个弊端:</p>
+<p>若ClassX和ClassY中存在两个同名的变量或方法,则ClassY会覆盖ClassX中的变量或方法.</p>
+</blockquote>
+<p><strong>此外:</strong></p>
+<blockquote>
+<p><strong>我们还可以通过call()和apply()方法实现对象冒充.</strong></p>
+</blockquote>
+<h3 id="call方法"><a href="#call方法" class="headerlink" title="call方法:"></a>call方法:</h3><blockquote>
+<p><strong>它的第一个参数用做this的对象,其他参数都直接传递给函数自身</strong>.我们来看下面这个小例子:</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ShowColor</span>(<span class="params">param1,param2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.getColor=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="keyword">this</span>.color+<span class="string">"&lt;br/&gt;Two Params : "</span>+param1+<span class="string">" ; "</span>+param2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>;</span><br><span class="line">obj.color=<span class="string">'Red'</span>;</span><br><span class="line">ShowColor.call(obj,<span class="string">"pm1"</span>,<span class="string">'pm2'</span>);</span><br><span class="line"></span><br><span class="line">obj.getColor();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>运行此段代码后,我们发现页面上显示为:</p>
+</blockquote>
+<p><img src="/javascript对象冒充实现继承/call.png" alt="call"></p>
+<p><strong>解释:</strong></p>
+<blockquote>
+<p>ShowColor方法是在对象外定义的,调用call时,它将第一个参数,也就是将ClassA的this指向了obj,将后面的参数”pm1”传递给了param1,’pm2’传递给了param2.</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>;</span><br><span class="line">obj.color=<span class="string">'Red'</span>;</span><br><span class="line">ShowColor.call(obj,<span class="string">"pm1"</span>,<span class="string">'pm2'</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>也就实现了以下效果:</p>
+</blockquote>
+<blockquote>
+<p>我们将上面代码中的obj.color=’Red’给<strong>注释起来</strong>,再运行代码,结果如下:</p>
+</blockquote>
+<p><img src="/javascript对象冒充实现继承/call_undefine.png" alt="call_undefine"></p>
+<blockquote>
+<p>原因是obj并没有color属性,而obj.getColor()方法中需要this.color,即obj.color,所以会出现undefined的结果.</p>
+<p>我们再来看如何利用call来实现对象冒充,继续以刚才的ClassA,ClassB为例:</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ClassA</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name=name;</span><br><span class="line">    <span class="keyword">this</span>.getName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.name;</span><br><span class="line">    &#125;            </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ClassB</span>(<span class="params">name,password</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//this.ClassA=ClassA;</span></span><br><span class="line">    <span class="comment">//this.ClassA(name);</span></span><br><span class="line">    <span class="comment">//delete this.ClassA;</span></span><br><span class="line">    ClassA.call(<span class="keyword">this</span>,name);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">this</span>.password=password;</span><br><span class="line">    <span class="keyword">this</span>.getPassword=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.password;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> b = <span class="keyword">new</span> ClassB(<span class="string">'www'</span>,<span class="string">'111'</span>);</span><br><span class="line">b.getPassword();</span><br></pre></td></tr></table></figure>
+<p>调试效果:</p>
+<p><img src="/javascript对象冒充实现继承/call_result.png" alt="call_result"></p>
+<p>解释:</p>
+<blockquote>
+<p>此处的ClassA.call(this,name); 即将ClassA的this指向了ClassB的this.从而实现了对象冒充.</p>
+</blockquote>
+<h3 id="apply方法"><a href="#apply方法" class="headerlink" title="apply方法"></a>apply方法</h3><blockquote>
+<p><strong>apply方法有两个参数,用作this的对象和要传传递给函数的参数的数组.</strong></p>
+</blockquote>
+<p><strong>例子:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ShowColor</span>(<span class="params">param1,param2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.getColor=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="keyword">this</span>.color+<span class="string">"&lt;br/&gt;Two Params : "</span>+param1+<span class="string">" ; "</span>+param2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>;</span><br><span class="line">obj.color=<span class="string">'Red'</span>;</span><br><span class="line">ShowColor.apply(obj,<span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">"pm1"</span>,<span class="string">'pm2'</span>));</span><br><span class="line"></span><br><span class="line">obj.getColor();</span><br></pre></td></tr></table></figure>
+<p><strong>此方法可以被用于对象冒充:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ClassA</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name=name;</span><br><span class="line">    <span class="keyword">this</span>.getName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.name;</span><br><span class="line">    &#125;            </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ClassB</span>(<span class="params">name,password</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//this.ClassA=ClassA;</span></span><br><span class="line">    <span class="comment">//this.ClassA(name);</span></span><br><span class="line">    <span class="comment">//delete this.ClassA;</span></span><br><span class="line">    ClassA.apply(<span class="keyword">this</span>,<span class="keyword">new</span> <span class="built_in">Array</span>(name));</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">this</span>.password=password;</span><br><span class="line">    <span class="keyword">this</span>.getPassword=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.password;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b = <span class="keyword">new</span> ClassB(<span class="string">'www'</span>,<span class="string">'111'</span>);</span><br><span class="line">b.getPassword();</span><br></pre></td></tr></table></figure>
+<p><strong>调试效果:</strong></p>
+<p><img src="/javascript对象冒充实现继承/apply_result.png" alt="apply_result"></p>
+<h3 id="原型继承"><a href="#原型继承" class="headerlink" title="原型继承"></a>原型继承</h3><blockquote>
+<p>Javascript对象的创建和继承使用了一套特别的模式,称作原型式继承.</p>
+<p>原理是:对象的构造函数可以从其他对象中继承方法,它创建出一个原型对象后,所有其他的新对象都可以基于这个原型对象来构建.</p>
+<p>原型本身并不会从其他原型或者构造函数中继承属性,而属性都是从实际对象那里继承过来的.</p>
+</blockquote>
+<p><strong>例1:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name=name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Person.prototype.GetName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">User</span>(<span class="params">name,password</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.password = password;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">User.prototype = <span class="keyword">new</span> Person();</span><br><span class="line">User.prototype.GetPassword=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.password;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>解释:</strong></p>
+<p><code>User.prototype = new Person()</code>;这句话如何理解呢?User是对User对象构造函数的引用,new Person()使用person构造函数创建了一个Person对象,然后把Person对象的原型置为这个操作的结果.也就是说,当每次new User()时,得到的新User对象都会带有Person对象的所有方法</p>
 
       
     </div>
@@ -476,12 +559,12 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>javascript 中全局变量与形参的赋值</p>
+  <p><span>本文标题:</span>javascript对象冒充实现继承</p>
   <p><span>文章作者:</span>王工头</p>
-  <p><span>发布时间:</span>2018年12月27日 - 21:48:42</p>
-  <p><span>最后更新:</span>2019年01月06日 - 15:21:13</p>
-  <p><span>原始链接:</span><a href="/javascript-中全局变量与形参的赋值/" title="javascript 中全局变量与形参的赋值">https://qqqww.com/javascript-中全局变量与形参的赋值/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript-中全局变量与形参的赋值/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年01月20日 - 17:33:04</p>
+  <p><span>最后更新:</span>2019年01月20日 - 20:20:38</p>
+  <p><span>原始链接:</span><a href="/javascript对象冒充实现继承/" title="javascript对象冒充实现继承">https://qqqww.com/javascript对象冒充实现继承/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript对象冒充实现继承/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -523,7 +606,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/全局变量与形参的赋值/" rel="tag"><i class="fa fa-tag"></i> 全局变量与形参的赋值</a>
+            <a href="/tags/冒充对象/" rel="tag"><i class="fa fa-tag"></i> 冒充对象</a>
           
         </div>
       
@@ -536,8 +619,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/javascript-中局部变量和形参同名冲突问题/" rel="next" title="javascript 中局部变量和形参同名冲突问题">
-                <i class="fa fa-chevron-left"></i> javascript 中局部变量和形参同名冲突问题
+              <a href="/javascript垃圾回收机制/" rel="next" title="javascript垃圾回收机制与内存管理">
+                <i class="fa fa-chevron-left"></i> javascript垃圾回收机制与内存管理
               </a>
             
           </div>
@@ -546,8 +629,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/webpack基本属性配置/" rel="prev" title="webpack基本属性配置">
-                webpack基本属性配置 <i class="fa fa-chevron-right"></i>
+              <a href="/javascript中typeof与instanceof的区别/" rel="prev" title="javascript中typeof与instanceof的区别">
+                javascript中typeof与instanceof的区别 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -753,7 +836,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#javascript-中全局变量与形参的赋值"><span class="nav-number">1.</span> <span class="nav-text">javascript 中全局变量与形参的赋值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#现象"><span class="nav-number">1.1.</span> <span class="nav-text">现象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原因"><span class="nav-number">1.2.</span> <span class="nav-text">原因</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#javascript中的继承"><span class="nav-number">1.</span> <span class="nav-text">javascript中的继承</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对象冒充"><span class="nav-number">1.0.1.</span> <span class="nav-text">对象冒充</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#call方法"><span class="nav-number">1.0.2.</span> <span class="nav-text">call方法:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#apply方法"><span class="nav-number">1.0.3.</span> <span class="nav-text">apply方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原型继承"><span class="nav-number">1.0.4.</span> <span class="nav-text">原型继承</span></a></li></ol></li></ol></div>
             
 
           </div>
