@@ -105,7 +105,7 @@
 <meta property="og:image" content="https://qqqww.com/javascript对象冒充实现继承/call_undefine.png">
 <meta property="og:image" content="https://qqqww.com/javascript对象冒充实现继承/call_result.png">
 <meta property="og:image" content="https://qqqww.com/javascript对象冒充实现继承/apply_result.png">
-<meta property="og:updated_time" content="2019-01-20T12:20:38.327Z">
+<meta property="og:updated_time" content="2019-01-21T04:25:25.569Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript对象冒充实现继承">
 <meta name="twitter:description" content="javascript冒充对象实现继承">
@@ -491,7 +491,7 @@
 <blockquote>
 <p><strong>我们还可以通过call()和apply()方法实现对象冒充.</strong></p>
 </blockquote>
-<h3 id="call方法"><a href="#call方法" class="headerlink" title="call方法:"></a>call方法:</h3><blockquote>
+<h3 id="call方法"><a href="#call方法" class="headerlink" title="call方法"></a>call方法</h3><blockquote>
 <p><strong>它的第一个参数用做this的对象,其他参数都直接传递给函数自身</strong>.我们来看下面这个小例子:</p>
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ShowColor</span>(<span class="params">param1,param2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.getColor=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">document</span>.write(<span class="keyword">this</span>.color+<span class="string">"&lt;br/&gt;Two Params : "</span>+param1+<span class="string">" ; "</span>+param2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>;</span><br><span class="line">obj.color=<span class="string">'Red'</span>;</span><br><span class="line">ShowColor.call(obj,<span class="string">"pm1"</span>,<span class="string">'pm2'</span>);</span><br><span class="line"></span><br><span class="line">obj.getColor();</span><br></pre></td></tr></table></figure>
@@ -562,7 +562,7 @@
   <p><span>本文标题:</span>javascript对象冒充实现继承</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月20日 - 17:33:04</p>
-  <p><span>最后更新:</span>2019年01月20日 - 20:20:38</p>
+  <p><span>最后更新:</span>2019年01月21日 - 12:25:25</p>
   <p><span>原始链接:</span><a href="/javascript对象冒充实现继承/" title="javascript对象冒充实现继承">https://qqqww.com/javascript对象冒充实现继承/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript对象冒充实现继承/" aria-label="复制成功！"></i></span>
   </p>
@@ -741,7 +741,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -754,7 +754,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-count">30</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -836,7 +836,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#javascript中的继承"><span class="nav-number">1.</span> <span class="nav-text">javascript中的继承</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对象冒充"><span class="nav-number">1.0.1.</span> <span class="nav-text">对象冒充</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#call方法"><span class="nav-number">1.0.2.</span> <span class="nav-text">call方法:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#apply方法"><span class="nav-number">1.0.3.</span> <span class="nav-text">apply方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原型继承"><span class="nav-number">1.0.4.</span> <span class="nav-text">原型继承</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#javascript中的继承"><span class="nav-number">1.</span> <span class="nav-text">javascript中的继承</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对象冒充"><span class="nav-number">1.0.1.</span> <span class="nav-text">对象冒充</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#call方法"><span class="nav-number">1.0.2.</span> <span class="nav-text">call方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#apply方法"><span class="nav-number">1.0.3.</span> <span class="nav-text">apply方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原型继承"><span class="nav-number">1.0.4.</span> <span class="nav-text">原型继承</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -880,7 +880,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">47.5k</span>
+    <span title="Site words total count">49.5k</span>
   
 </div>
 
@@ -910,7 +910,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共47.5k字</span>
+  <span class="post-count">博客全站共49.5k字</span>
 </div>
 
         

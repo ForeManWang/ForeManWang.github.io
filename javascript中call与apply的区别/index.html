@@ -102,7 +102,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://qqqww.com/javascript中call与apply的区别/applyAndcall.png">
 <meta property="og:image" content="https://qqqww.com/javascript中call与apply的区别/apply.png">
-<meta property="og:updated_time" content="2019-01-20T12:51:01.981Z">
+<meta property="og:updated_time" content="2019-01-21T04:23:57.034Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript中call与apply的区别">
 <meta name="twitter:description" content="javascript中call与apply的区别">
@@ -444,11 +444,11 @@
       
 
       
-        <h1 id="javascript中call与apply的区别"><a href="#javascript中call与apply的区别" class="headerlink" title="javascript中call与apply的区别"></a>javascript中call与apply的区别</h1><p>JavaScript中的每一个Function对象都有一个apply()方法和一个call()方法，它们的语法分别为：</p>
+        <h1 id="javascript中call与apply的区别"><a href="#javascript中call与apply的区别" class="headerlink" title="javascript中call与apply的区别"></a>javascript中call与apply的区别</h1><p>JavaScript中的每一个<code>Function</code>对象都有一个<code>apply()</code>方法和一个<code>call()</code>方法，它们的语法分别为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/*apply()方法*/</span><br><span class="line">function.apply(thisObj[, argArray])</span><br><span class="line"></span><br><span class="line">/*call()方法*/</span><br><span class="line">function.call(thisObj[, arg1[, arg2[, [,...argN]]]]);</span><br></pre></td></tr></table></figure>
 <p>##<strong>它们各自的定义</strong></p>
-<p>apply：调用一个对象的一个方法，用另一个对象替换当前对象。例如：B.apply(A, arguments);即A对象应用B对象的方法。</p>
-<p>call：调用一个对象的一个方法，用另一个对象替换当前对象。例如：B.call(A, args1,args2);即A对象调用B对象的方法。</p>
+<p><strong>apply：</strong>调用一个对象的一个方法，用另一个对象替换当前对象。例如：<code>B.apply(A, arguments)</code>;即A对象应用B对象的方法。</p>
+<p><strong>call：</strong>调用一个对象的一个方法，用另一个对象替换当前对象。例如：<code>B.call(A, args1,args2)</code>;即A对象调用B对象的方法。</p>
 <p>##它们的共同之处：</p>
 <p>都“可以用来代替另一个对象调用一个方法，将一个函数的对象上下文从初始的上下文改变为由thisObj指定的新对象”。</p>
 <h2 id="它们的不同之处"><a href="#它们的不同之处" class="headerlink" title="它们的不同之处"></a>它们的不同之处</h2><p><strong>apply：</strong>最多只能有两个参数——新this对象和一个数组argArray。如果给该方法传递多个参数，则把参数都写进这个数组里面，当然，即使只有一个参数，也要写进数组里。如果argArray不是一个有效的数组或arguments对象，那么将导致一个TypeError。如果没有提供argArray和thisObj任何一个参数，那么Global对象将被用作thisObj，并且无法被传递任何参数。</p>
@@ -462,15 +462,15 @@
 <p> <strong>（3）多重继承</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Class10</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.showSub = <span class="function"><span class="keyword">function</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">        alert(a - b);</span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Class11</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.showAdd = <span class="function"><span class="keyword">function</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">        alert(a + b);</span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Class12</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  Class10.apply(<span class="keyword">this</span>);</span><br><span class="line">  Class11.apply(<span class="keyword">this</span>);   </span><br><span class="line">  <span class="comment">// Class10.call(this);</span></span><br><span class="line">  <span class="comment">//Class11.call(this);  </span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> c2 = <span class="keyword">new</span> Class12();</span><br><span class="line">c2.showSub(<span class="number">3</span>,<span class="number">1</span>);    <span class="comment">//2</span></span><br><span class="line">c2.showAdd(<span class="number">3</span>,<span class="number">1</span>);    <span class="comment">//4</span></span><br></pre></td></tr></table></figure>
 <h2 id="apply的一些其他巧妙用法"><a href="#apply的一些其他巧妙用法" class="headerlink" title="apply的一些其他巧妙用法"></a>apply的一些其他巧妙用法</h2><p><strong>（1）Math.max 可以实现得到数组中最大的一项：</strong></p>
-<p>因为Math.max不支持Math.max([param1,param2])也就是数组，但是它支持Math.max(param1,param2…)，所以可以根据apply的特点来解决 var max=Math.max.apply(null,array)，这样就轻易的可以得到一个数组中的最大项（apply会将一个数组转换为一个参数接一个参</p>
+<p>因为<code>Math.max</code>不支持<code>Math.max([param1,param2])</code>也就是数组，但是它支持<code>Math.max(param1,param2...)</code>，所以可以根据apply的特点来解决 <code>var max=Math.max.apply(null,array)</code>，这样就轻易的可以得到一个数组中的最大项（apply会将一个数组转换为一个参数接一个参</p>
 <p>数的方式传递给方法）</p>
 <p>这块在调用的时候第一个参数给了null，这是因为没有对象去调用这个方法，我只需要用这个方法帮我运算，得到返回的结果就行，所以直接传递了一个null过去。</p>
-<p>用这种方法也可以实现得到数组中的最小项：Math.min.apply(null,array)</p>
+<p>用这种方法也可以实现得到数组中的最小项：<code>Math.min.apply(null,array)</code></p>
 <p><strong>（2）Array.prototype.push可以实现两个数组的合并</strong></p>
-<p>同样push方法没有提供push一个数组，但是它提供了push(param1,param2…paramN)，同样也可以用apply来转换一下这个数组，即：</p>
+<p>同样push方法没有提供push一个数组，但是它提供了<code>push(param1,param2...paramN)</code>，同样也可以用apply来转换一下这个数组，即：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr1=new Array(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;);</span><br><span class="line">var arr2=new Array(&quot;4&quot;,&quot;5&quot;,&quot;6&quot;);</span><br><span class="line">Array.prototype.push.apply(arr1,arr2);    //得到合并后数组的长度，因为push就是返回一个数组的长度</span><br></pre></td></tr></table></figure>
-<p>也可以这样理解，arr1调用了push方法，参数是通过apply将数组转换为参数列表的集合</p>
-<p>通常在什么情况下，可以使用apply类似Math.max等之类的特殊用法：</p>
+<p>也可以这样理解，<code>arr1</code>调用了<code>push</code>方法，参数是通过apply将数组转换为参数列表的集合</p>
+<p>通常在什么情况下，可以使用<code>apply</code>类似<code>Math.max</code>等之类的特殊用法：</p>
 <p>一般在目标函数只需要n个参数列表，而不接收一个数组的形式，可以通过apply的方式巧妙地解决这个问题</p>
 <p> <img src="/javascript中call与apply的区别/applyAndcall.png" alt="applyAndcall"></p>
 <p><img src="/javascript中call与apply的区别/apply.png" alt="apply"></p>
@@ -497,7 +497,7 @@
   <p><span>本文标题:</span>javascript中call与apply的区别</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月20日 - 20:38:07</p>
-  <p><span>最后更新:</span>2019年01月20日 - 20:51:01</p>
+  <p><span>最后更新:</span>2019年01月21日 - 12:23:57</p>
   <p><span>原始链接:</span><a href="/javascript中call与apply的区别/" title="javascript中call与apply的区别">https://qqqww.com/javascript中call与apply的区别/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript中call与apply的区别/" aria-label="复制成功！"></i></span>
   </p>
@@ -676,7 +676,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -689,7 +689,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-count">30</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -815,7 +815,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">47.5k</span>
+    <span title="Site words total count">49.5k</span>
   
 </div>
 
@@ -845,7 +845,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共47.5k字</span>
+  <span class="post-count">博客全站共49.5k字</span>
 </div>
 
         
