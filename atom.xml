@@ -35,6 +35,24 @@
   </entry>
   
   <entry>
+    <title>javascript中sessionStorage 、localStorage 和 Cookie</title>
+    <link href="https://qqqww.com/javascript%E4%B8%ADsessionStorage-%E3%80%81localStorage-%E5%92%8C-cookie/"/>
+    <id>https://qqqww.com/javascript中sessionStorage-、localStorage-和-cookie/</id>
+    <published>2019-01-21T09:53:43.000Z</published>
+    <updated>2019-01-21T13:39:56.395Z</updated>
+    
+    <summary type="html">
+    
+      javascript中sessionStorage 、localStorage 和 Cookie 的异同和用法
+    
+    </summary>
+    
+    
+      <category term="sessionStorage 、localStorage 和 cookie" scheme="https://qqqww.com/tags/sessionStorage-%E3%80%81localStorage-%E5%92%8C-cookie/"/>
+    
+  </entry>
+  
+  <entry>
     <title>javascript中typeof与instanceof的区别</title>
     <link href="https://qqqww.com/javascript%E4%B8%ADtypeof%E4%B8%8Einstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>https://qqqww.com/javascript中typeof与instanceof的区别/</id>
@@ -355,24 +373,6 @@
     
     
       <category term="sublime安装插件&amp;常用的sublime插件" scheme="https://qqqww.com/tags/sublime%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6-%E5%B8%B8%E7%94%A8%E7%9A%84sublime%E6%8F%92%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ES6笔记一</title>
-    <link href="https://qqqww.com/ES6%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
-    <id>https://qqqww.com/ES6笔记一/</id>
-    <published>2018-12-29T06:21:24.000Z</published>
-    <updated>2019-01-06T03:11:29.613Z</updated>
-    
-    <summary type="html">
-    
-      ES6笔记一之部署进度中检查运行环境中对ES6的支持情况，以及将ES6代码转为ES5代码
-    
-    </summary>
-    
-    
-      <category term="ES6" scheme="https://qqqww.com/tags/ES6/"/>
     
   </entry>
   
