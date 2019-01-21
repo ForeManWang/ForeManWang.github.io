@@ -53,6 +53,24 @@
   </entry>
   
   <entry>
+    <title>javascript中跨域问题</title>
+    <link href="https://qqqww.com/javascript%E4%B8%AD%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/"/>
+    <id>https://qqqww.com/javascript中跨域问题/</id>
+    <published>2019-01-21T09:01:02.000Z</published>
+    <updated>2019-01-21T09:47:09.601Z</updated>
+    
+    <summary type="html">
+    
+      javascript中跨域主要三种：proxy代理, CORS, jsonp
+    
+    </summary>
+    
+    
+      <category term="跨域" scheme="https://qqqww.com/tags/%E8%B7%A8%E5%9F%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>javascript中的闭包</title>
     <link href="https://qqqww.com/javascript%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/"/>
     <id>https://qqqww.com/javascript中的闭包/</id>
@@ -67,6 +85,24 @@
     
     
       <category term="闭包" scheme="https://qqqww.com/tags/%E9%97%AD%E5%8C%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascript中数组操作</title>
+    <link href="https://qqqww.com/javascript%E4%B8%AD%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/"/>
+    <id>https://qqqww.com/javascript中数组操作/</id>
+    <published>2019-01-21T08:24:53.000Z</published>
+    <updated>2019-01-21T09:22:02.705Z</updated>
+    
+    <summary type="html">
+    
+      javascript中Array相关的属性和方法
+    
+    </summary>
+    
+    
+      <category term="Array相关的属性和方法" scheme="https://qqqww.com/tags/Array%E7%9B%B8%E5%85%B3%E7%9A%84%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95/"/>
     
   </entry>
   
@@ -337,42 +373,6 @@
     
     
       <category term="虚拟DOM与Diff算法" scheme="https://qqqww.com/tags/%E8%99%9A%E6%8B%9FDOM%E4%B8%8EDiff%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue-vuex</title>
-    <link href="https://qqqww.com/vue-vuex/"/>
-    <id>https://qqqww.com/vue-vuex/</id>
-    <published>2019-01-05T05:37:19.000Z</published>
-    <updated>2019-01-06T07:29:34.806Z</updated>
-    
-    <summary type="html">
-    
-      vuex
-    
-    </summary>
-    
-    
-      <category term="vuex" scheme="https://qqqww.com/tags/vuex/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>node-读取文件方法封装</title>
-    <link href="https://qqqww.com/node-%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95%E5%B0%81%E8%A3%85/"/>
-    <id>https://qqqww.com/node-读取文件方法封装/</id>
-    <published>2019-01-02T09:14:39.000Z</published>
-    <updated>2019-01-06T07:24:04.860Z</updated>
-    
-    <summary type="html">
-    
-      node读取文件方法封装
-    
-    </summary>
-    
-    
-      <category term="函数封装" scheme="https://qqqww.com/tags/%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85/"/>
     
   </entry>
   
