@@ -53,6 +53,24 @@
   </entry>
   
   <entry>
+    <title>javascript中的闭包</title>
+    <link href="https://qqqww.com/javascript%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/"/>
+    <id>https://qqqww.com/javascript中的闭包/</id>
+    <published>2019-01-21T09:00:20.000Z</published>
+    <updated>2019-01-21T09:35:32.472Z</updated>
+    
+    <summary type="html">
+    
+      javascript中的闭包
+    
+    </summary>
+    
+    
+      <category term="闭包" scheme="https://qqqww.com/tags/%E9%97%AD%E5%8C%85/"/>
+    
+  </entry>
+  
+  <entry>
     <title>javascript中typeof与instanceof的区别</title>
     <link href="https://qqqww.com/javascript%E4%B8%ADtypeof%E4%B8%8Einstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>https://qqqww.com/javascript中typeof与instanceof的区别/</id>
@@ -355,24 +373,6 @@
     
     
       <category term="sublime添加自定义代码段" scheme="https://qqqww.com/tags/sublime%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BB%A3%E7%A0%81%E6%AE%B5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sublime安装插件&amp;常用的sublime插件</title>
-    <link href="https://qqqww.com/sublime%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6/"/>
-    <id>https://qqqww.com/sublime安装插件/</id>
-    <published>2018-12-30T11:32:31.000Z</published>
-    <updated>2019-01-06T07:24:52.480Z</updated>
-    
-    <summary type="html">
-    
-      sublime如何安装插件&amp;常用的sublime插件
-    
-    </summary>
-    
-    
-      <category term="sublime安装插件&amp;常用的sublime插件" scheme="https://qqqww.com/tags/sublime%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6-%E5%B8%B8%E7%94%A8%E7%9A%84sublime%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   

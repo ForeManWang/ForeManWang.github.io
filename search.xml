@@ -17,6 +17,14 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[javascript中的闭包]]></title>
+    <url>%2Fjavascript%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%2F</url>
+    <content type="text"><![CDATA[javascript中的闭包 当一个函数的返回值是另外一个函数，而返回的那个函数如果调用了其父函数内部的其它变量，如果返回的这个函数在外部被执行，就产生了闭包 实例 根据作用域链的规则，底层作用域没有声明的变量，会向上一级查找，找到就返回，没找到就一直找，直到window的变量，没有就返回undefined，这里明显count 是函数内部的flag2 的那个count 1234567891011var count = 10 //全局作用域 标记为flag1function add () &#123; var count = 0 //函数全局作用域 标记为flag2 return function()&#123; count += 1 //函数的内部作用域 alert(count) &#125;&#125;var s = add()s() //输出1s() //输出2 ##变量的作用域 变量的作用域分类：全局变量和局部变量 特点： 函数内部可以读取函数外部的全局变量；在函数外部无法读取函数内的局部变量 函数内部声明变量的时候，一定要使用var命令。如果不用的话，你实际上声明了一个全局变量 使用闭包的注意点： 滥用闭包，会造成内存泄漏：由于标识为flag2的count被闭包所引用，所以在内存中不会被回收，造成内存泄漏 会改变父函数内部变量的值：所以，如果把父函数当作对象（object）使用，把闭包当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便改变父函数内部变量的值]]></content>
+      <tags>
+        <tag>闭包</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[javascript中typeof与instanceof的区别]]></title>
     <url>%2Fjavascript%E4%B8%ADtypeof%E4%B8%8Einstanceof%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
     <content type="text"><![CDATA[#typeof VS instanceof 相同点：JavaScript 中 typeof 和 instanceof 常用来判断一个变量是否为空，或者是什么类型的 区别：前者判断数据类型较多，后者判断一个变量是否属于某个对象实例 typeof的定义和用法：返回值是一个字符串，用来说明变量的数据类型。 细节： (1)、typeof 一般只能返回如下几个结果：number,boolean,string,function,object,undefined。 (2)、typeof 来获取一个变量是否存在，如 if(typeof a!=”undefined”){alert(“ok”)}，而不要去使用 if(a) 因为如果 a 不存在（未声明）则会出错。 (3)、对于 Array,Null 等特殊对象使用 typeof 一律返回 object，这正是 typeof 的局限性。 Instanceof定义和用法：instanceof 用于判断一个变量是否属于某个对象的实例。 实例演示： 123var a = new Array(); alert(a instanceof Array); // truealert(a instanceof Object) // true 如上，会返回 true，同时 alert(a instanceof Object) 也会返回 true;这是因为 Array 是 object 的子类。 123function test()&#123;&#125;;var a = new test();alert(a instanceof test) // true]]></content>
