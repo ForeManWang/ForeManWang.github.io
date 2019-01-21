@@ -71,6 +71,24 @@
   </entry>
   
   <entry>
+    <title>javascript中字符串操作</title>
+    <link href="https://qqqww.com/javascript%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/"/>
+    <id>https://qqqww.com/javascript中字符串操作/</id>
+    <published>2019-01-21T08:24:19.000Z</published>
+    <updated>2019-01-21T08:57:54.412Z</updated>
+    
+    <summary type="html">
+    
+      javascript中的字符串操作，如何检测string类型，url查询字符串参数，字符串常用函数等
+    
+    </summary>
+    
+    
+      <category term="javascript字符串" scheme="https://qqqww.com/tags/javascript%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>javascript中typeof与instanceof的区别</title>
     <link href="https://qqqww.com/javascript%E4%B8%ADtypeof%E4%B8%8Einstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>https://qqqww.com/javascript中typeof与instanceof的区别/</id>
@@ -355,24 +373,6 @@
     
     
       <category term="函数封装" scheme="https://qqqww.com/tags/%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sublime添加自定义代码段</title>
-    <link href="https://qqqww.com/sublime%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BB%A3%E7%A0%81%E6%AE%B5/"/>
-    <id>https://qqqww.com/sublime添加自定义代码段/</id>
-    <published>2018-12-30T11:33:19.000Z</published>
-    <updated>2019-01-06T07:26:06.195Z</updated>
-    
-    <summary type="html">
-    
-      sublime添加自定义代码段
-    
-    </summary>
-    
-    
-      <category term="sublime添加自定义代码段" scheme="https://qqqww.com/tags/sublime%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BB%A3%E7%A0%81%E6%AE%B5/"/>
     
   </entry>
   
