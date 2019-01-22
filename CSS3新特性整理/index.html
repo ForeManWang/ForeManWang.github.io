@@ -106,7 +106,15 @@
 <meta property="og:image" content="https://7n.w3cschool.cn/attachments/image/20160224/1456318715769924.jpg">
 <meta property="og:image" content="https://7n.w3cschool.cn/attachments/image/20160224/1456318761367899.gif">
 <meta property="og:image" content="https://7n.w3cschool.cn/attachments/image/20160224/1456318830647206.gif">
-<meta property="og:updated_time" content="2019-01-22T11:49:45.820Z">
+<meta property="og:image" content="https://7n.w3cschool.cn/attachments/image/20180817/transforms.gif">
+<meta property="og:image" content="https://7n.w3cschool.cn/attachments/image/20180817/1456365708594641.gif">
+<meta property="og:image" content="https://7n.w3cschool.cn/attachments/day_180821/201808211551343738.gif">
+<meta property="og:image" content="https://7n.w3cschool.cn/attachments/day_180821/201808211546251813.gif">
+<meta property="og:image" content="https://qqqww.com/CSS3新特性整理/W3Cskew.png">
+<meta property="og:image" content="https://7n.w3cschool.cn/attachments/day_180821/201808211549539648.gif">
+<meta property="og:image" content="https://7n.w3cschool.cn/attachments/day_180130/201801301116084882.gif">
+<meta property="og:image" content="https://7n.w3cschool.cn/attachments/day_180130/201801301117117666.gif">
+<meta property="og:updated_time" content="2019-01-22T14:45:35.204Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS3新特性整理">
 <meta name="twitter:description" content="CSS3新特性整理">
@@ -407,7 +415,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  4.6k 字
+                  8.7k 字
                 </span>
               
 
@@ -423,7 +431,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  20 分钟
+                  40 分钟
                 </span>
               
             </div>
@@ -1048,6 +1056,733 @@
 </tr>
 </tbody>
 </table>
+<h2 id="CSS3-2D-转换"><a href="#CSS3-2D-转换" class="headerlink" title="CSS3 2D 转换"></a>CSS3 2D 转换</h2><blockquote>
+<p>可以移动，比例化，反过来，旋转，和拉伸元素</p>
+</blockquote>
+<p><img src="https://7n.w3cschool.cn/attachments/image/20180817/transforms.gif" alt="img"></p>
+<h3 id="属性-5"><a href="#属性-5" class="headerlink" title="属性"></a>属性</h3><ul>
+<li>transform</li>
+<li>transform-origin</li>
+</ul>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
+<li>translate()</li>
+<li>rotate()</li>
+<li>scale()</li>
+<li>skew()</li>
+<li>matrix()</li>
+</ul>
+<h3 id="兼容性-5"><a href="#兼容性-5" class="headerlink" title="兼容性"></a>兼容性</h3><blockquote>
+<p>表格中的数字表示支持该属性的第一个浏览器版本号</p>
+<p>紧跟在 -webkit-, -ms- 或 -moz- 前的数字为支持该前缀属性的第一个浏览器版本号</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>Chrome</th>
+<th>IE</th>
+<th>Firefox</th>
+<th>Safari</th>
+<th>Opera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>transform</td>
+<td>36.0  4.0 -webkit-</td>
+<td>10.0  9.0 -ms-</td>
+<td>16.0  3.5 -moz-</td>
+<td>3.2 -webkit-</td>
+<td>23.0  15.0 -webkit-  12.1  10.5 -o-</td>
+</tr>
+<tr>
+<td>transform-origin  (two-value syntax)</td>
+<td>36.0  4.0 -webkit-</td>
+<td>10.0  9.0 -ms-</td>
+<td>16.0  3.5 -moz-</td>
+<td>3.2 -webkit-</td>
+<td>23.0  15.0 -webkit-  12.1  10.5 -o-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Internet Explorer 10, Firefox, 和 Opera支持transform 属性.</p>
+<p>Chrome 和 Safari 要求前缀 -webkit- 版本.</p>
+<p><strong>注意：</strong> Internet Explorer 9 要求前缀 -ms- 版本.</p>
+</blockquote>
+<h3 id="translate"><a href="#translate" class="headerlink" title="translate()"></a>translate()</h3><blockquote>
+<p>移动</p>
+</blockquote>
+<blockquote>
+<p>translate()方法，根据左(X轴)和顶部(Y轴)位置给定的参数，从当前元素位置移动</p>
+</blockquote>
+<p><img src="https://7n.w3cschool.cn/attachments/image/20180817/1456365708594641.gif" alt="img"></p>
+<h4 id="语法-15"><a href="#语法-15" class="headerlink" title="语法"></a>语法</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">transform: translate(x轴移动距离, y轴移动距离) // 原点在左上角</span><br></pre></td></tr></table></figure>
+<h4 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h4><blockquote>
+<p>translate值（50px，100px）是从左边元素移动50个像素，并从顶部移动100像素</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123; </span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translate</span>(50px,100px); </span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">translate</span>(50px,100px); <span class="comment">/* IE 9 */</span> </span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translate</span>(50px,100px); <span class="comment">/* Safari and Chrome */</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="rotate"><a href="#rotate" class="headerlink" title="rotate()"></a>rotate()</h3><blockquote>
+<p>旋转，<strong>旋转过后，原点会跟着变化</strong></p>
+</blockquote>
+<blockquote>
+<p>rotate()方法，在一个给定度数顺时针旋转的元素。负值是允许的，这样是元素逆时针旋转</p>
+</blockquote>
+<p><img src="https://7n.w3cschool.cn/attachments/day_180821/201808211551343738.gif" alt="img"></p>
+<h4 id="语法-16"><a href="#语法-16" class="headerlink" title="语法"></a>语法</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">transform: rotate(angle) // 括号内填写旋转角度</span><br></pre></td></tr></table></figure>
+<h4 id="例子-15"><a href="#例子-15" class="headerlink" title="例子"></a>例子</h4><blockquote>
+<p>rotate值（30deg）元素顺时针旋转30度</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123; </span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(30deg); </span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">rotate</span>(30deg); <span class="comment">/* IE 9 */</span> </span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(30deg); <span class="comment">/* Safari and Chrome */</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="scale"><a href="#scale" class="headerlink" title="scale()"></a>scale()</h3><blockquote>
+<p>缩放</p>
+</blockquote>
+<blockquote>
+<p>scale()方法，该元素增加或减少的大小，取决于宽度（X轴）和高度（Y轴）的参数</p>
+</blockquote>
+<p><img src="https://7n.w3cschool.cn/attachments/day_180821/201808211546251813.gif" alt="img"></p>
+<h4 id="语法-17"><a href="#语法-17" class="headerlink" title="语法"></a>语法</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">scale</span>(宽度的倍数, 高度的倍数)</span><br></pre></td></tr></table></figure>
+<p>####例子</p>
+<blockquote>
+<p>scale（2,4）转变宽度为原来的大小的2倍，和其原始大小4倍的高度</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> </span><br><span class="line">&#123; </span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(2,4); </span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">scale</span>(2,4); <span class="comment">/* IE 9 */</span> </span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">scale</span>(2,4); <span class="comment">/* Safari and Chrome */</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="skew"><a href="#skew" class="headerlink" title="skew()"></a>skew()</h3><blockquote>
+<p>CSS3 倾斜</p>
+</blockquote>
+<blockquote>
+<p>包含两个参数值，分别表示X轴和Y轴倾斜的角度，如果第二个参数为空，则默认为0，参数为负表示向相反方向倾斜</p>
+</blockquote>
+<h4 id="语法-18"><a href="#语法-18" class="headerlink" title="语法"></a>语法</h4><blockquote>
+<ul>
+<li>skewX( );表示只在X轴(水平方向)倾斜。</li>
+<li>skewY( );表示只在Y轴(垂直方向)倾斜。 </li>
+</ul>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">skew</span>(相对于<span class="selector-tag">x</span>轴角度, 相对于<span class="selector-tag">y</span>轴角度)</span><br></pre></td></tr></table></figure>
+<h4 id="例子-16"><a href="#例子-16" class="headerlink" title="例子"></a>例子</h4><blockquote>
+<p>skew(30deg,20deg) 是元素在X轴和Y轴上倾斜30度20度</p>
+<p>此处 W3C 上教程有误，他写的是 <code>skew(30deg,20deg) 是元素在X轴和Y轴上倾斜20度30度</code></p>
+</blockquote>
+<p><img src="/CSS3新特性整理/W3Cskew.png" alt="W3Cskew"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123; </span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">skew</span>(30deg,20deg); </span><br><span class="line">	<span class="attribute">-ms-transform</span>: <span class="built_in">skew</span>(30deg,20deg); <span class="comment">/* IE 9 */</span> </span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">skew</span>(30deg,20deg); <span class="comment">/* Safari and Chrome */</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>###matrix()</p>
+<blockquote>
+<p><strong>CSS3 矩阵</strong>，反正我用得少</p>
+</blockquote>
+<blockquote>
+<p><strong>matrix()方法将2D变换方法合并成一个</strong></p>
+</blockquote>
+<p><img src="https://7n.w3cschool.cn/attachments/day_180821/201808211549539648.gif" alt="img"></p>
+<h4 id="语法-19"><a href="#语法-19" class="headerlink" title="语法"></a>语法</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">matrix</span>(旋转角度, 缩放比例, 移动, 倾斜)</span><br></pre></td></tr></table></figure>
+<h4 id="例子-17"><a href="#例子-17" class="headerlink" title="例子"></a>例子</h4><blockquote>
+<p>利用matrix()方法旋转div元素30°</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> </span><br><span class="line">&#123; </span><br><span class="line">	<span class="attribute">transform</span>:<span class="built_in">matrix</span>(0.866,0.5,-0.5,0.866,0,0); </span><br><span class="line">	<span class="attribute">-ms-transform</span>:<span class="built_in">matrix</span>(0.866,0.5,-0.5,0.866,0,0); <span class="comment">/* IE 9 */</span> </span><br><span class="line">	<span class="attribute">-webkit-transform</span>:<span class="built_in">matrix</span>(0.866,0.5,-0.5,0.866,0,0); <span class="comment">/* Safari and Chrome */</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="CSS3-3D转换"><a href="#CSS3-3D转换" class="headerlink" title="CSS3 3D转换"></a>CSS3 3D转换</h2><blockquote>
+<p>CSS3 允许您使用 3D 转换来对元素进行格式化</p>
+</blockquote>
+<h3 id="兼容性-6"><a href="#兼容性-6" class="headerlink" title="兼容性"></a>兼容性</h3><blockquote>
+<p>表格中的数字表示支持该属性的第一个浏览器版本号</p>
+<p>紧跟在 -webkit-, -ms- 或 -moz- 前的数字为支持该前缀属性的第一个浏览器版本号</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性</th>
+<th>Chrome</th>
+<th>IE</th>
+<th>Firefox</th>
+<th>Safari</th>
+<th>Opera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">transform</td>
+<td>36.0  12.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0  10.0 -moz-</td>
+<td>4.0 -webkit-</td>
+<td>23.0  15.0 -webkit-</td>
+</tr>
+<tr>
+<td style="text-align:left">transform-origin  (three-value syntax)</td>
+<td>36.0  12.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0  10.0 -moz-</td>
+<td>4.0 -webkit-</td>
+<td>23.0  15.0 -webkit-</td>
+</tr>
+<tr>
+<td style="text-align:left">transform-style</td>
+<td>36.0  12.0 -webkit-</td>
+<td>11.0</td>
+<td>16.0  10.0 -moz-</td>
+<td>4.0 -webkit-</td>
+<td>23.0  15.0 -webkit-</td>
+</tr>
+<tr>
+<td style="text-align:left">perspective</td>
+<td>36.0  12.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0  10.0 -moz-</td>
+<td>4.0 -webkit-</td>
+<td>23.0  15.0 -webkit-</td>
+</tr>
+<tr>
+<td style="text-align:left">perspective-origin</td>
+<td>36.0  12.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0  10.0 -moz-</td>
+<td>4.0 -webkit-</td>
+<td>23.0  15.0 -webkit-</td>
+</tr>
+<tr>
+<td style="text-align:left">backface-visibility</td>
+<td>36.0  12.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0  10.0 -moz-</td>
+<td>4.0 -webkit-</td>
+<td>23.0  15.0 -webkit-</td>
+</tr>
+</tbody>
+</table>
+<p>###rotateX() </p>
+<p><img src="https://7n.w3cschool.cn/attachments/day_180130/201801301116084882.gif" alt="Rotate X"></p>
+<h4 id="例子-18"><a href="#例子-18" class="headerlink" title="例子"></a>例子</h4><blockquote>
+<p>rotateX()方法，围绕其在一个给定度数X轴旋转的元素</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>W3C(w3cschool.cn)<span class="tag">&lt;/<span class="name">title</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"> </span></span><br><span class="line"><span class="undefined">div</span></span><br><span class="line"><span class="undefined">&#123;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">width</span><span class="selector-pseudo">:100px</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">height</span><span class="selector-pseudo">:75px</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">background-color</span><span class="selector-pseudo">:red</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">border</span><span class="selector-pseudo">:1px</span> <span class="selector-tag">solid</span> <span class="selector-tag">black</span>;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="css"><span class="selector-tag">div</span><span class="selector-id">#div2</span></span></span><br><span class="line"><span class="undefined">&#123;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">transform</span><span class="selector-pseudo">:rotateX(120deg)</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">-webkit-transform</span><span class="selector-pseudo">:rotateX(120deg)</span>; <span class="comment">/* Safari and Chrome */</span></span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>注意:<span class="tag">&lt;/<span class="name">b</span>&gt;</span> Internet Explorer 9 (以及更早版本的浏览器) 和 Opera 不支持 rotateX 方法.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>Hello. This is a DIV element.<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div2"</span>&gt;</span>Hello. This is a DIV element.<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="rotateY"><a href="#rotateY" class="headerlink" title="rotateY()"></a>rotateY()</h3><p><img src="https://7n.w3cschool.cn/attachments/day_180130/201801301117117666.gif" alt="Rotate Y"></p>
+<h4 id="例子-19"><a href="#例子-19" class="headerlink" title="例子"></a>例子</h4><blockquote>
+<p>rotateY()方法，围绕其在一个给定度数Y轴旋转的元素</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>W3C(w3cschool.cn)<span class="tag">&lt;/<span class="name">title</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"> </span></span><br><span class="line"><span class="undefined">div</span></span><br><span class="line"><span class="undefined">&#123;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">width</span><span class="selector-pseudo">:100px</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">height</span><span class="selector-pseudo">:75px</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">background-color</span><span class="selector-pseudo">:red</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">border</span><span class="selector-pseudo">:1px</span> <span class="selector-tag">solid</span> <span class="selector-tag">black</span>;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="css"><span class="selector-tag">div</span><span class="selector-id">#div2</span></span></span><br><span class="line"><span class="undefined">&#123;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">transform</span><span class="selector-pseudo">:rotateY(130deg)</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">-webkit-transform</span><span class="selector-pseudo">:rotateY(130deg)</span>; <span class="comment">/* Safari and Chrome */</span></span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>注意:<span class="tag">&lt;/<span class="name">b</span>&gt;</span> Internet Explorer 9 (以及更早版本的浏览器) 和 Opera 不支持 rotateY方法.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>Hello. This is a DIV element.<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div2"</span>&gt;</span>Hello. This is a DIV element.<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="CSS3-转换属性"><a href="#CSS3-转换属性" class="headerlink" title="CSS3 转换属性"></a>CSS3 转换属性</h3><blockquote>
+<p>下表列出了CSS3所有的转换属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th><strong>CSS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-transform.html" rel="external nofollow noopener noreferrer" target="_blank">transform</a></td>
+<td>向元素应用 2D 或 3D 转换。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-transform-origin.html" rel="external nofollow noopener noreferrer" target="_blank">transform-origin</a></td>
+<td>允许你改变被转换元素的位置。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-transform-style.html" rel="external nofollow noopener noreferrer" target="_blank">transform-style</a></td>
+<td>规定被嵌套元素如何在 3D 空间中显示。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-perspective.html" rel="external nofollow noopener noreferrer" target="_blank">perspective</a></td>
+<td>规定 3D 元素的透视效果。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-perspective-origin.html" rel="external nofollow noopener noreferrer" target="_blank">perspective-origin</a></td>
+<td>规定 3D 元素的底部位置。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-backface-visibility.html" rel="external nofollow noopener noreferrer" target="_blank">backface-visibility</a></td>
+<td>定义元素在不面对屏幕时是否可见。</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="CSS3-3D-转换方法"><a href="#CSS3-3D-转换方法" class="headerlink" title="CSS3 3D 转换方法"></a>CSS3 3D 转换方法</h3><blockquote>
+<p>类似于 CSS3 2D 转换方法的使用</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>matrix3d(<em>n**</em>,<strong><em>n</em></strong>,<strong> <em>n</em></strong>,<strong><em>n</em></strong>,<strong><em>n</em></strong>,<strong><em>n</em> </strong>,<strong><em>n</em></strong>,<strong><em>n</em></strong>,<strong><em>n</em> </strong>,<strong><em>n</em></strong>,<strong><em>n</em></strong>,<strong><em>n</em></strong>,<strong> <em>n</em></strong>,<strong><em>n</em></strong>,<strong><em>n</em></strong>,<em>**n</em> )</td>
+<td>定义 3D 转换<strong>，</strong>使用 16 个值的 4x4 矩阵。</td>
+</tr>
+<tr>
+<td>translate3d(<em>x**</em>,<strong><em>y</em></strong>,<em>**z</em>)</td>
+<td>定义 3D 转化。</td>
+</tr>
+<tr>
+<td>translateX(<em>x</em>)</td>
+<td>定义 3D 转化<strong>，</strong>仅使用用于 X 轴的值。</td>
+</tr>
+<tr>
+<td>translateY(<em>y</em>)</td>
+<td>定义 3D 转化<strong>，</strong>仅使用用于 Y 轴的值。</td>
+</tr>
+<tr>
+<td>translateZ(<em>z</em>)</td>
+<td>定义 3D 转化<strong>，</strong>仅使用用于 Z 轴的值。</td>
+</tr>
+<tr>
+<td>scale3d(<em>x**</em>,<strong><em>y</em></strong>,<em>**z</em>)</td>
+<td>定义 3D 缩放转换。</td>
+</tr>
+<tr>
+<td>scaleX(<em>x</em>)</td>
+<td>定义 3D 缩放转换<strong>，</strong>通过给定一个 X 轴的值。</td>
+</tr>
+<tr>
+<td>scaleY(<em>y</em>)</td>
+<td>定义 3D 缩放转换<strong>，</strong>通过给定一个 Y 轴的值。</td>
+</tr>
+<tr>
+<td>scaleZ(<em>z</em>)</td>
+<td>定义 3D 缩放转换<strong>，</strong>通过给定一个 Z 轴的值。</td>
+</tr>
+<tr>
+<td>rotate3d(<em>x**</em>,<strong><em>y</em></strong>,<strong><em>z</em></strong>,<em>**angle</em>)</td>
+<td>定义 3D 旋转。</td>
+</tr>
+<tr>
+<td>rotateX(<em>angle</em>)</td>
+<td>定义沿 X 轴的 3D 旋转。</td>
+</tr>
+<tr>
+<td>rotateY(<em>angle</em>)</td>
+<td>定义沿 Y 轴的 3D 旋转。</td>
+</tr>
+<tr>
+<td>rotateZ(<em>angle</em>)</td>
+<td>定义沿 Z 轴的 3D 旋转。</td>
+</tr>
+<tr>
+<td>perspective(<em>n</em>)</td>
+<td>定义 3D 转换元素的透视视图。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="CSS3-过渡"><a href="#CSS3-过渡" class="headerlink" title="CSS3 过渡"></a>CSS3 过渡</h2><blockquote>
+<p>CSS3中，我们为了添加某种效果可以从一种样式转变到另一个的时候，无需使用Flash动画或JavaScript</p>
+</blockquote>
+<h3 id="属性-6"><a href="#属性-6" class="headerlink" title="属性"></a>属性</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>CSS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-transition.html" rel="external nofollow noopener noreferrer" target="_blank">transition</a></td>
+<td>简写属性，用于在一个属性中设置四个过渡属性。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-transition-property.html" rel="external nofollow noopener noreferrer" target="_blank">transition-property</a></td>
+<td>规定应用过渡的 CSS 属性的名称。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-transition-duration.html" rel="external nofollow noopener noreferrer" target="_blank">transition-duration</a></td>
+<td>定义过渡效果花费的时间。默认是 0。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-transition-timing-function.html" rel="external nofollow noopener noreferrer" target="_blank">transition-timing-function</a></td>
+<td>规定过渡效果的时间曲线。默认是 “ease”。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-transition-delay.html" rel="external nofollow noopener noreferrer" target="_blank">transition-delay</a></td>
+<td>规定过渡效果何时开始。默认是 0。</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="兼容性-7"><a href="#兼容性-7" class="headerlink" title="兼容性"></a>兼容性</h3><blockquote>
+<p>表格中的数字表示支持该属性的第一个浏览器版本号</p>
+<p>紧跟在 -webkit-, -ms- 或 -moz- 前的数字为支持该前缀属性的第一个浏览器版本号</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>Chrome</th>
+<th>IE</th>
+<th>Firefox</th>
+<th>Safari</th>
+<th>Opera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>transition</td>
+<td>26.0  4.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0  4.0 -moz-</td>
+<td>6.1  3.1 -webkit-</td>
+<td>12.1  10.5 -o-</td>
+</tr>
+<tr>
+<td>transition-delay</td>
+<td>26.0  4.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0  4.0 -moz-</td>
+<td>6.1  3.1 -webkit-</td>
+<td>12.1  10.5 -o-</td>
+</tr>
+<tr>
+<td>transition-duration</td>
+<td>26.0  4.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0  4.0 -moz-</td>
+<td>6.1  3.1 -webkit-</td>
+<td>12.1  10.5 -o-</td>
+</tr>
+<tr>
+<td>transition-property</td>
+<td>26.0  4.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0  4.0 -moz-</td>
+<td>6.1  3.1 -webkit-</td>
+<td>12.1  10.5 -o-</td>
+</tr>
+<tr>
+<td>transition-timing-function</td>
+<td>26.0  4.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0  4.0 -moz-</td>
+<td>6.1  3.1 -webkit-</td>
+<td>12.1  10.5 -o-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h3><h4 id="语法-20"><a href="#语法-20" class="headerlink" title="语法"></a>语法</h4><blockquote>
+<p>transition需要配合一个变化的属性进行</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">transition</span>: 指定需要变化的属性（例如width）,完成时间, 转速曲线, 延迟执行的时间 </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="例子-20"><a href="#例子-20" class="headerlink" title="例子"></a>例子</h4><blockquote>
+<p>指定当鼠标经过 div 的 1s  之后 ,  div 的 width 在 1 秒时间内，匀速变化为 300 px</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">transition</span>: width <span class="number">1s</span> linear <span class="number">1s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>拆分写法</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123; </span><br><span class="line">    <span class="attribute">transition-property</span>: width; </span><br><span class="line">    <span class="attribute">transition-duration</span>: <span class="number">1s</span>; </span><br><span class="line">    <span class="attribute">transition-timing-function</span>: linear; </span><br><span class="line">    <span class="attribute">transition-delay</span>: <span class="number">1s</span>; </span><br><span class="line">    <span class="comment">/* Safari */</span> </span><br><span class="line">    <span class="attribute">-webkit-transition-property</span>: width; </span><br><span class="line">    <span class="attribute">-webkit-transition-duration</span>: <span class="number">1s</span>; </span><br><span class="line">    <span class="attribute">-webkit-transition-timing-function</span>: linear; </span><br><span class="line">	<span class="attribute">-webkit-transition-delay</span>: <span class="number">1s</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>注：</strong>这里看到了一篇很棒的文档，推荐一下<a href="https://segmentfault.com/a/1190000010780991#articleHeader1" rel="external nofollow noopener noreferrer" target="_blank">CSS3过渡和动画</a></p>
+<h2 id="CSS3-动画"><a href="#CSS3-动画" class="headerlink" title="CSS3 动画"></a>CSS3 动画</h2><blockquote>
+<p>CSS3，我们可以创建动画，它可以取代许多网页动画图像，Flash动画，和JAVAScripts</p>
+</blockquote>
+<h3 id="属性-7"><a href="#属性-7" class="headerlink" title="属性"></a>属性</h3><ul>
+<li>@keyframes</li>
+<li>animation</li>
+</ul>
+<h3 id="兼容性-8"><a href="#兼容性-8" class="headerlink" title="兼容性"></a>兼容性</h3><blockquote>
+<p>Internet Explorer 10、Firefox 以及 Opera 支持 @keyframes 规则和 animation 属性</p>
+<p>紧跟在 -webkit-, -ms- 或 -moz- 前的数字为支持该前缀属性的第一个浏览器版本号</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>Chrome</th>
+<th>IE</th>
+<th>Firefox</th>
+<th>Safari</th>
+<th>Opera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@keyframes</td>
+<td>43.0 4.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0 5.0 -moz-</td>
+<td>9.0 4.0 -webkit-</td>
+<td>30.0 15.0 -webkit- 12.0 -o-</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>43.0 4.0 -webkit-</td>
+<td>10.0</td>
+<td>16.0 5.0 -moz-</td>
+<td>9.0 4.0 -webkit-</td>
+<td>30.0 15.0 -webkit- 12.0 -o-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="语法-21"><a href="#语法-21" class="headerlink" title="语法"></a>语法</h3><blockquote>
+<p>@keyframes 和 animation 一般配合使用，使用 @keyframes 定义一个动画，使用 animation 去执行这个动画</p>
+</blockquote>
+<h3 id="例子-21"><a href="#例子-21" class="headerlink" title="例子"></a>例子</h3><blockquote>
+<p>必须定义动画的名称和动画的持续时间。如果省略的持续时间，动画将无法运行，因为默认值是0</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> myfirst</span><br><span class="line">&#123;</span><br><span class="line">	<span class="selector-tag">from</span> &#123;<span class="attribute">background</span>: red;&#125;</span><br><span class="line">	<span class="selector-tag">to</span> &#123;<span class="attribute">background</span>: yellow;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> myfirst /* Safari and Chrome */</span><br><span class="line">&#123;</span><br><span class="line">	<span class="selector-tag">from</span> &#123;<span class="attribute">background</span>: red;&#125;</span><br><span class="line">	<span class="selector-tag">to</span> &#123;<span class="attribute">background</span>: yellow;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">	<span class="attribute">animation</span>: myfirst <span class="number">5s</span>;</span><br><span class="line"> 	<span class="attribute">-webkit-animation</span>: myfirst <span class="number">5s</span>; <span class="comment">/* Safari and Chrome */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>可以以百分比指定动画发生时间</p>
+</blockquote>
+<blockquote>
+<p>为了得到最佳的浏览器支持，您应该始终定义 0% 和 100% 选择器</p>
+</blockquote>
+<blockquote>
+<p>当动画为 25% 及 50% 时改变背景色，然后当动画 100% 完成时再次改变</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> myfirst</span><br><span class="line">&#123;</span><br><span class="line">	0%   &#123;<span class="attribute">background</span>: red;&#125;</span><br><span class="line">	25%  &#123;<span class="attribute">background</span>: yellow;&#125;</span><br><span class="line">	50%  &#123;<span class="attribute">background</span>: blue;&#125;</span><br><span class="line">	100% &#123;<span class="attribute">background</span>: green;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> myfirst /* Safari and Chrome */</span><br><span class="line">&#123;</span><br><span class="line">	0%   &#123;<span class="attribute">background</span>: red;&#125;</span><br><span class="line">	25%  &#123;<span class="attribute">background</span>: yellow;&#125;</span><br><span class="line">	50%  &#123;<span class="attribute">background</span>: blue;&#125;</span><br><span class="line">	100% &#123;<span class="attribute">background</span>: green;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">	<span class="attribute">animation</span>: myfirst <span class="number">5s</span>;</span><br><span class="line"> 	<span class="attribute">-webkit-animation</span>: myfirst <span class="number">5s</span>; <span class="comment">/* Safari and Chrome */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>改变背景色和位置</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> myfirst</span><br><span class="line">&#123;</span><br><span class="line">	0%   &#123;<span class="attribute">background</span>: red; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">top</span>:<span class="number">0px</span>;&#125;</span><br><span class="line">	25%  &#123;<span class="attribute">background</span>: yellow; <span class="attribute">left</span>:<span class="number">200px</span>; <span class="attribute">top</span>:<span class="number">0px</span>;&#125;</span><br><span class="line">	50%  &#123;<span class="attribute">background</span>: blue; <span class="attribute">left</span>:<span class="number">200px</span>; <span class="attribute">top</span>:<span class="number">200px</span>;&#125;</span><br><span class="line">	75%  &#123;<span class="attribute">background</span>: green; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">top</span>:<span class="number">200px</span>;&#125;</span><br><span class="line">	100% &#123;<span class="attribute">background</span>: red; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">top</span>:<span class="number">0px</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> myfirst /* Safari and Chrome */</span><br><span class="line">&#123;</span><br><span class="line">	0%   &#123;<span class="attribute">background</span>: red; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">top</span>:<span class="number">0px</span>;&#125;</span><br><span class="line">	25%  &#123;<span class="attribute">background</span>: yellow; <span class="attribute">left</span>:<span class="number">200px</span>; <span class="attribute">top</span>:<span class="number">0px</span>;&#125;</span><br><span class="line">	50%  &#123;<span class="attribute">background</span>: blue; <span class="attribute">left</span>:<span class="number">200px</span>; <span class="attribute">top</span>:<span class="number">200px</span>;&#125;</span><br><span class="line">	75%  &#123;<span class="attribute">background</span>: green; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">top</span>:<span class="number">200px</span>;&#125;</span><br><span class="line">	100% &#123;<span class="attribute">background</span>: red; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">top</span>:<span class="number">0px</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">	<span class="attribute">animation</span>: myfirst <span class="number">5s</span>;</span><br><span class="line"> 	<span class="attribute">-webkit-animation</span>: myfirst <span class="number">5s</span>; <span class="comment">/* Safari and Chrome */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="CSS3的动画属性"><a href="#CSS3的动画属性" class="headerlink" title="CSS3的动画属性"></a>CSS3的动画属性</h3><blockquote>
+<p>下面的表格列出了 @keyframes 规则和所有动画属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>CSS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-animation-keyframes.html" rel="external nofollow noopener noreferrer" target="_blank">@keyframes</a></td>
+<td>规定动画。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-animation.html" rel="external nofollow noopener noreferrer" target="_blank">animation</a></td>
+<td>所有动画属性的简写属性，除了 animation-play-state 属性。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-animation-name.html" rel="external nofollow noopener noreferrer" target="_blank">animation-name</a></td>
+<td>规定 @keyframes 动画的名称。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-animation-duration.html" rel="external nofollow noopener noreferrer" target="_blank">animation-duration</a></td>
+<td>规定动画完成一个周期所花费的秒或毫秒。默认是 0。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-animation-timing-function.html" rel="external nofollow noopener noreferrer" target="_blank">animation-timing-function</a></td>
+<td>规定动画的速度曲线。默认是 “ease”。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-animation-delay.html" rel="external nofollow noopener noreferrer" target="_blank">animation-delay</a></td>
+<td>规定动画何时开始。默认是 0。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-animation-iteration-count.html" rel="external nofollow noopener noreferrer" target="_blank">animation-iteration-count</a></td>
+<td>规定动画被播放的次数。默认是 1。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-animation-direction.html" rel="external nofollow noopener noreferrer" target="_blank">animation-direction</a></td>
+<td>规定动画是否在下一周期逆向地播放。默认是 “normal”。</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://www.w3cschool.cn/cssref/css3-pr-animation-play-state.html" rel="external nofollow noopener noreferrer" target="_blank">animation-play-state</a></td>
+<td>规定动画是否正在运行或暂停。默认是 “running”。</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>运行myfirst动画，设置所有的属性</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">	<span class="attribute">animation-name</span>: myfirst;</span><br><span class="line">	<span class="attribute">animation-duration</span>: <span class="number">5s</span>;</span><br><span class="line">	<span class="attribute">animation-timing-function</span>: linear;</span><br><span class="line">	<span class="attribute">animation-delay</span>: <span class="number">2s</span>;</span><br><span class="line">    <span class="attribute">animation-iteration-count</span>: infinite;</span><br><span class="line">	<span class="attribute">animation-direction</span>: alternate;</span><br><span class="line">	<span class="attribute">animation-play-state</span>: running;</span><br><span class="line"><span class="comment">/* Safari and Chrome: */</span></span><br><span class="line">	<span class="attribute">-webkit-animation-name</span>: myfirst;</span><br><span class="line">	<span class="attribute">-webkit-animation-duration</span>: <span class="number">5s</span>;</span><br><span class="line">	<span class="attribute">-webkit-animation-timing-function</span>: linear;</span><br><span class="line">	<span class="attribute">-webkit-animation-delay</span>: <span class="number">2s</span>;</span><br><span class="line">	<span class="attribute">-webkit-animation-iteration-count</span>: infinite;</span><br><span class="line">	<span class="attribute">-webkit-animation-direction</span>: alternate;</span><br><span class="line">	<span class="attribute">-webkit-animation-play-state</span>: running;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>与上面的动画相同，但是使用了简写的动画 animation 属性</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">	<span class="attribute">animation</span>: myfirst <span class="number">5s</span> linear <span class="number">2s</span> infinite alternate;</span><br><span class="line">	<span class="comment">/* Safari and Chrome: */</span></span><br><span class="line">	<span class="attribute">-webkit-animation</span>: myfirst <span class="number">5s</span> linear <span class="number">2s</span> infinite alternate;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="CSS3-弹性盒子-Flex-Box"><a href="#CSS3-弹性盒子-Flex-Box" class="headerlink" title="CSS3 弹性盒子(Flex Box)"></a>CSS3 弹性盒子(Flex Box)</h2><p><strong>详见<a href="https://qqqww.com/flex布局的语法和案例/">Flex布局</a></strong></p>
+<h2 id="CSS3用户界面"><a href="#CSS3用户界面" class="headerlink" title="CSS3用户界面"></a>CSS3用户界面</h2><blockquote>
+<p>在 CSS3 中, 增加了一些新的用户界面特性来调整元素尺寸，框尺寸和外边框</p>
+</blockquote>
+<h3 id="属性-8"><a href="#属性-8" class="headerlink" title="属性"></a>属性</h3><ul>
+<li>resize</li>
+<li>box-sizing</li>
+<li>outline-offset</li>
+</ul>
+<h3 id="兼容性-9"><a href="#兼容性-9" class="headerlink" title="兼容性"></a>兼容性</h3><blockquote>
+<p>表格中的数字表示支持该属性的第一个浏览器版本号</p>
+<p>紧跟在 -webkit-, -ms- 或 -moz- 前的数字为支持该前缀属性的第一个浏览器版本号</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>Chrome</th>
+<th>IE</th>
+<th>Firefox</th>
+<th>Safari</th>
+<th>Opera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>resize</td>
+<td>4.0</td>
+<td>不兼容</td>
+<td>5.0 4.0 -moz-</td>
+<td>4.0</td>
+<td>15.0</td>
+</tr>
+<tr>
+<td>box-sizing</td>
+<td>10.0 4.0 -webkit-</td>
+<td>8.0</td>
+<td>29.0 2.0 -moz-</td>
+<td>5.1 3.1 -webkit-</td>
+<td>9.5</td>
+</tr>
+<tr>
+<td>outline-offset</td>
+<td>4.0</td>
+<td>不兼容</td>
+<td>5.0 4.0 -moz-</td>
+<td>4.0</td>
+<td>9.5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="CSS3-调整尺寸"><a href="#CSS3-调整尺寸" class="headerlink" title="CSS3 调整尺寸"></a>CSS3 调整尺寸</h3><blockquote>
+<p> CSS3中，resize属性指定一个元素是否应该由用户去调整大小</p>
+</blockquote>
+<h4 id="语法-22"><a href="#语法-22" class="headerlink" title="语法"></a>语法</h4><blockquote>
+<p>resize属性指定一个元素是否是由用户调整大小的</p>
+</blockquote>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">resize: none|both|horizontal|vertical</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>none</td>
+<td>用户无法调整元素的尺寸。</td>
+</tr>
+<tr>
+<td>both</td>
+<td>用户可调整元素的高度和宽度。</td>
+</tr>
+<tr>
+<td>horizontal</td>
+<td>用户可调整元素的宽度。</td>
+</tr>
+<tr>
+<td>vertical</td>
+<td>用户可调整元素的高度。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="例子-22"><a href="#例子-22" class="headerlink" title="例子"></a>例子</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>W3Cschool教程(w3cschool.cn)<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"> </span></span><br><span class="line"><span class="undefined">div</span></span><br><span class="line"><span class="undefined">&#123;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">border</span><span class="selector-pseudo">:2px</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">padding</span><span class="selector-pseudo">:10px</span> 40<span class="selector-tag">px</span>; </span></span><br><span class="line"><span class="css">	<span class="selector-tag">width</span><span class="selector-pseudo">:300px</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">resize</span><span class="selector-pseudo">:both</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">overflow</span><span class="selector-pseudo">:auto</span>;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>注意:<span class="tag">&lt;/<span class="name">b</span>&gt;</span> Firefox, Safari,和 Chrome 兼容 resize 属性.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>The resize property specifies whether or not an element is resizable by the user.<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="CSS3-方框大小调整"><a href="#CSS3-方框大小调整" class="headerlink" title="CSS3 方框大小调整"></a>CSS3 方框大小调整</h3><blockquote>
+<p>box-sizing 属性允许您以确切的方式定义适应某个区域的具体内容</p>
+<p>简单来说就是当需要考虑 width 或者 height 包不包括 padding 和 border 的时候可以考虑使用 box-sizing</p>
+<p>例如：box-sizing:border-box的时候，边框和padding包含在元素的宽高之内</p>
+</blockquote>
+<h4 id="语法-23"><a href="#语法-23" class="headerlink" title="语法"></a>语法</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">box-sizing: content-box|border-box|inherit</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>content-box</td>
+<td>这是CSS2.1指定的宽度和高度的行为。指定元素的宽度和高度（最小/最大属性）适用于box的宽度和高度。元素的填充和边框布局和绘制指定宽度和高度除外</td>
+</tr>
+<tr>
+<td>border-box</td>
+<td>指定宽度和高度（最小/最大属性）确定元素边框box。也就是说，对元素指定宽度和高度包括padding和border的指定。内容的宽度和高度减去各自双方该边框和填充的宽度从指定的”宽度”和”高度”属性计算</td>
+</tr>
+<tr>
+<td>inherit</td>
+<td>指定box-sizing属性的值，应该从父元素继承</td>
+</tr>
+</tbody>
+</table>
+<p>####例子</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>W3Cschool教程(w3cschool.cn)<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"> </span></span><br><span class="line"><span class="css"><span class="selector-tag">div</span><span class="selector-class">.container</span></span></span><br><span class="line"><span class="undefined">&#123;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">width</span><span class="selector-pseudo">:30em</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">border</span><span class="selector-pseudo">:1em</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="css"><span class="selector-tag">div</span><span class="selector-class">.box</span></span></span><br><span class="line"><span class="undefined">&#123;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">box-sizing</span><span class="selector-pseudo">:border-box</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">-moz-box-sizing</span><span class="selector-pseudo">:border-box</span>; <span class="comment">/* Firefox */</span></span></span><br><span class="line"><span class="css">	<span class="selector-tag">width</span><span class="selector-pseudo">:50</span>%;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">border</span><span class="selector-pseudo">:1em</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">float</span><span class="selector-pseudo">:left</span>;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span>This div occupies the left half.<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span>This div occupies the right half.<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="CSS3-外形修饰"><a href="#CSS3-外形修饰" class="headerlink" title="CSS3 外形修饰"></a>CSS3 外形修饰</h3><blockquote>
+<p>简单来说就是在边框 border 外面又加了一层 outline-offset</p>
+<p>轮廓与边框有两点不同：</p>
+<ul>
+<li>轮廓不占用空间</li>
+<li>轮廓可能是非矩形</li>
+</ul>
+</blockquote>
+<h4 id="语法-24"><a href="#语法-24" class="headerlink" title="语法"></a>语法</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">outline-offset: length|inherit</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>length</em></td>
+<td>轮廓与边框边缘的距离。</td>
+</tr>
+<tr>
+<td>inherit</td>
+<td>规定应从父元素继承 outline-offset 属性的值。</td>
+</tr>
+</tbody>
+</table>
+<p>####例子</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>W3Cschool教程(w3cschool.cn)<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"> </span></span><br><span class="line"><span class="undefined">div</span></span><br><span class="line"><span class="undefined">&#123;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">margin</span><span class="selector-pseudo">:20px</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">width</span><span class="selector-pseudo">:150px</span>; </span></span><br><span class="line"><span class="css">	<span class="selector-tag">padding</span><span class="selector-pseudo">:10px</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">height</span><span class="selector-pseudo">:70px</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">border</span><span class="selector-pseudo">:2px</span> <span class="selector-tag">solid</span> <span class="selector-tag">black</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">outline</span><span class="selector-pseudo">:2px</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">outline-offset</span><span class="selector-pseudo">:15px</span>;</span></span><br><span class="line"><span class="undefined">&#125; </span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>注意:<span class="tag">&lt;/<span class="name">b</span>&gt;</span> Internet Explorer 不兼容 outline-offset属性.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>这个 div有一个轮廓边界15 px边境外的边缘。<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="CSS3-媒体查询"><a href="#CSS3-媒体查询" class="headerlink" title="CSS3 媒体查询"></a>CSS3 媒体查询</h2><blockquote>
+<p>媒体查询很多就是用来进行响应式开发了</p>
+</blockquote>
+<h3 id="兼容性-10"><a href="#兼容性-10" class="headerlink" title="兼容性"></a>兼容性</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>Chrome</th>
+<th>IE</th>
+<th>Firefox</th>
+<th>Safari</th>
+<th>Opera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@media</td>
+<td>21.0</td>
+<td>9.0</td>
+<td>3.5</td>
+<td>4.0</td>
+<td>9.0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="media"><a href="#media" class="headerlink" title="@media"></a>@media</h3><h4 id="语法-25"><a href="#语法-25" class="headerlink" title="语法"></a>语法</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">media</span> 媒体类型 and (条件) &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="例子-23"><a href="#例子-23" class="headerlink" title="例子"></a>例子</h4><p><strong>利用媒体查询做响应式布局开发：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">body &#123;</span></span><br><span class="line"><span class="undefined">    background-color: pink;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="css">@<span class="keyword">media</span> screen and (max-width: <span class="number">960px</span>) &#123;</span></span><br><span class="line"><span class="undefined">    body &#123;</span></span><br><span class="line"><span class="undefined">        background-color: darkgoldenrod;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="css">@<span class="keyword">media</span> screen and (max-width: <span class="number">480px</span>) &#123;</span></span><br><span class="line"><span class="undefined">    body &#123;</span></span><br><span class="line"><span class="undefined">        background-color: lightgreen;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>重置浏览器窗口查看效果！<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>如果媒体类型屏幕的可视窗口宽度小于 960 px ，背景颜色将改变。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>如果媒体类型屏幕的可视窗口宽度小于 480 px ，背景颜色将改变。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -1070,7 +1805,7 @@
   <p><span>本文标题:</span>CSS3新特性整理</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月22日 - 17:00:23</p>
-  <p><span>最后更新:</span>2019年01月22日 - 19:49:45</p>
+  <p><span>最后更新:</span>2019年01月22日 - 22:45:35</p>
   <p><span>原始链接:</span><a href="/CSS3新特性整理/" title="CSS3新特性整理">https://qqqww.com/CSS3新特性整理/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/CSS3新特性整理/" aria-label="复制成功！"></i></span>
   </p>
@@ -1340,7 +2075,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS3新特性"><span class="nav-number">1.</span> <span class="nav-text">CSS3新特性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3边框"><span class="nav-number">1.1.</span> <span class="nav-text">CSS3边框</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性"><span class="nav-number">1.1.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性"><span class="nav-number">1.1.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-圆角边框"><span class="nav-number">1.1.3.</span> <span class="nav-text">CSS3 圆角边框</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">语法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3盒阴影"><span class="nav-number">1.1.4.</span> <span class="nav-text">CSS3盒阴影</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-1"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3边界图片"><span class="nav-number">1.1.5.</span> <span class="nav-text">CSS3边界图片</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-2"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-1"><span class="nav-number">1.1.5.2.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3背景"><span class="nav-number">1.2.</span> <span class="nav-text">CSS3背景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-背景图片"><span class="nav-number">1.2.3.</span> <span class="nav-text">CSS3 背景图片</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-3"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-2"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-背景图像大小"><span class="nav-number">1.2.4.</span> <span class="nav-text">CSS3 背景图像大小</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-4"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-3"><span class="nav-number">1.2.4.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-背景起始位置"><span class="nav-number">1.2.5.</span> <span class="nav-text">CSS3 背景起始位置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-5"><span class="nav-number">1.2.5.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-4"><span class="nav-number">1.2.5.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-背景图像裁剪"><span class="nav-number">1.2.6.</span> <span class="nav-text">CSS3 背景图像裁剪</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-6"><span class="nav-number">1.2.6.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-5"><span class="nav-number">1.2.6.2.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3渐变"><span class="nav-number">1.3.</span> <span class="nav-text">CSS3渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-2"><span class="nav-number">1.3.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3线性渐变"><span class="nav-number">1.3.3.</span> <span class="nav-text">CSS3线性渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-7"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-6"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#角度渐变"><span class="nav-number">1.3.3.3.</span> <span class="nav-text">角度渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#例子-7"><span class="nav-number">1.3.3.3.1.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3径向渐变"><span class="nav-number">1.3.4.</span> <span class="nav-text">CSS3径向渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-8"><span class="nav-number">1.3.4.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-8"><span class="nav-number">1.3.4.2.</span> <span class="nav-text">例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置形状"><span class="nav-number">1.3.4.3.</span> <span class="nav-text">设置形状</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不同尺寸大小关键字的使用"><span class="nav-number">1.3.4.4.</span> <span class="nav-text">不同尺寸大小关键字的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重复的径向渐变"><span class="nav-number">1.3.4.5.</span> <span class="nav-text">重复的径向渐变</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3文本效果"><span class="nav-number">1.4.</span> <span class="nav-text">CSS3文本效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-3"><span class="nav-number">1.4.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-3"><span class="nav-number">1.4.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3文本阴影"><span class="nav-number">1.4.3.</span> <span class="nav-text">CSS3文本阴影</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-9"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-9"><span class="nav-number">1.4.3.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3盒子阴影"><span class="nav-number">1.4.4.</span> <span class="nav-text">CSS3盒子阴影</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-10"><span class="nav-number">1.4.4.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-10"><span class="nav-number">1.4.4.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3溢出内容效果"><span class="nav-number">1.4.5.</span> <span class="nav-text">CSS3溢出内容效果</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-11"><span class="nav-number">1.4.5.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-11"><span class="nav-number">1.4.5.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3换行"><span class="nav-number">1.4.6.</span> <span class="nav-text">CSS3换行</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-12"><span class="nav-number">1.4.6.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-12"><span class="nav-number">1.4.6.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3单词拆分行"><span class="nav-number">1.4.7.</span> <span class="nav-text">CSS3单词拆分行</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-13"><span class="nav-number">1.4.7.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-13"><span class="nav-number">1.4.7.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS其他文本属性"><span class="nav-number">1.4.8.</span> <span class="nav-text">CSS其他文本属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3字体"><span class="nav-number">1.5.</span> <span class="nav-text">CSS3字体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-4"><span class="nav-number">1.5.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-4"><span class="nav-number">1.5.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3设置字体"><span class="nav-number">1.5.3.</span> <span class="nav-text">CSS3设置字体</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-14"><span class="nav-number">1.5.3.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-14"><span class="nav-number">1.5.3.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-字体描述"><span class="nav-number">1.5.4.</span> <span class="nav-text">CSS3 字体描述</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS3新特性"><span class="nav-number">1.</span> <span class="nav-text">CSS3新特性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3边框"><span class="nav-number">1.1.</span> <span class="nav-text">CSS3边框</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性"><span class="nav-number">1.1.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性"><span class="nav-number">1.1.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-圆角边框"><span class="nav-number">1.1.3.</span> <span class="nav-text">CSS3 圆角边框</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">语法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3盒阴影"><span class="nav-number">1.1.4.</span> <span class="nav-text">CSS3盒阴影</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-1"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3边界图片"><span class="nav-number">1.1.5.</span> <span class="nav-text">CSS3边界图片</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-2"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-1"><span class="nav-number">1.1.5.2.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3背景"><span class="nav-number">1.2.</span> <span class="nav-text">CSS3背景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-背景图片"><span class="nav-number">1.2.3.</span> <span class="nav-text">CSS3 背景图片</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-3"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-2"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-背景图像大小"><span class="nav-number">1.2.4.</span> <span class="nav-text">CSS3 背景图像大小</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-4"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-3"><span class="nav-number">1.2.4.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-背景起始位置"><span class="nav-number">1.2.5.</span> <span class="nav-text">CSS3 背景起始位置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-5"><span class="nav-number">1.2.5.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-4"><span class="nav-number">1.2.5.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-背景图像裁剪"><span class="nav-number">1.2.6.</span> <span class="nav-text">CSS3 背景图像裁剪</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-6"><span class="nav-number">1.2.6.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-5"><span class="nav-number">1.2.6.2.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3渐变"><span class="nav-number">1.3.</span> <span class="nav-text">CSS3渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-2"><span class="nav-number">1.3.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3线性渐变"><span class="nav-number">1.3.3.</span> <span class="nav-text">CSS3线性渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-7"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-6"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#角度渐变"><span class="nav-number">1.3.3.3.</span> <span class="nav-text">角度渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#例子-7"><span class="nav-number">1.3.3.3.1.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3径向渐变"><span class="nav-number">1.3.4.</span> <span class="nav-text">CSS3径向渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-8"><span class="nav-number">1.3.4.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-8"><span class="nav-number">1.3.4.2.</span> <span class="nav-text">例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置形状"><span class="nav-number">1.3.4.3.</span> <span class="nav-text">设置形状</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不同尺寸大小关键字的使用"><span class="nav-number">1.3.4.4.</span> <span class="nav-text">不同尺寸大小关键字的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重复的径向渐变"><span class="nav-number">1.3.4.5.</span> <span class="nav-text">重复的径向渐变</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3文本效果"><span class="nav-number">1.4.</span> <span class="nav-text">CSS3文本效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-3"><span class="nav-number">1.4.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-3"><span class="nav-number">1.4.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3文本阴影"><span class="nav-number">1.4.3.</span> <span class="nav-text">CSS3文本阴影</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-9"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-9"><span class="nav-number">1.4.3.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3盒子阴影"><span class="nav-number">1.4.4.</span> <span class="nav-text">CSS3盒子阴影</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-10"><span class="nav-number">1.4.4.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-10"><span class="nav-number">1.4.4.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3溢出内容效果"><span class="nav-number">1.4.5.</span> <span class="nav-text">CSS3溢出内容效果</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-11"><span class="nav-number">1.4.5.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-11"><span class="nav-number">1.4.5.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3换行"><span class="nav-number">1.4.6.</span> <span class="nav-text">CSS3换行</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-12"><span class="nav-number">1.4.6.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-12"><span class="nav-number">1.4.6.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3单词拆分行"><span class="nav-number">1.4.7.</span> <span class="nav-text">CSS3单词拆分行</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-13"><span class="nav-number">1.4.7.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-13"><span class="nav-number">1.4.7.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS其他文本属性"><span class="nav-number">1.4.8.</span> <span class="nav-text">CSS其他文本属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3字体"><span class="nav-number">1.5.</span> <span class="nav-text">CSS3字体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-4"><span class="nav-number">1.5.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-4"><span class="nav-number">1.5.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3设置字体"><span class="nav-number">1.5.3.</span> <span class="nav-text">CSS3设置字体</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-14"><span class="nav-number">1.5.3.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-14"><span class="nav-number">1.5.3.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-字体描述"><span class="nav-number">1.5.4.</span> <span class="nav-text">CSS3 字体描述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3-2D-转换"><span class="nav-number">1.6.</span> <span class="nav-text">CSS3 2D 转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-5"><span class="nav-number">1.6.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法"><span class="nav-number">1.6.2.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-5"><span class="nav-number">1.6.3.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#translate"><span class="nav-number">1.6.4.</span> <span class="nav-text">translate()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-15"><span class="nav-number">1.6.4.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#案例"><span class="nav-number">1.6.4.2.</span> <span class="nav-text">案例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rotate"><span class="nav-number">1.6.5.</span> <span class="nav-text">rotate()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-16"><span class="nav-number">1.6.5.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-15"><span class="nav-number">1.6.5.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#scale"><span class="nav-number">1.6.6.</span> <span class="nav-text">scale()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-17"><span class="nav-number">1.6.6.1.</span> <span class="nav-text">语法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#skew"><span class="nav-number">1.6.7.</span> <span class="nav-text">skew()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-18"><span class="nav-number">1.6.7.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-16"><span class="nav-number">1.6.7.2.</span> <span class="nav-text">例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-19"><span class="nav-number">1.6.7.3.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-17"><span class="nav-number">1.6.7.4.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3-3D转换"><span class="nav-number">1.7.</span> <span class="nav-text">CSS3 3D转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-6"><span class="nav-number">1.7.1.</span> <span class="nav-text">兼容性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-18"><span class="nav-number">1.7.1.1.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rotateY"><span class="nav-number">1.7.2.</span> <span class="nav-text">rotateY()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-19"><span class="nav-number">1.7.2.1.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-转换属性"><span class="nav-number">1.7.3.</span> <span class="nav-text">CSS3 转换属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-3D-转换方法"><span class="nav-number">1.7.4.</span> <span class="nav-text">CSS3 3D 转换方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3-过渡"><span class="nav-number">1.8.</span> <span class="nav-text">CSS3 过渡</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-6"><span class="nav-number">1.8.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-7"><span class="nav-number">1.8.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#transition"><span class="nav-number">1.8.3.</span> <span class="nav-text">transition</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-20"><span class="nav-number">1.8.3.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-20"><span class="nav-number">1.8.3.2.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3-动画"><span class="nav-number">1.9.</span> <span class="nav-text">CSS3 动画</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-7"><span class="nav-number">1.9.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-8"><span class="nav-number">1.9.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语法-21"><span class="nav-number">1.9.3.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例子-21"><span class="nav-number">1.9.4.</span> <span class="nav-text">例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3的动画属性"><span class="nav-number">1.9.5.</span> <span class="nav-text">CSS3的动画属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3-弹性盒子-Flex-Box"><span class="nav-number">1.10.</span> <span class="nav-text">CSS3 弹性盒子(Flex Box)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3用户界面"><span class="nav-number">1.11.</span> <span class="nav-text">CSS3用户界面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性-8"><span class="nav-number">1.11.1.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-9"><span class="nav-number">1.11.2.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-调整尺寸"><span class="nav-number">1.11.3.</span> <span class="nav-text">CSS3 调整尺寸</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-22"><span class="nav-number">1.11.3.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-22"><span class="nav-number">1.11.3.2.</span> <span class="nav-text">例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-方框大小调整"><span class="nav-number">1.11.4.</span> <span class="nav-text">CSS3 方框大小调整</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-23"><span class="nav-number">1.11.4.1.</span> <span class="nav-text">语法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3-外形修饰"><span class="nav-number">1.11.5.</span> <span class="nav-text">CSS3 外形修饰</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-24"><span class="nav-number">1.11.5.1.</span> <span class="nav-text">语法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3-媒体查询"><span class="nav-number">1.12.</span> <span class="nav-text">CSS3 媒体查询</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性-10"><span class="nav-number">1.12.1.</span> <span class="nav-text">兼容性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#media"><span class="nav-number">1.12.2.</span> <span class="nav-text">@media</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法-25"><span class="nav-number">1.12.2.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-23"><span class="nav-number">1.12.2.2.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -1384,7 +2119,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">58.8k</span>
+    <span title="Site words total count">62.9k</span>
   
 </div>
 
@@ -1414,7 +2149,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共58.8k字</span>
+  <span class="post-count">博客全站共62.9k字</span>
 </div>
 
         
