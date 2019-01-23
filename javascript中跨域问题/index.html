@@ -100,7 +100,7 @@
 <meta property="og:site_name" content="工头的博客">
 <meta property="og:description" content="javascript中跨域主要三种：proxy代理, CORS, jsonp">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-21T09:47:09.601Z">
+<meta property="og:updated_time" content="2019-01-23T15:21:26.242Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript中跨域问题">
 <meta name="twitter:description" content="javascript中跨域主要三种：proxy代理, CORS, jsonp">
@@ -400,7 +400,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  563 字
+                  557 字
                 </span>
               
 
@@ -463,7 +463,7 @@
 <h3 id="jsonp"><a href="#jsonp" class="headerlink" title="jsonp"></a>jsonp</h3><p><strong>定义和用法：</strong>通过动态插入一个script标签。<strong>浏览器对script的资源引用没有同源限制</strong>，同时资源加载到页面后会立即执行（没有阻塞的情况下）</p>
 <p><strong>特点：</strong>通过情况下，通过动态创建script来读取他域的动态资源，获取的数据一般为<code>json</code>格式。</p>
 <p><strong>实例：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    function testjsonp(data) &#123;</span><br><span class="line">       console.log(data.name); // 获取返回的结果</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var _script = document.createElement(&apos;script&apos;);</span><br><span class="line">    _script.type = &quot;text/javascript&quot;;</span><br><span class="line">    _script.src = &quot;http://localhost:8888/jsonp?callback=testjsonp&quot;;</span><br><span class="line">    document.head.appendChild(_script);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">testjsonp</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">       <span class="built_in">console</span>.log(data.name); <span class="comment">// 获取返回的结果</span></span><br><span class="line">    &#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">    var _script = document.createElement('script');</span></span><br><span class="line"><span class="regexp">    _script.type = "text/</span>javascript<span class="string">";</span></span><br><span class="line"><span class="string">    _script.src = "</span>http:<span class="comment">//localhost:8888/jsonp?callback=testjsonp";</span></span><br><span class="line">    <span class="built_in">document</span>.head.appendChild(_script);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
 <p><strong>缺点：</strong></p>
 <p>　　1、这种方式无法发送post请求（这里）</p>
 <p>　　2、另外要确定jsonp的请求是否失败并不容易，大多数框架的实现都是结合超时时间来判定</p>
@@ -489,7 +489,7 @@
   <p><span>本文标题:</span>javascript中跨域问题</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月21日 - 17:01:02</p>
-  <p><span>最后更新:</span>2019年01月21日 - 17:47:09</p>
+  <p><span>最后更新:</span>2019年01月23日 - 23:21:26</p>
   <p><span>原始链接:</span><a href="/javascript中跨域问题/" title="javascript中跨域问题">https://qqqww.com/javascript中跨域问题/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript中跨域问题/" aria-label="复制成功！"></i></span>
   </p>
