@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-22T14:45:35.204Z</updated>
+  <updated>2019-01-23T13:49:52.280Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DOCTYPE解读</title>
+    <link href="https://qqqww.com/DOCTYPE%E8%A7%A3%E8%AF%BB/"/>
+    <id>https://qqqww.com/DOCTYPE解读/</id>
+    <published>2019-01-23T13:18:32.000Z</published>
+    <updated>2019-01-23T13:49:52.280Z</updated>
+    
+    <summary type="html">
+    
+      本文是对DOCTYPE的解读, 具体解读了标准模式(strandards), 兼容模式(quirks), DTD, DOCTYPE文档类型等
+    
+    </summary>
+    
+    
+      <category term="DOCTYPE" scheme="https://qqqww.com/tags/DOCTYPE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS-sprites</title>
+    <link href="https://qqqww.com/CSS-sprites/"/>
+    <id>https://qqqww.com/CSS-sprites/</id>
+    <published>2019-01-23T12:20:06.000Z</published>
+    <updated>2019-01-23T12:46:35.400Z</updated>
+    
+    <summary type="html">
+    
+      CSS-sprites，又叫精灵图
+    
+    </summary>
+    
+    
+      <category term="CSS-sprites" scheme="https://qqqww.com/tags/CSS-sprites/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS BFC的理解</title>
+    <link href="https://qqqww.com/CSS-BFC%E7%9A%84%E7%90%86%E8%A7%A3/"/>
+    <id>https://qqqww.com/CSS-BFC的理解/</id>
+    <published>2019-01-23T10:17:55.000Z</published>
+    <updated>2019-01-23T12:14:49.265Z</updated>
+    
+    <summary type="html">
+    
+      CSS中BFC的理解
+    
+    </summary>
+    
+    
+      <category term="CSS BFC的理解" scheme="https://qqqww.com/tags/CSS-BFC%E7%9A%84%E7%90%86%E8%A7%A3/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS3新特性整理</title>
@@ -319,60 +373,6 @@
     
     
       <category term="git克隆失败" scheme="https://qqqww.com/tags/git%E5%85%8B%E9%9A%86%E5%A4%B1%E8%B4%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactNative豆瓣电影项目文档</title>
-    <link href="https://qqqww.com/ReactNative%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/"/>
-    <id>https://qqqww.com/ReactNative豆瓣电影项目文档/</id>
-    <published>2019-01-10T19:27:04.000Z</published>
-    <updated>2019-01-18T12:22:58.881Z</updated>
-    
-    <summary type="html">
-    
-      ReactNative豆瓣电影，react-native，android环境搭建，android打包发布等技能
-    
-    </summary>
-    
-    
-      <category term="ReactNative豆瓣电影" scheme="https://qqqww.com/tags/ReactNative%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactNative组件</title>
-    <link href="https://qqqww.com/ReactNative%E7%BB%84%E4%BB%B6/"/>
-    <id>https://qqqww.com/ReactNative组件/</id>
-    <published>2019-01-10T18:43:21.000Z</published>
-    <updated>2019-01-11T11:35:45.446Z</updated>
-    
-    <summary type="html">
-    
-      ReactNative组件
-    
-    </summary>
-    
-    
-      <category term="ReactNative组件" scheme="https://qqqww.com/tags/ReactNative%E7%BB%84%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactNative项目环境搭建</title>
-    <link href="https://qqqww.com/ReactNative%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>https://qqqww.com/ReactNative项目环境搭建/</id>
-    <published>2019-01-08T11:53:52.000Z</published>
-    <updated>2019-01-10T19:36:27.585Z</updated>
-    
-    <summary type="html">
-    
-      ReactNative项目环境搭建，这里首先搭建了android编译环境,然后打包安装到安卓手机
-    
-    </summary>
-    
-    
-      <category term="ReactNative豆瓣电影" scheme="https://qqqww.com/tags/ReactNative%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1/"/>
     
   </entry>
   
