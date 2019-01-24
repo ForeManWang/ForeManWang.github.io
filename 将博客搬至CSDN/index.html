@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="sessionStorage 、localStorage、Cookie">
+  <meta name="keywords" content="王工头, Web前端">
 
 
 
@@ -92,18 +92,18 @@
 
 
 
-<meta name="description" content="javascript中sessionStorage 、localStorage 和 Cookie 的异同和用法">
-<meta name="keywords" content="sessionStorage 、localStorage、Cookie">
+<meta name="description" content="一个平凡的Web前端开发者。">
+<meta name="keywords" content="Web前端开发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javascript中sessionStorage 、localStorage 和 Cookie">
-<meta property="og:url" content="https://qqqww.com/javascript中sessionStorage-、localStorage-和-cookie/index.html">
+<meta property="og:title" content="将博客搬至CSDN">
+<meta property="og:url" content="https://qqqww.com/将博客搬至CSDN/index.html">
 <meta property="og:site_name" content="工头的博客">
-<meta property="og:description" content="javascript中sessionStorage 、localStorage 和 Cookie 的异同和用法">
+<meta property="og:description" content="一个平凡的Web前端开发者。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-21T13:39:56.395Z">
+<meta property="og:updated_time" content="2019-01-24T08:16:40.464Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javascript中sessionStorage 、localStorage 和 Cookie">
-<meta name="twitter:description" content="javascript中sessionStorage 、localStorage 和 Cookie 的异同和用法">
+<meta name="twitter:title" content="将博客搬至CSDN">
+<meta name="twitter:description" content="一个平凡的Web前端开发者。">
 
 
 
@@ -133,7 +133,7 @@
 
 
 
-  <link rel="canonical" href="https://qqqww.com/javascript中sessionStorage-、localStorage-和-cookie/">
+  <link rel="canonical" href="https://qqqww.com/将博客搬至CSDN/">
 
 
 
@@ -157,7 +157,7 @@
 
 
 
-  <title>javascript中sessionStorage 、localStorage 和 Cookie | 工头的博客</title>
+  <title>将博客搬至CSDN | 工头的博客</title>
   
 
 
@@ -338,7 +338,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://qqqww.com/javascript中sessionStorage-、localStorage-和-cookie/">
+    <link itemprop="mainEntityOfPage" href="https://qqqww.com/将博客搬至CSDN/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王工头">
@@ -355,7 +355,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">javascript中sessionStorage 、localStorage 和 Cookie</h2>
+          <h2 class="post-title" itemprop="name headline">将博客搬至CSDN</h2>
         
 
         <div class="post-meta">
@@ -368,8 +368,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-21T17:53:43+08:00">
-                2019-01-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-24T16:16:40+08:00">
+                2019-01-24
               </time>
             
 
@@ -400,7 +400,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  974 字
+                  0 字
                 </span>
               
 
@@ -416,16 +416,12 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3 分钟
+                  1 分钟
                 </span>
               
             </div>
           
 
-          
-              <div class="post-description">
-                  javascript中sessionStorage 、localStorage 和 Cookie 的异同和用法 
-              </div>
           
 
         </div>
@@ -441,103 +437,7 @@
       
 
       
-        <h1 id="javascript中sessionStorage-、localStorage-和-Cookie"><a href="#javascript中sessionStorage-、localStorage-和-Cookie" class="headerlink" title="javascript中sessionStorage 、localStorage 和 Cookie"></a>javascript中sessionStorage 、localStorage 和 Cookie</h1><blockquote>
-<p> 参考文章：<a href="https://www.cnblogs.com/minigrasshopper/p/8064367.html" rel="external nofollow noopener noreferrer" target="_blank"><a href="https://www.cnblogs.com/minigrasshopper/p/8064367.html" rel="external nofollow noopener noreferrer" target="_blank">JS 详解 Cookie、 LocalStorage 与 SessionStorage</a></a></p>
-<p>下面是个人总结内容：</p>
-</blockquote>
-<h2 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h2><blockquote>
-<p>用于浏览器端存储的缓存数据</p>
-</blockquote>
-<h2 id="不同点"><a href="#不同点" class="headerlink" title="不同点"></a>不同点</h2><table>
-<thead>
-<tr>
-<th>特性</th>
-<th>Cookie</th>
-<th>localStorage</th>
-<th>sessionStorage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>数据的生命期</td>
-<td>可设置的失效时间，到达时间自动过期</td>
-<td>除非被清除，否则永久保存</td>
-<td>仅用于当前会话，浏览器关闭，立即被清除</td>
-</tr>
-<tr>
-<td>存放数据大小</td>
-<td>4K左右</td>
-<td>一般为5MB</td>
-<td>一般为5MB</td>
-</tr>
-<tr>
-<td>与服务器端通信</td>
-<td>携带在HTTP头中，数据会发送到服务器端，可能造成宽带浪费</td>
-<td>只在客户端，不参与和服务端的通信</td>
-<td>只在客户端，不参与和服务端的通信</td>
-</tr>
-<tr>
-<td>易用性</td>
-<td>需程序员自己封装，源生的Cookie接口不友好</td>
-<td>源生接口可以接受，亦可再次封装来对Object和Array有更好的支持</td>
-<td>源生接口可以接受，亦可再次封装来对Object和Array有更好的支持</td>
-</tr>
-</tbody>
-</table>
-<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p><strong>Cookie：</strong></p>
-<pre><code>1. 最好精简，因为本身存放数据大小很小
-2. 常用于判断用户登录，对于登录过的用户，浏览器会插入一个唯一的标识，当下次用户需要登录，只要读取到这个值，就能判断当前用户是否登录了
-</code></pre><p><strong>localStorage:</strong></p>
-<pre><code>1. 购物车管理工作，一些产生的本地数据用以完成数据持久化
-</code></pre><p><strong>sessionStorage：</strong></p>
-<ol>
-<li>多页面表单，按步骤引导用户填写</li>
-</ol>
-<h3 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h3><ol>
-<li><strong>Cookie、localStorage 和 sessionStorage</strong>三者，只要打开控制台，都能看到这三者存放的数据的，并且能够随意修改，所以会产生风险</li>
-<li>而<strong>sessionStorage</strong>使用了<strong>session</strong>加密，这样用户看到的数据都是经过加密处理过的，会难以获取正确的标识</li>
-<li>但是对于<strong>localStorage</strong>或者<strong>Cookie</strong>的数据，就可以被肆意妄为的修改或者伪造了</li>
-<li>上面是我个人的一些理解，文章中还提到了<strong>XSS</strong>注入的风险，关于<strong>XSS注入</strong>为此我专门查了些文档，推荐一篇自我感觉写的相当详细的<a href="https://www.cnblogs.com/TankXiao/archive/2012/03/21/2337194.html" rel="external nofollow noopener noreferrer" target="_blank"><a href="https://www.cnblogs.com/TankXiao/archive/2012/03/21/2337194.html" rel="external nofollow noopener noreferrer" target="_blank">Web安全测试之XSS</a></a></li>
-</ol>
-<h2 id="Web-Storage-AND-Cookie"><a href="#Web-Storage-AND-Cookie" class="headerlink" title="Web Storage  AND  Cookie"></a>Web Storage  AND  Cookie</h2><ol>
-<li>前者存储空间更大</li>
-<li>前者存储内容不会发送到服务器，防止造成宽带浪费</li>
-<li>接口丰富</li>
-<li>独立的存储空间：每个域（包括子域）有独立的存储空间，各个存储空间是完全独立的，避免造成数据混乱</li>
-<li>每个特定的域名下最多生成20个cookie</li>
-<li><code>sessionStorage</code>用于本地存储一个会话存储，关闭会话，随之销毁</li>
-<li><code>localStorage</code>用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的</li>
-<li><code>Cookie</code>的作用是与服务器进行交互，作为<code>HTTP</code>规范的一部分而存在 ，而<code>Web Storage</code>仅仅是为了在本地存储数据而生</li>
-</ol>
-<h2 id="一些基本操作"><a href="#一些基本操作" class="headerlink" title="一些基本操作"></a>一些基本操作</h2><blockquote>
-<p><code>localStorage</code>和<code>sessionStorage</code>都具有相同的操作方法，例如<code>setItem</code>、<code>getItem</code>和<code>removeItem</code>等</p>
-</blockquote>
-<h3 id="setItem存储value"><a href="#setItem存储value" class="headerlink" title="setItem存储value"></a>setItem存储value</h3><blockquote>
-<p> 用于存储对象格式的数据</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sessionStorage.setItem(<span class="string">"key"</span>, <span class="string">"value"</span>);     </span><br><span class="line">localStorage.setItem(<span class="string">"site"</span>, <span class="string">"qqqww"</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="getItem获取value"><a href="#getItem获取value" class="headerlink" title="getItem获取value"></a>getItem获取value</h3><blockquote>
-<p>获取指定关键字段<code>key</code>本地存储的值</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> value = sessionStorage.getItem(<span class="string">"key"</span>);     </span><br><span class="line"><span class="keyword">var</span> site = localStorage.getItem(<span class="string">"site"</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="removeItem删除key"><a href="#removeItem删除key" class="headerlink" title="removeItem删除key"></a>removeItem删除key</h3><blockquote>
-<p>删除指定关键字段<code>key</code>本地存储的值</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sessionStorage.removeItem(<span class="string">"key"</span>);     </span><br><span class="line">localStorage.removeItem(<span class="string">"site"</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="clear清除所有的key-value"><a href="#clear清除所有的key-value" class="headerlink" title="clear清除所有的key/value"></a>clear清除所有的key/value</h3><blockquote>
-<p>清除所有本地的<code>key/value</code></p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sessionStorage.clear();     </span><br><span class="line">localStorage.clear();</span><br></pre></td></tr></table></figure>
-<h3 id="其他操作方法：点操作和"><a href="#其他操作方法：点操作和" class="headerlink" title="其他操作方法：点操作和[ ]"></a>其他操作方法：点操作和[ ]</h3><blockquote>
-<p><code>web Storage</code>不但可以用自身的<code>setItem`</code>,getItem`等方便存取，也可以像普通对象一样用点(.)操作符，及[]的方式进行数据存储</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> storage = <span class="built_in">window</span>.localStorage</span><br><span class="line">storage.key1 = <span class="string">"hello"</span></span><br><span class="line">storage[<span class="string">"key2"</span>] = <span class="string">"world"</span> </span><br><span class="line"><span class="built_in">console</span>.log(storage.key1)</span><br><span class="line"><span class="built_in">console</span>.log(storage[<span class="string">"key2"</span>])</span><br></pre></td></tr></table></figure>
-<h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><blockquote>
-<p> <strong>localStorage和sessionStorage的key和length属性实现遍历</strong></p>
-<p><code>sessionStorage</code>和<code>localStorage</code>提供的<code>key()</code>和<code>length</code>可以方便的实现存储的数据遍历</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> storage = <span class="built_in">window</span>.localStorage;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>, len=storage.length; i&lt;len;i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> key = storage.key(i);     </span><br><span class="line">    <span class="keyword">var</span> value = storage.getItem(key);     </span><br><span class="line">    <span class="built_in">console</span>.log(key + <span class="string">"="</span> + value); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+        
       
     </div>
     
@@ -556,12 +456,12 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>javascript中sessionStorage 、localStorage 和 Cookie</p>
+  <p><span>本文标题:</span>将博客搬至CSDN</p>
   <p><span>文章作者:</span>王工头</p>
-  <p><span>发布时间:</span>2019年01月21日 - 17:53:43</p>
-  <p><span>最后更新:</span>2019年01月21日 - 21:39:56</p>
-  <p><span>原始链接:</span><a href="/javascript中sessionStorage-、localStorage-和-cookie/" title="javascript中sessionStorage 、localStorage 和 Cookie">https://qqqww.com/javascript中sessionStorage-、localStorage-和-cookie/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript中sessionStorage-、localStorage-和-cookie/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年01月24日 - 16:16:40</p>
+  <p><span>最后更新:</span>2019年01月24日 - 16:16:40</p>
+  <p><span>原始链接:</span><a href="/将博客搬至CSDN/" title="将博客搬至CSDN">https://qqqww.com/将博客搬至CSDN/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/将博客搬至CSDN/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -601,12 +501,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/sessionStorage-、localStorage-和-cookie/" rel="tag"><i class="fa fa-tag"></i> sessionStorage 、localStorage 和 cookie</a>
-          
-        </div>
-      
 
       
       
@@ -616,8 +510,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/javascript中跨域问题/" rel="next" title="javascript中跨域问题">
-                <i class="fa fa-chevron-left"></i> javascript中跨域问题
+              <a href="/Web前端中的几种布局/" rel="next" title="Web前端中的几种布局">
+                <i class="fa fa-chevron-left"></i> Web前端中的几种布局
               </a>
             
           </div>
@@ -625,10 +519,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/开发及性能优化/" rel="prev" title="雅虎十四条性能优化原则">
-                雅虎十四条性能优化原则 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -711,17 +601,8 @@ var jiathis_config={
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -823,22 +704,6 @@ var jiathis_config={
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#javascript中sessionStorage-、localStorage-和-Cookie"><span class="nav-number">1.</span> <span class="nav-text">javascript中sessionStorage 、localStorage 和 Cookie</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#相同点"><span class="nav-number">1.1.</span> <span class="nav-text">相同点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不同点"><span class="nav-number">1.2.</span> <span class="nav-text">不同点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#应用场景"><span class="nav-number">1.2.1.</span> <span class="nav-text">应用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安全性"><span class="nav-number">1.2.2.</span> <span class="nav-text">安全性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-Storage-AND-Cookie"><span class="nav-number">1.3.</span> <span class="nav-text">Web Storage  AND  Cookie</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些基本操作"><span class="nav-number">1.4.</span> <span class="nav-text">一些基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#setItem存储value"><span class="nav-number">1.4.1.</span> <span class="nav-text">setItem存储value</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#getItem获取value"><span class="nav-number">1.4.2.</span> <span class="nav-text">getItem获取value</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#removeItem删除key"><span class="nav-number">1.4.3.</span> <span class="nav-text">removeItem删除key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#clear清除所有的key-value"><span class="nav-number">1.4.4.</span> <span class="nav-text">clear清除所有的key/value</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他操作方法：点操作和"><span class="nav-number">1.4.5.</span> <span class="nav-text">其他操作方法：点操作和[ ]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遍历"><span class="nav-number">1.4.6.</span> <span class="nav-text">遍历</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
       <div id="music163player">
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=490106148&auto=1&height=66"></iframe> 
