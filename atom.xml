@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-24T05:30:33.457Z</updated>
+  <updated>2019-01-24T06:58:51.901Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://qqqww.com/Web%E5%89%8D%E7%AB%AF%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%83%E5%B1%80/"/>
     <id>https://qqqww.com/Web前端中的几种布局/</id>
     <published>2019-01-24T02:35:24.000Z</published>
-    <updated>2019-01-24T05:30:33.457Z</updated>
+    <updated>2019-01-24T06:58:51.901Z</updated>
     
     <summary type="html">
     
-      Web前端中的几种布局，圣杯布局，双飞翼布局，栅格布局，flex布局，绝对定位布局
+      Web前端中的几种布局，圣杯布局，双飞翼布局，栅格布局，Flex布局，绝对定位布局
     
     </summary>
     
@@ -359,20 +359,20 @@
   </entry>
   
   <entry>
-    <title>Flex布局</title>
-    <link href="https://qqqww.com/Flex%E5%B8%83%E5%B1%80/"/>
-    <id>https://qqqww.com/Flex布局/</id>
-    <published>2019-01-17T09:50:17.000Z</published>
-    <updated>2019-01-17T11:36:28.285Z</updated>
+    <title>git克隆失败和解决办法</title>
+    <link href="https://qqqww.com/git%E5%85%8B%E9%9A%86%E5%A4%B1%E8%B4%A5%E5%92%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>https://qqqww.com/git克隆失败和解决办法/</id>
+    <published>2019-01-17T04:47:24.000Z</published>
+    <updated>2019-01-17T04:52:18.180Z</updated>
     
     <summary type="html">
     
-      flex布局
+      git clone 失败，解决办法是加上 --depth 1
     
     </summary>
     
     
-      <category term="flex布局" scheme="https://qqqww.com/tags/flex%E5%B8%83%E5%B1%80/"/>
+      <category term="git克隆失败" scheme="https://qqqww.com/tags/git%E5%85%8B%E9%9A%86%E5%A4%B1%E8%B4%A5/"/>
     
   </entry>
   

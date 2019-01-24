@@ -92,13 +92,13 @@
 
 
 
-<meta name="description" content="Web前端中的几种布局，圣杯布局，双飞翼布局，栅格布局，flex布局，绝对定位布局">
+<meta name="description" content="Web前端中的几种布局，圣杯布局，双飞翼布局，栅格布局，Flex布局，绝对定位布局">
 <meta name="keywords" content="Web前端布局,流行布局">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web前端中的几种布局">
 <meta property="og:url" content="https://qqqww.com/Web前端中的几种布局/index.html">
 <meta property="og:site_name" content="工头的博客">
-<meta property="og:description" content="Web前端中的几种布局，圣杯布局，双飞翼布局，栅格布局，flex布局，绝对定位布局">
+<meta property="og:description" content="Web前端中的几种布局，圣杯布局，双飞翼布局，栅格布局，Flex布局，绝对定位布局">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://qqqww.com/Web前端中的几种布局/BFC实现圣杯布局1.png">
 <meta property="og:image" content="https://qqqww.com/Web前端中的几种布局/BFC实现圣杯布局2.png">
@@ -106,10 +106,14 @@
 <meta property="og:image" content="https://qqqww.com/Web前端中的几种布局/圣杯布局之浮动.png">
 <meta property="og:image" content="https://qqqww.com/Web前端中的几种布局/margin实现圣杯布局.png">
 <meta property="og:image" content="https://qqqww.com/Web前端中的几种布局/圣杯布局.png">
-<meta property="og:updated_time" content="2019-01-24T05:30:33.457Z">
+<meta property="og:image" content="https://qqqww.com/Web前端中的几种布局/圣杯嵌套.png">
+<meta property="og:image" content="https://qqqww.com/Web前端中的几种布局/container设计.png">
+<meta property="og:image" content="https://qqqww.com/Web前端中的几种布局/row实现.png">
+<meta property="og:image" content="https://qqqww.com/Web前端中的几种布局/column.png">
+<meta property="og:updated_time" content="2019-01-24T06:58:51.901Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web前端中的几种布局">
-<meta name="twitter:description" content="Web前端中的几种布局，圣杯布局，双飞翼布局，栅格布局，flex布局，绝对定位布局">
+<meta name="twitter:description" content="Web前端中的几种布局，圣杯布局，双飞翼布局，栅格布局，Flex布局，绝对定位布局">
 <meta name="twitter:image" content="https://qqqww.com/Web前端中的几种布局/BFC实现圣杯布局1.png">
 
 
@@ -407,7 +411,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.1k 字
+                  2.1k 字
                 </span>
               
 
@@ -423,7 +427,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5 分钟
+                  9 分钟
                 </span>
               
             </div>
@@ -431,7 +435,7 @@
 
           
               <div class="post-description">
-                  Web前端中的几种布局，圣杯布局，双飞翼布局，栅格布局，flex布局，绝对定位布局 
+                  Web前端中的几种布局，圣杯布局，双飞翼布局，栅格布局，Flex布局，绝对定位布局 
               </div>
           
 
@@ -451,6 +455,7 @@
         <h2 id="圣杯布局"><a href="#圣杯布局" class="headerlink" title="圣杯布局"></a>圣杯布局</h2><blockquote>
 <p>圣杯布局是一种三列布局，两边定宽，中间宽度自适应</p>
 <p>圣杯布局可以将整个<code>div.container</code>看做一个奖杯，<code>div.left</code>和<code>div.right</code>看做奖杯的两个耳朵</p>
+<p><strong>圣杯布局的原理就是当子元素处于浮动状态时，设置负margin，子元素会叠盖到兄弟元素之上</strong></p>
 </blockquote>
 <p><strong>方法一：利用 BFC 元素与浮动元素不会相互覆盖的特性，实现圣杯布局</strong></p>
 <ol>
@@ -505,7 +510,55 @@
 <p>看完了圣杯布局，来看<strong>双飞翼布局</strong>，其实和圣杯布局差不多，可以将<code>div.container</code>看做一只大鸟，将<code>div.middle</code>看做鸟的身体，将<code>div.left</code>和<code>div.right</code>看做鸟的两个翅膀</p>
 <p>实现方式与圣杯布局差不多，但在解决中间栏<code>div.middle</code>部分的思路不一致</p>
 </blockquote>
-<h2 id="栅格布局"><a href="#栅格布局" class="headerlink" title="栅格布局"></a>栅格布局</h2><h2 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h2><h2 id="绝对定位布局"><a href="#绝对定位布局" class="headerlink" title="绝对定位布局"></a>绝对定位布局</h2>
+<p><strong>直接上代码：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">		<span class="selector-tag">html</span>, <span class="selector-tag">body</span> &#123; <span class="attribute">width</span>: <span class="number">100%</span>; <span class="attribute">margin</span>: <span class="number">0</span>; <span class="attribute">padding</span>: <span class="number">0</span>; &#125;</span></span><br><span class="line"><span class="css">		<span class="selector-class">.header</span>,</span></span><br><span class="line"><span class="css">		<span class="selector-class">.footer</span> &#123;</span></span><br><span class="line"><span class="undefined">			clear: both;</span></span><br><span class="line"><span class="undefined">			width: 100%;</span></span><br><span class="line"><span class="css">			<span class="selector-tag">background-color</span>: <span class="selector-id">#ccc</span>;</span></span><br><span class="line"><span class="undefined">			text-align: center;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="css">		<span class="selector-class">.left</span>,</span></span><br><span class="line"><span class="css">		<span class="selector-class">.main</span>,</span></span><br><span class="line"><span class="css">		<span class="selector-class">.right</span> &#123;</span></span><br><span class="line"><span class="undefined">			float: left;</span></span><br><span class="line"><span class="undefined">			height: 150px;</span></span><br><span class="line"><span class="undefined">			text-align: center;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="css">		<span class="selector-class">.left</span>,</span></span><br><span class="line"><span class="css">		<span class="selector-class">.right</span> &#123;			</span></span><br><span class="line"><span class="undefined">			width: 220px;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="css">		<span class="selector-class">.left</span> &#123;</span></span><br><span class="line"><span class="undefined">			margin-left: -100%;</span></span><br><span class="line"><span class="undefined">			background-color: yellow;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="css">		<span class="selector-class">.main</span> &#123;</span></span><br><span class="line"><span class="undefined">			width: 100%;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="css">		<span class="selector-class">.middle</span> &#123;</span></span><br><span class="line"><span class="undefined">			min-height: 150px;</span></span><br><span class="line"><span class="undefined">			margin: 0 220px;</span></span><br><span class="line"><span class="undefined">			background-color: blue;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="css">		<span class="selector-class">.right</span> &#123;</span></span><br><span class="line"><span class="undefined">			margin-left: -220px;</span></span><br><span class="line"><span class="undefined">			background-color: red;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="undefined">	</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span>header<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"middle"</span>&gt;</span>middle<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span>left<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>right<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span>	</span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span>footer<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="圣杯布局-VS-双飞翼布局"><a href="#圣杯布局-VS-双飞翼布局" class="headerlink" title="圣杯布局  VS  双飞翼布局"></a>圣杯布局  VS  双飞翼布局</h3><p>主要是针对于<strong>中间<code>div.middle</code>的处理思路</strong>不一样</p>
+<p><strong>圣杯布局是先留白，在用<code>margin</code>让两边过去，利用了相对布局</strong></p>
+<p><strong>双飞翼布局多创建一个div，包裹middle，利用margin为负值来布局</strong></p>
+<p>相比较而言，双飞翼布局比圣杯布局多用了个<code>div</code>，<code>container</code>的<code>padding</code>不需要加了，相对布局<code>position: relative</code>，双飞翼布局的<code>子div</code>用<code>margin</code>布局</p>
+<p><strong>注意：</strong>两种布局一般都需要将<code>div.middle</code>这一栏提到结构<code>div.left</code>的上面先渲染</p>
+<blockquote>
+<p>前面分析了<strong>圣杯布局和双飞翼布局</strong>，了解到<strong>他们的原理</strong>实际上都是是当子元素处于浮动状态时，设置负margin，子元素会叠盖到兄弟元素之上</p>
+<p>那么将中间是三个盒子的代码再复制一份，嵌套在<code>div.middle</code>中，看看效果</p>
+</blockquote>
+<p><img src="/Web前端中的几种布局/圣杯嵌套.png" alt="圣杯嵌套"></p>
+<blockquote>
+<p>此时会发现，中间<code>div.middle</code>部分多一部分盒子，且依然满足两边固定，中间宽度自适应，这个很像<strong>Bootstrap</strong>里的<strong>栅格嵌套</strong></p>
+</blockquote>
+<h2 id="栅格布局"><a href="#栅格布局" class="headerlink" title="栅格布局"></a>栅格布局</h2><blockquote>
+<p>Bootstrap的栅格布局提供了一套响应式的解决方案，其实把这套布局拆分来看，分为这几部分：</p>
+<ol>
+<li>container的设计</li>
+<li>响应式布局实现</li>
+<li>行</li>
+<li>列</li>
+</ol>
+<p>其中行和列的布局原理和圣杯布局原理一样</p>
+</blockquote>
+<h3 id="container设计"><a href="#container设计" class="headerlink" title="container设计"></a>container设计</h3><p><img src="/Web前端中的几种布局/container设计.png" alt="container设计"></p>
+<h3 id="响应式布局实现"><a href="#响应式布局实现" class="headerlink" title="响应式布局实现"></a>响应式布局实现</h3><blockquote>
+<p><strong>@media媒体查询</strong></p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">padding-right</span>: <span class="number">15px</span>;</span><br><span class="line">  <span class="attribute">padding-left</span>: <span class="number">15px</span>;</span><br><span class="line">  <span class="attribute">margin-right</span>: auto;</span><br><span class="line">  <span class="attribute">margin-left</span>: auto;</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;<span class="comment">/*当宽度大于768px时触发*/</span></span><br><span class="line">  <span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">750px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">media</span> (min-width: <span class="number">992px</span>) &#123;<span class="comment">/*当宽度大于992px时触发*/</span></span><br><span class="line">  <span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">970px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">media</span> (min-width: <span class="number">1200px</span>) &#123;<span class="comment">/*当宽度大于1200px时触发*/</span></span><br><span class="line">  <span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">1170px</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container-fluid</span> &#123; <span class="comment">/*这个是宽度默认*/</span></span><br><span class="line">  <span class="attribute">padding-right</span>: <span class="number">15px</span>;</span><br><span class="line">  <span class="attribute">padding-left</span>: <span class="number">15px</span>;</span><br><span class="line">  <span class="attribute">margin-right</span>: auto;</span><br><span class="line">  <span class="attribute">margin-left</span>: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="行（row）"><a href="#行（row）" class="headerlink" title="行（row）"></a>行（row）</h3><p><img src="/Web前端中的几种布局/row实现.png" alt="row实现"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.row</span> &#123;</span><br><span class="line">  <span class="attribute">margin-right</span>: -<span class="number">15px</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">15px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="列（col）"><a href="#列（col）" class="headerlink" title="列（col）"></a>列（col）</h3><p><strong>Bootstrap分别将他们分割成12份，意思是你可以随意使用者12份，加起来要正好12，并能自己调整分配数字</strong></p>
+<p><img src="/Web前端中的几种布局/column.png" alt="column"></p>
+<p><strong>Bootstrap实现了更好的响应式布局，列的种类是有很多种的</strong></p>
+<p><strong>.col-xs-*</strong> 针对超小屏幕 手机（&lt;768px）</p>
+<p><strong>.col-sm-*</strong> 小屏幕 平板 (≥768px)</p>
+<p><strong>.col-md-*</strong> 中等屏幕 桌面显示器 (≥992px)(栅格参数)</p>
+<p><strong>.col-lg-*</strong> 针对特大的（≥1200px）</p>
+<p><strong>例子：</strong></p>
+<blockquote>
+<p>表示小屏幕手机采用<code>col-sm-6</code>布局，中屏幕手机采用<code>col-md-4</code>布局</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-sm-6 col-md-4"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>Bootsrap</strong>中关于栅格布局的代码实现，很多，这里不粘贴了，原理就是前面所说的，可以去官网看</p>
+<p>当然，Bootstrap远不止实现了上面那点东西，例如 <strong>.col-md-offset-* .col-md-push-*</strong> 能够实现很好的细节的排版等等很多，这个神奇的东西还是需要慢慢领悟的~~，下面不能废话了，继续回归正题，说布局</p>
+<h2 id="Flex布局"><a href="#Flex布局" class="headerlink" title="Flex布局"></a>Flex布局</h2><p>参考文档：<a href="https://qqqww.com/Flex布局的语法和案例/">Flex布局</a></p>
+<h2 id="绝对定位布局"><a href="#绝对定位布局" class="headerlink" title="绝对定位布局"></a>绝对定位布局</h2><p>绝对定位布局很多地方都有应用，依靠绝对定位，想定到哪，定到那，这里不细说</p>
+
       
     </div>
     
@@ -527,7 +580,7 @@
   <p><span>本文标题:</span>Web前端中的几种布局</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月24日 - 10:35:24</p>
-  <p><span>最后更新:</span>2019年01月24日 - 13:30:33</p>
+  <p><span>最后更新:</span>2019年01月24日 - 14:58:51</p>
   <p><span>原始链接:</span><a href="/Web前端中的几种布局/" title="Web前端中的几种布局">https://qqqww.com/Web前端中的几种布局/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/Web前端中的几种布局/" aria-label="复制成功！"></i></span>
   </p>
@@ -702,7 +755,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">41</span>
+                  <span class="site-state-item-count">40</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -715,7 +768,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">40</span>
+                  <span class="site-state-item-count">39</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -797,7 +850,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#圣杯布局"><span class="nav-number">1.</span> <span class="nav-text">圣杯布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双飞翼布局"><span class="nav-number">2.</span> <span class="nav-text">双飞翼布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#栅格布局"><span class="nav-number">3.</span> <span class="nav-text">栅格布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#flex布局"><span class="nav-number">4.</span> <span class="nav-text">flex布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绝对定位布局"><span class="nav-number">5.</span> <span class="nav-text">绝对定位布局</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#圣杯布局"><span class="nav-number">1.</span> <span class="nav-text">圣杯布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双飞翼布局"><span class="nav-number">2.</span> <span class="nav-text">双飞翼布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#圣杯布局-VS-双飞翼布局"><span class="nav-number">2.1.</span> <span class="nav-text">圣杯布局  VS  双飞翼布局</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#栅格布局"><span class="nav-number">3.</span> <span class="nav-text">栅格布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#container设计"><span class="nav-number">3.1.</span> <span class="nav-text">container设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#响应式布局实现"><span class="nav-number">3.2.</span> <span class="nav-text">响应式布局实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#行（row）"><span class="nav-number">3.3.</span> <span class="nav-text">行（row）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列（col）"><span class="nav-number">3.4.</span> <span class="nav-text">列（col）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flex布局"><span class="nav-number">4.</span> <span class="nav-text">Flex布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绝对定位布局"><span class="nav-number">5.</span> <span class="nav-text">绝对定位布局</span></a></li></ol></div>
             
 
           </div>
@@ -841,7 +894,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">67.9k</span>
+    <span title="Site words total count">67.1k</span>
   
 </div>
 
@@ -871,7 +924,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共67.9k字</span>
+  <span class="post-count">博客全站共67.1k字</span>
 </div>
 
         
