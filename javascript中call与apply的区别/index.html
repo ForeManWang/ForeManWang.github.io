@@ -102,7 +102,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://qqqww.com/javascript中call与apply的区别/applyAndcall.png">
 <meta property="og:image" content="https://qqqww.com/javascript中call与apply的区别/apply.png">
-<meta property="og:updated_time" content="2019-01-25T04:46:23.099Z">
+<meta property="og:updated_time" content="2019-01-25T05:49:05.253Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript中call与apply的区别">
 <meta name="twitter:description" content="javascript中call与apply的区别">
@@ -449,8 +449,8 @@
 </blockquote>
 <p>JavaScript中的每一个<code>Function</code>对象都有一个<code>apply()</code>方法和一个<code>call()</code>方法，它们的语法分别为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/*apply()方法*/</span><br><span class="line">function.apply(thisObj[, argArray])</span><br><span class="line"></span><br><span class="line">/*call()方法*/</span><br><span class="line">function.call(thisObj[, arg1[, arg2[, [,...argN]]]]);</span><br></pre></td></tr></table></figure>
-<h2 id="它们各自的定义"><a href="#它们各自的定义" class="headerlink" title="它们各自的定义"></a><strong>它们各自的定义</strong></h2><p><strong>apply：</strong>调用一个对象的一个方法，用另一个对象替换当前对象。例如：<code>B.apply(A, arguments)</code>;即A对象应用B对象的方法。</p>
-<p><strong>call：</strong>调用一个对象的一个方法，用另一个对象替换当前对象。例如：<code>B.call(A, args1,args2)</code>;即A对象调用B对象的方法。</p>
+<h2 id="它们各自的定义"><a href="#它们各自的定义" class="headerlink" title="它们各自的定义"></a><strong>它们各自的定义</strong></h2><p><strong>apply</strong>：调用一个对象的一个方法，用另一个对象替换当前对象。例如<code>：B.apply(A, arguments)</code>;即A对象应用B对象的方法。</p>
+<p><strong>call</strong>：调用一个对象的一个方法，用另一个对象替换当前对象。例如：<code>B.call(A, args1,args2)</code>;即A对象调用B对象的方法。</p>
 <p>##它们的共同之处：</p>
 <p>都“可以用来代替另一个对象调用一个方法，将一个函数的对象上下文从初始的上下文改变为由thisObj指定的新对象”。</p>
 <h2 id="它们的不同之处"><a href="#它们的不同之处" class="headerlink" title="它们的不同之处"></a>它们的不同之处</h2><p><strong>apply</strong>：最多只能有两个参数——新this对象和一个数组argArray。如果给该方法传递多个参数，则把参数都写进这个数组里面，当然，即使只有一个参数，也要写进数组里。如果argArray不是一个有效的数组或arguments对象，那么将导致一个TypeError。如果没有提供argArray和thisObj任何一个参数，那么Global对象将被用作thisObj，并且无法被传递任何参数。</p>
@@ -498,7 +498,7 @@
   <p><span>本文标题:</span>javascript中call与apply的区别</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月20日 - 20:38:07</p>
-  <p><span>最后更新:</span>2019年01月25日 - 12:46:23</p>
+  <p><span>最后更新:</span>2019年01月25日 - 13:49:05</p>
   <p><span>原始链接:</span><a href="/javascript中call与apply的区别/" title="javascript中call与apply的区别">https://qqqww.com/javascript中call与apply的区别/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript中call与apply的区别/" aria-label="复制成功！"></i></span>
   </p>
@@ -565,8 +565,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/javascript中typeof与instanceof的区别/" rel="prev" title="javascript中typeof与instanceof的区别">
-                javascript中typeof与instanceof的区别 <i class="fa fa-chevron-right"></i>
+              <a href="/javascript中typeof与instanceof的区别/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -690,7 +690,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">38</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

@@ -101,7 +101,7 @@
 <meta property="og:description" content="javascript垃圾回收机制与内存管理">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://qqqww.com/javascript垃圾回收机制/内存泄漏的原因.png">
-<meta property="og:updated_time" content="2019-01-25T04:31:17.480Z">
+<meta property="og:updated_time" content="2019-01-25T10:43:05.937Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript垃圾回收机制与内存管理">
 <meta name="twitter:description" content="javascript垃圾回收机制与内存管理">
@@ -466,14 +466,11 @@
 <blockquote>
 <p>fn1中定义的obj为局部变量，而当调用结束后，出了fn1的环境，那么该块内存会被js引擎中的垃圾回收器自动释放；在fn2被调用的过程中，返回的对象被全局变量b所指向，所以该块内存并不会被释放</p>
 </blockquote>
-<p>##垃圾回收机制的标记策略</p>
-<blockquote>
+<h2 id="垃圾回收机制的标记策略"><a href="#垃圾回收机制的标记策略" class="headerlink" title="垃圾回收机制的标记策略"></a>垃圾回收机制的标记策略</h2><blockquote>
 <p>垃圾收集器必须跟踪哪个变量有用哪个变量没用，对于<strong>不再有用的变量打上标记</strong>，以备将来收回其占用的内存。用于标识无用变量的策略可能会因实现而异，但具体到浏览器中的实现，则通常有两个策略：<strong>标记清除、引用计数。</strong></p>
 </blockquote>
-<p>###标记清除</p>
-<p>  　　1. 当变量进入环境时，将其标记为“进入环境”，当变量离开环境时，将其标记为“离开环境”（常用）<br>  　　2. 某一个时刻，垃圾回收器会过滤掉环境中的变量，以及被环境变量引用的变量，剩下的就是被视为准备回收的变量<br>  　　3. 到目前为止，IE、Firefox、Opera、Chrome、Safari的js实现使用的都是标记清除的垃圾回收策略或类似的策略，只不过垃圾收集的时间间隔互不相同</p>
-<p>###引用计数</p>
-<blockquote>
+<h3 id="标记清除"><a href="#标记清除" class="headerlink" title="标记清除"></a>标记清除</h3><p>  　　1. 当变量进入环境时，将其标记为“进入环境”，当变量离开环境时，将其标记为“离开环境”（常用）<br>  　　2. 某一个时刻，垃圾回收器会过滤掉环境中的变量，以及被环境变量引用的变量，剩下的就是被视为准备回收的变量<br>  　　3. 到目前为止，IE、Firefox、Opera、Chrome、Safari的js实现使用的都是标记清除的垃圾回收策略或类似的策略，只不过垃圾收集的时间间隔互不相同</p>
+<h3 id="引用计数"><a href="#引用计数" class="headerlink" title="引用计数"></a>引用计数</h3><blockquote>
 <p>跟踪记录每个值被引用的次数</p>
 </blockquote>
 <ol>
@@ -601,7 +598,7 @@
   <p><span>本文标题:</span>javascript垃圾回收机制与内存管理</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月20日 - 15:20:48</p>
-  <p><span>最后更新:</span>2019年01月25日 - 12:31:17</p>
+  <p><span>最后更新:</span>2019年01月25日 - 18:43:05</p>
   <p><span>原始链接:</span><a href="/javascript垃圾回收机制/" title="javascript垃圾回收机制与内存管理">https://qqqww.com/javascript垃圾回收机制/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript垃圾回收机制/" aria-label="复制成功！"></i></span>
   </p>
@@ -793,7 +790,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">38</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -875,7 +872,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#垃圾回收机制与内存管理"><span class="nav-number">1.</span> <span class="nav-text">垃圾回收机制与内存管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是垃圾回收机制"><span class="nav-number">1.1.</span> <span class="nav-text">什么是垃圾回收机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#垃圾回收机制的作用"><span class="nav-number">1.1.1.</span> <span class="nav-text">垃圾回收机制的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#垃圾回收机制的原理"><span class="nav-number">1.1.2.</span> <span class="nav-text">垃圾回收机制的原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例"><span class="nav-number">1.2.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾回收机制与内存管理-1"><span class="nav-number">1.3.</span> <span class="nav-text">垃圾回收机制与内存管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#堆和栈"><span class="nav-number">1.3.1.</span> <span class="nav-text">堆和栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#管理内存"><span class="nav-number">1.3.2.</span> <span class="nav-text">管理内存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内存泄漏"><span class="nav-number">1.3.3.</span> <span class="nav-text">内存泄漏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">1.3.4.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#垃圾回收机制与内存管理"><span class="nav-number">1.</span> <span class="nav-text">垃圾回收机制与内存管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是垃圾回收机制"><span class="nav-number">1.1.</span> <span class="nav-text">什么是垃圾回收机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#垃圾回收机制的作用"><span class="nav-number">1.1.1.</span> <span class="nav-text">垃圾回收机制的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#垃圾回收机制的原理"><span class="nav-number">1.1.2.</span> <span class="nav-text">垃圾回收机制的原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例"><span class="nav-number">1.2.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾回收机制的标记策略"><span class="nav-number">1.3.</span> <span class="nav-text">垃圾回收机制的标记策略</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#标记清除"><span class="nav-number">1.3.1.</span> <span class="nav-text">标记清除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用计数"><span class="nav-number">1.3.2.</span> <span class="nav-text">引用计数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾回收机制与内存管理-1"><span class="nav-number">1.4.</span> <span class="nav-text">垃圾回收机制与内存管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#堆和栈"><span class="nav-number">1.4.1.</span> <span class="nav-text">堆和栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#管理内存"><span class="nav-number">1.4.2.</span> <span class="nav-text">管理内存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内存泄漏"><span class="nav-number">1.4.3.</span> <span class="nav-text">内存泄漏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">1.4.4.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

@@ -104,7 +104,7 @@
 <meta property="og:image" content="https://qqqww.com/React-虚拟DOM/DOM树.png">
 <meta property="og:image" content="https://qqqww.com/React-虚拟DOM/模拟DOM树.png">
 <meta property="og:image" content="https://qqqww.com/React-虚拟DOM/Diff.png">
-<meta property="og:updated_time" content="2019-01-25T04:31:51.093Z">
+<meta property="og:updated_time" content="2019-01-25T11:02:14.638Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React-虚拟DOM与Diff算法">
 <meta name="twitter:description" content="React中的虚拟DOM与Diff算法，本质和目的">
@@ -461,8 +461,8 @@
 </blockquote>
 <h2 id="DOM和虚拟DOM的区别"><a href="#DOM和虚拟DOM的区别" class="headerlink" title="DOM和虚拟DOM的区别"></a><strong>DOM和虚拟DOM的区别</strong></h2><blockquote>
 <ul>
-<li><strong>DOM：</strong>浏览器中，提供的概念；用JS对象，表示页面上的元素，并提供了操作元素的API</li>
-<li><strong>虚拟DOM：</strong>是框架中的概念；而是开发框架的程序员，手动用JS对象来模拟DOM元素和嵌套关系<ul>
+<li><strong>DOM</strong>：浏览器中，提供的概念；用JS对象，表示页面上的元素，并提供了操作元素的API</li>
+<li><strong>虚拟DOM</strong>：是框架中的概念；而是开发框架的程序员，手动用JS对象来模拟DOM元素和嵌套关系<ul>
 <li>本质： 用JS对象，来模拟DOM元素和嵌套关系</li>
 <li>目的：就是为了实现页面元素的高效更新</li>
 </ul>
@@ -473,14 +473,14 @@
 <p><img src="/React-虚拟DOM/虚拟DOM引入图片.png" alt="虚拟DOM表格排序案例"></p>
 <p><strong>假如我有一个需求：点击列头，实现表格数据顺序的排序</strong></p>
 <ol>
-<li><strong>数据来源：</strong>表格中的数据从数据库查询而来</li>
-<li><strong>存储：</strong>这些查询到的数据以<code>数组</code>的形式，存放到了浏览器的内存中</li>
-<li><strong>渲染：</strong><ol>
+<li><strong>数据来源</strong>：表格中的数据从数据库查询而来</li>
+<li><strong>存储</strong>：这些查询到的数据以<code>数组</code>的形式，存放到了浏览器的内存中</li>
+<li><strong>渲染</strong>：<ol>
 <li>方案一：手动for循环整个数据，手动拼接字符串<code>str += &#39;&lt;tr&gt;123&lt;tr&gt;&#39;</code></li>
 <li>方案二：使用模板引擎，类似<code>art-template</code>，比手动更方便点，其内部本质也是拼接了字符串</li>
 </ol>
 </li>
-<li><strong>思考：</strong>对于上述方案，思考其缺陷和解决方案<ol>
+<li><strong>思考</strong>：对于上述方案，思考其缺陷和解决方案<ol>
 <li>如果用户点击了<code>时间</code>,想要按照时间从大到小的排序，其流程应当是：<ol>
 <li>触发点击事件，在事件中，把内存中的对象数组，重新排序</li>
 <li>当排序完成之后，页面时旧的，但是内存中的顺序是最新的</li>
@@ -491,7 +491,7 @@
 </ol>
 </li>
 <li><strong>DOM树实现按需渲染：</strong><ol>
-<li><strong>什么是<code>DOM树</code>：</strong><ol>
+<li><strong>什么是<code>DOM树</code></strong>：<ol>
 <li><code>DOM</code>结构，类似下图1中的结构</li>
 <li><strong>一个网页的呈现过程：</strong><ol>
 <li>浏览器请求服务器获取<code>HTML</code>代码</li>
@@ -514,7 +514,7 @@
 </li>
 </ol>
 </li>
-<li><strong>总结：</strong>什么是虚拟DOM<ol>
+<li><strong>总结</strong>：什么是虚拟DOM<ol>
 <li>用JS对象的形式，来模拟页面上的DOM嵌套关系，即虚拟DOM是以JS对象的形式存在的</li>
 <li>React中虚拟DOM对象的本质和目的：<ol>
 <li>本质：用JS对象来模拟DOM元素的嵌套关系</li>
@@ -531,8 +531,7 @@
 <h3 id="component-diff"><a href="#component-diff" class="headerlink" title="component  diff"></a>component  diff</h3><p>在进行<code>tree diff</code>的时候，每一层中组件级别的对比，叫做<strong>component diff</strong></p>
 <p>如果对比前后，组件类型相同，则暂时认为不需要更新组件</p>
 <p>如果对比前后，组件类型不同，则需要暂时移除旧组件，创建新组件，追加到页面上</p>
-<p>###element diff</p>
-<p>在进行组件对比的时候，如果两个组件类型相同，需要进行元素级别的对比，这叫做<strong>element diff</strong></p>
+<h3 id="element-diff"><a href="#element-diff" class="headerlink" title="element diff"></a>element diff</h3><p>在进行组件对比的时候，如果两个组件类型相同，需要进行元素级别的对比，这叫做<strong>element diff</strong></p>
 
       
     </div>
@@ -555,7 +554,7 @@
   <p><span>本文标题:</span>React-虚拟DOM与Diff算法</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月06日 - 19:37:34</p>
-  <p><span>最后更新:</span>2019年01月25日 - 12:31:51</p>
+  <p><span>最后更新:</span>2019年01月25日 - 19:02:14</p>
   <p><span>原始链接:</span><a href="/React-虚拟DOM/" title="React-虚拟DOM与Diff算法">https://qqqww.com/React-虚拟DOM/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/React-虚拟DOM/" aria-label="复制成功！"></i></span>
   </p>
@@ -747,7 +746,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">38</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -829,7 +828,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#虚拟DOM与Diff算法"><span class="nav-number">1.</span> <span class="nav-text">虚拟DOM与Diff算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM的本质"><span class="nav-number">1.1.</span> <span class="nav-text">DOM的本质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中的虚拟DOM"><span class="nav-number">1.2.</span> <span class="nav-text">React中的虚拟DOM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现虚拟DOM的目的"><span class="nav-number">1.3.</span> <span class="nav-text">实现虚拟DOM的目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM和虚拟DOM的区别"><span class="nav-number">1.4.</span> <span class="nav-text">DOM和虚拟DOM的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何实现页面元素的高效更新"><span class="nav-number">1.5.</span> <span class="nav-text">如何实现页面元素的高效更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Diff算法"><span class="nav-number">1.6.</span> <span class="nav-text">Diff算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#tree-diff"><span class="nav-number">1.6.1.</span> <span class="nav-text">tree diff</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#component-diff"><span class="nav-number">1.6.2.</span> <span class="nav-text">component  diff</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#虚拟DOM与Diff算法"><span class="nav-number">1.</span> <span class="nav-text">虚拟DOM与Diff算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM的本质"><span class="nav-number">1.1.</span> <span class="nav-text">DOM的本质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中的虚拟DOM"><span class="nav-number">1.2.</span> <span class="nav-text">React中的虚拟DOM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现虚拟DOM的目的"><span class="nav-number">1.3.</span> <span class="nav-text">实现虚拟DOM的目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM和虚拟DOM的区别"><span class="nav-number">1.4.</span> <span class="nav-text">DOM和虚拟DOM的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何实现页面元素的高效更新"><span class="nav-number">1.5.</span> <span class="nav-text">如何实现页面元素的高效更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Diff算法"><span class="nav-number">1.6.</span> <span class="nav-text">Diff算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#tree-diff"><span class="nav-number">1.6.1.</span> <span class="nav-text">tree diff</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#component-diff"><span class="nav-number">1.6.2.</span> <span class="nav-text">component  diff</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#element-diff"><span class="nav-number">1.6.3.</span> <span class="nav-text">element diff</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

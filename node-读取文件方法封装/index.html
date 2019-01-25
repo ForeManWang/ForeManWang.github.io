@@ -104,7 +104,7 @@
 <meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/回调地狱.png">
 <meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/Promise介绍.png">
 <meta property="og:image" content="https://qqqww.com/node-读取文件方法封装/Promise的then方法.png">
-<meta property="og:updated_time" content="2019-01-25T04:31:45.961Z">
+<meta property="og:updated_time" content="2019-01-25T10:54:03.115Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="node-读取文件方法封装">
 <meta name="twitter:description" content="node读取文件方法封装">
@@ -460,9 +460,7 @@
 <p>需求：封装一个方法，给你一个要读取文件的路径，你这个方法能帮我读取文件，并把内容返回给我</p>
 <h2 id="普通方式"><a href="#普通方式" class="headerlink" title="普通方式"></a>普通方式</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这是普通读取文件的方式</span></span><br><span class="line"> fs.readFile(path.join(__dirname, <span class="string">'./files/1.txt'</span>), <span class="string">'utf-8'</span>, (err, dataStr) =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (err) <span class="keyword">throw</span> err</span><br><span class="line">  <span class="built_in">console</span>.log(dataStr)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p>但是这样达不到需求，所以就有了下面一种方式</p>
-<h2 id="简单封装一"><a href="#简单封装一" class="headerlink" title="简单封装一"></a>简单封装一</h2><p>给一个路径参数<code>fpath</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>由于读取文件是异步操作，不能直接在函数内部return,所以没有接收到返回值，在外部调用就是undefined</p>
+<h2 id="简单封装一"><a href="#简单封装一" class="headerlink" title="简单封装一"></a>简单封装一</h2><p>由于读取文件是异步操作，不能直接在函数内部return,所以没有接收到返回值，在外部调用就是undefined</p>
 <p><strong>所以用<code>callback</code>接收一下</strong></p>
 <h2 id="简单封装二"><a href="#简单封装二" class="headerlink" title="简单封装二"></a>简单封装二</h2><p>封装一个给定文件路径，返回读取到的内容的读取文件的异步方法</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFileByPath</span> (<span class="params">fpath, callback</span>) </span>&#123;</span><br><span class="line">  fs.readFile(fpath, <span class="string">'utf-8'</span>, (err, data) =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err</span><br><span class="line">    <span class="comment">// console.log(data)</span></span><br><span class="line">    callback(data)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line">getFileByPath(path.join(__dirname, <span class="string">'./files/1.txt'</span>), (data) =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(data) <span class="comment">// 111</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
@@ -514,7 +512,7 @@
   <p><span>本文标题:</span>node-读取文件方法封装</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月02日 - 17:14:39</p>
-  <p><span>最后更新:</span>2019年01月25日 - 12:31:45</p>
+  <p><span>最后更新:</span>2019年01月25日 - 18:54:03</p>
   <p><span>原始链接:</span><a href="/node-读取文件方法封装/" title="node-读取文件方法封装">https://qqqww.com/node-读取文件方法封装/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/node-读取文件方法封装/" aria-label="复制成功！"></i></span>
   </p>
@@ -706,7 +704,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">38</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
