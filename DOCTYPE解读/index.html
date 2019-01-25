@@ -100,7 +100,7 @@
 <meta property="og:site_name" content="工头的博客">
 <meta property="og:description" content="本文是对DOCTYPE的解读, 具体解读了标准模式(strandards), 兼容模式(quirks), DTD, DOCTYPE文档类型等">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-23T13:49:52.280Z">
+<meta property="og:updated_time" content="2019-01-25T05:22:33.842Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOCTYPE解读">
 <meta name="twitter:description" content="本文是对DOCTYPE的解读, 具体解读了标准模式(strandards), 兼容模式(quirks), DTD, DOCTYPE文档类型等">
@@ -442,6 +442,9 @@
 
       
         <h1 id="DOCTYPE解读"><a href="#DOCTYPE解读" class="headerlink" title="DOCTYPE解读"></a>DOCTYPE解读</h1><blockquote>
+<p><strong>欢迎访问我的博客</strong>，祝码农同胞们早日走上人生巅峰，迎娶白富美~~~</p>
+</blockquote>
+<blockquote>
 <p>DOCTYPE的作用？标准模式和兼容模式各有什么区别？为什么html5只需要写<code>&lt;!doctype html&gt;</code></p>
 <p>參考文档：<a href="https://www.cnblogs.com/wuqiutong/p/5986191.html" rel="external nofollow noopener noreferrer" target="_blank">https://www.cnblogs.com/wuqiutong/p/5986191.html</a></p>
 </blockquote>
@@ -463,7 +466,7 @@
 </ol>
 </li>
 </ol>
-<p><strong>具体到两种模式解析上的不同点：</strong></p>
+<p><strong>具体到两种模式解析上的不同点</strong>：</p>
 <ol>
 <li>盒模型的高宽包含内边距<code>padding</code>和边框<code>border</code>， 在<code>W3C</code>标准中，如果设置一个元素的宽度和高度，指的是元素内容的宽度和高度，而在<code>IE5.5</code>及以下的浏览器及其他版本的<code>Quirks</code>模式下，IE的宽度和高度还包含了<code>padding</code>和<code>border</code></li>
 <li>在<code>Standards</code>模式下，给<code>span</code>等行内元素设置<code>wdith</code>和<code>height</code>都不会生效，而在<code>quirks</code>模式下，则会生效</li>
@@ -474,32 +477,32 @@
 <li><code>quirks</code>模式下<code>white-space:pre</code>会失效</li>
 </ol>
 <h2 id="DOCTYPE-的文档类型"><a href="#DOCTYPE-的文档类型" class="headerlink" title="DOCTYPE 的文档类型"></a>DOCTYPE 的文档类型</h2><blockquote>
-<p><strong>我们去编译器里快速生成这些各种类型的声明来看看：</strong></p>
+<p><strong>我们去编译器里快速生成这些各种类型的声明来看看</strong>：</p>
 </blockquote>
 <p>  <strong>1. HTML5（一种）</strong>：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br></pre></td></tr></table></figure>
 <p><strong>2. HTML 4.01（三种）：</strong></p>
 <p>严格模式包含所有 HTML 元素和属性，但不包括展示性的和弃用的元素（比如 font），不允许框架集（Framesets）；过渡模式包含所有 HTML 元素和属性，包括展示性的和弃用的元素（比如 font），不允许框架集（Framesets）；框架模式等同于过渡模式，但允许框架集内容 </p>
-<p><strong>HTML 4.01 Strict ：</strong></p>
+<p><strong>HTML 4.01 Strict</strong>：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>HTML 4.01 Transitional ：</strong></p>
+<p><strong>HTML 4.01 Transitional</strong> ：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>HTML 4.01 Frameset ：</strong></p>
+<p><strong>HTML 4.01 Frameset</strong> ：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"  "http://www.w3.org/TR/html4/frameset.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>3、XHTML 1.0（四种）：</strong></p>
+<p><strong>3、XHTML 1.0(四种)</strong> ：</p>
 <p>前三种模式同上，XHML 必须以格式正确的 XML 来编写标记</p>
-<p><strong>XHTML 1.0 Strict ：</strong></p>
+<p><strong>XHTML 1.0 Strict</strong> ：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>XHTML 1.0 Transitional ：</strong></p>
+<p><strong>XHTML 1.0 Transitional</strong> ：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" " http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>XHTML 1.0 Frameset：</strong></p>
+<p><strong>XHTML 1.0 Frameset</strong>：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
 <p><strong>XHTML 1.1 该 DTD 等同于 XHTML 1.0 Strict，但允许添加模型</strong></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
 <h2 id="XHTML、HTML-VS-HTML5"><a href="#XHTML、HTML-VS-HTML5" class="headerlink" title="XHTML、HTML  VS  HTML5"></a>XHTML、HTML  VS  HTML5</h2><ol>
 <li>文档声明不同，具体见上面一节<strong>DOCTYPE 的文档类型</strong></li>
 <li><strong>HTML</strong> 没有提供结构语义化的标签，而<strong>HTML5</strong>提供了很多新的语义化的标签</li>
-<li><strong>XHML VS HTML：</strong><ol>
+<li><strong>XHML VS HTML</strong>：<ol>
 <li>相比较 <strong>HTML</strong> 而言，<strong>XHTML</strong> 更加严格</li>
 <li><strong>XHTML</strong> 所有的标记都必须要有一个相应的结束标记</li>
 <li><strong>XHTML</strong> 所有标签的元素和属性的名字都必须使用小写</li>
@@ -524,12 +527,12 @@
 <p><strong>SGML(Standard Generalized Markup Language，即标准通用标记语言)</strong></p>
 <p>详细见<a href="https://wiki.mbalib.com/wiki/SGML" rel="external nofollow noopener noreferrer" target="_blank">智库百科</a></p>
 </blockquote>
-<p><strong>主要特点：</strong></p>
+<p><strong>主要特点</strong>：</p>
 <ol>
 <li>它可以支持众多的文档结构类型，例如布告、技术手册、章节目录、设计规范、各种信函等</li>
 <li>它可以创建与特定的软硬件无关的文档，因此很容易与使用不同计算机系统的用户交换文档</li>
 </ol>
-<p><strong>主要构成：</strong></p>
+<p><strong>主要构成</strong>：</p>
 <ol>
 <li>SGML声明(SGML Declaration)</li>
 <li>文档类型定义(Document Type Definition，DTD)</li>
@@ -538,7 +541,7 @@
 <h3 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h3><blockquote>
 <p><a href="https://baike.baidu.com/item/%E7%AE%80%E6%98%93%E4%BF%A1%E6%81%AF%E8%81%9A%E5%90%88" rel="external nofollow noopener noreferrer" target="_blank">简易信息聚合</a>（也叫聚合内容）是一种RSS基于<a href="https://baike.baidu.com/item/XML" rel="external nofollow noopener noreferrer" target="_blank">XML</a>标准，在互联网上被广泛采用的内容包装和投递协议</p>
 <p>RSS(Really Simple Syndication)是一种描述和同步<a href="https://baike.baidu.com/item/%E7%BD%91%E7%AB%99" rel="external nofollow noopener noreferrer" target="_blank">网站</a>内容的格式，是使用最广泛的XML应用</p>
-<p>详细见[RSS简易信息聚合](</p>
+<p>详细见[RSS简易信息聚合]</p>
 </blockquote>
 
       
@@ -562,7 +565,7 @@
   <p><span>本文标题:</span>DOCTYPE解读</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月23日 - 21:18:32</p>
-  <p><span>最后更新:</span>2019年01月23日 - 21:49:52</p>
+  <p><span>最后更新:</span>2019年01月25日 - 13:22:33</p>
   <p><span>原始链接:</span><a href="/DOCTYPE解读/" title="DOCTYPE解读">https://qqqww.com/DOCTYPE解读/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/DOCTYPE解读/" aria-label="复制成功！"></i></span>
   </p>
@@ -880,7 +883,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">67.1k</span>
+    <span title="Site words total count">68.2k</span>
   
 </div>
 
@@ -910,7 +913,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共67.1k字</span>
+  <span class="post-count">博客全站共68.2k字</span>
 </div>
 
         

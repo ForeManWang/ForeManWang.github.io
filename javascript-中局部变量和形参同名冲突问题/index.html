@@ -100,7 +100,7 @@
 <meta property="og:site_name" content="工头的博客">
 <meta property="og:description" content="javascript 中局部变量和形参同名冲突问题">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-27T13:47:03.411Z">
+<meta property="og:updated_time" content="2019-01-25T04:31:38.190Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript 中局部变量和形参同名冲突问题">
 <meta name="twitter:description" content="javascript 中局部变量和形参同名冲突问题">
@@ -400,7 +400,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  215 字
+                  242 字
                 </span>
               
 
@@ -441,7 +441,10 @@
       
 
       
-        <h1 id="javascript-中局部变量和形参同名冲突问题"><a href="#javascript-中局部变量和形参同名冲突问题" class="headerlink" title="javascript 中局部变量和形参同名冲突问题"></a>javascript 中局部变量和形参同名冲突问题</h1><p><strong>新建一个数组</strong></p>
+        <h1 id="javascript-中局部变量和形参同名冲突问题"><a href="#javascript-中局部变量和形参同名冲突问题" class="headerlink" title="javascript 中局部变量和形参同名冲突问题"></a>javascript 中局部变量和形参同名冲突问题</h1><blockquote>
+<p><strong>欢迎访问我的博客</strong>，祝码农同胞们早日走上人生巅峰，迎娶白富美~~~</p>
+</blockquote>
+<p><strong>新建一个数组</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'zhangsan'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'lisi'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'wangwu'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'zhaoliu'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">name</span>:<span class="string">'xiaoming'</span>,<span class="attr">age</span>:<span class="string">'18'</span>&#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 <p><strong>局部变量和形参冲突的情况</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getList</span>(<span class="params">i</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[i].name == <span class="string">'e'</span>)&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">'已遍历完整个数组'</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr[i]</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(getList(<span class="number">1</span>)) <span class="comment">// undefined</span></span><br><span class="line"><span class="comment">// 调用 getList(1)时，其结果并不是 &#123;tel:1234658,name:'b'&#125; , 而是 undefined</span></span><br></pre></td></tr></table></figure>
@@ -470,7 +473,7 @@
   <p><span>本文标题:</span>javascript 中局部变量和形参同名冲突问题</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2018年12月27日 - 21:33:15</p>
-  <p><span>最后更新:</span>2018年12月27日 - 21:47:03</p>
+  <p><span>最后更新:</span>2019年01月25日 - 12:31:38</p>
   <p><span>原始链接:</span><a href="/javascript-中局部变量和形参同名冲突问题/" title="javascript 中局部变量和形参同名冲突问题">https://qqqww.com/javascript-中局部变量和形参同名冲突问题/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript-中局部变量和形参同名冲突问题/" aria-label="复制成功！"></i></span>
   </p>
@@ -788,7 +791,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">67.1k</span>
+    <span title="Site words total count">68.2k</span>
   
 </div>
 
@@ -818,7 +821,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共67.1k字</span>
+  <span class="post-count">博客全站共68.2k字</span>
 </div>
 
         

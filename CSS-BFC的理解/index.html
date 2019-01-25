@@ -105,7 +105,7 @@
 <meta property="og:image" content="https://qqqww.com/CSS-BFC的理解/BFCmargin.png">
 <meta property="og:image" content="https://qqqww.com/CSS-BFC的理解/多栏布局1.png">
 <meta property="og:image" content="https://qqqww.com/CSS-BFC的理解/多栏布局2.png">
-<meta property="og:updated_time" content="2019-01-23T12:14:49.265Z">
+<meta property="og:updated_time" content="2019-01-25T05:15:20.422Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS BFC的理解">
 <meta name="twitter:description" content="CSS中BFC的理解">
@@ -448,6 +448,9 @@
 
       
         <h1 id="BFC"><a href="#BFC" class="headerlink" title="BFC"></a>BFC</h1><blockquote>
+<p><strong>欢迎访问我的博客</strong>，祝码农同胞们早日走上人生巅峰，迎娶白富美~~~</p>
+</blockquote>
+<blockquote>
 <p>在 Web 页面的 CSS 渲染中，BFC （Block Fromatting Context）块级格式化上下文，即 BFC 区域是一块独立的块级渲染区域，并且拥有一套渲染规则，来约束盒子布局，且与外部区域无关，块盒与行盒（行盒由一行中所有的内联元素所组成）都会垂直的沿着其父元素的边框排列</p>
 </blockquote>
 <h2 id="创建BFC"><a href="#创建BFC" class="headerlink" title="创建BFC"></a>创建BFC</h2><blockquote>
@@ -515,7 +518,7 @@
 <p><strong>解决办法：</strong>将我上面代码中的注释去掉任意一个，都可以解决这种父元素塌陷的问题</p>
 <p>原理正如上面解释的一样，创建BFC的元素，子浮动元素也会参与其高度计算，即不会产生高度塌陷问题。实际上只要让父元素生成BFC即可，并不只有这种方式</p>
 <p>此时再去打开浏览器看看，父元素<code>div.container</code>就有高度了</p>
-<p><strong>拓展：</strong>一般清除浮动最常用的方式，<strong>双伪元素清除浮动</strong>，若子元素需要浮动，则给其父元素加一个类<code>clearfix</code>使其形成<code>BFC</code>即可</p>
+<p><strong>拓展</strong>：一般清除浮动最常用的方式，<strong>双伪元素清除浮动</strong>，若子元素需要浮动，则给其父元素加一个类<code>clearfix</code>使其形成<code>BFC</code>即可</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:before</span>, <span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">    overflow: hidden; // 形成 BFC</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="多栏布局"><a href="#多栏布局" class="headerlink" title="多栏布局"></a>多栏布局</h3><blockquote>
 <p>与浮动元素相邻的已生成BFC的元素不能与浮动元素相互覆盖。利用该特性可以作为多栏布局的一种实现方式</p>
@@ -548,7 +551,7 @@
   <p><span>本文标题:</span>CSS BFC的理解</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月23日 - 18:17:55</p>
-  <p><span>最后更新:</span>2019年01月23日 - 20:14:49</p>
+  <p><span>最后更新:</span>2019年01月25日 - 13:15:20</p>
   <p><span>原始链接:</span><a href="/CSS-BFC的理解/" title="CSS BFC的理解">https://qqqww.com/CSS-BFC的理解/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/CSS-BFC的理解/" aria-label="复制成功！"></i></span>
   </p>
@@ -866,7 +869,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">67.1k</span>
+    <span title="Site words total count">68.2k</span>
   
 </div>
 
@@ -896,7 +899,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共67.1k字</span>
+  <span class="post-count">博客全站共68.2k字</span>
 </div>
 
         

@@ -102,7 +102,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://qqqww.com/javascript中call与apply的区别/applyAndcall.png">
 <meta property="og:image" content="https://qqqww.com/javascript中call与apply的区别/apply.png">
-<meta property="og:updated_time" content="2019-01-21T04:23:57.034Z">
+<meta property="og:updated_time" content="2019-01-25T04:46:23.099Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript中call与apply的区别">
 <meta name="twitter:description" content="javascript中call与apply的区别">
@@ -444,24 +444,25 @@
       
 
       
-        <h1 id="javascript中call与apply的区别"><a href="#javascript中call与apply的区别" class="headerlink" title="javascript中call与apply的区别"></a>javascript中call与apply的区别</h1><p>JavaScript中的每一个<code>Function</code>对象都有一个<code>apply()</code>方法和一个<code>call()</code>方法，它们的语法分别为：</p>
+        <h1 id="javascript中call与apply的区别"><a href="#javascript中call与apply的区别" class="headerlink" title="javascript中call与apply的区别"></a>javascript中call与apply的区别</h1><blockquote>
+<p><strong>欢迎访问我的博客</strong>，祝码农同胞们早日走上人生巅峰，迎娶白富美~~~</p>
+</blockquote>
+<p>JavaScript中的每一个<code>Function</code>对象都有一个<code>apply()</code>方法和一个<code>call()</code>方法，它们的语法分别为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/*apply()方法*/</span><br><span class="line">function.apply(thisObj[, argArray])</span><br><span class="line"></span><br><span class="line">/*call()方法*/</span><br><span class="line">function.call(thisObj[, arg1[, arg2[, [,...argN]]]]);</span><br></pre></td></tr></table></figure>
-<p>##<strong>它们各自的定义</strong></p>
-<p><strong>apply：</strong>调用一个对象的一个方法，用另一个对象替换当前对象。例如：<code>B.apply(A, arguments)</code>;即A对象应用B对象的方法。</p>
+<h2 id="它们各自的定义"><a href="#它们各自的定义" class="headerlink" title="它们各自的定义"></a><strong>它们各自的定义</strong></h2><p><strong>apply：</strong>调用一个对象的一个方法，用另一个对象替换当前对象。例如：<code>B.apply(A, arguments)</code>;即A对象应用B对象的方法。</p>
 <p><strong>call：</strong>调用一个对象的一个方法，用另一个对象替换当前对象。例如：<code>B.call(A, args1,args2)</code>;即A对象调用B对象的方法。</p>
 <p>##它们的共同之处：</p>
 <p>都“可以用来代替另一个对象调用一个方法，将一个函数的对象上下文从初始的上下文改变为由thisObj指定的新对象”。</p>
-<h2 id="它们的不同之处"><a href="#它们的不同之处" class="headerlink" title="它们的不同之处"></a>它们的不同之处</h2><p><strong>apply：</strong>最多只能有两个参数——新this对象和一个数组argArray。如果给该方法传递多个参数，则把参数都写进这个数组里面，当然，即使只有一个参数，也要写进数组里。如果argArray不是一个有效的数组或arguments对象，那么将导致一个TypeError。如果没有提供argArray和thisObj任何一个参数，那么Global对象将被用作thisObj，并且无法被传递任何参数。</p>
-<p><strong>call：</strong>它可以接受多个参数，第一个参数与apply一样，后面则是一串参数列表。这个方法主要用在js对象各方法相互调用的时候，使当前this实例指针保持一致，或者在特殊情况下需要改变this指针。如果没有提供thisObj参数，那么 Global 对象被用作thisObj。 </p>
+<h2 id="它们的不同之处"><a href="#它们的不同之处" class="headerlink" title="它们的不同之处"></a>它们的不同之处</h2><p><strong>apply</strong>：最多只能有两个参数——新this对象和一个数组argArray。如果给该方法传递多个参数，则把参数都写进这个数组里面，当然，即使只有一个参数，也要写进数组里。如果argArray不是一个有效的数组或arguments对象，那么将导致一个TypeError。如果没有提供argArray和thisObj任何一个参数，那么Global对象将被用作thisObj，并且无法被传递任何参数。</p>
+<p><strong>call</strong>：它可以接受多个参数，第一个参数与apply一样，后面则是一串参数列表。这个方法主要用在js对象各方法相互调用的时候，使当前this实例指针保持一致，或者在特殊情况下需要改变this指针。如果没有提供thisObj参数，那么 Global 对象被用作thisObj。 </p>
 <p>实际上，apply和call的功能是一样的，只是传入的参数列表形式不同。</p>
-<p>##示例</p>
-<p><strong>（1）基本用法</strong></p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p><strong>（1）基本用法</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> a+b;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sub</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> a-b;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> a1 = add.apply(sub,[<span class="number">4</span>,<span class="number">2</span>]);　　<span class="comment">//sub调用add的方法</span></span><br><span class="line"><span class="keyword">var</span> a2 = sub.apply(add,[<span class="number">4</span>,<span class="number">2</span>]);</span><br><span class="line">alert(a1);  <span class="comment">//6     </span></span><br><span class="line">alert(a2);  <span class="comment">//2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*call的用法*/</span></span><br><span class="line"><span class="keyword">var</span> a1 = add.call(sub,<span class="number">4</span>,<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
 <p><strong>（2）实现继承</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name = name;</span><br><span class="line">  <span class="keyword">this</span>.showName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        alert(<span class="keyword">this</span>.name);    </span><br><span class="line">    &#125;    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Cat</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">  Animal.apply(<span class="keyword">this</span>,[name]);    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> cat = <span class="keyword">new</span> Cat(<span class="string">"咕咕"</span>);</span><br><span class="line">cat.showName();</span><br><span class="line"></span><br><span class="line"><span class="comment">/*call的用法*/</span></span><br><span class="line">Animal.call(<span class="keyword">this</span>,name);</span><br></pre></td></tr></table></figure>
 <p> <strong>（3）多重继承</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Class10</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.showSub = <span class="function"><span class="keyword">function</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">        alert(a - b);</span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Class11</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.showAdd = <span class="function"><span class="keyword">function</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">        alert(a + b);</span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Class12</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  Class10.apply(<span class="keyword">this</span>);</span><br><span class="line">  Class11.apply(<span class="keyword">this</span>);   </span><br><span class="line">  <span class="comment">// Class10.call(this);</span></span><br><span class="line">  <span class="comment">//Class11.call(this);  </span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> c2 = <span class="keyword">new</span> Class12();</span><br><span class="line">c2.showSub(<span class="number">3</span>,<span class="number">1</span>);    <span class="comment">//2</span></span><br><span class="line">c2.showAdd(<span class="number">3</span>,<span class="number">1</span>);    <span class="comment">//4</span></span><br></pre></td></tr></table></figure>
-<h2 id="apply的一些其他巧妙用法"><a href="#apply的一些其他巧妙用法" class="headerlink" title="apply的一些其他巧妙用法"></a>apply的一些其他巧妙用法</h2><p><strong>（1）Math.max 可以实现得到数组中最大的一项：</strong></p>
+<h2 id="apply的一些其他巧妙用法"><a href="#apply的一些其他巧妙用法" class="headerlink" title="apply的一些其他巧妙用法"></a>apply的一些其他巧妙用法</h2><p><strong>（1）Math.max 可以实现得到数组中最大的一项</strong></p>
 <p>因为<code>Math.max</code>不支持<code>Math.max([param1,param2])</code>也就是数组，但是它支持<code>Math.max(param1,param2...)</code>，所以可以根据apply的特点来解决 <code>var max=Math.max.apply(null,array)</code>，这样就轻易的可以得到一个数组中的最大项（apply会将一个数组转换为一个参数接一个参</p>
 <p>数的方式传递给方法）</p>
 <p>这块在调用的时候第一个参数给了null，这是因为没有对象去调用这个方法，我只需要用这个方法帮我运算，得到返回的结果就行，所以直接传递了一个null过去。</p>
@@ -472,7 +473,7 @@
 <p>也可以这样理解，<code>arr1</code>调用了<code>push</code>方法，参数是通过apply将数组转换为参数列表的集合</p>
 <p>通常在什么情况下，可以使用<code>apply</code>类似<code>Math.max</code>等之类的特殊用法：</p>
 <p>一般在目标函数只需要n个参数列表，而不接收一个数组的形式，可以通过apply的方式巧妙地解决这个问题</p>
-<p> <img src="/javascript中call与apply的区别/applyAndcall.png" alt="applyAndcall"></p>
+<p><img src="/javascript中call与apply的区别/applyAndcall.png" alt="applyAndcall"></p>
 <p><img src="/javascript中call与apply的区别/apply.png" alt="apply"></p>
 <p>其实看上面两张图打印的结果不难发现，我们的<code>apply</code>和<code>call</code>的第一个参数位置就是调用者，假如<code>arr1</code>在第一个参数位置，就是<code>arr1</code>调用了<code>xxxx</code>,那么相当于<code>arr1</code>此时拥有了<code>xxx</code>的方法，我们举个例子，例如<code>Array.prototype.push.apply(arr1,arr2)</code>就是<code>arr1</code>调用了<code>Array.prototype.push</code>方法</p>
 
@@ -497,7 +498,7 @@
   <p><span>本文标题:</span>javascript中call与apply的区别</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月20日 - 20:38:07</p>
-  <p><span>最后更新:</span>2019年01月21日 - 12:23:57</p>
+  <p><span>最后更新:</span>2019年01月25日 - 12:46:23</p>
   <p><span>原始链接:</span><a href="/javascript中call与apply的区别/" title="javascript中call与apply的区别">https://qqqww.com/javascript中call与apply的区别/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript中call与apply的区别/" aria-label="复制成功！"></i></span>
   </p>
@@ -771,7 +772,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#javascript中call与apply的区别"><span class="nav-number">1.</span> <span class="nav-text">javascript中call与apply的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#它们的不同之处"><span class="nav-number">1.1.</span> <span class="nav-text">它们的不同之处</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#apply的一些其他巧妙用法"><span class="nav-number">1.2.</span> <span class="nav-text">apply的一些其他巧妙用法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#javascript中call与apply的区别"><span class="nav-number">1.</span> <span class="nav-text">javascript中call与apply的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#它们各自的定义"><span class="nav-number">1.1.</span> <span class="nav-text">它们各自的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#它们的不同之处"><span class="nav-number">1.2.</span> <span class="nav-text">它们的不同之处</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#示例"><span class="nav-number">1.3.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#apply的一些其他巧妙用法"><span class="nav-number">1.4.</span> <span class="nav-text">apply的一些其他巧妙用法</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -815,7 +816,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">67.1k</span>
+    <span title="Site words total count">68.2k</span>
   
 </div>
 
@@ -845,7 +846,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共67.1k字</span>
+  <span class="post-count">博客全站共68.2k字</span>
 </div>
 
         

@@ -100,7 +100,7 @@
 <meta property="og:site_name" content="工头的博客">
 <meta property="og:description" content="javascript中跨域主要三种：proxy代理, CORS, jsonp">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-23T15:21:26.242Z">
+<meta property="og:updated_time" content="2019-01-25T04:39:54.936Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript中跨域问题">
 <meta name="twitter:description" content="javascript中跨域主要三种：proxy代理, CORS, jsonp">
@@ -400,7 +400,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  557 字
+                  584 字
                 </span>
               
 
@@ -442,6 +442,9 @@
 
       
         <h1 id="javascript中跨域问题"><a href="#javascript中跨域问题" class="headerlink" title="javascript中跨域问题"></a>javascript中跨域问题</h1><blockquote>
+<p><strong>欢迎访问我的博客</strong>，祝码农同胞们早日走上人生巅峰，迎娶白富美~~~</p>
+</blockquote>
+<blockquote>
 <p>由于浏览器同源策略，凡是发送请求url的协议、域名、端口三者之间任意一与当前页面地址不同即为跨域</p>
 </blockquote>
 <h2 id="产生跨域的情况"><a href="#产生跨域的情况" class="headerlink" title="产生跨域的情况"></a>产生跨域的情况</h2><ol>
@@ -451,20 +454,20 @@
 <li>子域名不同，如<code>abc.qqqww.com</code>访问<code>def.qqqww.com</code></li>
 <li>域名和域名对应ip，如<code>www.qqqww.com</code>访问<code>192.168.0.112</code></li>
 </ol>
-<h2 id="跨域请求资源的方法"><a href="#跨域请求资源的方法" class="headerlink" title="跨域请求资源的方法"></a>跨域请求资源的方法</h2><h3 id="proxy代理"><a href="#proxy代理" class="headerlink" title="proxy代理"></a>proxy代理</h3><p><strong>定义和用法：</strong>proxy代理用于将请求发送给后台服务器，通过服务器来发送请求，然后将请求的结果传递给前端。</p>
-<p><strong>实现方法：</strong>通过nginx代理</p>
+<h2 id="跨域请求资源的方法"><a href="#跨域请求资源的方法" class="headerlink" title="跨域请求资源的方法"></a>跨域请求资源的方法</h2><h3 id="proxy代理"><a href="#proxy代理" class="headerlink" title="proxy代理"></a>proxy代理</h3><p><strong>定义和用法</strong>： proxy代理用于将请求发送给后台服务器，通过服务器来发送请求，然后将请求的结果传递给前端。</p>
+<p><strong>实现方法</strong>：通过nginx代理</p>
 <p><strong>注意：</strong></p>
 <ol>
 <li>如果你代理的是https协议的请求，那么你的<code>proxy</code>首先<strong>需要信任该证书</strong>（尤其是自定义证书）或者忽略证书检查，否则你的请求无法成功</li>
 </ol>
 <h3 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h3><p><strong>定义和用法</strong>：CORS (Cross-Origin Resource Sharing) 是现代浏览器支持跨域资源请求的一种最常用的方式。</p>
-<p><strong>使用方法：</strong>一般需要后端人员在处理请求数据的时候，<strong>添加允许跨域</strong>的相关操作。如下：</p>
+<p><strong>使用方法</strong>：一般需要后端人员在处理请求数据的时候，<strong>添加允许跨域</strong>的相关操作。如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">res.writeHead(200, &#123;</span><br><span class="line">    &quot;Content-Type&quot;: &quot;text/html; charset=UTF-8&quot;,</span><br><span class="line">    &quot;Access-Control-Allow-Origin&quot;:&apos;http://localhost&apos;,</span><br><span class="line">    &apos;Access-Control-Allow-Methods&apos;: &apos;GET, POST, OPTIONS&apos;,</span><br><span class="line">    &apos;Access-Control-Allow-Headers&apos;: &apos;X-Requested-With, Content-Type&apos;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h3 id="jsonp"><a href="#jsonp" class="headerlink" title="jsonp"></a>jsonp</h3><p><strong>定义和用法：</strong>通过动态插入一个script标签。<strong>浏览器对script的资源引用没有同源限制</strong>，同时资源加载到页面后会立即执行（没有阻塞的情况下）</p>
-<p><strong>特点：</strong>通过情况下，通过动态创建script来读取他域的动态资源，获取的数据一般为<code>json</code>格式。</p>
+<h3 id="jsonp"><a href="#jsonp" class="headerlink" title="jsonp"></a>jsonp</h3><p><strong>定义和用法</strong>：通过动态插入一个script标签。<strong>浏览器对script的资源引用没有同源限制</strong>，同时资源加载到页面后会立即执行（没有阻塞的情况下）</p>
+<p><strong>特点</strong>：通过情况下，通过动态创建script来读取他域的动态资源，获取的数据一般为<code>json</code>格式。</p>
 <p><strong>实例：</strong></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">testjsonp</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">       <span class="built_in">console</span>.log(data.name); <span class="comment">// 获取返回的结果</span></span><br><span class="line">    &#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">    var _script = document.createElement('script');</span></span><br><span class="line"><span class="regexp">    _script.type = "text/</span>javascript<span class="string">";</span></span><br><span class="line"><span class="string">    _script.src = "</span>http:<span class="comment">//localhost:8888/jsonp?callback=testjsonp";</span></span><br><span class="line">    <span class="built_in">document</span>.head.appendChild(_script);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>缺点：</strong></p>
+<p><strong>缺点</strong>：</p>
 <p>　　1、这种方式无法发送post请求（这里）</p>
 <p>　　2、另外要确定jsonp的请求是否失败并不容易，大多数框架的实现都是结合超时时间来判定</p>
 
@@ -489,7 +492,7 @@
   <p><span>本文标题:</span>javascript中跨域问题</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月21日 - 17:01:02</p>
-  <p><span>最后更新:</span>2019年01月23日 - 23:21:26</p>
+  <p><span>最后更新:</span>2019年01月25日 - 12:39:54</p>
   <p><span>原始链接:</span><a href="/javascript中跨域问题/" title="javascript中跨域问题">https://qqqww.com/javascript中跨域问题/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript中跨域问题/" aria-label="复制成功！"></i></span>
   </p>
@@ -807,7 +810,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">67.1k</span>
+    <span title="Site words total count">68.2k</span>
   
 </div>
 
@@ -837,7 +840,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共67.1k字</span>
+  <span class="post-count">博客全站共68.2k字</span>
 </div>
 
         

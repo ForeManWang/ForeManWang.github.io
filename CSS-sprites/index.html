@@ -102,7 +102,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://qqqww.com/CSS-sprites/CSS-sprites.png">
 <meta property="og:image" content="https://qqqww.com/CSS-sprites/result.png">
-<meta property="og:updated_time" content="2019-01-23T12:46:35.400Z">
+<meta property="og:updated_time" content="2019-01-25T05:15:50.075Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS-sprites">
 <meta name="twitter:description" content="CSS-sprites，又叫精灵图">
@@ -403,7 +403,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  640 字
+                  667 字
                 </span>
               
 
@@ -445,6 +445,9 @@
 
       
         <h1 id="CSS-sprites，又叫精灵图"><a href="#CSS-sprites，又叫精灵图" class="headerlink" title="CSS-sprites，又叫精灵图"></a>CSS-sprites，又叫精灵图</h1><blockquote>
+<p><strong>欢迎访问我的博客</strong>，祝码农同胞们早日走上人生巅峰，迎娶白富美~~~</p>
+</blockquote>
+<blockquote>
 <p><strong>概念：CSS-sprites，又叫精灵图，也是CSS图像拼合或者CSS贴图定位</strong></p>
 </blockquote>
 <h2 id="CSS-sprites拼合"><a href="#CSS-sprites拼合" class="headerlink" title="CSS-sprites拼合"></a>CSS-sprites拼合</h2><blockquote>
@@ -455,19 +458,19 @@
 <li>一般大图像或者网页背景不适合拼合为<strong>CSS sprites</strong>，网络带宽不好的情况下，访问大图的拼合图像，加载时间需要更长</li>
 <li><strong>推荐：</strong>一般最好将尺寸大小差不多的品何在一张图片上，这样也会有利于开发者计算定位，降低出错率，提高效率</li>
 </ol>
-<h2 id="CSS-sprites优点和缺点"><a href="#CSS-sprites优点和缺点" class="headerlink" title="CSS-sprites优点和缺点"></a>CSS-sprites优点和缺点</h2><p><strong>优点：</strong></p>
+<h2 id="CSS-sprites优点和缺点"><a href="#CSS-sprites优点和缺点" class="headerlink" title="CSS-sprites优点和缺点"></a>CSS-sprites优点和缺点</h2><p><strong>优点</strong>：</p>
 <ol>
 <li>将众多小图像拼合，一次性加载，减少http请求，提高网站性能</li>
 <li>减少图片文件数量，减少命名太多的困扰，对开发者友好，降低出错率，提高效率</li>
 </ol>
-<p><strong>缺点：</strong></p>
+<p><strong>缺点</strong>：</p>
 <ol>
 <li>在做图片拼合的时候，需要在页面中留有合适的空间，需要精确测量计算位置，会很繁琐，当然现在也有对应的自动拼合且产生定位代码的软件</li>
 <li>不利于维护，当<strong>CSS-sprites</strong>上的一个图像需要改动时，往往需要改动其他的图像的CSS代码，这就要在制作<strong>CSS sprites</strong>的时候就要考虑这种图片以后改动会不会很频繁，如果很频繁，可以不放在拼合图像中</li>
 </ol>
 <h2 id="CSS-sprites例子"><a href="#CSS-sprites例子" class="headerlink" title="CSS-sprites例子"></a>CSS-sprites例子</h2><p><img src="/CSS-sprites/CSS-sprites.png" alt="CSS-sprites"></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1,minimal-ui, user-scalable=no"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        .sprites div &#123;</span></span><br><span class="line"><span class="undefined">            margin: 5px;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        .sprites span &#123;</span></span><br><span class="line"><span class="undefined">            float: left;</span></span><br><span class="line"><span class="undefined">            width: 20px;</span></span><br><span class="line"><span class="undefined">            height: 20px;</span></span><br><span class="line"><span class="undefined">            background-image: url(sprite.png);</span></span><br><span class="line"><span class="undefined">            background-size: 60px 40px;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        .sprites1&#123;</span></span><br><span class="line"><span class="undefined">            background-position: 0 0;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        .sprites2&#123;</span></span><br><span class="line"><span class="undefined">            background-position: -20px 0;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        .sprites3&#123;</span></span><br><span class="line"><span class="undefined">            background-position: 0 -20px;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        .sprites4&#123;</span></span><br><span class="line"><span class="undefined">            background-position: -20px -20px;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        .sprites5&#123;</span></span><br><span class="line"><span class="undefined">            background-position: -40px 0;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        .sprites6&#123;</span></span><br><span class="line"><span class="undefined">            background-position: -40px -20px;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sprites"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"sprites1"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>付款图标<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"sprites2"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>删除图标<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"sprites3"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>存款图标<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"sprites4"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>粘贴图标<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"sprites5"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>笑脸图标<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"sprites6"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>编辑图标<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>然后快去看看执行结果吧：</strong></p>
+<p><strong>然后快去看看执行结果吧</strong>：</p>
 <p><img src="/CSS-sprites/result.png" alt="result"></p>
 
       
@@ -491,7 +494,7 @@
   <p><span>本文标题:</span>CSS-sprites</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月23日 - 20:20:06</p>
-  <p><span>最后更新:</span>2019年01月23日 - 20:46:35</p>
+  <p><span>最后更新:</span>2019年01月25日 - 13:15:50</p>
   <p><span>原始链接:</span><a href="/CSS-sprites/" title="CSS-sprites">https://qqqww.com/CSS-sprites/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/CSS-sprites/" aria-label="复制成功！"></i></span>
   </p>
@@ -809,7 +812,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">67.1k</span>
+    <span title="Site words total count">68.2k</span>
   
 </div>
 
@@ -839,7 +842,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共67.1k字</span>
+  <span class="post-count">博客全站共68.2k字</span>
 </div>
 
         
