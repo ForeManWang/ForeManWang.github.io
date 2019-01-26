@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-26T15:32:06.760Z</updated>
+  <updated>2019-01-26T17:21:52.873Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>同步加载、异步加载和延迟加载和预加载</title>
+    <link href="https://qqqww.com/javascript%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E5%8A%A0%E8%BD%BD%E3%80%81%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E5%92%8C%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD/"/>
+    <id>https://qqqww.com/javascript中的同步加载、异步加载和延迟加载/</id>
+    <published>2019-01-26T16:38:32.000Z</published>
+    <updated>2019-01-26T17:21:52.873Z</updated>
+    
+    <summary type="html">
+    
+      同步加载、异步加载、延迟加载和预加载
+    
+    </summary>
+    
+    
+      <category term="同步加载、异步加载、延迟加载和预加载" scheme="https://qqqww.com/tags/%E5%90%8C%E6%AD%A5%E5%8A%A0%E8%BD%BD%E3%80%81%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E3%80%81%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>javascript中的深拷贝与浅拷贝</title>
@@ -352,24 +370,6 @@
     
     
       <category term="call与apply" scheme="https://qqqww.com/tags/call%E4%B8%8Eapply/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript对象冒充实现继承</title>
-    <link href="https://qqqww.com/javascript%E5%AF%B9%E8%B1%A1%E5%86%92%E5%85%85%E5%AE%9E%E7%8E%B0%E7%BB%A7%E6%89%BF/"/>
-    <id>https://qqqww.com/javascript对象冒充实现继承/</id>
-    <published>2019-01-20T09:33:04.000Z</published>
-    <updated>2019-01-25T10:46:35.988Z</updated>
-    
-    <summary type="html">
-    
-      javascript冒充对象实现继承
-    
-    </summary>
-    
-    
-      <category term="冒充对象" scheme="https://qqqww.com/tags/%E5%86%92%E5%85%85%E5%AF%B9%E8%B1%A1/"/>
     
   </entry>
   
