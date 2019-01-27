@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-27T15:40:30.148Z</updated>
+  <updated>2019-01-27T11:15:56.631Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,54 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="https://qqqww.com/2/"/>
-    <id>https://qqqww.com/2/</id>
-    <published>2019-01-27T15:40:17.229Z</published>
-    <updated>2019-01-27T15:40:30.148Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;&lt;meta name=&quot;generator&quot; content=&quot;Hexo 3.8.0&quot;&gt;
-	&lt;meta charset=&quot;UTF-8&quot;&gt;
-	&lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://qqqww.com/1/"/>
-    <id>https://qqqww.com/1/</id>
-    <published>2019-01-27T13:37:18.775Z</published>
-    <updated>2019-01-27T15:40:24.184Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;&lt;meta name=&quot;generator&quot; content=&quot;Hexo 3.8.0&quot;&gt;
-	&lt;meta charset=&quot;UTF-8&quot;&gt;
-	&lt;title&gt;Document&lt;/title&gt;
-	&lt;style
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>渐进增强和优雅降级</title>
@@ -381,6 +333,43 @@
     
     
       <category term="Array相关的属性和方法" scheme="https://qqqww.com/tags/Array%E7%9B%B8%E5%85%B3%E7%9A%84%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascript中字符串操作</title>
+    <link href="https://qqqww.com/javascript%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/"/>
+    <id>https://qqqww.com/javascript中字符串操作/</id>
+    <published>2019-01-21T08:24:19.000Z</published>
+    <updated>2019-01-25T05:26:57.410Z</updated>
+    
+    <summary type="html">
+    
+      javascript中的字符串操作，如何检测string类型，url查询字符串参数，字符串常用函数等
+    
+    </summary>
+    
+    
+      <category term="javascript字符串" scheme="https://qqqww.com/tags/javascript%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://qqqww.com/javascript%E4%B8%ADtypeof%E4%B8%8Einstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>https://qqqww.com/javascript中typeof与instanceof的区别/</id>
+    <published>2019-01-20T12:59:58.873Z</published>
+    <updated>2019-01-25T05:54:26.718Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;typeof-VS-instanceof&quot;&gt;&lt;a href=&quot;#typeof-VS-instanceof&quot; class=&quot;headerlink&quot; title=&quot;typeof  VS  instanceof&quot;&gt;&lt;/a&gt;&lt;strong&gt;typeof  VS  inst
+      
+    
+    </summary>
+    
     
   </entry>
   
