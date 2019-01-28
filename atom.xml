@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-27T11:15:56.631Z</updated>
+  <updated>2019-01-28T15:07:22.946Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://qqqww.com/javascript%E4%B8%AD%E7%9A%84parseInt()/"/>
+    <id>https://qqqww.com/javascript中的parseInt()/</id>
+    <published>2019-01-28T14:14:54.724Z</published>
+    <updated>2019-01-28T15:07:22.946Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;欢迎访问我的博客&lt;/strong&gt;，祝码农同胞们早日走上人生巅峰，迎娶白富美~~~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文参考&lt;a href=&quot;https://developer.mozilla.o
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>渐进增强和优雅降级</title>
@@ -351,25 +374,6 @@
     
     
       <category term="javascript字符串" scheme="https://qqqww.com/tags/javascript%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://qqqww.com/javascript%E4%B8%ADtypeof%E4%B8%8Einstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>https://qqqww.com/javascript中typeof与instanceof的区别/</id>
-    <published>2019-01-20T12:59:58.873Z</published>
-    <updated>2019-01-25T05:54:26.718Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;typeof-VS-instanceof&quot;&gt;&lt;a href=&quot;#typeof-VS-instanceof&quot; class=&quot;headerlink&quot; title=&quot;typeof  VS  instanceof&quot;&gt;&lt;/a&gt;&lt;strong&gt;typeof  VS  inst
-      
-    
-    </summary>
-    
     
   </entry>
   
