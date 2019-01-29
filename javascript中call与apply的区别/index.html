@@ -102,7 +102,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://qqqww.com/javascript中call与apply的区别/applyAndcall.png">
 <meta property="og:image" content="https://qqqww.com/javascript中call与apply的区别/apply.png">
-<meta property="og:updated_time" content="2019-01-25T05:49:05.253Z">
+<meta property="og:updated_time" content="2019-01-29T08:49:04.069Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript中call与apply的区别">
 <meta name="twitter:description" content="javascript中call与apply的区别">
@@ -472,9 +472,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr1=new Array(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;);</span><br><span class="line">var arr2=new Array(&quot;4&quot;,&quot;5&quot;,&quot;6&quot;);</span><br><span class="line">Array.prototype.push.apply(arr1,arr2);    //得到合并后数组的长度，因为push就是返回一个数组的长度</span><br></pre></td></tr></table></figure>
 <p>也可以这样理解，<code>arr1</code>调用了<code>push</code>方法，参数是通过apply将数组转换为参数列表的集合</p>
 <p>通常在什么情况下，可以使用<code>apply</code>类似<code>Math.max</code>等之类的特殊用法：</p>
-<p>一般在目标函数只需要n个参数列表，而不接收一个数组的形式，可以通过apply的方式巧妙地解决这个问题</p>
-<p><img src="/javascript中call与apply的区别/applyAndcall.png" alt="applyAndcall"></p>
-<p><img src="/javascript中call与apply的区别/apply.png" alt="apply"></p>
+<p>一般在目标函数只需要n个参数列表，而不接收一个数组的形式，可以通过apply的方式巧妙地解决这个问题<img src="/javascript中call与apply的区别/applyAndcall.png" alt="applyAndcall"><img src="/javascript中call与apply的区别/apply.png" alt="apply"></p>
 <p>其实看上面两张图打印的结果不难发现，我们的<code>apply</code>和<code>call</code>的第一个参数位置就是调用者，假如<code>arr1</code>在第一个参数位置，就是<code>arr1</code>调用了<code>xxxx</code>,那么相当于<code>arr1</code>此时拥有了<code>xxx</code>的方法，我们举个例子，例如<code>Array.prototype.push.apply(arr1,arr2)</code>就是<code>arr1</code>调用了<code>Array.prototype.push</code>方法</p>
 
       
@@ -498,7 +496,7 @@
   <p><span>本文标题:</span>javascript中call与apply的区别</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月20日 - 20:38:07</p>
-  <p><span>最后更新:</span>2019年01月25日 - 13:49:05</p>
+  <p><span>最后更新:</span>2019年01月29日 - 16:49:04</p>
   <p><span>原始链接:</span><a href="/javascript中call与apply的区别/" title="javascript中call与apply的区别">https://qqqww.com/javascript中call与apply的区别/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/javascript中call与apply的区别/" aria-label="复制成功！"></i></span>
   </p>

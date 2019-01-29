@@ -41,19 +41,19 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[javascript中的parseInt()]]></title>
-    <url>%2Fjavascript%E4%B8%AD%E7%9A%84parseInt()%2F</url>
-    <content type="text"><![CDATA[欢迎访问我的博客，祝码农同胞们早日走上人生巅峰，迎娶白富美~~~ 本文参考MDN 中的 parseInt() 英文好的，请移步 MDN parseInt() MDN中对 parseInt()的讲解总结如下： 语法1parseInt(string, [radix]); 参数string： 必需，要解析的值，如果string 不是字符串，则将其转化为字符串，并忽略字符串中的前面的空格 radix： 可选，一个介于2到36之间的整数，表示进制，假设parseInt(&#39;10&#39;, 8)，就表示以 8进制来解析这个字符串 10 返回值从给定字符串中解析的整数，如果第一个字符不能够被转换为数字，则返回 NaN 说明 如果 radix 为 0，或者没有设置该参数的时候，parseInt()会根据 string判断需要多少进制 如果 string 以 0x 开头，parseInt()会把 string其余部分解析为 十六进制的整数 如果 string以 0 开头，那么 ECMAScript v3 允许 parseInt() 的一个实现把其后的字符解析为八进制或十六进制的数字，关于这一点，我去控制台测试parseInt(&#39;010&#39;) = 10，并没有像官方说的那样按照 8 进制去解析字符串 10，TODO：所以此处，还待求证，保留意见，欢迎广大道友提出宝贵意见~~ 如果 string以 1 ~ 9 的数字开头，parseInt() 将把它解析为十进制的整数 注意： 只有字符串中的第一个数字会被返回 开头和结尾的空格是允许的 如果字符串的第一个字符不能被转换为数字，则返回 NaN 当 radix &lt;= string字符串的第一个数字，返回 NaN，下面是我在控制台测试的一些实例 123456789101112131415161718192021222324parseInt('9asdsad9')9parseInt('9asdsad9', 10)9parseInt('9asdsad9', 11)109parseInt('9asdsad9', 12)118parseInt('9asdsad9', 0)9parseInt('9asdsad9', 6)NaNparseInt('9asdsad9', 8)NaNparseInt('9asdsad9', 9)NaNparseInt('9asdsad9', 9)NaNparseInt('9asdsad9', 10)9parseInt('8asd9', 9)8parseInt('9', 9)NaN]]></content>
-      <tags>
-        <tag>javascript中的parseInt()</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[图解HTTP:从输入网址到呈现]]></title>
     <url>%2F%E5%9B%BE%E8%A7%A3HTTP-%E4%BB%8E%E8%BE%93%E5%85%A5%E7%BD%91%E5%9D%80%E5%88%B0%E5%91%88%E7%8E%B0%2F</url>
     <content type="text"><![CDATA[图解HTTP:从输入网址到呈现 欢迎访问我的博客，祝码农同胞们早日走上人生巅峰，迎娶白富美~~~ 那首先上图，看下图参照下面的说明 说明： 下面以按具体流程讲解： 当用户需要请求github.com的时候，首先要打开浏览器，输入URL地址，即输入github.com 浏览器发起 DNS 调用去解析URL中的域名字段： 先检查本地缓存中有没有这个域名 如果有，浏览器将接收到的URL中抽取出域名字段，就是访问的主机名，比如https://github.com，并将这个主机名传送给DNS应用的客户端 如果没有查找系统hosts文件有没有这个域名，如果有，解析出IP 如果没有，DNS客户机端向DNS服务器端发送一份查询报文，报文中包含着要访问的主机名字段 该DNS客户机最终会收到一份回答报文，其中包含有该主机名对应的IP地址 一旦该浏览器收到来自DNS的IP地址，就可以向该IP地址定位的HTTP服务器发起TCP连接 浏览器先通过本地随机端口去建立一个通向服务端的连接通道，此通道遵循HTTP协议 浏览器将客户端信息打“包” 将“包”通过连接通道发送到服务端 服务端接收并打开这个“包”，读取到里面的请求路径 根据文件请求路径找到MIME-TYPE，即获得了消息内容类型 判断这个文件是否为静态文件，如果是静态文件，自己处理，如果自己不能处理，交给自己服务中的其他“小弟们”处理 如果是静态文件，则读取静态文件内容，将内容返回给客户端 如果不是静态文件，则发送给“小弟”处理，这里假设PHP能处理，就按照PHP的语法规则去处理并返回给服务端 服务端将处理好的数据以及其他一些内容，打“包”并通过之前建立的通道发送给客户端 客户端接收并打开这个服务端发送回来的“包”，找到其中的Content-Type 根据Content-Type指定的编码格式（例如html，css，javascript等），决定怎么去处理这些文件或者渲染网页 假设是HTML，则直接渲染到网页结构上]]></content>
       <tags>
         <tag>图解HTTP-从输入网址到呈现</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[javascript中的parseInt()]]></title>
+    <url>%2Fjavascript%E4%B8%AD%E7%9A%84parseInt()%2F</url>
+    <content type="text"><![CDATA[欢迎访问我的博客，祝码农同胞们早日走上人生巅峰，迎娶白富美~~~ 本文参考MDN 中的 parseInt() 英文好的，请移步 MDN parseInt() MDN中对 parseInt()的讲解总结如下： 语法1parseInt(string, [radix]); 参数string： 必需，要解析的值，如果string 不是字符串，则将其转化为字符串，并忽略字符串中的前面的空格 radix： 可选，一个介于2到36之间的整数，表示进制，假设parseInt(&#39;10&#39;, 8)，就表示以 8进制来解析这个字符串 10 返回值从给定字符串中解析的整数，如果第一个字符不能够被转换为数字，则返回 NaN 说明 如果 radix 为 0，或者没有设置该参数的时候，parseInt()会根据 string判断需要多少进制 如果 string 以 0x 开头，parseInt()会把 string其余部分解析为 十六进制的整数 如果 string以 0 开头，那么 ECMAScript v3 允许 parseInt() 的一个实现把其后的字符解析为八进制或十六进制的数字，关于这一点，我去控制台测试parseInt(&#39;010&#39;) = 10，并没有像官方说的那样按照 8 进制去解析字符串 10，TODO：所以此处，还待求证，保留意见，欢迎广大道友提出宝贵意见~~ 如果 string以 1 ~ 9 的数字开头，parseInt() 将把它解析为十进制的整数 注意： 只有字符串中的第一个数字会被返回 开头和结尾的空格是允许的 如果字符串的第一个字符不能被转换为数字，则返回 NaN 当 radix &lt;= string字符串的第一个数字，返回 NaN，下面是我在控制台测试的一些实例 123456789101112131415161718192021222324parseInt('9asdsad9')9parseInt('9asdsad9', 10)9parseInt('9asdsad9', 11)109parseInt('9asdsad9', 12)118parseInt('9asdsad9', 0)9parseInt('9asdsad9', 6)NaNparseInt('9asdsad9', 8)NaNparseInt('9asdsad9', 9)NaNparseInt('9asdsad9', 9)NaNparseInt('9asdsad9', 10)9parseInt('8asd9', 9)8parseInt('9', 9)NaN]]></content>
+      <tags>
+        <tag>javascript中的parseInt()</tag>
       </tags>
   </entry>
   <entry>
