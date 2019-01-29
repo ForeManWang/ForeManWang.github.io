@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-27T11:15:56.631Z</updated>
+  <updated>2019-01-29T17:30:50.254Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,96 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ES6中的class关键字</title>
+    <link href="https://qqqww.com/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
+    <id>https://qqqww.com/ES6中的class关键字/</id>
+    <published>2019-01-29T15:54:37.000Z</published>
+    <updated>2019-01-29T17:30:50.254Z</updated>
+    
+    <summary type="html">
+    
+      ES6中的class关键字
+    
+    </summary>
+    
+    
+      <category term="ES6中的class关键字" scheme="https://qqqww.com/tags/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6新特性整理</title>
+    <link href="https://qqqww.com/ES6%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
+    <id>https://qqqww.com/ES6新特性整理/</id>
+    <published>2019-01-29T11:55:31.000Z</published>
+    <updated>2019-01-29T17:33:16.499Z</updated>
+    
+    <summary type="html">
+    
+      ES6新特性整理
+    
+    </summary>
+    
+    
+      <category term="ES6新特性整理" scheme="https://qqqww.com/tags/ES6%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>.offset(), .position(), .scrollTop(), .width(), .innerWidth(), .outerWidth()</title>
+    <link href="https://qqqww.com/%E4%B8%80%E4%BA%9B%E8%B7%9D%E7%A6%BB%E5%B1%9E%E6%80%A7%E5%92%8C%E5%AE%BD%E9%AB%98%E5%B1%9E%E6%80%A7/"/>
+    <id>https://qqqww.com/一些距离属性和宽高属性/</id>
+    <published>2019-01-29T11:48:30.000Z</published>
+    <updated>2019-01-29T11:51:09.037Z</updated>
+    
+    <summary type="html">
+    
+      .offset(), .position(), .scrollTop(), .width(), .innerWidth(), .outerWidth()
+    
+    </summary>
+    
+    
+      <category term=".offset(), .position(), .scrollTop(), .width(), .innerWidth(), .outerWidth()" scheme="https://qqqww.com/tags/offset-position-scrollTop-width-innerWidth-outerWidth/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>e.clientX,e.clientY,e.pageX,e.pageY,e.offsetX,e.offsetY,e.screenX,e.screenY</title>
+    <link href="https://qqqww.com/%E5%87%A0%E4%B8%AA%E5%9D%90%E6%A0%87%E5%B1%9E%E6%80%A7/"/>
+    <id>https://qqqww.com/几个坐标属性/</id>
+    <published>2019-01-29T11:13:56.000Z</published>
+    <updated>2019-01-29T11:25:44.398Z</updated>
+    
+    <summary type="html">
+    
+      e.clientX,e.clientY,e.pageX,e.pageY,e.offsetX,e.offsetY,e.screenX,e.screenY
+    
+    </summary>
+    
+    
+      <category term="e.clientX,e.clientY,e.pageX,e.pageY,e.offsetX,e.offsetY,e.screenX,e.screenY" scheme="https://qqqww.com/tags/e-clientX-e-clientY-e-pageX-e-pageY-e-offsetX-e-offsetY-e-screenX-e-screenY/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascript实现简单拖曳功能</title>
+    <link href="https://qqqww.com/javascript%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E6%8B%96%E6%9B%B3%E5%8A%9F%E8%83%BD/"/>
+    <id>https://qqqww.com/javascript实现简单拖曳功能/</id>
+    <published>2019-01-29T09:27:12.000Z</published>
+    <updated>2019-01-29T10:16:44.212Z</updated>
+    
+    <summary type="html">
+    
+      javascript实现简单拖曳功能
+    
+    </summary>
+    
+    
+      <category term="javascript实现简单拖曳功能" scheme="https://qqqww.com/tags/javascript%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E6%8B%96%E6%9B%B3%E5%8A%9F%E8%83%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>渐进增强和优雅降级</title>
@@ -107,24 +197,6 @@
   </entry>
   
   <entry>
-    <title>图解HTTP:从输入网址到呈现</title>
-    <link href="https://qqqww.com/%E5%9B%BE%E8%A7%A3HTTP-%E4%BB%8E%E8%BE%93%E5%85%A5%E7%BD%91%E5%9D%80%E5%88%B0%E5%91%88%E7%8E%B0/"/>
-    <id>https://qqqww.com/图解HTTP-从输入网址到呈现/</id>
-    <published>2019-01-26T10:50:48.000Z</published>
-    <updated>2019-01-26T11:25:16.796Z</updated>
-    
-    <summary type="html">
-    
-      图解HTTP-从输入网址到呈现浏览器做了什么，服务器做了什么
-    
-    </summary>
-    
-    
-      <category term="图解HTTP-从输入网址到呈现" scheme="https://qqqww.com/tags/%E5%9B%BE%E8%A7%A3HTTP-%E4%BB%8E%E8%BE%93%E5%85%A5%E7%BD%91%E5%9D%80%E5%88%B0%E5%91%88%E7%8E%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>javascript中的parseInt()</title>
     <link href="https://qqqww.com/javascript%E4%B8%AD%E7%9A%84parseInt()/"/>
     <id>https://qqqww.com/javascript中的parseInt()/</id>
@@ -139,6 +211,24 @@
     
     
       <category term="javascript中的parseInt()" scheme="https://qqqww.com/tags/javascript%E4%B8%AD%E7%9A%84parseInt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图解HTTP:从输入网址到呈现</title>
+    <link href="https://qqqww.com/%E5%9B%BE%E8%A7%A3HTTP-%E4%BB%8E%E8%BE%93%E5%85%A5%E7%BD%91%E5%9D%80%E5%88%B0%E5%91%88%E7%8E%B0/"/>
+    <id>https://qqqww.com/图解HTTP-从输入网址到呈现/</id>
+    <published>2019-01-26T10:50:48.000Z</published>
+    <updated>2019-01-26T11:25:16.796Z</updated>
+    
+    <summary type="html">
+    
+      图解HTTP-从输入网址到呈现浏览器做了什么，服务器做了什么
+    
+    </summary>
+    
+    
+      <category term="图解HTTP-从输入网址到呈现" scheme="https://qqqww.com/tags/%E5%9B%BE%E8%A7%A3HTTP-%E4%BB%8E%E8%BE%93%E5%85%A5%E7%BD%91%E5%9D%80%E5%88%B0%E5%91%88%E7%8E%B0/"/>
     
   </entry>
   
@@ -279,96 +369,6 @@
     
     
       <category term="雅虎十四条性能优化原则" scheme="https://qqqww.com/tags/%E9%9B%85%E8%99%8E%E5%8D%81%E5%9B%9B%E6%9D%A1%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%8E%9F%E5%88%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript中sessionStorage 、localStorage 和 Cookie</title>
-    <link href="https://qqqww.com/javascript%E4%B8%ADsessionStorage-%E3%80%81localStorage-%E5%92%8C-cookie/"/>
-    <id>https://qqqww.com/javascript中sessionStorage-、localStorage-和-cookie/</id>
-    <published>2019-01-21T09:53:43.000Z</published>
-    <updated>2019-01-25T04:31:01.542Z</updated>
-    
-    <summary type="html">
-    
-      javascript中sessionStorage 、localStorage 和 Cookie 的异同和用法
-    
-    </summary>
-    
-    
-      <category term="sessionStorage 、localStorage 和 cookie" scheme="https://qqqww.com/tags/sessionStorage-%E3%80%81localStorage-%E5%92%8C-cookie/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>typeof  VS  instanceof</title>
-    <link href="https://qqqww.com/javascript%E4%B8%ADtypeof%E4%B8%8Einstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>https://qqqww.com/javascript中typeof与instanceof的区别/</id>
-    <published>2019-01-21T09:01:02.000Z</published>
-    <updated>2019-01-28T15:29:52.084Z</updated>
-    
-    <summary type="html">
-    
-      typeof  VS  instanceof
-    
-    </summary>
-    
-    
-      <category term="typeof  VS  instanceof" scheme="https://qqqww.com/tags/typeof-VS-instanceof/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript中跨域问题</title>
-    <link href="https://qqqww.com/javascript%E4%B8%AD%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/"/>
-    <id>https://qqqww.com/javascript中跨域问题/</id>
-    <published>2019-01-21T09:01:02.000Z</published>
-    <updated>2019-01-25T04:39:54.936Z</updated>
-    
-    <summary type="html">
-    
-      javascript中跨域主要三种：proxy代理, CORS, jsonp
-    
-    </summary>
-    
-    
-      <category term="跨域" scheme="https://qqqww.com/tags/%E8%B7%A8%E5%9F%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript中的闭包</title>
-    <link href="https://qqqww.com/javascript%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/"/>
-    <id>https://qqqww.com/javascript中的闭包/</id>
-    <published>2019-01-21T09:00:20.000Z</published>
-    <updated>2019-01-25T04:48:41.206Z</updated>
-    
-    <summary type="html">
-    
-      javascript中的闭包
-    
-    </summary>
-    
-    
-      <category term="闭包" scheme="https://qqqww.com/tags/%E9%97%AD%E5%8C%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript中数组操作</title>
-    <link href="https://qqqww.com/javascript%E4%B8%AD%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/"/>
-    <id>https://qqqww.com/javascript中数组操作/</id>
-    <published>2019-01-21T08:24:53.000Z</published>
-    <updated>2019-01-25T05:28:01.062Z</updated>
-    
-    <summary type="html">
-    
-      javascript中Array相关的属性和方法
-    
-    </summary>
-    
-    
-      <category term="Array相关的属性和方法" scheme="https://qqqww.com/tags/Array%E7%9B%B8%E5%85%B3%E7%9A%84%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95/"/>
     
   </entry>
   
