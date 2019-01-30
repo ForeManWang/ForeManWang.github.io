@@ -53,24 +53,6 @@
   </entry>
   
   <entry>
-    <title>ES6 新特性</title>
-    <link href="https://qqqww.com/ES6%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
-    <id>https://qqqww.com/ES6新特性整理/</id>
-    <published>2019-01-29T15:54:37.000Z</published>
-    <updated>2019-01-30T10:47:21.523Z</updated>
-    
-    <summary type="html">
-    
-      ES6 新特性
-    
-    </summary>
-    
-    
-      <category term="ES6 新特性" scheme="https://qqqww.com/tags/ES6-%E6%96%B0%E7%89%B9%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ES6中的class关键字</title>
     <link href="https://qqqww.com/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
     <id>https://qqqww.com/ES6中的class关键字/</id>
@@ -85,6 +67,24 @@
     
     
       <category term="ES6中的class关键字" scheme="https://qqqww.com/tags/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6 新特性</title>
+    <link href="https://qqqww.com/ES6%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
+    <id>https://qqqww.com/ES6新特性整理/</id>
+    <published>2019-01-29T15:54:37.000Z</published>
+    <updated>2019-01-30T10:47:21.523Z</updated>
+    
+    <summary type="html">
+    
+      ES6 新特性
+    
+    </summary>
+    
+    
+      <category term="ES6 新特性" scheme="https://qqqww.com/tags/ES6-%E6%96%B0%E7%89%B9%E6%80%A7/"/>
     
   </entry>
   
