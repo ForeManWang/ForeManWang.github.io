@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-29T17:30:50.254Z</updated>
+  <updated>2019-01-30T15:57:05.397Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -17,11 +17,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>简书左侧目录</title>
+    <link href="https://qqqww.com/%E7%AE%80%E4%B9%A6%E5%B7%A6%E4%BE%A7%E7%9B%AE%E5%BD%95/"/>
+    <id>https://qqqww.com/简书左侧目录/</id>
+    <published>2019-01-30T15:54:24.000Z</published>
+    <updated>2019-01-30T15:57:05.397Z</updated>
+    
+    <summary type="html">
+    
+      本文描述了简书左侧目录, 简书markdown自动生成目录, CSDN上自动生成目录等
+    
+    </summary>
+    
+    
+      <category term="简书markdown自动生成目录" scheme="https://qqqww.com/tags/%E7%AE%80%E4%B9%A6markdown%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6中的Symbol</title>
+    <link href="https://qqqww.com/ES6%E4%B8%AD%E7%9A%84Symbol/"/>
+    <id>https://qqqww.com/ES6中的Symbol/</id>
+    <published>2019-01-30T06:44:26.000Z</published>
+    <updated>2019-01-30T10:13:51.132Z</updated>
+    
+    <summary type="html">
+    
+      ES6中的Symbol
+    
+    </summary>
+    
+    
+      <category term="ES6中的Symbol" scheme="https://qqqww.com/tags/ES6%E4%B8%AD%E7%9A%84Symbol/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ES6中的class关键字</title>
     <link href="https://qqqww.com/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
     <id>https://qqqww.com/ES6中的class关键字/</id>
     <published>2019-01-29T15:54:37.000Z</published>
-    <updated>2019-01-29T17:30:50.254Z</updated>
+    <updated>2019-01-30T10:19:29.629Z</updated>
     
     <summary type="html">
     
@@ -35,20 +71,20 @@
   </entry>
   
   <entry>
-    <title>ES6新特性整理</title>
+    <title>ES6 新特性</title>
     <link href="https://qqqww.com/ES6%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
     <id>https://qqqww.com/ES6新特性整理/</id>
-    <published>2019-01-29T11:55:31.000Z</published>
-    <updated>2019-01-29T17:43:36.575Z</updated>
+    <published>2019-01-29T15:54:37.000Z</published>
+    <updated>2019-01-30T10:47:21.523Z</updated>
     
     <summary type="html">
     
-      ES6新特性整理
+      ES6 新特性
     
     </summary>
     
     
-      <category term="ES6新特性整理" scheme="https://qqqww.com/tags/ES6%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
+      <category term="ES6 新特性" scheme="https://qqqww.com/tags/ES6-%E6%96%B0%E7%89%B9%E6%80%A7/"/>
     
   </entry>
   
@@ -333,42 +369,6 @@
     
     
       <category term="CSS BFC的理解" scheme="https://qqqww.com/tags/CSS-BFC%E7%9A%84%E7%90%86%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS3新特性整理</title>
-    <link href="https://qqqww.com/CSS3%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
-    <id>https://qqqww.com/CSS3新特性整理/</id>
-    <published>2019-01-22T09:00:23.000Z</published>
-    <updated>2019-01-25T05:21:03.251Z</updated>
-    
-    <summary type="html">
-    
-      CSS3新特性整理
-    
-    </summary>
-    
-    
-      <category term="CSS3新特性" scheme="https://qqqww.com/tags/CSS3%E6%96%B0%E7%89%B9%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>雅虎十四条性能优化原则</title>
-    <link href="https://qqqww.com/%E5%BC%80%E5%8F%91%E5%8F%8A%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
-    <id>https://qqqww.com/开发及性能优化/</id>
-    <published>2019-01-21T11:41:24.000Z</published>
-    <updated>2019-01-25T04:49:37.722Z</updated>
-    
-    <summary type="html">
-    
-      开发及性能优化，雅虎十四条性能优化原则
-    
-    </summary>
-    
-    
-      <category term="雅虎十四条性能优化原则" scheme="https://qqqww.com/tags/%E9%9B%85%E8%99%8E%E5%8D%81%E5%9B%9B%E6%9D%A1%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%8E%9F%E5%88%99/"/>
     
   </entry>
   

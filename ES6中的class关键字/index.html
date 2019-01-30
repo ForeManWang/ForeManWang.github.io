@@ -100,7 +100,7 @@
 <meta property="og:site_name" content="工头的博客">
 <meta property="og:description" content="ES6中的class关键字">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-29T17:30:50.254Z">
+<meta property="og:updated_time" content="2019-01-30T10:19:29.629Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6中的class关键字">
 <meta name="twitter:description" content="ES6中的class关键字">
@@ -416,7 +416,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  8 分钟
+                  9 分钟
                 </span>
               
             </div>
@@ -540,6 +540,11 @@
 <blockquote>
 <p>上述代码中，利用<code>call</code>使<code>this</code>即<code>foo</code>调用了<code>getName</code>方法，这使得<code>getName</code>实际上成为了当前模块的私有方法</p>
 </blockquote>
+<p>方法三：<code>Symbol</code> 值的<strong>唯一性</strong></p>
+<blockquote>
+<p>对于 Symbol 可以参考<a href="https://qqqww.com/ES6中的Symbol/">ES6中的Symbol</a></p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = <span class="built_in">Symbol</span>(<span class="string">'a'</span>)</span><br><span class="line"><span class="keyword">const</span> b = <span class="built_in">Symbol</span>(<span class="string">'b'</span>)</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">People</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 公有方法</span></span><br><span class="line">    foo (name) &#123;</span><br><span class="line">        <span class="keyword">this</span>[a](name)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 私有方法</span></span><br><span class="line">    [a](name) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>[b] = name</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="私有属性"><a href="#私有属性" class="headerlink" title="私有属性"></a>私有属性</h4><blockquote>
 <p>请参照<a href="http://es6.ruanyifeng.com/#docs/class" rel="external nofollow noopener noreferrer" target="_blank">http://es6.ruanyifeng.com/#docs/class</a></p>
 </blockquote>
@@ -586,7 +591,7 @@
   <p><span>本文标题:</span>ES6中的class关键字</p>
   <p><span>文章作者:</span>王工头</p>
   <p><span>发布时间:</span>2019年01月29日 - 23:54:37</p>
-  <p><span>最后更新:</span>2019年01月30日 - 01:30:50</p>
+  <p><span>最后更新:</span>2019年01月30日 - 18:19:29</p>
   <p><span>原始链接:</span><a href="/ES6中的class关键字/" title="ES6中的class关键字">https://qqqww.com/ES6中的class关键字/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/ES6中的class关键字/" aria-label="复制成功！"></i></span>
   </p>
@@ -643,8 +648,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/ES6新特性整理/" rel="next" title="ES6新特性整理">
-                <i class="fa fa-chevron-left"></i> ES6新特性整理
+              <a href="/ES6新特性整理/" rel="next" title="ES6 新特性">
+                <i class="fa fa-chevron-left"></i> ES6 新特性
               </a>
             
           </div>
@@ -652,6 +657,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/ES6中的Symbol/" rel="prev" title="ES6中的Symbol">
+                ES6中的Symbol <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -761,7 +770,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">54</span>
+                  <span class="site-state-item-count">56</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -774,7 +783,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">52</span>
+                  <span class="site-state-item-count">54</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -900,7 +909,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">83.1k</span>
+    <span title="Site words total count">86k</span>
   
 </div>
 
@@ -930,7 +939,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共83.1k字</span>
+  <span class="post-count">博客全站共86k字</span>
 </div>
 
         
