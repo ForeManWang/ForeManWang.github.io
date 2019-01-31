@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-01-30T15:57:05.397Z</updated>
+  <updated>2019-01-31T15:38:15.748Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,96 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>模块化开发之CMD规范</title>
+    <link href="https://qqqww.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%E4%B9%8BCMD%E8%A7%84%E8%8C%83/"/>
+    <id>https://qqqww.com/模块化开发之CMD规范/</id>
+    <published>2019-01-31T13:16:28.000Z</published>
+    <updated>2019-01-31T15:38:15.748Z</updated>
+    
+    <summary type="html">
+    
+      CMD规范需要SeaJS的支持
+    
+    </summary>
+    
+    
+      <category term="模块化开发之CMD规范" scheme="https://qqqww.com/tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%E4%B9%8BCMD%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模块化开发之AMD规范</title>
+    <link href="https://qqqww.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%E4%B9%8BAMD%E8%A7%84%E8%8C%83/"/>
+    <id>https://qqqww.com/模块化开发之AMD规范/</id>
+    <published>2019-01-31T12:46:28.000Z</published>
+    <updated>2019-01-31T15:38:47.936Z</updated>
+    
+    <summary type="html">
+    
+      模块化开发之AMD规范遵循RequireJS规范
+    
+    </summary>
+    
+    
+      <category term="模块化开发之AMD规范" scheme="https://qqqww.com/tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%E4%B9%8BAMD%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模块化开发之CommonJS规范</title>
+    <link href="https://qqqww.com/%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%E4%B9%8BCommonJS%E8%A7%84%E8%8C%83/"/>
+    <id>https://qqqww.com/模块化开发之CommonJS规范/</id>
+    <published>2019-01-31T12:00:37.000Z</published>
+    <updated>2019-01-31T15:40:03.584Z</updated>
+    
+    <summary type="html">
+    
+      NodeJs模块化开发遵循CommonJS规范
+    
+    </summary>
+    
+    
+      <category term="模块化开发之CommonJS规范" scheme="https://qqqww.com/tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%E4%B9%8BCommonJS%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈模块化开发</title>
+    <link href="https://qqqww.com/%E6%B5%85%E8%B0%88%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91/"/>
+    <id>https://qqqww.com/浅谈模块化开发/</id>
+    <published>2019-01-31T09:42:34.000Z</published>
+    <updated>2019-01-31T15:11:24.723Z</updated>
+    
+    <summary type="html">
+    
+      本文简单概述了引入模块化编程的重要意义，以及主要的几种模块化编程方案，如ES6中的Module, CommonJS, AMD规范, CMD规范等
+    
+    </summary>
+    
+    
+      <category term="浅谈模块化开发" scheme="https://qqqww.com/tags/%E6%B5%85%E8%B0%88%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6中Module语法与加载实现</title>
+    <link href="https://qqqww.com/ES6%E4%B8%ADModule%E8%AF%AD%E6%B3%95%E4%B8%8E%E5%8A%A0%E8%BD%BD%E5%AE%9E%E7%8E%B0/"/>
+    <id>https://qqqww.com/ES6中Module语法与加载实现/</id>
+    <published>2019-01-31T09:29:43.000Z</published>
+    <updated>2019-01-31T15:39:26.360Z</updated>
+    
+    <summary type="html">
+    
+      本文描述了ES6中的Module语法和如何进行Module加载实现
+    
+    </summary>
+    
+    
+      <category term="ES6中Module语法与加载实现" scheme="https://qqqww.com/tags/ES6%E4%B8%ADModule%E8%AF%AD%E6%B3%95%E4%B8%8E%E5%8A%A0%E8%BD%BD%E5%AE%9E%E7%8E%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>简书左侧目录</title>
@@ -53,6 +143,24 @@
   </entry>
   
   <entry>
+    <title>ES6 新特性</title>
+    <link href="https://qqqww.com/ES6%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
+    <id>https://qqqww.com/ES6新特性整理/</id>
+    <published>2019-01-29T15:54:37.000Z</published>
+    <updated>2019-01-31T15:41:04.813Z</updated>
+    
+    <summary type="html">
+    
+      ES6 新特性
+    
+    </summary>
+    
+    
+      <category term="ES6 新特性" scheme="https://qqqww.com/tags/ES6-%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ES6中的class关键字</title>
     <link href="https://qqqww.com/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
     <id>https://qqqww.com/ES6中的class关键字/</id>
@@ -67,24 +175,6 @@
     
     
       <category term="ES6中的class关键字" scheme="https://qqqww.com/tags/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ES6 新特性</title>
-    <link href="https://qqqww.com/ES6%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
-    <id>https://qqqww.com/ES6新特性整理/</id>
-    <published>2019-01-29T15:54:37.000Z</published>
-    <updated>2019-01-30T10:47:21.523Z</updated>
-    
-    <summary type="html">
-    
-      ES6 新特性
-    
-    </summary>
-    
-    
-      <category term="ES6 新特性" scheme="https://qqqww.com/tags/ES6-%E6%96%B0%E7%89%B9%E6%80%A7/"/>
     
   </entry>
   
@@ -283,92 +373,6 @@
     
     
       <category term="substring,substr VS slice" scheme="https://qqqww.com/tags/substring-substr-VS-slice/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>将博客搬至CSDN</title>
-    <link href="https://qqqww.com/%E5%B0%86%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%87%B3CSDN/"/>
-    <id>https://qqqww.com/将博客搬至CSDN/</id>
-    <published>2019-01-24T08:16:40.000Z</published>
-    <updated>2019-01-24T08:16:40.464Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Web前端中的几种布局</title>
-    <link href="https://qqqww.com/Web%E5%89%8D%E7%AB%AF%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%83%E5%B1%80/"/>
-    <id>https://qqqww.com/Web前端中的几种布局/</id>
-    <published>2019-01-24T02:35:24.000Z</published>
-    <updated>2019-01-26T07:55:31.235Z</updated>
-    
-    <summary type="html">
-    
-      Web前端中的几种布局，圣杯布局，双飞翼布局，栅格布局，Flex布局，绝对定位布局
-    
-    </summary>
-    
-    
-      <category term="Web前端布局" scheme="https://qqqww.com/tags/Web%E5%89%8D%E7%AB%AF%E5%B8%83%E5%B1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DOCTYPE解读</title>
-    <link href="https://qqqww.com/DOCTYPE%E8%A7%A3%E8%AF%BB/"/>
-    <id>https://qqqww.com/DOCTYPE解读/</id>
-    <published>2019-01-23T13:18:32.000Z</published>
-    <updated>2019-01-25T05:22:33.842Z</updated>
-    
-    <summary type="html">
-    
-      本文是对DOCTYPE的解读, 具体解读了标准模式(strandards), 兼容模式(quirks), DTD, DOCTYPE文档类型等
-    
-    </summary>
-    
-    
-      <category term="DOCTYPE" scheme="https://qqqww.com/tags/DOCTYPE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS-sprites</title>
-    <link href="https://qqqww.com/CSS-sprites/"/>
-    <id>https://qqqww.com/CSS-sprites/</id>
-    <published>2019-01-23T12:20:06.000Z</published>
-    <updated>2019-01-25T05:15:50.075Z</updated>
-    
-    <summary type="html">
-    
-      CSS-sprites，又叫精灵图
-    
-    </summary>
-    
-    
-      <category term="CSS-sprites" scheme="https://qqqww.com/tags/CSS-sprites/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS BFC的理解</title>
-    <link href="https://qqqww.com/CSS-BFC%E7%9A%84%E7%90%86%E8%A7%A3/"/>
-    <id>https://qqqww.com/CSS-BFC的理解/</id>
-    <published>2019-01-23T10:17:55.000Z</published>
-    <updated>2019-01-25T05:15:20.422Z</updated>
-    
-    <summary type="html">
-    
-      CSS中BFC的理解
-    
-    </summary>
-    
-    
-      <category term="CSS BFC的理解" scheme="https://qqqww.com/tags/CSS-BFC%E7%9A%84%E7%90%86%E8%A7%A3/"/>
     
   </entry>
   
