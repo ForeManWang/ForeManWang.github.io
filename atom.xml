@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-02-12T04:42:46.135Z</updated>
+  <updated>2019-02-12T14:49:51.576Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,82 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微信小程序生命周期详解</title>
+    <link href="https://qqqww.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://qqqww.com/微信小程序生命周期详解/</id>
+    <published>2019-02-12T11:55:13.000Z</published>
+    <updated>2019-02-12T14:49:51.576Z</updated>
+    
+    <summary type="html">
+    
+      本文主要描述了App.js生命周期, 页面生命周期
+    
+    </summary>
+    
+    
+      <category term="微信小程序生命周期" scheme="https://qqqww.com/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue生命周期详解</title>
+    <link href="https://qqqww.com/Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://qqqww.com/Vue生命周期详解/</id>
+    <published>2019-02-12T11:54:39.000Z</published>
+    <updated>2019-02-12T13:16:56.376Z</updated>
+    
+    <summary type="html">
+    
+      Vue生命周期详解
+    
+    </summary>
+    
+    
+      <category term="Vue生命周期详解" scheme="https://qqqww.com/tags/Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React生命周期详解</title>
+    <link href="https://qqqww.com/React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://qqqww.com/React生命周期详解/</id>
+    <published>2019-02-12T11:53:55.000Z</published>
+    <updated>2019-02-12T13:12:45.686Z</updated>
+    
+    <summary type="html">
+    
+      React生命周期详解
+    
+    </summary>
+    
+    
+      <category term="React生命周期" scheme="https://qqqww.com/tags/React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NodeJS中的网络编程</title>
+    <link href="https://qqqww.com/NodeJS%E4%B8%AD%E7%9A%84%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+    <id>https://qqqww.com/NodeJS中的网络编程/</id>
+    <published>2019-02-12T10:21:31.000Z</published>
+    <updated>2019-02-12T11:32:15.584Z</updated>
+    
+    <summary type="html">
+    
+      本文主要描述了网络编程, nodejs中的net模块
+    
+    </summary>
+    
+    
+      <category term="网络编程" scheme="https://qqqww.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="nodejs中的net模块" scheme="https://qqqww.com/tags/nodejs%E4%B8%AD%E7%9A%84net%E6%A8%A1%E5%9D%97/"/>
+    
+      <category term="TCP Server" scheme="https://qqqww.com/tags/TCP-Server/"/>
+    
+  </entry>
   
   <entry>
     <title>联系方式网页跳转</title>
@@ -165,24 +241,6 @@
   </entry>
   
   <entry>
-    <title>ES6中的class关键字</title>
-    <link href="https://qqqww.com/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
-    <id>https://qqqww.com/ES6中的class关键字/</id>
-    <published>2019-01-29T15:54:37.000Z</published>
-    <updated>2019-01-30T10:19:29.629Z</updated>
-    
-    <summary type="html">
-    
-      ES6中的class关键字
-    
-    </summary>
-    
-    
-      <category term="ES6中的class关键字" scheme="https://qqqww.com/tags/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ES6 新特性</title>
     <link href="https://qqqww.com/ES6%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
     <id>https://qqqww.com/ES6新特性整理/</id>
@@ -197,6 +255,24 @@
     
     
       <category term="ES6 新特性" scheme="https://qqqww.com/tags/ES6-%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6中的class关键字</title>
+    <link href="https://qqqww.com/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
+    <id>https://qqqww.com/ES6中的class关键字/</id>
+    <published>2019-01-29T15:54:37.000Z</published>
+    <updated>2019-01-30T10:19:29.629Z</updated>
+    
+    <summary type="html">
+    
+      ES6中的class关键字
+    
+    </summary>
+    
+    
+      <category term="ES6中的class关键字" scheme="https://qqqww.com/tags/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
     
   </entry>
   
@@ -305,78 +381,6 @@
     
     
       <category term="javascript中的深拷贝与浅拷贝" scheme="https://qqqww.com/tags/javascript%E4%B8%AD%E7%9A%84%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ajax工作原理及实例</title>
-    <link href="https://qqqww.com/Ajax%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E4%BE%8B/"/>
-    <id>https://qqqww.com/Ajax工作原理及实例/</id>
-    <published>2019-01-26T12:33:21.000Z</published>
-    <updated>2019-01-26T14:16:56.012Z</updated>
-    
-    <summary type="html">
-    
-      Ajax工作原理及实例
-    
-    </summary>
-    
-    
-      <category term="Ajax工作原理及实例" scheme="https://qqqww.com/tags/Ajax%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E4%BE%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript中的伪数组</title>
-    <link href="https://qqqww.com/javascript%E4%B8%AD%E7%9A%84%E4%BC%AA%E6%95%B0%E7%BB%84/"/>
-    <id>https://qqqww.com/javascript中的伪数组/</id>
-    <published>2019-01-26T11:43:25.000Z</published>
-    <updated>2019-01-26T12:15:29.586Z</updated>
-    
-    <summary type="html">
-    
-      javascript中的伪数组, 真伪数组的转换
-    
-    </summary>
-    
-    
-      <category term="伪数组" scheme="https://qqqww.com/tags/%E4%BC%AA%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript中的parseInt()</title>
-    <link href="https://qqqww.com/javascript%E4%B8%AD%E7%9A%84parseInt()/"/>
-    <id>https://qqqww.com/javascript中的parseInt()/</id>
-    <published>2019-01-26T10:50:48.000Z</published>
-    <updated>2019-01-28T15:28:53.533Z</updated>
-    
-    <summary type="html">
-    
-      javascript中的parseInt()
-    
-    </summary>
-    
-    
-      <category term="javascript中的parseInt()" scheme="https://qqqww.com/tags/javascript%E4%B8%AD%E7%9A%84parseInt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>图解HTTP:从输入网址到呈现</title>
-    <link href="https://qqqww.com/%E5%9B%BE%E8%A7%A3HTTP-%E4%BB%8E%E8%BE%93%E5%85%A5%E7%BD%91%E5%9D%80%E5%88%B0%E5%91%88%E7%8E%B0/"/>
-    <id>https://qqqww.com/图解HTTP-从输入网址到呈现/</id>
-    <published>2019-01-26T10:50:48.000Z</published>
-    <updated>2019-01-26T11:25:16.796Z</updated>
-    
-    <summary type="html">
-    
-      图解HTTP-从输入网址到呈现浏览器做了什么，服务器做了什么
-    
-    </summary>
-    
-    
-      <category term="图解HTTP-从输入网址到呈现" scheme="https://qqqww.com/tags/%E5%9B%BE%E8%A7%A3HTTP-%E4%BB%8E%E8%BE%93%E5%85%A5%E7%BD%91%E5%9D%80%E5%88%B0%E5%91%88%E7%8E%B0/"/>
     
   </entry>
   
