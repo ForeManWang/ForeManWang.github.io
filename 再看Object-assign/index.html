@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="王工头, Web前端">
+  <meta name="keywords" content="Object.assign">
 
 
 
@@ -92,17 +92,18 @@
 
 
 
-<meta name="description" content="一个平凡的Web前端开发者。">
-<meta name="keywords" content="Web前端开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="工头的博客">
-<meta property="og:url" content="https://qqqww.com/tags/ES6中Module语法与加载实现/index.html">
+<meta name="description" content="Object.assign">
+<meta name="keywords" content="Object.assign">
+<meta property="og:type" content="article">
+<meta property="og:title" content="再看Object.assign">
+<meta property="og:url" content="https://qqqww.com/再看Object-assign/index.html">
 <meta property="og:site_name" content="工头的博客">
-<meta property="og:description" content="一个平凡的Web前端开发者。">
+<meta property="og:description" content="Object.assign">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-20T05:46:19.149Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="工头的博客">
-<meta name="twitter:description" content="一个平凡的Web前端开发者。">
+<meta name="twitter:title" content="再看Object.assign">
+<meta name="twitter:description" content="Object.assign">
 
 
 
@@ -132,7 +133,7 @@
 
 
 
-  <link rel="canonical" href="https://qqqww.com/tags/ES6中Module语法与加载实现/">
+  <link rel="canonical" href="https://qqqww.com/再看Object-assign/">
 
 
 
@@ -156,7 +157,7 @@
 
 
 
-  <title>标签: ES6中Module语法与加载实现 | 工头的博客</title>
+  <title>再看Object.assign | 工头的博客</title>
   
 
 
@@ -185,7 +186,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband">
       <a href="https://foremanwang.github.io/" class="github-corner" aria-label="View source on GitHub" rel="external nofollow noopener noreferrer" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     </div>
@@ -323,52 +324,282 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>ES6中Module语法与加载实现<small>标签</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://qqqww.com/再看Object-assign/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王工头">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="工头的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/ES6中Module语法与加载实现/" itemprop="url">
-              
-                <span itemprop="name">ES6中Module语法与加载实现</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">再看Object.assign</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-31T17:29:43+08:00" content="2019-01-31">
-          01-31
-        </time>
-      </div>
+        <div class="post-meta">
+          
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-20T12:12:46+08:00">
+                2019-02-20
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  785 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3 分钟
+                </span>
+              
+            </div>
+          
+
+          
+              <div class="post-description">
+                  Object.assign 
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="再看Object-assign"><a href="#再看Object-assign" class="headerlink" title="再看Object.assign"></a>再看Object.assign</h1><blockquote>
+<p><strong>欢迎访问我的博客</strong>，祝码农同胞们早日走上人生巅峰，迎娶白富美~~~</p>
+</blockquote>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是今天面试的一个问题，问题是：<strong>Object.assign</strong>是深拷贝还是浅拷贝，因为之前专门就<strong>JS的深拷贝和浅拷贝</strong>做过研究，也写了文档记录，自认为自己高的还是比较清楚的，所以我就很自信的答了，说是浅拷贝，坐车上仔细想了想，将面试问题总结了一下，至于面试问题的总结以后都会在博客体现，回归正题：这里说说我去MDN和各种博客看到的内容，结果令我尴尬了哈哈哈，<strong>那么Object.assign到底是浅拷贝还是深拷贝呢？那就得再来看看到底什么是浅拷贝，什么是深拷贝？</strong></p>
+<h2 id="什么是浅拷贝"><a href="#什么是浅拷贝" class="headerlink" title="什么是浅拷贝"></a>什么是浅拷贝</h2><p>浅拷贝是内存地址的复制，是让目标对象指针和源对象指向同一片内存空间，那么相当于什么呢？下面举个例子</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> people = &#123;</span><br><span class="line">    name: <span class="string">'zhangsan'</span>,</span><br><span class="line">    age: <span class="number">10</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> people2 = people</span><br><span class="line"><span class="built_in">console</span>.log(people.age) <span class="comment">// 10</span></span><br><span class="line"><span class="built_in">console</span>.log(people2.age) <span class="comment">// 10</span></span><br><span class="line">people2.age = <span class="number">100</span></span><br><span class="line"><span class="built_in">console</span>.log(people.age) <span class="comment">// 100</span></span><br><span class="line"><span class="built_in">console</span>.log(people2.age) <span class="comment">// 100</span></span><br><span class="line"><span class="comment">// people 的值被修改了</span></span><br></pre></td></tr></table></figure>
+<p>看上面代码。将<code>people</code>直接赋值给<code>people2</code>，此时修改<code>people2.age</code>，<code>people.age</code>也会跟着变化，即他们实际上是引用的赋值，指向的是同一个内存空间，所以修改了<code>people2.age</code>相当于修改的是指向的这块共同的内存空间中的<code>age</code>所以说，<code>people.age</code>也<strong>会跟着变化</strong>，<strong>这叫浅拷贝</strong></p>
+<h2 id="什么是深拷贝"><a href="#什么是深拷贝" class="headerlink" title="什么是深拷贝"></a>什么是深拷贝</h2><p>先看个例子</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> people = &#123;</span><br><span class="line">    name: <span class="string">'zhangsan'</span>,</span><br><span class="line">    age: <span class="number">10</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> people2 = &#123;</span><br><span class="line">    name: people.name,</span><br><span class="line">	age: people.age</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> people2 = people</span><br><span class="line"><span class="built_in">console</span>.log(people.age) <span class="comment">// 10</span></span><br><span class="line"><span class="built_in">console</span>.log(people2.age) <span class="comment">// 10</span></span><br><span class="line">people2.age = <span class="number">100</span></span><br><span class="line"><span class="built_in">console</span>.log(people.age) <span class="comment">// 10</span></span><br><span class="line"><span class="built_in">console</span>.log(people2.age) <span class="comment">// 100</span></span><br><span class="line"><span class="comment">// people 的值没有被修改</span></span><br></pre></td></tr></table></figure>
+<p>看以上代码，这次拷贝通过将<code>people</code>下面的属性赋值给<code>people2</code>下面的属性，并且当<code>people2.age</code>被修改的时候，<code>people.age</code>并<strong>没有被修改</strong>，<strong>这叫做深拷贝</strong></p>
+<h2 id="看看Object-assign"><a href="#看看Object-assign" class="headerlink" title="看看Object.assign"></a>看看Object.assign</h2><blockquote>
+<p>引用MDN中的一句话：Object.assign()将所有可枚举的值从一个或者多个源对象复制到目标对象，它将返回目标对象</p>
+</blockquote>
+<p>举两个例子说明：</p>
+<p><strong>当Object.assign()去处理一层拷贝时</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> people = &#123;</span><br><span class="line">    name: <span class="string">'zhangsan'</span>,</span><br><span class="line">    age: <span class="number">10</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> people2 = <span class="built_in">Object</span>.assign(&#123;&#125;, people)</span><br><span class="line"><span class="built_in">console</span>.log(people.age) <span class="comment">// 10</span></span><br><span class="line"><span class="built_in">console</span>.log(people2.age) <span class="comment">// 10</span></span><br><span class="line">people2.age = <span class="number">100</span></span><br><span class="line"><span class="built_in">console</span>.log(people.age) <span class="comment">// 10</span></span><br><span class="line"><span class="built_in">console</span>.log(people2.age) <span class="comment">// 100</span></span><br><span class="line"><span class="comment">// people 的值没有被修改</span></span><br></pre></td></tr></table></figure>
+<p>这个时候我们看到，<code>people.age</code>的值不受<code>people2.age</code>的影响，说明是深拷贝</p>
+<p><strong>当Object.assign()去处理多层拷贝时</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> people = &#123;</span><br><span class="line">    name: <span class="string">'zhangsan'</span>,</span><br><span class="line">    age: <span class="number">10</span>,</span><br><span class="line">    zhangsan: &#123;</span><br><span class="line">        say: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">'hello'</span>)</span><br><span class="line">        &#125;,</span><br><span class="line">        height: <span class="number">180</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> people2 = <span class="built_in">Object</span>.assign(&#123;&#125;, people)</span><br><span class="line"><span class="built_in">console</span>.log(people.zhangsan.height) <span class="comment">// 180</span></span><br><span class="line"><span class="built_in">console</span>.log(people2.zhangsan.height) <span class="comment">// 180</span></span><br><span class="line">people2.zhangsan.height = <span class="number">181</span></span><br><span class="line"><span class="built_in">console</span>.log(people.zhangsan.height) <span class="comment">// 181</span></span><br><span class="line"><span class="built_in">console</span>.log(people2.zhangsan.height) <span class="comment">// 181</span></span><br><span class="line"><span class="comment">// people 的值被修改了</span></span><br></pre></td></tr></table></figure>
+<p>我们发现<code>people.age</code>的值受到了<code>people2.age</code>的影响，所以在此处是浅拷贝</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>由以上例子看到，<strong>Object.assign()</strong>实际上<strong>只在在第一层是深拷贝，第一层以下的全是浅拷贝</strong></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/assign" rel="external nofollow noopener noreferrer" target="_blank">MDN中的Object.assign()</a></li>
+<li><a href="https://blog.csdn.net/weixin_43307658/article/details/86662537" rel="external nofollow noopener noreferrer" target="_blank">JavaScript中的浅拷贝和深拷贝</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>再看Object.assign</p>
+  <p><span>文章作者:</span>王工头</p>
+  <p><span>发布时间:</span>2019年02月20日 - 12:12:46</p>
+  <p><span>最后更新:</span>2019年02月20日 - 13:46:19</p>
+  <p><span>原始链接:</span><a href="/再看Object-assign/" title="再看Object.assign">https://qqqww.com/再看Object-assign/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://qqqww.com/再看Object-assign/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
 
       
     </div>
 
+
+    
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢大佬们的阅读-------------</div>
+    
+</div>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Object-assign/" rel="tag"><i class="fa fa-tag"></i> Object.assign</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/less的基本用法/" rel="next" title="less的基本用法">
+                <i class="fa fa-chevron-left"></i> less的基本用法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank" rel="external nofollow noopener noreferrer">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -376,6 +607,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTc2Mi8xODMwOA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -396,8 +636,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -499,6 +748,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#再看Object-assign"><span class="nav-number">1.</span> <span class="nav-text">再看Object.assign</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是浅拷贝"><span class="nav-number">1.2.</span> <span class="nav-text">什么是浅拷贝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是深拷贝"><span class="nav-number">1.3.</span> <span class="nav-text">什么是深拷贝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#看看Object-assign"><span class="nav-number">1.4.</span> <span class="nav-text">看看Object.assign</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文章"><span class="nav-number">1.6.</span> <span class="nav-text">参考文章</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
       <div id="music163player">
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=490106148&auto=1&height=66"></iframe> 
@@ -675,6 +940,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -703,6 +972,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

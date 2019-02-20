@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-02-14T08:58:23.557Z</updated>
+  <updated>2019-02-20T05:46:19.149Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>再看Object.assign</title>
+    <link href="https://qqqww.com/%E5%86%8D%E7%9C%8BObject-assign/"/>
+    <id>https://qqqww.com/再看Object-assign/</id>
+    <published>2019-02-20T04:12:46.000Z</published>
+    <updated>2019-02-20T05:46:19.149Z</updated>
+    
+    <summary type="html">
+    
+      Object.assign
+    
+    </summary>
+    
+    
+      <category term="Object.assign" scheme="https://qqqww.com/tags/Object-assign/"/>
+    
+  </entry>
   
   <entry>
     <title>less的基本用法</title>
@@ -259,24 +277,6 @@
   </entry>
   
   <entry>
-    <title>ES6 新特性</title>
-    <link href="https://qqqww.com/ES6%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
-    <id>https://qqqww.com/ES6新特性整理/</id>
-    <published>2019-01-29T15:54:37.000Z</published>
-    <updated>2019-01-31T15:41:04.813Z</updated>
-    
-    <summary type="html">
-    
-      ES6 新特性
-    
-    </summary>
-    
-    
-      <category term="ES6 新特性" scheme="https://qqqww.com/tags/ES6-%E6%96%B0%E7%89%B9%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ES6中的class关键字</title>
     <link href="https://qqqww.com/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
     <id>https://qqqww.com/ES6中的class关键字/</id>
@@ -291,6 +291,24 @@
     
     
       <category term="ES6中的class关键字" scheme="https://qqqww.com/tags/ES6%E4%B8%AD%E7%9A%84class%E5%85%B3%E9%94%AE%E5%AD%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6 新特性</title>
+    <link href="https://qqqww.com/ES6%E6%96%B0%E7%89%B9%E6%80%A7%E6%95%B4%E7%90%86/"/>
+    <id>https://qqqww.com/ES6新特性整理/</id>
+    <published>2019-01-29T15:54:37.000Z</published>
+    <updated>2019-01-31T15:41:04.813Z</updated>
+    
+    <summary type="html">
+    
+      ES6 新特性
+    
+    </summary>
+    
+    
+      <category term="ES6 新特性" scheme="https://qqqww.com/tags/ES6-%E6%96%B0%E7%89%B9%E6%80%A7/"/>
     
   </entry>
   
@@ -363,24 +381,6 @@
     
     
       <category term="渐进增强和优雅降级" scheme="https://qqqww.com/tags/%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA%E5%92%8C%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>同步加载、异步加载和延迟加载和预加载</title>
-    <link href="https://qqqww.com/javascript%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E5%8A%A0%E8%BD%BD%E3%80%81%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E5%92%8C%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD/"/>
-    <id>https://qqqww.com/javascript中的同步加载、异步加载和延迟加载/</id>
-    <published>2019-01-26T16:38:32.000Z</published>
-    <updated>2019-01-26T17:21:52.873Z</updated>
-    
-    <summary type="html">
-    
-      同步加载、异步加载、延迟加载和预加载
-    
-    </summary>
-    
-    
-      <category term="同步加载、异步加载、延迟加载和预加载" scheme="https://qqqww.com/tags/%E5%90%8C%E6%AD%A5%E5%8A%A0%E8%BD%BD%E3%80%81%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E3%80%81%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E5%92%8C%E9%A2%84%E5%8A%A0%E8%BD%BD/"/>
     
   </entry>
   
