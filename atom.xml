@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qqqww.com/"/>
-  <updated>2019-02-20T05:46:19.149Z</updated>
+  <updated>2019-02-20T07:59:03.576Z</updated>
   <id>https://qqqww.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于webpack</title>
+    <link href="https://qqqww.com/%E5%85%B3%E4%BA%8Ewebpack/"/>
+    <id>https://qqqww.com/关于webpack/</id>
+    <published>2019-02-20T07:56:01.000Z</published>
+    <updated>2019-02-20T07:59:03.576Z</updated>
+    
+    <summary type="html">
+    
+      本文主要描述了webapck优化打包速度, webpack的理解, webpack打包原理, webpack构建流程, webpack的作用等
+    
+    </summary>
+    
+    
+      <category term="webapck优化打包速度" scheme="https://qqqww.com/tags/webapck%E4%BC%98%E5%8C%96%E6%89%93%E5%8C%85%E9%80%9F%E5%BA%A6/"/>
+    
+      <category term="webpack的理解" scheme="https://qqqww.com/tags/webpack%E7%9A%84%E7%90%86%E8%A7%A3/"/>
+    
+      <category term="webpack打包原理" scheme="https://qqqww.com/tags/webpack%E6%89%93%E5%8C%85%E5%8E%9F%E7%90%86/"/>
+    
+      <category term="webpack构建流程" scheme="https://qqqww.com/tags/webpack%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/"/>
+    
+      <category term="webpack的作用" scheme="https://qqqww.com/tags/webpack%E7%9A%84%E4%BD%9C%E7%94%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>再看Object.assign</title>
@@ -363,24 +389,6 @@
     
     
       <category term="javascript实现简单拖曳功能" scheme="https://qqqww.com/tags/javascript%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E6%8B%96%E6%9B%B3%E5%8A%9F%E8%83%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>渐进增强和优雅降级</title>
-    <link href="https://qqqww.com/%E6%B5%85%E8%B0%88%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA%E5%92%8C%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7/"/>
-    <id>https://qqqww.com/浅谈渐进增强和优雅降级/</id>
-    <published>2019-01-27T06:27:35.000Z</published>
-    <updated>2019-01-27T11:15:56.631Z</updated>
-    
-    <summary type="html">
-    
-      渐进增强和优雅降级
-    
-    </summary>
-    
-    
-      <category term="渐进增强和优雅降级" scheme="https://qqqww.com/tags/%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA%E5%92%8C%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7/"/>
     
   </entry>
   
